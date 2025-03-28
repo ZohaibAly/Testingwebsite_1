@@ -4,6 +4,7 @@ import BrandLogosComp from './Component/Home/BrandCarouselComp/BrandCarouselComp
 import './App.css';
 import AmazonHeroComponent from './Component/Home/AmazonHeroComp/AmazonHeroComp';
 import CaseStudy from './Component/Home/CaseStudyComp/CaseStudyComp';
+// import CardStudy from './Component/Home/CardCaseStudy/CardCaseStudy';
 function App() {
   return (
     <div className="App">
@@ -11,6 +12,7 @@ function App() {
       <AmazonHeroComponent />
       <BrandLogosComp/>
       <CaseStudy/>
+      
     </div>
   );
 }
