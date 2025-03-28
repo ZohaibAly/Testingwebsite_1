@@ -11,7 +11,6 @@ function App() {
       <AmazonHeroComponent />
       <BrandLogosComp/>
       <CaseStudy/>
-     
     </div>
   );
 }
