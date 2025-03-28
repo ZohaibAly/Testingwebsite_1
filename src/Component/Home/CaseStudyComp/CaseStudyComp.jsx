@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './CaseStudyComp.css';
 
 // Import all case study images
@@ -8,12 +8,11 @@ import caseStudy3 from '../../../assets/Case-Study-3.png';
 import caseStudy4 from '../../../assets/Case-Study-4.png';
 import caseStudy5 from '../../../assets/Case-Study-5.png';
 
-// Import arrow icons (alternatively, you can use FontAwesome)
+// Import arrow icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const CaseStudySlider = () => {
-  // Array of all case study images
   const caseStudies = [
     { id: 1, image: caseStudy1, alt: "Case Study 1" },
     { id: 2, image: caseStudy2, alt: "Case Study 2" },
@@ -22,18 +21,26 @@ const CaseStudySlider = () => {
     { id: 5, image: caseStudy5, alt: "Case Study 5" }
   ];
 
-  // State to track current case study index (starting with the first one)
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animationClass, setAnimationClass] = useState('');
 
-  // Handle arrow navigation
+  // Reset animation class after animation completes
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setAnimationClass('');
+    }, 800); // Match with animation duration
+    
+    return () => clearTimeout(timer);
+  }, [animationClass]);
+
   const goToPrevious = () => {
-    // If at first image, go to last image, otherwise go to previous image
+    setAnimationClass('slide-from-left');
     const newIndex = currentIndex === 0 ? caseStudies.length - 1 : currentIndex - 1;
     setCurrentIndex(newIndex);
   };
 
   const goToNext = () => {
-    // If at last image, go to first image, otherwise go to next image
+    setAnimationClass('slide-from-right');
     const newIndex = currentIndex === caseStudies.length - 1 ? 0 : currentIndex + 1;
     setCurrentIndex(newIndex);
   };
@@ -49,6 +56,7 @@ const CaseStudySlider = () => {
           <img 
             src={caseStudies[currentIndex].image} 
             alt={caseStudies[currentIndex].alt}
+            className={animationClass}
           />
         </div>
         
@@ -56,10 +64,10 @@ const CaseStudySlider = () => {
           <button className="view-all-btn">View All Before After</button>
           
           <div className="case-study-arrows">
-            <button className="arrow-btn" onClick={goToPrevious}>
+            <button type="button" className="arrow-btn" onClick={goToPrevious}>
               <FontAwesomeIcon icon={faArrowLeft} />
             </button>
-            <button className="arrow-btn" onClick={goToNext}>
+            <button type="button" className="arrow-btn" onClick={goToNext}>
               <FontAwesomeIcon icon={faArrowRight} />
             </button>
           </div>

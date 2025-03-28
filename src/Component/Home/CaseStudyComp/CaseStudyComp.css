@@ -8,12 +8,14 @@
   --arrow-bg: #292E4C;
   --arrow-color: white;
   --heading-font: 'Montserrat', sans-serif;
+  --btn-font:'poppins', sans-serif;
 }
 
 .case-study-container {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  margin-top: 60px;
   padding: 60px 20px;
   font-family: var(--heading-font);
 }
@@ -24,8 +26,10 @@
 }
 
 .case-study-heading h2 {
-  font-size: 48px;
-  font-weight: 600;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 65px;
   color: var(--primary-text);
 }
 
@@ -38,9 +42,9 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: 2px;
+  bottom: 10px;
   width: 100%;
-  height: 4px;
+  height: 12px;
   background-color: var(--highlight-color);
   z-index: -1;
 }
@@ -49,13 +53,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: px;
 }
 
 .case-study-image {
   width: 100%;
-  max-width: 1400px;
-  margin-bottom: 30px;
+  max-width: 1920px;
   text-align: center;
+
 }
 
 .case-study-image img {
@@ -63,6 +68,7 @@
   height: auto;
   object-fit: contain;
   transition: opacity 0.3s ease;
+
 }
 
 .case-study-navigation {
@@ -70,15 +76,18 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  margin-top: -80px;
 }
 
 .view-all-btn {
-  padding: 12px 30px;
+padding: 24px 50px 24px 50px;
   background-color: var(--btn-bg);
   color: var(--primary-text);
-  border: 1px solid var(--border-color);
-  border-radius: 30px;
-  font-size: 16px;
+  border: 4px solid var(--primary-text);
+  border-radius: 70px;
+  font-size: 24px;
+  letter-spacing: 3%;
+  font-family: var(--btn-font);
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -91,14 +100,15 @@
 
 .case-study-arrows {
   display: flex;
-  gap: 10px;
+  gap: 30px;
 }
 
 .arrow-btn {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 71px;
   border-radius: 50%;
   display: flex;
+  margin-top: 30px;
   align-items: center;
   justify-content: center;
   background-color: var(--arrow-bg);
@@ -111,8 +121,12 @@
 
 .arrow-btn:hover {
   transform: scale(1.1);
+  font-size: 32px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+.arrow-btn svg {
+    font-size: 50px; /* Increase icon size */
+  }
 
 /* Responsive styles */
 @media (max-width: 768px) {
@@ -124,5 +138,72 @@
     width: 40px;
     height: 40px;
     font-size: 16px;
+  }
+}
+
+/* Advanced image transition animations */
+/* Directional image animations */
+.case-study-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.case-study-image img {
+  will-change: transform, opacity, filter;
+}
+
+/* Right arrow clicked - image slides in from right */
+.case-study-image img.slide-from-right {
+  animation: slideFromRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Left arrow clicked - image slides in from left */
+.case-study-image img.slide-from-left {
+  animation: slideFromLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10%) scale(0.95);
+    filter: blur(8px) brightness(1.2);
+  }
+  20% {
+    opacity: 0.6;
+    filter: blur(4px);
+  }
+  60% {
+    filter: blur(0);
+  }
+  80% {
+    transform: translateX(-1%) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: blur(0) brightness(1);
+  }
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%) scale(0.95);
+    filter: blur(8px) brightness(1.2);
+  }
+  20% {
+    opacity: 0.6;
+    filter: blur(4px);
+  }
+  60% {
+    filter: blur(0);
+  }
+  80% {
+    transform: translateX(1%) scale(1.01);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0) scale(1);
+    filter: blur(0) brightness(1);
   }
 }
