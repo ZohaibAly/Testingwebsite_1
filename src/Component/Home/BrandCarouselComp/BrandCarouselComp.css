@@ -3,7 +3,7 @@
 :root {
   --carousel-bg: #292E4C;
   --heading-color: #ffffff;
-  --accent-color: #fcf0bd;
+  --accent-color: #6530DD;
 }
 
 .brand-carousel-container {
@@ -22,17 +22,36 @@
   font-size: 55px;
   margin-bottom: 50px;
   padding-top: 40px;
+  position: relative;
+ 
 }
 
 .brand-carousel-heading h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 55px;
   font-weight: 600;
+  letter-spacing: 0.5px;
+  position: relative; /* Add this */
+  z-index: 0; /* Add this */
   color: var(--heading-color);
-}
 
+}
+.brand-carousel-heading span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    width: 100%;
+    height: 15px;
+    background-color:var(--accent-color); /* Vibrant purple/blue color */
+    z-index: -1; /* Add this */
+  }
 .brand-carousel-heading span {
-  color: var(--accent-color);
+    color: var(--heading-color);
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+
 }
 
 .brand-carousel-wrapper {
