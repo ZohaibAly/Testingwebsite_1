@@ -12,15 +12,16 @@
   background-color: var(--carousel-bg);
   padding: 60px 0;
   overflow: hidden;
-  margin-top: 60px;
+  margin-top: 90px;
   position: relative;
 }
 
-.brand-carousel-heading {
+.brand-carousel-heading
+ {
   text-align: center;
   font-size: 55px;
   margin-bottom: 50px;
-padding-top: 40px;
+  padding-top: 40px;
 }
 
 .brand-carousel-heading h2 {
@@ -43,6 +44,7 @@ padding-top: 40px;
   display: flex;
   animation: scroll 30s linear infinite;
   width: fit-content;
+  gap:150px;
 }
 
 .brand-logo {
@@ -56,7 +58,7 @@ padding-top: 40px;
 .brand-logo img {
   max-height: 250px;
   width: auto;
-  filter: brightness(0) invert(1); /* Makes logos white */
+  
   opacity: 0.9;
   transition: opacity 0.3s ease;
 }
