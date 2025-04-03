@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+:root {
+  --primary-text: #292E4C;
+  --primary-purple: #7039d4;
+  --secondary-purple: #7e3bff;
+  --card-green: #00b894;
+  --arrow-green: #00d68f;
+  --btn-icon-bg: #7e3bff;
+  --card-bg: #ffffff;
+  --border-color: #e9ecef;
+  --heading-font: 'Montserrat', sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--heading-font);
+}
+
+.app {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+/* Case Studies Section */
+.case-studies-section {
+  padding: 60px 80px;
+}
+
+/* Header section */
+.case-studies-header {
+  margin-bottom: 40px;
+}
+
+.case-studies-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.case-studies-tag {
+  color: var(--secondary-purple);
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.case-studies-title h2 {
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--primary-text);
+  margin: 0;
+}
+
+/* Filter buttons */
+.category-filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--border-color);
+  background-color: transparent;
+  color: var(--primary-text);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+  background-color: var(--card-green);
+  color: white;
+  border-color: var(--card-green);
+}
+
+.filter-btn:hover:not(.active) {
+  background-color: #f8f9fa;
+}
+
+/* Case studies grid */
+.case-studies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* View all button */
+.view-all-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.view-all-btn {
+  background-color: var(--primary-text);
+  color: white;
+  padding: 14px 30px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #1e2235;
+  transform: translateY(-2px);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .case-studies-section {
+    padding: 40px 20px;
+  }
+  
+  .case-studies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .case-studies-title h2 {
+    font-size: 36px;
+  }
+  
+  .case-studies-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-btn {
+    font-size: 12px;
+    padding: 8px 15px;
+  }
+}
