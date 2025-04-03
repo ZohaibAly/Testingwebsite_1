@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './Component/NavbarComponent/NavbarComponent';
 import BrandLogosComp from './Component/Home/BrandCarouselComp/BrandCarouselComp';
 import './App.css';
 import AmazonHeroComponent from './Component/Home/AmazonHeroComp/AmazonHeroComp';
 import CaseStudy from './Component/Home/CaseStudyComp/CaseStudyComp';
-import SuccessCard from './Component/Home/SuccessCard/SuccessCard';
+import CaseStudiesContainer from './Component/Home/SuccessCard/CardContainer';
 import Cardimage1 from './assets/image-card-1.png';
 import Cardimage2 from './assets/image-card-2.png';
 import Cardimage3 from './assets/image-card-3.png';
@@ -26,7 +26,7 @@ function App() {
     // Default/CTR variants
     {
       id: 1,
-      image: Cardimage1,
+      image: Cardimage5,
       growth: '+957.2%',
       category: 'Grocery',
       description: '7X Revenue Growth by Overcoming Compliance & Inventory Challenges',
@@ -34,7 +34,7 @@ function App() {
     },
     {
       id: 2,
-      image: Cardimage2,
+      image: Cardimage4,
       growth: '+577%',
       category: 'Supplements',
       description: '400% Increase in Sales and Profitability For Supplements Brand',
@@ -42,7 +42,7 @@ function App() {
     },
     {
       id: 3,
-      image: Cardimage3,
+      image: Cardimage2,
       growth: '2x',
       category: 'Healthcare',
       description: "2X Sales Growth – Revitalizing a brand's Lozenges on Amazon",
@@ -122,41 +122,6 @@ function App() {
     }
   ];
 
-  // State to track active filter
-  const [activeFilter, setActiveFilter] = useState('ctr'); // Default to first filter
-
-  // Get displayed items based on active filter
-  const getDisplayedItems = () => {
-    // For Designs filter, return empty array (no cards)
-    if (activeFilter === 'designs') {
-      return [];
-    }
-    
-    // For CTR filter, return 3 specific cards
-    if (activeFilter === 'ctr') {
-      return caseStudyData.filter(item => item.tags.includes('ctr'));
-    }
-    
-    // For Amazon PPC, get the 2 cards with Amazon tag
-    if (activeFilter === 'amazon') {
-      return caseStudyData.filter(item => item.tags.includes('amazon'));
-    }
-    
-    // For Hijacker Removal and Listings SEO, use same images as Amazon but different content
-    const amazonCards = caseStudyData.filter(item => item.tags.includes('amazon'));
-    const currentFilterCards = caseStudyData.filter(item => item.tags.includes(activeFilter));
-    
-    // Return cards with Amazon images but current filter content
-    return amazonCards.map((amazonCard, index) => {
-      return {
-        ...currentFilterCards[index],
-        image: amazonCard.image
-      };
-    });
-  };
-
-  // Get current cards to display
-  const displayedItems = getDisplayedItems();
   
   return (
     <div className="App">
@@ -164,45 +129,10 @@ function App() {
       <AmazonHeroComponent />
       <BrandLogosComp />
       <CaseStudy />
-      {/* Case Studies Section */}
-      <div className="case-studies-section">
-        <div className="case-studies-header">
-          <div className="case-studies-title">
-            <span className="case-studies-tag">Case Study</span>
-            <h2>My Case Studies</h2>
-          </div>
-          
-          <div className="category-filters">
-            {categoryButtons.map(category => (
-              <button 
-                key={category.id}
-                className={`filter-btn ${activeFilter === category.id ? 'active' : ''}`}
-                onClick={() => setActiveFilter(category.id)}
-              >
-                {category.label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="case-studies-grid">
-          {displayedItems.map((item, index) => (
-            <SuccessCard
-              key={`card-${index}`}
-              image={item.image}
-              growth={item.growth}
-              category={item.category}
-              description={item.description}
-            />
-          ))}
-        </div>
-
-        <div className="view-all-container">
-          <button className="view-all-btn" onClick={() => setActiveFilter('ctr')}>
-            View All Case Studies
-          </button>
-        </div>
-      </div>
+      <CaseStudiesContainer 
+        caseStudyData={caseStudyData}
+        categoryButtons={categoryButtons}
+      />
     </div>
   );
 }
