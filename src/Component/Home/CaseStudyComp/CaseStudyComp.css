@@ -96,6 +96,7 @@ padding: 24px 50px 24px 50px;
 .view-all-btn:hover {
   background-color: var(--primary-text);
   color: white;
+  cursor: pointer;
 }
 
 .case-study-arrows {

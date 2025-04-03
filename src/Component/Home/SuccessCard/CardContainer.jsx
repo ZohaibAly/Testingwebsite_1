@@ -74,7 +74,7 @@ const CaseStudiesContainer = (props) => {
        </div>
 
        <div className="view-all-container">
-         <button className="view-all-btn" onClick={() => setActiveFilter('ctr')}>
+         <button className="Card-viewallbtn" onClick={() => setActiveFilter('ctr')}>
            View All Case Studies
          </button>
        </div>

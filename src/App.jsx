@@ -26,7 +26,7 @@ function App() {
     // Default/CTR variants
     {
       id: 1,
-      image: Cardimage5,
+      image: Cardimage2,
       growth: '+957.2%',
       category: 'Grocery',
       description: '7X Revenue Growth by Overcoming Compliance & Inventory Challenges',
@@ -34,7 +34,7 @@ function App() {
     },
     {
       id: 2,
-      image: Cardimage4,
+      image: Cardimage5,
       growth: '+577%',
       category: 'Supplements',
       description: '400% Increase in Sales and Profitability For Supplements Brand',
@@ -42,7 +42,7 @@ function App() {
     },
     {
       id: 3,
-      image: Cardimage2,
+      image: Cardimage4,
       growth: '2x',
       category: 'Healthcare',
       description: "2X Sales Growth – Revitalizing a brand's Lozenges on Amazon",
@@ -52,7 +52,7 @@ function App() {
     // Amazon PPC variants
     {
       id: 4,
-      image: Cardimage1, // Same image as id 1
+      image: Cardimage3, // Same image as id 1
       growth: '+577%',
       category: 'Supplements',
       description: '400% Increase in Sales and Profitability For Supplements Brand',
@@ -60,7 +60,7 @@ function App() {
     },
     {
       id: 5,
-      image: Cardimage2, // Same image as id 2
+      image: Cardimage1, // Same image as id 2
       growth: '+781.7%',
       category: 'Grocery',
       description: '6X YoY Growth for Food Brand Through A to Z Management',

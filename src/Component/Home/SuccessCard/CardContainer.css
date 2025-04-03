@@ -3,18 +3,18 @@
 :root {
   --primary-text: #292E4C;
   --primary-purple: #7039d4;
-  --secondary-purple: #7e3bff;
-  --card-green: #00b894;
+  --secondary-purple: #6C30ED;
+  --card-green: #0EA498;
   --arrow-green: #00d68f;
   --btn-icon-bg: #7e3bff;
   --card-bg: #ffffff;
   --border-color: #e9ecef;
   --heading-font: 'Montserrat', sans-serif;
+  --case-font: 'poppins', sans-serif;
 }
 
 .case-studies-container {
   max-width: 1920px;
-  margin: 0 auto;
   padding: 60px 80px;
   font-family: var(--heading-font);
 }
@@ -31,15 +31,23 @@
 
 .case-studies-tag {
   color: var(--secondary-purple);
-  font-size: 16px;
-  font-weight: 600;
+  font-family: var( --case-font);
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 90px;
+  padding-bottom: 15px;
+  line-height: 31px;
+  letter-spacing: 0%;
   display: block;
   margin-bottom: 10px;
 }
 
 .case-studies-title h2 {
-  font-size: 48px;
+  font-size: 60px;
   font-weight: 700;
+  font-family: var(--heading-font);
+  line-height: 100%;
+  letter-spacing: 0%;  
   color: var(--primary-text);
   margin: 0;
 }
@@ -47,6 +55,7 @@
 /* Filter buttons */
 .category-filters {
   display: flex;
+  margin-top: 80px;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
@@ -56,11 +65,14 @@
 .filter-btn {
   padding: 10px 20px;
   border-radius: 30px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--primary-text);
   background-color: transparent;
   color: var(--primary-text);
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 400px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  font-family: var(--case-font);
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -70,18 +82,27 @@
   color: white;
   border-color: var(--card-green);
 }
+.filter-btn.active:hover {
+    background-color: var(--card-green);
+    color: white;
+    border-color: var(--card-green);
+  }
+  .filter-btn:hover{
+    background-color: var(--primary-text);
+    color:var(--card-bg) ;
+  }
 
-.filter-btn:hover:not(.active) {
-  background-color: #f8f9fa;
-}
+  .case-studies-grid {
+    display: flex;
+    align-items: center;
+    grid-template-columns: repeat(3, minmax(580px, 0px)); /* Control max width per card */
+    gap: 20px; /* Reduce the gap between cards */
+    width: 100%;
+    max-width: 1920px;
+    margin: 40px auto;
+    justify-content: center; /* Center the cards */
+  }
 
-/* Case studies grid */
-.case-studies-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-  gap: 30px;
-  margin-bottom: 40px;
-}
 
 /* View all button */
 .view-all-container {
@@ -89,21 +110,29 @@
   margin-top: 30px;
 }
 
-.view-all-btn {
+.Card-viewallbtn {
   background-color: var(--primary-text);
   color: white;
+
   padding: 14px 30px;
-  border-radius: 30px;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
+  border-radius: 34px;
+  border:3px solid #292E4C;
+  width: 498px;
+  height: 70px;
+  font-size: 24px;
+  line-height: 24px;
+  letter-spacing: 3%;
+  font-family: var(--case-font);
+  font-weight: 500px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.view-all-btn:hover {
-  background-color: #1e2235;
-  transform: translateY(-2px);
+.Card-viewallbtn:hover {
+  background-color:white;
+  color: #292E4C;
+  border:3px solid #292E4C;
+
 }
 
 /* Responsive styles */
