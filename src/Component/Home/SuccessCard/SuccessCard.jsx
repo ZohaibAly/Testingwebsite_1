@@ -5,7 +5,6 @@ import './SuccessCard.css';
 
 const SuccessCard = (props) => {
   const { image, growth, category, description } = props;
-  
   return (
     <div className="success-card">
       <div className="card-image">
@@ -19,11 +18,10 @@ const SuccessCard = (props) => {
         <h3 className="card-category">{category}</h3>
         <p className="card-description">{description}</p>
         <button className="view-case-btn">
-          View Case Studies <span className="btn-circle">→</span>
+          View Case Studies <span className="Card-btn-circle">→</span>
         </button>
       </div>
     </div>
   );
 };
-
 export default SuccessCard;

@@ -40,10 +40,18 @@ function App() {
       description: '400% Increase in Sales and Profitability For Supplements Brand',
       tags: ['ctr'],
     },
+    {
+      id: 3,
+      image: Cardimage3,
+      growth: '2x',
+      category: 'Healthcare',
+      description: "2X Sales Growth – Revitalizing a brand's Lozenges on Amazon",
+      tags: ['ctr'],
+    },
     
     // Amazon PPC variants
     {
-      id: 3,
+      id: 4,
       image: Cardimage1, // Same image as id 1
       growth: '+577%',
       category: 'Supplements',
@@ -51,7 +59,7 @@ function App() {
       tags: ['amazon'],
     },
     {
-      id: 4,
+      id: 5,
       image: Cardimage2, // Same image as id 2
       growth: '+781.7%',
       category: 'Grocery',
@@ -61,7 +69,7 @@ function App() {
     
     // Hijacker removal variants
     {
-      id: 5,
+      id: 6,
       image: Cardimage1, // Same image as id 1
       growth: '3x',
       category: 'Babycare',
@@ -69,7 +77,7 @@ function App() {
       tags: ['hijacker'],
     },
     {
-      id: 6,
+      id: 7,
       image: Cardimage2, // Same image as id 2
       growth: '2x',
       category: 'Healthcare',
@@ -79,7 +87,7 @@ function App() {
     
     // Designs variants
     {
-      id: 7,
+      id: 8,
       image: Cardimage1, // Same image as id 1
       growth: '+43.8%',
       category: 'Supplements',
@@ -87,7 +95,7 @@ function App() {
       tags: ['designs'],
     },
     {
-      id: 8,
+      id: 9,
       image: Cardimage2, // Same image as id 2
       growth: '+2x',
       category: 'Babycare',
@@ -97,7 +105,7 @@ function App() {
     
     // Listings SEO variants
     {
-      id: 9,
+      id: 10,
       image: Cardimage1, // Same image as id 1
       growth: '+57%',
       category: 'Supplements',
@@ -105,7 +113,7 @@ function App() {
       tags: ['listings'],
     },
     {
-      id: 10,
+      id: 11,
       image: Cardimage2, // Same image as id 2
       growth: '+2.5x',
       category: 'Multivitamins',
@@ -117,22 +125,38 @@ function App() {
   // State to track active filter
   const [activeFilter, setActiveFilter] = useState('ctr'); // Default to first filter
 
-  // Get unique image URLs (we'll always show the same set of images)
-  const uniqueImages = [Cardimage1, Cardimage2]; // We're using the same 2 images consistently
-  
-  // Find case studies for each unique image based on the active filter
-  const getContentForImage = (imageUrl) => {
-    // Try to find a case study with this image and matching tag
-    const matchingItem = caseStudyData.find(
-      item => item.image === imageUrl && item.tags.includes(activeFilter)
-    );
+  // Get displayed items based on active filter
+  const getDisplayedItems = () => {
+    // For Designs filter, return empty array (no cards)
+    if (activeFilter === 'designs') {
+      return [];
+    }
     
-    // If no match found, return the first item with this image
-    return matchingItem || caseStudyData.find(item => item.image === imageUrl);
+    // For CTR filter, return 3 specific cards
+    if (activeFilter === 'ctr') {
+      return caseStudyData.filter(item => item.tags.includes('ctr'));
+    }
+    
+    // For Amazon PPC, get the 2 cards with Amazon tag
+    if (activeFilter === 'amazon') {
+      return caseStudyData.filter(item => item.tags.includes('amazon'));
+    }
+    
+    // For Hijacker Removal and Listings SEO, use same images as Amazon but different content
+    const amazonCards = caseStudyData.filter(item => item.tags.includes('amazon'));
+    const currentFilterCards = caseStudyData.filter(item => item.tags.includes(activeFilter));
+    
+    // Return cards with Amazon images but current filter content
+    return amazonCards.map((amazonCard, index) => {
+      return {
+        ...currentFilterCards[index],
+        image: amazonCard.image
+      };
+    });
   };
 
-  // Get content for each image based on the active filter
-  const displayedItems = uniqueImages.map(imageUrl => getContentForImage(imageUrl));
+  // Get current cards to display
+  const displayedItems = getDisplayedItems();
   
   return (
     <div className="App">
@@ -179,8 +203,6 @@ function App() {
           </button>
         </div>
       </div>
-      
-     
     </div>
   );
 }
