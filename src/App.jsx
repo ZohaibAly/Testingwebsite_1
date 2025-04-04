@@ -6,6 +6,7 @@ import AmazonHeroComponent from './Component/Home/AmazonHeroComp/AmazonHeroComp'
 import CaseStudy from './Component/Home/CaseStudyComp/CaseStudyComp';
 import CaseStudiesContainer from './Component/Home/SuccessCard/CardContainer';
 import Business from './Component/Home/BusinessMatrics/BusinessMatrics';
+import OffersGrid from './Component/Home/OfferGrid/OfferGrid';
 import Cardimage1 from './assets/image-card-1.png';
 import Cardimage2 from './assets/image-card-2.png';
 import Cardimage3 from './assets/image-card-3.png';
@@ -135,6 +136,7 @@ function App() {
         categoryButtons={categoryButtons}
       />
       <Business/>
+      <OffersGrid/>
     </div>
   );
 }
