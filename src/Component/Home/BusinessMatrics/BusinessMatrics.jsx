@@ -36,7 +36,7 @@ const CompanyMetrics = () => {
             <p className="metric-label">Retention Rate</p>
           </div>
           
-          <div className="metric-card gradient-purple">
+          <div className="metric-card self-customize">
             <h3 className="metric-value">50+</h3>
             <p className="metric-label">Employees</p>
           </div>
