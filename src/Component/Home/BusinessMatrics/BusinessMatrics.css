@@ -1,0 +1,189 @@
+:root {
+    /* Colors */
+    --teal: #0EA498;
+    --dark-blue: #292E4C;
+    --purple: #7E3FF2;
+    --white: #FFFFFF;
+    --font-fam: 'Montserrat', sans-serif;
+    --Diff-family:'poppins', sans-serif;
+    /* Shadows */
+    --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    
+    /* Border radius */
+    --border-radius: 12px;
+    
+    /* Transitions */
+    --hover-transition: all 0.3s ease;
+  }
+  
+  .company-metrics {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 4rem 0;
+    margin-top: 110px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* Header layout with title and main metric */
+  .metrics-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .title-container {
+    max-width: 550px;
+  }
+  
+  .section-title {
+    font-size:75px;
+    line-height: 75px;
+    letter-spacing: 0%;
+    font-family: var(--font-fam);
+    width: 653px;
+    height: 75px;
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .section-subtitle {
+padding-top: 20px;
+    font-size:20px;
+    line-height: 25px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    color: #3E3E3E;
+    margin-bottom: 1rem;
+  }
+  
+  /* Button styling */
+  .about-button {
+    display: inline-flex;
+    align-items: center;
+   
+    font-family: var(--Diff-family);
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    cursor: pointer;
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 71px;
+    height: 70px;
+    background-color: var(--teal);
+    color: white;
+    border-radius: 50%;
+    margin-left: 0.75rem;
+  }
+
+.icon svg{
+    transform: rotate(-45deg);
+    transition: transform 0.3s ease;
+    width: 42px;
+    height: 25px;
+}
+.about-button:hover{
+    color:var(--teal);
+    text-decoration: underline;
+}
+  
+  /* Primary metric card (the $100M+ one) */
+  .primary-metric-card {
+    background-color: var(--teal);
+    color: var(--white);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    min-width: 350px;
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: var(--hover-transition);
+  }
+  
+  .primary-metric-card:hover {
+    transform: translateY(-11px);
+  }
+  
+  /* Grid for the three bottom metrics */
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  /* Styling for all metric cards */
+  .metric-card {
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    color: var(--white);
+    text-align: center;
+    box-shadow: var(--card-shadow);
+    transition: var(--hover-transition);
+  }
+  
+  .metric-card:hover {
+    transform: translateY(-11px);
+  }
+  
+  .metric-value {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .metric-label {
+    font-size: 1.25rem;
+  }
+  
+  /* Specific card styles */
+  .gradient-purple {
+    background: linear-gradient(135deg, var(--purple), var(--teal));
+  }
+  
+  .dark-blue {
+    background-color: var(--dark-blue);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .metrics-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .primary-metric-card {
+      width: 100%;
+      min-width: unset;
+    }
+  }
+
+  .section-title span{
+    position: relative; 
+  }
+  .section-title span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+    width: 100%;
+    height: 12px;
+    background-color: #7B45EF;
+    z-index: -1;
+  }

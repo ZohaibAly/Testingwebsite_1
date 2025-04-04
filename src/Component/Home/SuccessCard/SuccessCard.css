@@ -131,8 +131,6 @@ line-height: 100%;
   font-size: 14px; /* Increased from 12px */
 }
 
-
-
 .Card-btn-circle svg {
   transform: rotate(-45deg);
   transition: transform 0.3s ease;
