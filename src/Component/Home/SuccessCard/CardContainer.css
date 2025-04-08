@@ -98,12 +98,11 @@
     grid-template-columns: repeat(3, minmax(580px, 0px)); /* Control max width per card */
     gap: 20px; /* Reduce the gap between cards */
   width: 100%;
- 
     max-width: 1920px;
+    min-height: 755px;
     margin: 40px auto;
     justify-content: center; /* Center the cards */
   }
-
 
 /* View all button */
 .view-all-container {
