@@ -5,7 +5,7 @@
   --primary-font: 'Montserrat', sans-serif;
   --body-font: 'Poppins', sans-serif;
   --dark-blue: #292E4C;
-  --purple: #7E3FF2;
+  --purple: #6C30ED;
   --teal: #0EA498;
   --light-gray: #F5F5F5;
   --white: #FFFFFF;
@@ -35,14 +35,14 @@
 
 .offers-grid__subtitle {
   color: var(--purple);
-  font-size: 1.25rem;
-  font-weight: 500;
-  margin-bottom: 0.5rem;
+  font-size:28px;
+  font-weight: 700;
+line-height: 31px;
 }
 
 .offers-grid__title {
   color: var(--dark-blue);
-  font-size: 2.5rem;
+  font-size:60px;
   font-weight: 700;
   font-family: var(--primary-font);
 }
@@ -52,7 +52,6 @@
   grid-template-columns: repeat(6, 1fr);
   gap: 2rem;
   width: 100%;
-  margin-bottom: 1.5rem;
   max-width: 1200px;
 }
 
@@ -71,6 +70,7 @@
 
 .offers-grid__item--hovered {
   border: 2px solid var(--dark-blue);
+  height: 200px;
 }
 
 .offers-grid__icon {
