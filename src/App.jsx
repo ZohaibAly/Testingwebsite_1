@@ -8,7 +8,7 @@ import CaseStudiesContainer from './Component/Home/SuccessCard/CardContainer';
 import Business from './Component/Home/BusinessMatrics/BusinessMatrics';
 import OffersGrid from './Component/Home/OfferGrid/OfferGrid';
 // import FooterComp from './Component/Home/Footer/Footer';
-import FreeStoreComp from './Component/Home/FreeStore/FreeStore';
+import FreeStoreComp from './Component/FreeStore/FreeStore';
 import Cardimage1 from './assets/image-card-1.png';
 import Cardimage2 from './assets/image-card-2.png';
 import Cardimage3 from './assets/image-card-3.png';

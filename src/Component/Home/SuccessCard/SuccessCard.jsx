@@ -7,6 +7,7 @@ import './SuccessCard.css';
 const SuccessCard = (props) => {
   const { image, growth, category, description } = props;
   return (
+    
     <div className="success-card">
       <div className="card-image">
         <img src={image} alt={category} />
@@ -25,6 +26,7 @@ const SuccessCard = (props) => {
         </button>
       </div>
     </div>
+    
   );
 };
 export default SuccessCard;
