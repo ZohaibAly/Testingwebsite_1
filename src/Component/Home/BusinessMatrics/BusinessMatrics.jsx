@@ -11,7 +11,7 @@ const CompanyMetrics = () => {
             <h2 className="section-title">By The<span>Numbers</span></h2>
             <p className="section-subtitle">We Don't Just Manage Amazon—We Master It for You.</p>
             
-            <a href="/about" className="about-button">
+            <a href="#" className="about-button">
               About CommerceKind
               <span className="icon">
               <FontAwesomeIcon icon={faArrowRight}/>

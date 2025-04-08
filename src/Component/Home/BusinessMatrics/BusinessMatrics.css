@@ -1,4 +1,4 @@
-/* First, import the Poppins font */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
@@ -11,7 +11,7 @@
   --body-font: 'Poppins', sans-serif;
   --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   --border-radius: 12px;
-  --hover-transition: all 0.3s ease;
+  --hover-transition: all 0.3s linear;
 }
 
 .company-metrics {
@@ -74,30 +74,37 @@
   line-height: 25px;
   letter-spacing: 0%;
   cursor: pointer;
+  transition: all 0.25s linear;
 }
 
 .icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 71px;
-  height: 70px;
+  width: 65px;
+  height: 65px;
   background-color: var(--teal);
   color: white;
   border-radius: 50%;
   margin-left: 0.75rem;
+  transition: all 0.25s linear;
 }
 
 .icon svg {
   transform: rotate(-45deg);
-  transition: transform 0.3s ease;
-  width: 42px;
-  height: 25px;
+  transition: transform 0.3s linear;
+
+  height: 35px;
 }
 
 .about-button:hover {
   color: var(--teal);
   text-decoration: underline;
+  & .icon{
+    translate: 5px -5px !important;
+  }
+  
+  
 }
 
 /* Primary metric card (the $100M+ one) */
@@ -192,7 +199,7 @@
   content: '';
   position: absolute;
   left: 0;
-  bottom: 15px;
+  bottom: 22px;
   width: 100%;
   height: 12px;
   background-color: #7B45EF;
