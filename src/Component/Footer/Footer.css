@@ -4,13 +4,12 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family:  "Montserrat", "Poppins", system-ui, "Avenir", Helvetica, Arial, sans-serif,;
 }
 
 .Footer-main {
     display: flex;
     flex-direction: row;
-    align-items: center !important;
+    align-items: center;
     justify-content: center;
     gap: 60px;
     padding: 5px 70px 100px 70px;
@@ -29,8 +28,8 @@
     line-height: 40px;
     letter-spacing: 2%;
     max-width: 428px;
-    /* height: 389px; */
-
+    min-height: 409px;
+    max-height: 409px;
 }
 
 .Footerpt-1 .image-1 {
@@ -40,7 +39,7 @@
 
 .Footerpt-1 p {
     font-size: 24px;
-    font-family: "Montserrat", Sans-serif !important;
+    font-family: "Montserrat", "Sans-serif";
     line-height: 40px;
     margin-top: -20px;
     color: #292E4C;
@@ -60,25 +59,31 @@
     flex-direction: row;
     align-items: left;
     gap: 110px;
-    font-family: "Montserrat" !important;
+    font-family: "Montserrat", "Sans-serif";
+    
 
 }
 
 .Footerpt-2 h4 {
     font-size: 24px;
-    font-family: "Montserrat" !important;
+    font-family: "Montserrat", "Sans-serif";
     font-weight: 700;
     color: #292E4C;
 }
 
 .Footerpt-2 a{
-    font-family: "Montserrat" !important;
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 21px;
+    font-family: "Montserrat", "Sans-serif";
     text-decoration: none;
-    color: #292E4C;
     transition: color 0.5s ease;
+    color: black; 
+    font-weight: 400;
+    line-height: 21px;
+}
+
+.Footerpt-2 p{
+    font-family: "Montserrat", "Sans-serif";
+    font-size: 20px;
+
 }
 
 .Footerpt-2 a:hover {
@@ -98,6 +103,8 @@
     line-height: 40px;
     padding-bottom: 100px;
     letter-spacing: 2%;
+    font-family: "Montserrat", "Sans-serif";
+
 }
 
 .Footerpt-3 {
@@ -110,7 +117,7 @@
 }
 
 .Footerpt-3 h4 {
-    font-family: "Montserrat" !important;
+    font-family: "Montserrat";
     font-weight: 700;
     font-size: 24px;
     line-height: 40px;
@@ -131,6 +138,7 @@
     box-shadow: none;
     background-color: #D9D9D9;
     border-radius: 10px;
+    min-width: 426px;
 
 }
 .Footerpt-3 .input-field::placeholder{
@@ -144,10 +152,13 @@
     background-color: #D9D9D9;
     border-color: white;
     padding: 25px;
-    padding-right: 95px;
     margin-right: 0px;
     border-right: none;
     flex-grow: 1;
+}
+
+.Footerpt-3 .input-field:focus{
+    outline: none;
 }
 
 .Footer-input-wrapper button {

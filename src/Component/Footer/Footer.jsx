@@ -1,7 +1,7 @@
 import React from 'react';
 import './Footer.css';
-import frame1 from '../../assets/Footer-Frame.png';
-import frame2 from '../../assets/facebook.png';
+import frame1 from '../../assets/Logo-HD-CommerceKind.png';
+import frame2 from '../../assets/fb.png';
 import frame3 from '../../assets/twitter.png';
 import frame4 from '../../assets/insta.png';
 import frame5 from '../../assets/linkedin.png';
@@ -45,7 +45,7 @@ const Footer = () => {
                     <h4>Quick Links</h4>
                     <a href=""><p>Careers</p></a>
                     <a href=""><p>Blogs</p></a>
-                    <a href=""><p>FAQ's</p></a>
+                    <a href=""><p>FAQs</p></a>
                     <a href=""><p>Reviews</p></a>
                 </div>
                 <div className='Newsletter'>

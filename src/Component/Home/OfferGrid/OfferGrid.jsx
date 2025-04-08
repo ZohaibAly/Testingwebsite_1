@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import './OfferGrid.css';
+
 // Import your images here
 import Services1 from '../../../assets/Services-image1.png';
 import Services2 from '../../../assets/Services-image2.png';
@@ -7,10 +8,37 @@ import Services3 from '../../../assets/Services-image3.png';
 import Services4 from '../../../assets/Services-image4.png';
 import Services5 from '../../../assets/Services-image5.png';
 import Services6 from '../../../assets/Services-image6.png';
-const OffersGrid = () => {
-  const [hoveredOffer, setHoveredOffer] = useState(null);
 
+const OffersGrid = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+  const [highlightStyle, setHighlightStyle] = useState({
+    display: 'none',
+    left: '0px',
+    width: '0px'
+  });
   
+  const itemRefs = useRef([]);
+
+  useEffect(() => {
+    if (hoveredIndex !== null && itemRefs.current[hoveredIndex]) {
+      const element = itemRefs.current[hoveredIndex];
+      const rect = element.getBoundingClientRect();
+      const containerRect = element.parentElement.getBoundingClientRect();
+      const offsetLeft = rect.left - containerRect.left;
+      
+      setHighlightStyle({
+        display: 'block',
+        left: `${offsetLeft}px`,
+        width: `${rect.width}px`
+      });
+    } else {
+      setHighlightStyle({
+        display: 'none',
+        left: '0px',
+        width: '0px'
+      });
+    }
+  }, [hoveredIndex]);
 
   const offers = [
     {
@@ -48,6 +76,14 @@ const OffersGrid = () => {
     },
   ];
 
+  const handleMouseEnter = (index) => {
+    setHoveredIndex(index);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredIndex(null);
+  };
+
   return (
     <section className="offers-grid">
       <div className="offers-grid__container">
@@ -57,26 +93,32 @@ const OffersGrid = () => {
         </div>
 
         <div className="offers-grid__items">
-          {offers.map((offer) => (
-            <a 
-              href="#" 
-              key={offer.id} 
-              className={`offers-grid__item ${hoveredOffer === offer.id ? 'offers-grid__item--hovered' : ''}`}
-              onMouseEnter={() => setHoveredOffer(offer.id)}
-              onMouseLeave={() => setHoveredOffer(null)}
+          {offers.map((offer, index) => (
+            <div 
+              key={offer.id}
+              className={`offers-grid__item ${hoveredIndex === index ? 'offers-grid__item--active' : ''}`}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+              ref={el => itemRefs.current[index] = el}
             >
               <div className="offers-grid__icon">
                 <img src={offer.image} alt={offer.title} />
               </div>
               <div className="offers-grid__text">
-                <h4>{offer.title}</h4>
-                {offer.subtitle && <h4>{offer.subtitle}</h4>}
+                <p>{offer.title}</p>
+                <p>{offer.subtitle}</p>
+               
               </div>
-            </a>
+            </div>
           ))}
         </div>
 
-        <div className="offers-grid__divider"></div>
+        <div className="offers-grid__divider-container">
+          <div 
+            className="offers-grid__divider-highlight" 
+            style={highlightStyle}
+          />
+        </div>
 
         <div className="offers-grid__action">
           <a href="#" className="offers-grid__button">View All Services</a>

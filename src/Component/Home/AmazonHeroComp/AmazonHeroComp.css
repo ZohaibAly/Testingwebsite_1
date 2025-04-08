@@ -64,6 +64,10 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  & *{
+ 
+		transition: all 0.25s linear;
+  }
 }
 
 .hero-button {
@@ -74,9 +78,9 @@
   border-radius: 10px;
   font-size: 18px;
   font-weight: 600;
+ 
   font-family: var(--title-font);
   cursor: pointer;
-  transition: all 0.3s ease;
   border: 3px solid var(--button-color);
 }
 
@@ -100,14 +104,18 @@
 .hero-link:hover {
   color: var(--button-color);
   text-decoration:underline;
+  & .ama-arrow-icon{
+		translate: 5px -5px !important;
+	}
 }
 
-.arrow-icon {
+.ama-arrow-icon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 42.43px;
-  height: 42.43px;
+  width: 40px;
+  /* height: 40px; */
+  aspect-ratio: 1;
   background-color: var(--button-color);
   color: white;
   border-radius: 50%;
@@ -115,9 +123,10 @@
   position: relative;
  
 }
-.arrow-icon svg {
+.ama-arrow-icon svg {
   transform: rotate(-45deg);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s linear;
+
 }
 
 .pic1{
