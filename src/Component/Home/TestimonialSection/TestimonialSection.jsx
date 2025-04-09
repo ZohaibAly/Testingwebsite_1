@@ -66,10 +66,11 @@ const TestimonialsSection = () => {
         <div className="testimonials-content">
       
           <div className="testimonials-left">
-            <img src={Testimonial3} alt="Trustpilot Review" />
-            <img src={Testimonial4} alt="Trustpilot Review" />
-            <img src={Testimonial1} alt="Trustpilot Review" />
-            <img src={Testimonial2} alt="Trustpilot Review" />
+       <a href="https://www.trustpilot.com/reviews/679a9ebcc509578b38d3148c">   <img src={Testimonial3} alt="Trustpilot Review" /></a>
+           <a href="https://www.trustpilot.com/reviews/678ebd8baadb0c9574960440"> <img src={Testimonial4} alt="Trustpilot Review" /></a>
+           <a href="https://www.trustpilot.com/reviews/67a3bbf00965ce2f4b5d22c4">  <img src={Testimonial1} alt="Trustpilot Review" /></a>
+          <a href="https://www.trustpilot.com/reviews/6789763d9983b2c1d430bc69"><img src={Testimonial2} alt="Trustpilot Review" /> </a>
+            
           </div>
           
           {/* Video Preview - Right Side */}

@@ -138,6 +138,7 @@ height: 50px;
 
 .offers-grid__action {
   margin-top: 1rem;
+  transition: all 0.2s linear;
 }
 
 .offers-grid__button {
@@ -151,9 +152,11 @@ height: 50px;
   text-decoration: none;
   border: 3px solid var(--dark-blue);
   display: inline-block;
+  transition: all 0.2s linear;
 }
 .offers-grid__button:hover{
   background-color: var(--white);
   color: var(--dark-blue);
   border: 3px solid var(--dark-blue);
+  transition: all 0.2s linear;
 }

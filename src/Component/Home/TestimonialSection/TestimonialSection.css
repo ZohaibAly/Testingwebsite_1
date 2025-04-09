@@ -107,8 +107,7 @@ border: 3px solid white;
   transform: scale(1.2); /* Increases image size by 20% on hover and when active */
   transition: all 0.3s linear;
 }
-
-/* Video Modal */
+/* Video Modal - Updated */
 .video-modal {
   position: fixed;
   top: 0;
@@ -116,9 +115,22 @@ border: 3px solid white;
   width: 100%;
   height: 100%;
   z-index: 1000;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: slideDown 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .modal-overlay {
@@ -132,25 +144,31 @@ border: 3px solid white;
 
 .modal-content {
   position: relative;
-  width: 90%;
-  max-width: 900px;
+  width: 80%;
+  max-width: 1280px;
   z-index: 1001;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
   height: 0;
+  padding-bottom: 45%; /* 16:9 aspect ratio for 80% width */
+  border-radius: 8px;
+  overflow: hidden;
 }
+
 
 .modal-content iframe {
   position: absolute;
   top: 0;
   left: 0;
+  border-radius: 20px;
   width: 100%;
+z-index: 1000;
   height: 100%;
+  border: none;
 }
 
 .close-modal {
   position: absolute;
   top: -40px;
-  right: -40px;
+  right: 0;
   background: none;
   border: none;
   color: white;
@@ -158,6 +176,20 @@ border: 3px solid white;
   cursor: pointer;
   padding: 0;
   line-height: 1;
+  z-index: 1002;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .modal-content {
+    width: 95%;
+    padding-bottom: 53.4375%; /* 16:9 aspect ratio for 95% width */
+  }
+  
+  .close-modal {
+    top: -30px;
+    right: 0;
+  }
 }
 
 /* Responsive styles */
@@ -176,16 +208,6 @@ border: 3px solid white;
   }
 }
 
-@media (max-width: 768px) {
-  .testimonials-header h2 {
-    font-size: 32px;
-  }
-  
-  .testimonials-left {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
-}
 
 @media (max-width: 480px) {
   .testimonials-header h2 {
