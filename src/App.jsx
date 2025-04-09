@@ -9,6 +9,8 @@ import Business from './Component/Home/BusinessMatrics/BusinessMatrics';
 import OffersGrid from './Component/Home/OfferGrid/OfferGrid';
 import FooterComp from './Component/Footer/Footer';
 import FreeStoreComp from './Component/FreeStore/FreeStore';
+import Testmonial from './Component/Home/TestimonialSection/TestimonialSection';
+// import Servicespop from './Component/ServicesPage/Services/Services';
 import Cardimage1 from './assets/image-card-1.png';
 import Cardimage2 from './assets/image-card-2.png';
 import Cardimage3 from './assets/image-card-3.png';
@@ -139,8 +141,10 @@ function App() {
       />
       <Business/>
       <OffersGrid/>
+      <Testmonial/>
       <FreeStoreComp/>
       <FooterComp/>
+      
     </div>
   );
 }
