@@ -19,6 +19,7 @@
   margin: 0 auto;
   padding: 4rem 0;
   margin-top: 140px;
+  margin-bottom: 100px;
   font-family: var(--body-font); /* Use the variable here instead of hardcoding */
 }
 

@@ -13,7 +13,7 @@
 
 .offers-grid {
   max-width: 1920px;
-  margin: 0 auto;
+  margin: 100px auto 0 auto;
   padding: 4rem 0;
   font-family: var(--body-font);
 }
