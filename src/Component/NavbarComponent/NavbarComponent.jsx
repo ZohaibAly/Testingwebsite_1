@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneVolume, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
@@ -22,9 +23,9 @@ const NavbarComponent = () => {
         </div>
         <div className='p2'>
           <div className='links'>
-            <a href="/careers">Careers</a>
-            <a href="/blog">Blog</a>
-            <a href="/faqs">FAQs</a>
+            <Link to="/careers">Careers</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/faqs">FAQs</Link>
             <a href="/reviews">Reviews</a>
           </div>
           <div className='divider'>|</div>
@@ -38,13 +39,13 @@ const NavbarComponent = () => {
       </div>
       <div className='child2'>
         <div className='logo'>
-          <img src={Logo} alt="CommerceKind Logo" />
+          <Link to="/"><img src={Logo} alt="CommerceKind Logo" /></Link>
         </div>
         <div className='navigation'>
-          <a href="/case-studies">Case Studies</a>
-          <a href="/before-after">Before and After</a>
-          <a href="/services">Services</a>
-          <a href="/contact">Contact</a>
+          <Link to="/case-studies">Case Studies</Link>
+          <Link to="/before-after">Before and After</Link>
+          <Link to="/services">Services</Link>
+          <Link to="/contact">Contact</Link>
         </div>
         <div className='actions'>
           <div className='search'>

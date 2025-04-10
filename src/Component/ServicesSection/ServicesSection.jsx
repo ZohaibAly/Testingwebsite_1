@@ -1,13 +1,13 @@
 import React from "react";
-import "./Services.css";
-import SerImage1 from '../../../assets/Services-image1.png';
-import SerImage2 from '../../../assets/Services-image2.png';
-import SerImage3 from '../../../assets/Services-image3.png';
-import SerImage4 from '../../../assets/Services-image4.png';
-import SerImage5 from '../../../assets/Services-image5.png';
-import SerImage6 from '../../../assets/Services-image6.png';
+import "./ServicesSection.css";
+import SerImage1 from '../../assets/Services-image1.png';
+import SerImage2 from '../../assets/Services-image2.png';
+import SerImage3 from '../../assets/Services-image3.png';
+import SerImage4 from '../../assets/Services-image4.png';
+import SerImage5 from '../../assets/Services-image5.png';
+import SerImage6 from '../../assets/Services-image6.png';
 
-const Services = () => {
+const ServicesSection = () => {
     return (
         <div className="services-component">
             {/* Heading Section */}
@@ -93,4 +93,4 @@ const Services = () => {
     );
 };
 
-export default Services;
+export default ServicesSection;
