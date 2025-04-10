@@ -1,10 +1,8 @@
 import React from 'react';
 import './Footer.css';
 import frame1 from '../../assets/Logo-HD-CommerceKind.png';
-import frame2 from '../../assets/fb.png';
-import frame3 from '../../assets/twitter.png';
-import frame4 from '../../assets/insta.png';
-import frame5 from '../../assets/linkedin.png';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     return (
@@ -18,18 +16,10 @@ const Footer = () => {
                     CommerceKind is your trusted partner for Amazon’s success. We empower businesses to grow their stores and accounts with tailored solutions and proven expertise.
                 </p>
                 <div className='Footerpt-1-images'>
-                    <a href="">
-                        <img src={frame2} alt="FCAEBOOK_IMAGE" />
-                    </a>
-                    <a href="">
-                        <img src={frame3} alt="TWITTER_IMAGE" />
-                    </a>
-                    <a href="">
-                        <img src={frame4} alt="INSTAGRAM_IMAGE" />
-                    </a>
-                    <a href="">
-                        <img src={frame5} alt="LINKEDIN_IMAGE" />
-                    </a>
+                    <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                    <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>
+                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+                    <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
                 </div>
             </div>
             <div className='Footerpt-2'>

@@ -48,10 +48,17 @@
 
 .Footerpt-1-images {
     display: flex;
-    gap: 20px;
+    gap: 14px;
     width: 30px;
     height: 30px;
-
+    & svg{
+        color: white;
+        background-color: #0EA498;
+        width: 25px;
+        height: 25px;
+        padding: 13.5px;
+        border-radius: 15px;
+    }
 }
 
 .Footerpt-2 {
@@ -127,7 +134,7 @@
 
 .Footerpt-3 p {
     font-size: 20px;
-    color: #2d324d;
+    color: #292E4C;
     letter-spacing: 2%;
 }
 
@@ -168,16 +175,12 @@
     border: none;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color: aliceblue;
+    color: white;
     font-size: 16px;
     font-weight: 700;
     margin-left: 0px;
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
-}
-
-.Footer-input-wrapper .abc:focus {
-    outline: none;
 }
 
 .Footer-bottom{
@@ -201,5 +204,5 @@
   }
 
 .Footer-bottom-text a:hover{
-    color: #412FED
+    color: #6C30ED;
 }
