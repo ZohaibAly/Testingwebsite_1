@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 import frame1 from '../../assets/Logo-HD-CommerceKind.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -25,18 +26,18 @@ const Footer = () => {
             <div className='Footerpt-2'>
                 <div className='Company'>
                     <h4>Company</h4>
-                    <a href=""><p>Home</p></a>
-                    <a href=""><p>Case Studies</p></a>
-                    <a href=""><p>Before and After</p></a>
-                    <a href=""><p>Services</p></a>
-                    <a href=""><p>Contact</p></a>
+                    <Link to="/"><p>Home</p></Link>
+                    <Link to="/case-studies"><p>Case Studies</p></Link>
+                    <Link to="/before-after"><p>Before and After</p></Link>
+                    <Link to="/services"><p>Services</p></Link>
+                    <Link to="/contact"><p>Contact</p></Link>
                 </div>
                 <div className='Quicklink'>
                     <h4>Quick Links</h4>
-                    <a href=""><p>Careers</p></a>
-                    <a href=""><p>Blogs</p></a>
-                    <a href=""><p>FAQs</p></a>
-                    <a href=""><p>Reviews</p></a>
+                    <Link to="/careers"><p>Careers</p></Link>
+                    <Link to="/blog"><p>Blog</p></Link>
+                    <Link to="/frequently-asked-questions"><p>FAQs</p></Link>
+                    <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank'><p>Reviews</p></a>
                 </div>
                 <div className='Newsletter'>
                     <h4>Others</h4>

@@ -25,8 +25,8 @@ const NavbarComponent = () => {
           <div className='links'>
             <Link to="/careers">Careers</Link>
             <Link to="/blog">Blog</Link>
-            <Link to="/faqs">FAQs</Link>
-            <a href="/reviews">Reviews</a>
+            <Link to="/frequently-asked-questions">FAQs</Link>
+            <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank'>Reviews</a>
           </div>
           <div className='divider'>|</div>
           <div className='socials'>
