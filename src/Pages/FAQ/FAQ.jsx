@@ -1,6 +1,6 @@
 import React from 'react';
 import './FAQ.css';
-import Testmonial from '../../Component/Home/TestimonialSection/TestimonialSection';
+import Testmonial from '../../Component/TestimonialSection/TestimonialSection';
 import FreeStoreComp from '../../Component/FreeStore/FreeStore';
 
 function FAQ() {

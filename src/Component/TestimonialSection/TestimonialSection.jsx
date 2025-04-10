@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import './TestimonialSection.css';
 
 // Import your client testimonial images for the video carousel
-import clientFullFixed1 from '../../../assets/clientFullFixed1.png';
-import clientFullFixed2 from '../../../assets/clientFullFixed2.png';
-import clientFullFixed3 from '../../../assets/clientFullFixed3.png';
+import clientFullFixed1 from '../../assets/clientFullFixed1.png';
+import clientFullFixed2 from '../../assets/clientFullFixed2.png';
+import clientFullFixed3 from '../../assets/clientFullFixed3.png';
 
-import LessSign from '../../../assets/less-sign.png';
-import GreaterSign from '../../../assets/greater-sign.png';
+import LessSign from '../../assets/less-sign.png';
+import GreaterSign from '../../assets/greater-sign.png';
 // Import Trustpilot testimonial images
-import Testimonial1 from '../../../assets/Testimonial-1-CommerceKind.png';
-import Testimonial2 from '../../../assets/Testimonial-2-CommerceKind.png';
-import Testimonial3 from '../../../assets/Testimonial-3-CommerceKind.png';
-import Testimonial4 from '../../../assets/Testimonial-4-CommerceKind.png';
+import Testimonial1 from '../../assets/Testimonial-1-CommerceKind.png';
+import Testimonial2 from '../../assets/Testimonial-2-CommerceKind.png';
+import Testimonial3 from '../../assets/Testimonial-3-CommerceKind.png';
+import Testimonial4 from '../../assets/Testimonial-4-CommerceKind.png';
 
 // YouTube video IDs from the URLs you provided
 const videoIds = [
