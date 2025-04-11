@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .showcase-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  .showcase-study-heading {
+    text-align: center;
+    margin-bottom: 75px;
+  }
+  
+  .showcase-study-heading h2 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 0px;
+    line-height: 65px;
+    color: #292E4C;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .showcase-study-heading span {
+    position: relative;
+    color: #292E4C;
+  }
+  
+  .showcase-study-heading span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    width: 100%;
+    height: 12px;
+    background-color: #7B45EF;
+    z-index: -1;
+  }
+  
+  .showcase-section {
+    margin-bottom: 60px;
+    opacity: 0;
+    width: 100%;
+    transition: all 0.8s ease-out;
+  }
+  
+  /* First section comes from left */
+  .showcase-section:nth-child(2) {
+    transform: translateX(-100px);
+  }
+  
+  /* Second section comes from right */
+  .showcase-section:nth-child(3) {
+    transform: translateX(100px);
+  }
+  
+  /* Third section comes from left */
+  .showcase-section:nth-child(4) {
+    transform: translateX(-100px);
+  }
+  
+  /* Fourth section comes from right */
+  .showcase-section:nth-child(5) {
+    transform: translateX(100px);
+  }
+  
+  /* Fifth section comes from left */
+  .showcase-section:nth-child(6) {
+    transform: translateX(-100px);
+  }
+  
+  .showcase-section.show {
+    opacity: 1;
+    transform: translateX(0) !important;
+  }
+  
+  .showcase-content {
+    background-color: #0EA4981A;
+    border-radius: 0px;
+  }
+  
+  .showcase-section:nth-child(3) .showcase-content,
+  .showcase-section:nth-child(5) .showcase-content {
+    background-color: #F0EAFD;
+  }
+  
+  .showcase-title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .brand-of {
+    display: block;
+    font-size: 28px;
+    padding-top: 30px;
+    font-family: 'poppins', sans-serif;
+    color: #292E4C;
+    font-weight: 700;
+  }
+  
+  .showcase-title h2 {
+    font-size: 48px;
+    color: #6c30ed;
+    font-family: 'poppins', sans-serif;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .showcase-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .showcase-image {
+    background: none;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .showcase-heading {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+    
+    .showcase-title h2 {
+      font-size: 30px;
+    }
+    
+    .showcase-section {
+      margin-bottom: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .showcase-heading {
+      font-size: 28px;
+    }
+    
+    .showcase-title h2 {
+      font-size: 24px;
+    }
+    
+    .showcase-section {
+      margin-bottom: 40px;
+    }
+  }

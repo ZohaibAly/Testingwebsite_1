@@ -13,3 +13,6 @@
     background-color:#6C30ED;
       border-radius:1000px;
   }
+  body{
+    overflow-x: hidden;
+  }

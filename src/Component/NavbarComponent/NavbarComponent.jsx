@@ -6,6 +6,7 @@ import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/fr
 import Logo from '../../assets/Logo-HD-CommerceKind.png';
 import './NavbarComponent.css';
 
+
 const NavbarComponent = () => {
   return (
     <div className='parent'>
@@ -43,7 +44,7 @@ const NavbarComponent = () => {
         </div>
         <div className='navigation'>
           <Link to="/case-studies">Case Studies</Link>
-          <Link to="/before-after">Before and After</Link>
+          <Link to="/before-and-after">Before and After</Link>
           <Link to="/services">Services</Link>
           <Link to="/contact">Contact</Link>
         </div>
