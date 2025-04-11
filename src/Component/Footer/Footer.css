@@ -29,7 +29,7 @@
     letter-spacing: 2%;
     max-width: 428px;
     min-height: 409px;
-    max-height: 409px;
+    max-height: 509px;
 }
 
 .Footerpt-1 .image-1 {
@@ -40,7 +40,6 @@
 .Footerpt-1 p {
     font-size: 24px;
     font-family: "Montserrat", "Sans-serif";
-    line-height: 40px;
     margin-top: -20px;
     color: #292E4C;
     margin-bottom: 15px;

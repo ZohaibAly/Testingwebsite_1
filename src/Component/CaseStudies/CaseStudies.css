@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --main-brand-color: #0EA498;
+    --text-color: #292E4C;
+    --brand-button-color: #6C30ED;
+    --bg: #292E4C1A;
+}
+
+.casestudies-main{
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    max-width: 1920px;
+    height: 870px;
+    flex-direction: column;
+    outline: 2px solid black;
+}
+.casestudies-item{
+   
+    outline: 2px solid black;
+    background-color: var(--bg);
+    display: flex;
+    gap: 5% 5%;
+    row-gap: 5%;
+    column-gap: 5%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.casestudies-item .casestudiesimg img{
+    max-width: 768px;
+    height: 769px;
+}
+
+.casestudies-content{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    column-gap:20px ;
+}
+
+.casestudies-content h3{
+    color: var(--main-brand-color);
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    line-height: 60px;
+    letter-spacing: -1.5%;
+}
+
+.casestudies-content h4{
+    color: var(--text-color);
+    font-size: 60px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: -1.5%;
+}
+
+.buttons-all button{
+    border-radius: 24px;
+    border-width: 1px;
+    background-color: #FFFFFF;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    line-height: 20px;
+    letter-spacing: 0%;
+    padding: 15px 20px 15px 20px;
+}
+
+.casestudies-content .para-down{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: -1.5%;
+    font-size: 20px;
+    color: #000000CC;
+}
+
+.casestudies-content .btn-last button{
+    font-family: "Poppins", Sans-serif;
+    font-size: 20px !important;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-width: 3px 3px 3px 3px;
+    border-radius: 5px 5px 5px 5px;
+    padding: 21px 45px 21px 45px;
+    background-color: var(--brand-button-color);
+    color: white;
+    cursor: pointer;
+}

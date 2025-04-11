@@ -2,7 +2,7 @@ import React from "react";
 import "./ServicesSection.css";
 import SerImage1 from '../../assets/Services-image1.png';
 import SerImage2 from '../../assets/Services-image2.png';
-import SerImage3 from '../../assets/Services-image3.png';
+import SerImage3 from '../../assets/Services-image3.png'; 
 import SerImage4 from '../../assets/Services-image4.png';
 import SerImage5 from '../../assets/Services-image5.png';
 import SerImage6 from '../../assets/Services-image6.png';
