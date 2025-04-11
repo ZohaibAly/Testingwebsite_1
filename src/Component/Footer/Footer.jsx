@@ -28,7 +28,7 @@ const Footer = () => {
                     <h4>Company</h4>
                     <Link to="/"><p>Home</p></Link>
                     <Link to="/case-studies"><p>Case Studies</p></Link>
-                    <Link to="/before-after"><p>Before and After</p></Link>
+                    <Link to="/before-and-after"><p>Before and After</p></Link>
                     <Link to="/services"><p>Services</p></Link>
                     <Link to="/contact"><p>Contact</p></Link>
                 </div>
