@@ -7,6 +7,7 @@ import CaseStudiesContainer from '../../Component/Home/SuccessCard/CardContainer
 import Business from '../../Component/Home/BusinessMatrics/BusinessMatrics';
 import OffersGrid from '../../Component/Home/OfferGrid/OfferGrid';
 import Testmonial from '../../Component/TestimonialSection/TestimonialSection';
+import FAQSection from '../../Component/FAQ/FAQ';
 import FreeStoreComp from '../../Component/FreeStore/FreeStore';
 import Cardimage1 from '../../assets/image-card-1.png';
 import Cardimage2 from '../../assets/image-card-2.png';
@@ -137,6 +138,7 @@ function Home() {
       <Business/>
       <Testmonial/>
       <OffersGrid/>
+      <FAQSection />
       <FreeStoreComp/>
     </div>
   );
