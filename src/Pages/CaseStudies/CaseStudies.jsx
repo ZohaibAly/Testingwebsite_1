@@ -10,7 +10,6 @@ function CaseStudies() {
         <div className="CaseStudies">
             <CSSeection />
             <BreadCrumb/>
-            
             <Testmonial/>
             <FreeStoreComp/>
         </div>
