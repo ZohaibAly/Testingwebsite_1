@@ -20,7 +20,6 @@ const SuccessCard = (props) => {
          <div className="growth-percentage">
          <span >{growth}</span>
          </div>
-          
         </div>
        
         <h3 className="card-category">{category}</h3>
