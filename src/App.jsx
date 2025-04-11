@@ -12,6 +12,7 @@ import ContactPage from './Pages/Contact/Contact';
 import BlogPage from './Pages/Blog/Blog';
 import FAQPage from './Pages/FAQ/FAQ';
 import CareersPage from './Pages/Careers/Careers';
+import Space from './Component/Space/Space';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ScrollToTop />
       <div className="App">
         <Navbar />
+        <Space />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/careers" element={<CareersPage />} />

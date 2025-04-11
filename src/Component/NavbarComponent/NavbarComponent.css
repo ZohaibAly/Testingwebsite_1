@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 .parent {
-    font-family: var(--font-family);
-   width: auto;
+  font-family: var(--font-family);
+  width: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50000;
 
   }
   :root {
@@ -36,7 +41,7 @@
     align-items: center;
     gap: 8px;
     
-
+    
   }
   .email-container
   {
@@ -89,7 +94,8 @@
     padding: 15px 50px;
     border-bottom: 1px solid #eee;
     box-shadow: 0px 4px 4px 0px #00000040;
-
+    background-color: white;
+    
   }
   
   .logo img {
