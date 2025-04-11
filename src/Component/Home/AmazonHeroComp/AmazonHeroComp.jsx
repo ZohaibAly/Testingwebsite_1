@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import './AmazonHeroComp.css';
@@ -20,9 +21,8 @@ const AmazonHeroComponent = () => {
             Strategy - Free Audit to get started
           </p>
           <div className="hero-buttons">
-            <button className="hero-button">Free Store Audit</button>
-            <a href="#" className="hero-link">Grow Your Amazon Sales <span className="ama-arrow-icon"><FontAwesomeIcon icon={faArrowRight} /></span>
-            </a>
+            <Link to="/contact"><button className="hero-button">Free Store Audit</button></Link>
+            <Link to="/contact" className="hero-link">Grow Your Amazon Sales <span className="ama-arrow-icon"><FontAwesomeIcon icon={faArrowRight} /></span></Link>
           </div>
         </div>
         <div className="hero-image">
