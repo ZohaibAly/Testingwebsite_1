@@ -8,8 +8,8 @@ import BreadCrumb from '../../Component/BreadcrumbBanner/BreadcrumbBanner';
 function CaseStudies() {
     return (
         <div className="CaseStudies">
-            <CSSeection />
             <BreadCrumb/>
+            <CSSeection />
             <Testmonial/>
             <FreeStoreComp/>
         </div>
