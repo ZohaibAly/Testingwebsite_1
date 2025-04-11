@@ -1,11 +1,11 @@
-
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-import './AmazonHeroComp.css';
-import HeroImage from '../../../assets/Home-Hero-Graphic-CommerceKind.png';
-import purpleGlow from '../../../assets/Home-Hero-Glow-Purple.png';
-import GreenGlow from '../../../assets/Home-Hero-Glow-Green.png';
+import React from "react";
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import "./AmazonHeroComp.css";
+import HeroImage from "../../../assets/Home-Hero-Graphic-CommerceKind.png";
+import purpleGlow from "../../../assets/Home-Hero-Glow-Purple.png";
+import GreenGlow from "../../../assets/Home-Hero-Glow-Green.png";
 
 const AmazonHeroComponent = () => {
   return (
@@ -20,18 +20,33 @@ const AmazonHeroComponent = () => {
             Strategy - Free Audit to get started
           </p>
           <div className="hero-buttons">
-            <button className="hero-button">Free Store Audit</button>
-            <a href="#" className="hero-link">Grow Your Amazon Sales <span className="ama-arrow-icon"><FontAwesomeIcon icon={faArrowRight} /></span>
-            </a>
+            <Link to="/contact">
+              <button className="hero-button">Free Store Audit</button>
+            </Link>
+            <Link to="/contact" className="hero-link">
+              Grow Your Amazon Sales{" "}
+              <span className="ama-arrow-icon">
+                <FontAwesomeIcon icon={faArrowRight} />
+              </span>
+            </Link>
           </div>
         </div>
         <div className="hero-image">
-            <div className='pic1'>
-            <img src={purpleGlow} alt="Before and After Amazon Dashboard Comparison" />
-            </div>
-          <img src={HeroImage} alt="Before and After Amazon Dashboard Comparison" />
-          <div className='pic2'>
-          <img src={GreenGlow} alt="Before and After Amazon Dashboard Comparison" />
+          <div className="pic1">
+            <img
+              src={purpleGlow}
+              alt="Before and After Amazon Dashboard Comparison"
+            />
+          </div>
+          <img
+            src={HeroImage}
+            alt="Before and After Amazon Dashboard Comparison"
+          />
+          <div className="pic2">
+            <img
+              src={GreenGlow}
+              alt="Before and After Amazon Dashboard Comparison"
+            />
           </div>
         </div>
       </div>

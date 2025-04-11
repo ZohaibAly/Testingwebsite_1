@@ -152,6 +152,9 @@
     color: #0ea498;
     transition: color 0.3s ease;
   }
+  .navigation a.active{
+    color: #0ea498; 
+  }
   
   /* Hover effect for the Try button */
   .try-button:hover {

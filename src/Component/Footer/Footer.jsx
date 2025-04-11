@@ -17,10 +17,10 @@ const Footer = () => {
                     CommerceKind is your trusted partner for Amazon’s success. We empower businesses to grow their stores and accounts with tailored solutions and proven expertise.
                 </p>
                 <div className='Footerpt-1-images'>
-                    <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+                    <a href="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></a>
                     <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>
-                    <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-                    <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
+                    <a href="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></a>
+                    <a href="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></a>
                 </div>
             </div>
             <div className='Footerpt-2'>
@@ -28,7 +28,7 @@ const Footer = () => {
                     <h4>Company</h4>
                     <Link to="/"><p>Home</p></Link>
                     <Link to="/case-studies"><p>Case Studies</p></Link>
-                    <Link to="/before-after"><p>Before and After</p></Link>
+                    <Link to="/before-and-after"><p>Before and After</p></Link>
                     <Link to="/services"><p>Services</p></Link>
                     <Link to="/contact"><p>Contact</p></Link>
                 </div>

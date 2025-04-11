@@ -6,6 +6,7 @@ import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/fr
 import Logo from '../../assets/Logo-HD-CommerceKind.png';
 import './NavbarComponent.css';
 
+
 const NavbarComponent = () => {
   return (
     <div className='parent'>
@@ -30,9 +31,9 @@ const NavbarComponent = () => {
           </div>
           <div className='divider'>|</div>
           <div className='socials'>
-            <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>
           </div>
         </div>
@@ -43,7 +44,7 @@ const NavbarComponent = () => {
         </div>
         <div className='navigation'>
           <Link to="/case-studies">Case Studies</Link>
-          <Link to="/before-after">Before and After</Link>
+          <Link to="/before-and-after">Before and After</Link>
           <Link to="/services">Services</Link>
           <Link to="/contact">Contact</Link>
         </div>
