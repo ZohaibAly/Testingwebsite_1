@@ -30,8 +30,8 @@ const NavbarComponent = () => {
           </div>
           <div className='divider'>|</div>
           <div className='socials'>
-            <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></a>
             <a href="#"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>
           </div>
