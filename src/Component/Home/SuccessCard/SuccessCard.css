@@ -2,7 +2,6 @@
   border-radius: 10px;
   width: 580px; /* Reduced from 580px to make cards more compact */
   box-shadow: -9px 0px 35px 0px #00000059;
-
   max-width:100%;
   overflow: hidden;
   height:755px; /* Changed from fixed height to auto */
@@ -63,14 +62,27 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+
 }
 
 .growth-indicator {
   display: flex;
-  align-items: center;
-  gap: 10px;
+gap: 10px;
+  outline: 2px solid black;
   margin-top: 30px;
   margin-bottom: 15px; /* Increased from 10px */
+}
+.img{
+  outline: 1px solid black; 
+}
+.growth-percentage {
+  color: #0EA498;
+  font-weight: 700px;
+font-family: 'poppins', sans-serif;
+outline: 1px solid black;
+line-height: 100%;
+  font-size: 60px; 
+  margin-bottom: 0;
 }
 
 .arrow-icon {
@@ -80,13 +92,6 @@
 }
 
 
-.growth-percentage {
-  color: #0EA498;
-  font-weight: 700px;
-font-family: 'poppins', sans-serif;
-line-height: 100%;
-  font-size: 60px; /* Increased from 24px to match Image 2 */
-}
 
 .card-category {
   font-size: 42px; /* Increased from 24px */

@@ -14,9 +14,15 @@ const SuccessCard = (props) => {
       </div>
       <div className="card-content">
         <div className="growth-indicator">
-          <img src={Arrowup} alt="Card  ArrowUp " />
-          <span className="growth-percentage">{growth}</span>
+          <div className='img'>
+          <img src={Arrowup} alt="Card ArrowUp" />
+          </div>
+         <div className="growth-percentage">
+         <span >{growth}</span>
+         </div>
+          
         </div>
+       
         <h3 className="card-category">{category}</h3>
         <p className="card-description">{description}</p>
         <button className="view-case-btn">
