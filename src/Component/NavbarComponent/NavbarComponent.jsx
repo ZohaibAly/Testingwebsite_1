@@ -6,7 +6,6 @@ import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/fr
 import Logo from '../../assets/Logo-HD-CommerceKind.png';
 import './NavbarComponent.css';
 
-
 const NavbarComponent = () => {
   return (
     <div className='parent'>
