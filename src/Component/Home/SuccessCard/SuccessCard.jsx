@@ -29,6 +29,7 @@ const SuccessCard = (props) => {
           <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </button>
+        
       </div>
     </div>
     
