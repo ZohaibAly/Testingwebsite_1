@@ -13,6 +13,10 @@
   --case-font: 'poppins', sans-serif;
 }
 
+.case-studies-section{
+  padding-inline: 10px;
+}
+
 .case-studies-container {
   max-width: 1920px;
   padding: 60px 80px;
@@ -26,7 +30,6 @@
 
 .case-studies-title {
   text-align: center;
-  margin-bottom: 30px;
 }
 
 .case-studies-tag {
@@ -94,6 +97,7 @@
 
   .case-studies-grid {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     grid-template-columns: repeat(3, minmax(580px, 0px)); /* Control max width per card */
     gap: 20px; /* Reduce the gap between cards */
@@ -134,7 +138,12 @@
   border:3px solid #292E4C;
 
 }
-
+@media ( width <= 1208px) {
+  .category-filters{
+    margin-top: 50px;
+  }
+ 
+}
 /* Responsive styles */
 @media (max-width: 1200px) {
   .case-studies-container {
@@ -158,5 +167,58 @@
   .filter-btn {
     font-size: 12px;
     padding: 8px 15px;
+  }
+}
+
+
+
+@media ( width <= 600px ) {
+  .Card-viewallbtn{
+    width: 475px;
+  }
+}
+
+@media ( width <= 500px) {
+  .Card-viewallbtn{
+    width: 450px;
+  }
+}
+
+@media ( width <= 462px) {
+  .Card-viewallbtn{
+    width: 420px;
+  }
+}
+@media ( width <= 442px ) {
+  .Card-viewallbtn{
+    width: 390px;
+  }
+}
+
+@media ( width <= 404px ) {
+  .Card-viewallbtn{
+    width: 355px;
+  
+  }
+}
+@media ( width <= 386px ) {
+  .Card-viewallbtn{
+    width: 335px;
+  
+  }
+}
+@media ( width <= 358px ) {
+  .Card-viewallbtn{
+    width: 325px;
+    font-size: 22px;
+  
+  }
+}
+@media ( width <= 342px ) {
+  .Card-viewallbtn{
+    width: 305px;
+    font-weight: 400;
+    font-size: 22px;
+  
   }
 }

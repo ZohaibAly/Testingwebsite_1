@@ -7,6 +7,9 @@
   --primary-color: #292E4C;
   --button-color: #7039d4;
 }
+*:has(>.hero-container) {
+  overflow-x: hidden;
+}
 
 /* Main container - sets the size and background */
 .hero-container {

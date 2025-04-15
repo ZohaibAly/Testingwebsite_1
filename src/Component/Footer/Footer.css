@@ -5,7 +5,9 @@
     margin: 0px;
     padding: 0px;
 }
-
+*:has(>.Footer-main) {
+    overflow-x: hidden;
+  }
 .Footer-main {
     display: flex;
     flex-direction: row;
