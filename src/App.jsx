@@ -19,8 +19,8 @@ function App() {
     <Router>
       <ScrollToTop />
       <div className="App">
-        {/* <Navbar /> */}
-        {/* <Space /> */}
+        <Navbar />
+        <Space />
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/careers" element={<CareersPage />} />
@@ -31,7 +31,7 @@ function App() {
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>
-        {/* <FooterComp/> */}
+        <FooterComp/>
       </div>
     </Router>
   );
