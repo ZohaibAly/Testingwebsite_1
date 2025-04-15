@@ -118,7 +118,7 @@
     cursor: pointer;
     font-size: 24px;
   }
-  
+
   .try-button {
     background-color: #6C30ED;
     color: white;
@@ -298,11 +298,107 @@
      
 
     }
+    /* Add these styles to your NavbarComponent.css file */
+
+/* Hide hamburger icon by default on larger screens */
+.hamburger-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobile menu styling */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height:auto;
+  background-color: white;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.mobile-menu-header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.close-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.mobile-navigation a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.mobile-top-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.mobile-top-links a {
+  text-decoration: none;
+  color: #333;
+}
+
+.mobile-socials {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.mobile-socials a {
+  font-size: 20px;
+  color: #333;
+}
+
+.mobile-actions {
+  display: flex;
+  justify-content: center;
+}
+   
 @media ( width <=850px) {
   .child1{
     display: none;
   }
+  .child2 .navigation{
+    display: none;
+  }
+  .child2 .actions{
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: flex;
+    align-items: center;
+  }
   
+  /* Show mobile menu when open */
+  .mobile-menu {
+    display: flex;
+  }
+ 
+
+
 }
 
 

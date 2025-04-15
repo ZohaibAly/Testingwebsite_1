@@ -12,7 +12,9 @@
     --brand-button-color: #6C30ED;
     --bg: #292E4C1A;
 }
-
+*:has(>.casestudies-main) {
+    overflow-x: hidden;
+  }
 
 .casestudies-main{
     padding-top: 100px;
