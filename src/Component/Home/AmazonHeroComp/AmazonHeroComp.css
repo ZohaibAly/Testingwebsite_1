@@ -19,7 +19,6 @@
   box-sizing: border-box;
 }
 
-/* Parent div - sets the flex properties */
 .hero-parent {
   display: flex;
   justify-content: space-between;

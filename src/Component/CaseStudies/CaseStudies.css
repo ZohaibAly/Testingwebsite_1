@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0px;
     padding: 0px;
 }
@@ -13,14 +13,16 @@
     --bg: #292E4C1A;
 }
 
+*:has(>.casestudies-main) {
+    overflow-x: hidden;
+}
 
-.casestudies-main{
+.casestudies-main {
     padding-top: 100px;
     padding-bottom: 100px;
     margin: 0px;
     display: flex;
-    gap: 50px;
-    row-gap:50px;
+    row-gap: 50px;
     align-items: center;
     width: 100%;
     height: auto;
@@ -29,7 +31,8 @@
     margin-bottom: 200px;
 }
 
-.casestudies-item{
+.casestudies-item {
+    padding-right: 10px;
     max-width: 1920px;
     display: flex;
     gap: 5% 5%;
@@ -41,19 +44,19 @@
     margin-right: 150px;
 }
 
-.casestudies-item .casestudiesimg img{
+.casestudies-item .casestudiesimg img {
     max-width: 768px;
     height: 769px;
 }
 
-.casestudies-content{
+.casestudies-content {
     display: flex;
     justify-content: center;
     align-items: start;
     flex-direction: column;
 }
 
-.casestudies-content h3{
+.casestudies-content h3 {
     color: var(--main-brand-color);
     font-size: 60px;
     font-family: 'Montserrat', sans-serif;
@@ -64,7 +67,7 @@
     letter-spacing: -1.5%;
 }
 
-.casestudies-content h4{
+.casestudies-content h4 {
     color: var(--text-color);
     font-size: 60px;
     font-family: 'Poppins', sans-serif;
@@ -74,47 +77,47 @@
     margin-bottom: 25px;
 }
 
-.button-all{
+.button-all {
     margin-bottom: 25px;
     display: flex;
     gap: 50px 50px;
     row-gap: 50px;
 }
 
-.button-all button{
-    border-radius: 24px;
-    border-width: 1px;
+.button-all button {
+    border-radius: 38px;
+    border-width: 1.5px;
+    border-color: black;
     background-color: #FFFFFF;
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     line-height: 20px;
     letter-spacing: 0%;
-    padding: 15px 20px 15px 20px;
+    padding: 14px 20px 14px 20px;
     font-size: 20px;
 }
 
-.button-all button:nth-child(2){
+.button-all button:nth-child(2) {
     border: none;
 }
 
-.casestudies-content .para-down{
+.casestudies-content .para-down {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    line-height: 14px;
+    line-height: 24px;
     letter-spacing: -1.5%;
     font-size: 20px;
     color: #000000CC;
     margin-bottom: 35px;
-
 }
 
-.casestudies-content .btn-last button{
+.casestudies-content .btn-last button {
     font-family: "Poppins", Sans-serif;
-    font-size: 20px !important;
+    font-size: 20px;
     border: none;
     font-weight: 700;
     letter-spacing: 0.5px;
-    border-width:3px;
+    border-width: 3px;
     border-radius: 5px 5px 5px 5px;
     padding: 21px 45px 21px 45px;
     background-color: var(--brand-button-color);
@@ -122,7 +125,7 @@
     cursor: pointer;
 }
 
-.lm-btn button{
+.lm-btn button {
     font-family: "Poppins", Sans-serif;
     font-size: 31px;
     font-weight: 600;
@@ -137,9 +140,653 @@
     transition: 0.2s linear;
 }
 
-.lm-btn button:hover{
+.lm-btn button:hover {
     background-color: #FFFFFF;
     color: var(--brand-button-color);
     border-color: var(--brand-button-color);
     outline: var(--brand-button-color);
+}
+
+/* MEDIA QUERIES */
+
+@media (width <= 1620px) {
+    .casestudies-main {
+        row-gap: 35px;
+    }
+
+    .casestudies-item {
+        gap: 4% 4%;
+        row-gap: 4%;
+        column-gap: 4%;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .casestudies-item .casestudiesimg img {
+        max-width: 700px;
+        height: 700px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 50px;
+        font-weight: 550;
+        line-height: 50px;
+        margin-bottom: 25px;
+        margin-top: 20px;
+    }
+    
+    .casestudies-content h4 {
+        font-size: 50px;
+        font-weight: 400;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .casestudies-content {
+        & > .para-down {
+            font-weight: 350;
+            line-height: 22px;
+            font-size: 18px;
+            margin-bottom: 28px;
+        }
+        & > .btn-last button {
+            font-size: 18px;
+            font-weight: 650;
+            letter-spacing: 0.5px;
+            padding: 18px 40px 18px 40px;
+            background-color: var(--brand-button-color);
+        }
+    }
+
+    .button-all {
+        margin-bottom: 20px;
+        gap: 40px;
+        row-gap: 40px;
+    }
+
+    .button-all button {
+        line-height: 18px;
+        white-space: nowrap;
+        padding: 12px 18px 12px 18px;
+        font-size: 18px;
+    }
+
+    .lm-btn button {
+        font-size: 28px;
+        font-weight: 550;
+        padding: 24px 90px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 1470px) {
+    .casestudies-main {
+        row-gap: 30px;
+    }
+    
+    .casestudies-item {
+        gap: 3% 3%;
+        row-gap: 3%;
+        column-gap: 3%;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 600px;
+        height: 600px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 40px;
+        font-weight: 550;
+        line-height: 40px;
+        margin-bottom: 20px;
+        margin-top: 18px;
+    }
+
+    .casestudies-content h4 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -1%;
+        margin-bottom: 18px;
+    }
+    
+    .casestudies-content {    
+        & > .para-down {
+            font-weight: 350;
+            line-height: 20px;
+            letter-spacing: -1%;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        & > .btn-last button {
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            padding: 16px 35px 16px 35px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 18px;
+        gap: 35px;
+        row-gap: 35px;
+    }
+    
+    .button-all button {
+        line-height: 18px;
+        padding: 10px 16px 10px 16px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    
+    .lm-btn button {
+        font-size: 25px;
+        font-weight: 500;
+        padding: 23px 80px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 1270px) {
+    .casestudies-main {
+        row-gap: 28px;
+    }
+    
+    .casestudies-item {
+        gap: 3% 3%;
+        row-gap: 3%;
+        column-gap: 3%;
+        margin-left: 90px;
+        margin-right: 90px;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 500px;
+        height: 500px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 36px;
+        font-weight: 550;
+        line-height: 40px;
+        margin-bottom: 18px;
+        margin-top: 15px;
+        letter-spacing: -1%;
+    }
+
+    .casestudies-content h4 {
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 50px;
+        letter-spacing: -1%;
+        margin-bottom: 15px;
+    }
+    
+    .casestudies-content {    
+        & > .para-down {
+            font-weight: 350;
+            line-height: 20px;
+            letter-spacing: -1%;
+            font-size: 15px;
+            margin-bottom: 25px;
+        }
+        & > .btn-last button {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            padding: 16px 30px 16px 30px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 18px;
+        gap: 25px;
+        row-gap: 25px;
+    }
+    
+    .button-all button {
+        line-height: 18px;
+        padding: 10px 16px 10px 16px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    
+    .lm-btn button {
+        font-size: 25px;
+        font-weight: 500;
+        padding: 23px 80px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 1070px) {
+    .casestudies-main {
+        row-gap: 25px;
+    }
+    
+    .casestudies-item {
+        gap: 2% 2%;
+        row-gap: 2%;
+        column-gap: 2%;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 32px;
+        font-weight: 500;
+        line-height: 40px;
+        margin-bottom: 15px;
+        margin-top: 13px;
+        letter-spacing: -1%;
+    }
+
+    .casestudies-content h4 {
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -1%;
+        margin-bottom: 15px;
+    }
+    
+    .casestudies-content {    
+        & > .para-down {
+            font-weight: 350;
+            line-height: 20px;
+            letter-spacing: -1%;
+            font-size: 15px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        & > .btn-last button {
+            font-weight: 300;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            padding: 12px 20px 12px 20px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 15px;
+        gap: 18px;
+        row-gap: 18px;
+    }
+    
+    .button-all button {
+        line-height: 13px;
+        padding: 10px 16px 10px 16px;
+        font-size: 16px;
+        white-space: nowrap;
+    }
+    
+    .lm-btn button {
+        font-size: 25px;
+        font-weight: 500;
+        padding: 23px 80px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 950px) {
+    .casestudies-main {
+        row-gap: 20px;
+    }
+    
+    .casestudies-item {
+        align-items: center;
+    }
+    
+    .casestudies-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .casestudies-item:nth-child(even) {
+        gap: 2% 2%;
+        flex-direction: column;
+        row-gap: 2%;
+        column-gap: 2%;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .casestudies-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 500px;
+        height: 500px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 35px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 40px;
+        margin-bottom: 15px;
+        margin-top: 13px;
+        letter-spacing: -1%;
+    }
+
+    .casestudies-content h4 {
+        font-size: 26px;
+        text-align: center;
+        font-weight: 400;
+        line-height: 40px;
+        letter-spacing: -1%;
+        margin-bottom: 15px;
+    }
+    
+    .casestudies-content {   
+        align-items: center; 
+        & > .para-down {
+            font-weight: 350;
+            line-height: 20px;
+            letter-spacing: -1%;
+            text-align: center;
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
+        & > .btn-last button {
+            font-weight: 300;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            padding: 12px 20px 12px 20px;
+            margin-bottom: 20px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 15px;
+        gap: 18px;
+        row-gap: 18px;
+    }
+    
+    .button-all button {
+        white-space: nowrap;
+        line-height: 13px;
+        padding: 10px 16px 10px 16px;
+        font-size: 16px;
+    }
+    
+    .lm-btn button {
+        font-size: 20px;
+        font-weight: 400;
+        padding: 20px 60px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 590px) {
+    .casestudies-main {
+        row-gap: 10px;
+    }
+    
+    .casestudies-item {
+        align-items: center;
+    }
+    
+    .casestudies-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .casestudies-item:nth-child(even) {
+        gap: 2% 2%;
+        flex-direction: column;
+        row-gap: 2%;
+        column-gap: 2%;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .casestudies-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 400px;
+        height: 400px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 30px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        letter-spacing: -1%;
+    }
+
+    .casestudies-content h4 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 300;
+        line-height: 30px;
+        letter-spacing: -1%;
+        margin-bottom: 10px;
+    }
+    
+    .casestudies-content {   
+        align-items: center; 
+        & > .para-down {
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -1%;
+            font-size: 10px;
+            margin-bottom: 10px;
+        }
+        & > .btn-last button {
+            font-weight: 300;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            padding: 10px 15px 10px 15px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 15px;
+        gap: 12px;
+        row-gap: 12px;
+    }
+    
+    .button-all button {
+        line-height: 13px;
+        padding: 8px 12px 8px 12px;
+        font-size: 12px;
+    }
+    
+    .lm-btn button {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 15px 40px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 450px) {
+    .casestudies-main {
+        row-gap: 10px;
+    }
+    
+    .casestudies-item {
+        align-items: center;
+    }
+    
+    .casestudies-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .casestudies-item:nth-child(even) {
+        gap: 2% 2%;
+        flex-direction: column;
+        row-gap: 2%;
+        column-gap: 2%;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .casestudies-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 25px;
+        font-weight: 350;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        letter-spacing: -1%;
+    }
+
+    .casestudies-content h4 {
+        font-size: 25px;
+        text-align: center;
+        font-weight: 250;
+        line-height: 25px;
+        letter-spacing: -1%;
+        margin-bottom: 10px;
+    }
+    
+    .casestudies-content {   
+        align-items: center; 
+        & > .para-down {
+            font-weight: 200;
+            line-height: 20px;
+            letter-spacing: -1%;
+            font-size: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        & > .btn-last button {
+            font-weight: 250;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            padding: 8px 12px 8px 12px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 12px;
+        gap: 8px;
+        row-gap: 8px;
+    }
+    
+    .button-all button {
+        line-height: 13px;
+        padding: 8px 12px 8px 12px;
+        font-size: 10px;
+    }
+    
+    .lm-btn button {
+        font-size: 12px;
+        font-weight: 250;
+        padding: 12px 35px;
+        border: 2px solid #6C30ED;
+    }
+}
+
+@media (width <= 390px) {
+    .casestudies-main {
+        row-gap: 10px;
+    }
+    
+    .casestudies-item {
+        align-items: center;
+    }
+    
+    .casestudies-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .casestudies-item:nth-child(even) {
+        gap: 2% 2%;
+        flex-direction: column;
+        row-gap: 2%;
+        column-gap: 2%;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+    
+    .casestudies-item:nth-child(odd) {
+        flex-direction: column-reverse;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 300px;
+        height: 300px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 20px;
+        font-weight: 350;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+        letter-spacing: -1%;
+    }
+
+    .casestudies-content h4 {
+        font-size: 20px;
+        text-align: center;
+        font-weight: 200;
+        line-height: 25px;
+        letter-spacing: -1%;
+        margin-bottom: 10px;
+    }
+    
+    .casestudies-content {   
+        align-items: center; 
+        & > .para-down {
+            font-weight: 200;
+            line-height: 20px;
+            letter-spacing: -1%;
+            font-size: 8px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        & > .btn-last button {
+            font-weight: 200;
+            font-size: 8px;
+            letter-spacing: 0.5px;
+            padding: 8px 10px 8px 10px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 12px;
+        gap: 5px;
+        row-gap: 5px;
+    }
+    
+    .button-all button {
+        line-height: 10px;
+        padding: 5px 10px 5px 10px;
+        font-size: 8px;
+    }
+    
+    .lm-btn button {
+        font-size: 12px;
+        font-weight: 250;
+        padding: 12px 35px;
+        border: 2px solid #6C30ED;
+    }
 }
