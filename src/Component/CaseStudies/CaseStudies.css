@@ -35,9 +35,7 @@
     padding-right: 10px;
     max-width: 1920px;
     display: flex;
-    gap: 5% 5%;
-    row-gap: 5%;
-    column-gap: 5%;
+    gap: 5%;
     margin-top: 0px;
     margin-bottom: 0px;
     margin-left: 150px;
@@ -80,8 +78,7 @@
 .button-all {
     margin-bottom: 25px;
     display: flex;
-    gap: 50px 50px;
-    row-gap: 50px;
+    gap: 50px;
 }
 
 .button-all button {
@@ -92,7 +89,6 @@
     color: var(--text-color);
     font-family: 'Poppins', sans-serif;
     line-height: 20px;
-    letter-spacing: 0%;
     padding: 14px 20px 14px 20px;
     font-size: 20px;
 }
@@ -118,7 +114,7 @@
     font-weight: 700;
     letter-spacing: 0.5px;
     border-width: 3px;
-    border-radius: 5px 5px 5px 5px;
+    border-radius: 5px;
     padding: 21px 45px 21px 45px;
     background-color: var(--brand-button-color);
     color: white;
@@ -155,9 +151,7 @@
     }
 
     .casestudies-item {
-        gap: 4% 4%;
-        row-gap: 4%;
-        column-gap: 4%;
+        gap: 4%;
         margin-left: 120px;
         margin-right: 120px;
     }
@@ -201,7 +195,6 @@
     .button-all {
         margin-bottom: 20px;
         gap: 40px;
-        row-gap: 40px;
     }
 
     .button-all button {
@@ -225,9 +218,7 @@
     }
     
     .casestudies-item {
-        gap: 3% 3%;
-        row-gap: 3%;
-        column-gap: 3%;
+        gap: 3%;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -272,7 +263,6 @@
     .button-all {
         margin-bottom: 18px;
         gap: 35px;
-        row-gap: 35px;
     }
     
     .button-all button {
@@ -296,9 +286,7 @@
     }
     
     .casestudies-item {
-        gap: 3% 3%;
-        row-gap: 3%;
-        column-gap: 3%;
+        gap: 3%;
         margin-left: 90px;
         margin-right: 90px;
     }
@@ -344,7 +332,6 @@
     .button-all {
         margin-bottom: 18px;
         gap: 25px;
-        row-gap: 25px;
     }
     
     .button-all button {
@@ -368,9 +355,7 @@
     }
     
     .casestudies-item {
-        gap: 2% 2%;
-        row-gap: 2%;
-        column-gap: 2%;
+        gap: 2%;
         margin-left: 80px;
         margin-right: 80px;
     }
@@ -417,7 +402,6 @@
     .button-all {
         margin-bottom: 15px;
         gap: 18px;
-        row-gap: 18px;
     }
     
     .button-all button {
@@ -450,15 +434,14 @@
     
     .casestudies-item:nth-child(even) {
         gap: 2% 2%;
-        flex-direction: column;
-        row-gap: 2%;
+        flex-direction: column-reverse;
         column-gap: 2%;
         margin-left: 80px;
         margin-right: 80px;
     }
     
     .casestudies-item:nth-child(odd) {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
     
     .casestudies-item .casestudiesimg img {
@@ -507,7 +490,6 @@
     .button-all {
         margin-bottom: 15px;
         gap: 18px;
-        row-gap: 18px;
     }
     
     .button-all button {
@@ -534,23 +516,6 @@
         align-items: center;
     }
     
-    .casestudies-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    
-    .casestudies-item:nth-child(even) {
-        gap: 2% 2%;
-        flex-direction: column;
-        row-gap: 2%;
-        column-gap: 2%;
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-    
-    .casestudies-item:nth-child(odd) {
-        flex-direction: column-reverse;
-    }
-    
     .casestudies-item .casestudiesimg img {
         max-width: 400px;
         height: 400px;
@@ -567,7 +532,7 @@
     }
 
     .casestudies-content h4 {
-        font-size: 20px;
+        font-size: 24px;
         text-align: center;
         font-weight: 300;
         line-height: 30px;
@@ -596,7 +561,6 @@
     .button-all {
         margin-bottom: 15px;
         gap: 12px;
-        row-gap: 12px;
     }
     
     .button-all button {
@@ -622,22 +586,6 @@
         align-items: center;
     }
     
-    .casestudies-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    
-    .casestudies-item:nth-child(even) {
-        gap: 2% 2%;
-        flex-direction: column;
-        row-gap: 2%;
-        column-gap: 2%;
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-    
-    .casestudies-item:nth-child(odd) {
-        flex-direction: column-reverse;
-    }
     
     .casestudies-item .casestudiesimg img {
         max-width: 300px;
@@ -655,7 +603,7 @@
     }
 
     .casestudies-content h4 {
-        font-size: 25px;
+        font-size: 22px;
         text-align: center;
         font-weight: 250;
         line-height: 25px;
@@ -709,23 +657,6 @@
     
     .casestudies-item {
         align-items: center;
-    }
-    
-    .casestudies-item:nth-child(even) {
-        flex-direction: row-reverse;
-    }
-    
-    .casestudies-item:nth-child(even) {
-        gap: 2% 2%;
-        flex-direction: column;
-        row-gap: 2%;
-        column-gap: 2%;
-        margin-left: 80px;
-        margin-right: 80px;
-    }
-    
-    .casestudies-item:nth-child(odd) {
-        flex-direction: column-reverse;
     }
     
     .casestudies-item .casestudiesimg img {
