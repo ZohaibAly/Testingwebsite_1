@@ -25,17 +25,16 @@ const caseStudiesData = [
 ];
 
 const CaseStudies = () => {
-  const [visibleCount, setVisibleCount] = useState(3); // Initially show 3 items
+  const [visibleCount, setVisibleCount] = useState(3);
 
   const loadMore = () => {
-    setVisibleCount(caseStudiesData.length); // Show all
+    setVisibleCount(caseStudiesData.length); 
   };
 
   return (
     <div className='casestudies-main'>
       {caseStudiesData.slice(0, visibleCount).map((item, index) => (
         <div className="casestudies-item" key={item.id}>
-          {/* Alternate image and content placement */}
           {index % 2 === 0 ? (
             <>
               <div className="casestudiesimg"><img src={item.image} alt="Case Study" /></div>
@@ -72,7 +71,6 @@ const CaseStudies = () => {
         </div>
       ))}
 
-      {/* Load More button */}
       {visibleCount < caseStudiesData.length && (
         <div style={{ textAlign: 'center', marginTop: '2rem' }}>
           <Link className='lm-btn' to="#">
