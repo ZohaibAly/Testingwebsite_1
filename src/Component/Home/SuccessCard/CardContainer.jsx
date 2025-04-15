@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import SuccessCard from '../SuccessCard/SuccessCard';
 import './CardContainer.css';
 const CaseStudiesContainer = (props) => {
@@ -76,9 +77,11 @@ const CaseStudiesContainer = (props) => {
 
 
        <div className="view-all-container">
-         <button className="Card-viewallbtn" onClick={() => setActiveFilter('ctr')}>
+       <Link to="/case-studies">
+       <button className="Card-viewallbtn" onClick={() => setActiveFilter('ctr')}>
            View All Case Studies
-         </button>
+         </button></Link>
+    
        </div>
      </div>
 

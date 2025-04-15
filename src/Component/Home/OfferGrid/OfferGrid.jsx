@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './OfferGrid.css';
 
 // Import your images here
@@ -121,7 +122,7 @@ const OffersGrid = () => {
         </div>
 
         <div className="offers-grid__action">
-          <a href="#" className="offers-grid__button">View All Services</a>
+        <Link to="/services" className="offers-grid__button" >View All Services</Link>
         </div>
       </div>
     </section>
