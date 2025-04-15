@@ -2,16 +2,13 @@
   border-radius: 10px;
   width: 580px; /* Reduced from 580px to make cards more compact */
   box-shadow: -9px 0px 35px 0px #00000059;
-  max-width:100%;
   overflow: hidden;
   height:755px; /* Changed from fixed height to auto */
   display: flex;
   flex-direction: column;
-  margin: 0px; /* Added margin between cards */
+  margin: 0px;
   overflow-x: hidden;
 }
-
-
 
 .growth-indicator {
   display: flex;
@@ -19,8 +16,6 @@
   gap: 8px; /* Adds space between arrow and percentage */
   position: relative;
 }
-
-
 .growth-indicator::after {
   content: '';
   position: absolute;
@@ -152,4 +147,147 @@ transition: all 0.3s linear;
     translate: 5px -5px;
 		transition: all 0.3s linear;
   }
+}
+
+@media ( width <= 600px) {
+  .success-card{
+    width: 520px;
+    height: 680px;
+  }
+ .growth-indicator{
+  margin-top: 25px;
+  margin-bottom: 25px;
+ }
+ .growth-percentage{
+  font-size: 50px;
+  font-weight: 700;
+ }
+ .img{
+  height: 8px;
+  width: 60px;
+ }
+}
+
+@media ( width <= 500px) {
+ .card-category{
+  font-size: 36px;
+  margin: 15px 0;
+ }
+ .card-description{
+  font-size: 18px;
+  margin-bottom: 23px;
+ }
+}
+
+@media ( width <= 462px) {
+  .card-category{
+    font-size: 35px;
+    margin: 14px 0;
+   }
+   .card-description{
+    font-size: 18px;
+    margin-bottom: 22px;
+   }
+
+   .success-card{
+    width: 500px;
+    height: 630px;
+  }
+ .growth-indicator{
+  margin-top: 10px;
+  margin-bottom: 17px;
+ }
+ .growth-percentage{
+  font-size: 47px;
+  font-weight: 600;
+ }
+ .growth-indicator::after {
+  width: 380px;
+}
+}
+
+@media ( width <= 442px ) {
+  .growth-indicator::after {
+    width: 360px;
+  }
+}
+@media ( width <= 418px ) {
+  .growth-indicator::after {
+    width: 330px;
+  }
+  .card-image{
+    height: 285px;
+  }
+ 
+}
+@media ( width <= 404px ) {
+  .growth-indicator::after {
+    width: 330px;
+  }
+  .card-description{
+    font-size: 15px;
+    margin-bottom: 20px;
+   }
+   .card-content{
+    padding: 15px; 
+  }
+}
+
+@media ( width <= 386px ) {
+  .growth-indicator::after {
+    width: 315px;
+  }
+ 
+}
+@media ( width <= 370px ) {
+  .growth-indicator::after {
+    width: 300px;
+  }
+
+  .card-category{
+    font-size: 32px;
+    margin: 12px 0;
+   }
+   .card-description{
+    font-size: 15px;
+    margin-bottom: 20px;
+   }
+ .growth-indicator{
+  margin-top: 9px;
+  margin-bottom: 16px;
+ }
+ .growth-percentage{
+  font-size: 44px;
+  font-weight: 600;
+ }
+ .img{
+  width: 55px;
+  height: 65px;
+ }
+ 
+}
+
+@media ( width <= 342px ) {
+  .growth-indicator::after {
+    width: 280px;
+  }
+}
+@media ( width = 320px ) {
+  .growth-indicator::after {
+    width: 260px;
+  }
+  
+  .card-category{
+    font-size: 30px;
+    margin: 10px 0;
+   }
+ .growth-indicator{
+  margin-top: 9px;
+  margin-bottom: 16px;
+ }
+ .growth-percentage{
+  font-size: 40px;
+  font-weight: 600;
+ }
+
 }
