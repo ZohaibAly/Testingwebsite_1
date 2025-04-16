@@ -1,55 +1,49 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
   --teal: #0EA498;
   --dark-blue: #292E4C;
   --purple: #6C30ED;
   --white: #FFFFFF;
-  --font-fam: 'Montserrat', sans-serif;
-  --body-font: 'Poppins', sans-serif;
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Poppins', sans-serif;
   --card-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   --border-radius: 12px;
   --hover-transition: all 0.3s linear;
 }
-
+*{
+  margin: 0;
+  padding: 0;
+}
 .company-metrics {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 4rem 0;
   margin-top: 140px;
   margin-bottom: 100px;
-  font-family: var(--body-font); /* Use the variable here instead of hardcoding */
+  padding: 10px;
 }
-
 .container {
-  width: 90%;
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
+  max-width: 1350px;
+  margin-inline: auto;
 }
 
 .metrics-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 3rem;
-}
+  align-items: center;
+  margin-bottom:48px;
 
-.title-container {
-  max-width: 550px;
 }
 
 .section-title {
   font-size: 75px;
   line-height: 75px;
   letter-spacing: 0%;
-  font-family: var(--font-fam);
-  width: 653px;
-  height: 75px;
   color: var(--dark-blue);
-  margin-bottom: 0.5rem;
-  font-weight: bold;
+  font-family: var(--font-primary);
+  font-weight:700;
 }
 
 .section-subtitle {
@@ -57,22 +51,22 @@
   font-size: 20px;
   line-height: 25px;
   font-weight: 400;
+  font-family: var(--font-primary);
   letter-spacing: 0%;
   color: #3E3E3E;
-  margin-bottom: 1rem;
-  font-family: var(--body-font); /* Add this to ensure Poppins is used */
+  margin-bottom:16px;
 }
 
 /* Button styling */
 .about-button {
   display: inline-flex;
   align-items: center;
-  font-family: var(--body-font);
   color: var(--dark-blue);
   text-decoration: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 25px;
+  font-family: var(--font-secondary);
   letter-spacing: 0%;
   cursor: pointer;
   transition: all 0.25s linear;
@@ -94,7 +88,6 @@
 .icon svg {
   transform: rotate(-45deg);
   transition: transform 0.3s linear;
-
   height: 35px;
 }
 
@@ -113,56 +106,62 @@
   background-color: var(--teal);
   color: var(--white);
   border-radius: 20px;
-  padding: 2.5rem;
-  text-align: center;
-  margin-top: -45px;
+width: 588px;
+height: 257px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
 }
 
-.primary-metric-card h3 {
+.primary-metric-card .primary-child {
   font-weight: 400;
   font-size: 120px;
+  font-family: var(--font-secondary);
   line-height: 96px;
   letter-spacing: 0%;
-  font-family: var(--body-font);
   margin-bottom: 15px; /* Add space between value and label */
 }
 
-.primary-metric-card p {
+.primary-metric-card .primary-child2 {
   font-size: 28px;
-  font-family: var(--body-font);
+  font-weight: 400;
+  line-height: 31px;
+  font-family: var(--font-secondary);
 }
 
 /* Grid for the three bottom metrics */
 .metrics-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
+  display: flex;
+  gap:30px;
 }
 
-/* Styling for all metric cards */
 .metric-card {
-  border-radius: 20px; /* Match the border radius with primary card */
-  padding: 2.5rem;
-  color: var(--white);
-  font-family: var(--body-font);
- font-weight: 400;
- font-size: 120px;
-
-
+border-radius: 20px;
+width: 430px;
+min-height: 257px;
+box-sizing: border-box;
+color: var(--white);
+padding: 50px;
+display: flex;
+flex-direction: column;
+justify-content:space-between;
+align-items: start;
 }
 
-.metric-card h3 {
+.metric-card .metric-value{
   font-size: 120px;
-  font-weight: 400; /* Match with primary card */
-  font-family: var(--body-font);
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  line-height:96px;
 }
 
-.metric-card p {
-  font-size: 1.25rem;
-  font-family: var(--body-font);
+.metric-card .matric-brand{
   font-size: 28px;
   font-weight: 400;
   line-height: 31px;
+  font-family: var(--font-secondary);
   letter-spacing: 0%;
 }
 
@@ -178,31 +177,438 @@
   background-color: var(--dark-blue);
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .metrics-header {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .primary-metric-card {
-    width: 100%;
-    min-width: unset;
-  }
-}
-
 .section-title span {
   position: relative; 
 }
 
-.section-title span::after {
+.section-title span::before {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: 22px;
+  bottom: 15px;
   width: 100%;
   height: 12px;
   background-color: #7B45EF;
   z-index: -1;
+}
+.spanclass
+{
+  font-family: var(--font-primary);
+}
+
+
+
+
+/*Responsive design start from 1290px screen*/
+@media ( width <= 1290px) {
+  .primary-metric-card{
+    width: 550px;
+  }
+}
+@media ( width <= 1232px) {
+  .primary-metric-card{
+    width: 530px;
+  }
+  .section-title{
+    font-size: 70px;
+  }
+  .section-title span::before {
+    bottom: 11px;
+  }
+}
+
+@media ( width <= 1180px) {
+  .primary-metric-card{
+    width: 510px;
+  }
+  .section-title{
+    font-size: 68px;
+  }
+}
+
+@media ( width <= 1138px) {
+  .primary-metric-card{
+    width: 500px;
+  }
+  .primary-metric-card .primary-child{
+    font-size: 110px;
+  }
+  .section-title{
+    font-size: 64px;
+  }
+  .section-title span::before {
+    bottom: 10px;
+  }
+  .section-subtitle{
+    font-size: 18px;
+  }
+}
+
+@media ( width <= 1098px) {
+  .primary-metric-card{
+    width: 480px;
+  }
+  .primary-metric-card .primary-child{
+    font-size:100px;
+  
+  }
+  .primary-metric-card .primary-child2{
+    font-size: 24px;
+  }
+  .section-title{
+    font-size: 64px;
+  }
+ 
+  .metric-card .metric-value{
+font-size: 120px;
+  }
+  .metric-card .matric-brand{
+font-size: 26px;
+  }
+  .metrics-grid{
+    gap:15px;
+  }
+  .metrics-grid .metric-card
+  {
+    width: 400px;
+  }
+}
+
+@media ( width <= 1068px) {
+  .section-title{
+    font-size:60px;
+  }
+  .section-subtitle{
+    font-size: 18px;
+  }
+}
+
+@media ( width <= 1056px) {
+  .section-title{
+    font-size:60px;
+  }
+  .section-subtitle{
+    font-size: 18px;
+  }
+
+  .primary-metric-card .primary-child{
+    font-size:100px;
+  
+  }
+  .primary-metric-card .primary-child2{
+    font-size: 24px;
+  }
+  .metrics-grid .metric-card
+  {
+    width: 380px;
+  }
+  .metrics-grid{
+    gap:8px;
+  }
+  .section-title span::before {
+    bottom: 8px;
+    height: 10px;
+  }
+}
+
+@media ( width <= 1042px) {
+
+  .metrics-grid .metric-card
+  {
+    width: 350px;
+  }
+  .section-title{
+    font-size: 55px;
+  }
+.section-subtitle{
+  font-size: 16px;
+  padding-top: 18px;
+}
+  .primary-metric-card .primary-child{
+    font-size: 90px;
+  }
+  .primary-metric-card .primary-child2{
+    font-size: 21px;
+  }
+  .primary-metric-card{
+    width:460px;
+  }
+  .metrics-header{
+    margin-bottom: 38px;
+  }
+  .metric-card .metric-value{
+    font-size: 115px;
+
+  }
+  .metric-card .matric-brand{
+    font-size: 24px;
+  }
+ .metrics-grid .metric-card{
+    width:360px;
+  }
+
+}
+@media ( width <= 1012px) {
+  .metrics-grid{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+}
+
+@media ( width <= 978px) {
+  .metrics-header{
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .section-subtitle{
+font-size: 20px;
+  }
+  .section-title{
+    font-size: 70px;
+  }
+  .section-title span::before {
+    bottom: 14px;
+    height: 10px;
+  }
+  .title-container{
+    margin-bottom: 20px;
+  }
+  
+}
+
+@media ( width <= 658px) {
+  .section-subtitle{
+    font-size: 19px;
+      }
+      .section-title{
+        font-size: 65px;
+      }
+
+}
+
+@media ( width <= 610px) {
+  .section-subtitle{
+    font-size: 18px;
+    text-align: center;
+      }
+      .section-title{
+        font-size: 60px;
+        text-align: center;
+      }
+      .section-title span::before {
+        bottom: 10px;
+        height: 11px;
+      }
+      .setting{
+      display: flex;
+      justify-content: center;
+    }
+}
+
+@media ( width <= 570px) {
+
+  .section-subtitle{
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 0px;
+      }
+      .section-title{
+        font-size: 55px;
+      }
+      .icon{
+        width: 60px;
+        height: 60px;
+      }
+      
+}
+
+
+@media ( width <= 500px) {
+
+  .section-subtitle{
+    font-size: 15px;
+      }
+      .section-title{
+        font-size: 50px;
+      }
+      .section-title span::before {
+        bottom: 9px;
+        height: 9px;
+      }
+}
+
+@media ( width <= 484px) {
+  .primary-metric-card .primary-child{
+    font-size: 90px;
+  }
+  .primary-metric-card .primary-child2{
+    font-size: 21px;
+  }
+  .primary-metric-card{
+    width:430px;
+  }
+  .section-subtitle{
+    padding-top: 7px;
+  }
+}
+
+@media ( width <= 476px) {
+  .section-subtitle{
+    font-size: 13px;
+      }
+      .section-title{
+        font-size:45px;
+      }
+      .section-title span::before {
+        bottom: 8px;
+        height: 9px;
+      }
+}
+
+@media ( width <= 476px) {
+  .primary-metric-card .primary-child{
+    font-size: 90px;
+  }
+  .primary-metric-card .primary-child2{
+    font-size: 21px;
+  }
+  .primary-metric-card{
+    width:400px;
+  }
+}
+
+@media ( width <= 426px) {
+  .primary-metric-card .primary-child{
+    font-size: 80px;
+  }
+  .primary-metric-card .primary-child2{
+    font-size: 19px;
+  }
+  .primary-metric-card{
+    width:390px;
+  }
+      .section-title{
+        font-size:43px;
+      }
+      .section-title span::before {
+        bottom: 8px;
+        height: 9px;
+      }
+}
+
+@media ( width <= 414px) {
+  .primary-metric-card{
+    width:360px;
+  }
+}
+
+@media ( width <= 404px) {
+  .section-title{
+    font-size:41px;
+  }
+  .section-subtitle{
+    font-size: 12px;
+  }
+  .section-title span::before {
+    bottom: 7px;
+    height: 9px;
+  }
+}
+
+@media ( width <= 386px) {
+  .section-title{
+    font-size:39px;
+  }
+  .section-subtitle{
+    font-size: 12px;
+    padding-top: 5px;
+  }
+
+  .primary-metric-card .primary-child{
+    font-size: 80px;
+  }
+  .primary-metric-card .primary-child2{
+    font-size: 19px;
+  }
+  .primary-metric-card{
+    width:350px;
+  }
+  .metric-card .metric-value{
+    font-size: 90px;
+
+  }
+  .metric-card .matric-brand{
+    font-size: 22px;
+  }
+ .metrics-grid .metric-card{
+    width:350px;
+  }
+  .icon{
+    width: 50px;
+    height: 50px;
+  }
+  .icon svg{
+    height:30px;
+  }
+}
+
+@media ( width <= 370px) {
+  .section-title{
+    font-size:35px;
+  }
+  .section-title span::before {
+    bottom: 6px;
+    height: 7px;
+  }
+  .primary-metric-card .primary-child{
+    font-size: 70px;
+  }
+  .primary-metric-card .primary-child2{
+    font-size: 19px;
+  }
+  .primary-metric-card{
+    width:320px;
+  }
+  .metric-card .metric-value{
+    font-size:85px;
+
+  }
+  .metric-card .matric-brand{
+    font-size: 22px;
+  }
+ .metrics-grid .metric-card{
+    width:320px;
+  }
+  .metrics-header{
+    margin-bottom:10px;
+  }
+
+}
+
+@media ( width <= 344px) {
+
+.metrics-grid .metric-card{
+  width:300px;
+}
+.primary-metric-card{
+  width:300px;
+}
+
+}
+
+@media ( width = 320px) {
+.section-title{
+  font-size:32px ;
+}
+.about-button{
+  font-size: 17px;
+}
+.section-subtitle{
+  font-size: 14px;
+  padding-top: 0px;
+}
+.section-title span::before {
+  bottom: 5px;
+  height: 7px;
+}
 }

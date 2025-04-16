@@ -8,9 +8,9 @@ const CompanyMetrics = () => {
       <div className="container">
         <div className="metrics-header">
           <div className="title-container">
-            <h2 className="section-title">By The<span>Numbers</span></h2>
+            <p className="section-title">By The <span className='spanclass'>Numbers</span></p>
             <p className="section-subtitle">We Don't Just Manage Amazon—We Master It for You.</p>
-            
+            <div className='setting'>
             <a href="#" className="about-button">
               About CommerceKind
               <span className="icon">
@@ -18,27 +18,29 @@ const CompanyMetrics = () => {
               </span>
             </a>
           </div>
+            </div>
+          
           
           <div className="primary-metric-card">
-            <h3 className="metric-value">$100M+</h3>
-            <p className="metric-label">Revenue Generated Annually</p>
+            <p className='primary-child'>$100M+</p>
+            <p className='primary-child2'>Revenue Generated Annually</p>
           </div>
         </div>
         
         <div className="metrics-grid">
           <div className="metric-card gradient-purple">
-            <h3 className="metric-value">40+</h3>
-            <p className="metric-label">Brands</p>
+            <p className='metric-value'>40+</p>
+            <p className='matric-brand'>Brands</p>
           </div>
           
           <div className="metric-card dark-blue">
-            <h3 className="metric-value">99%</h3>
-            <p className="metric-label">Retention Rate</p>
+            <p className='metric-value'>99%</p>
+            <p className='matric-brand'>Retention Rate</p>
           </div>
           
           <div className="metric-card self-customize">
-            <h3 className="metric-value">50+</h3>
-            <p className="metric-label">Employees</p>
+            <p className='metric-value'>50+</p>
+            <p className='matric-brand'>Employees</p>
           </div>
         </div>
       </div>
