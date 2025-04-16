@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './FreeStore.css';
 
 const FreeStore = () => {
@@ -8,9 +9,7 @@ const FreeStore = () => {
                 <h2>Ready To Earn 5x More?</h2>
             </div>
             <div className="FreeStore-btn">
-                <a href="#">
-                    <button className='free-store-btn'>Free Store Audit</button>
-                </a>
+            <Link to="/contact"><button className='free-store-btn'>Free Store Audit</button></Link>
             </div>
         </div>
     );
