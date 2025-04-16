@@ -32,7 +32,11 @@ const CaseStudies = () => {
   };
 
   return (
-    <div className='casestudies-main'>
+  <>
+    <div className="showcase-study-heading">
+        <h2><span>Case</span> Studies</h2>
+      </div>
+    <div className='casestudies-main'>     
       {caseStudiesData.slice(0, visibleCount).map((item, index) => (
         <div className="casestudies-item" key={item.id}>
           {index % 2 === 0 ? (
@@ -81,6 +85,7 @@ const CaseStudies = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 
