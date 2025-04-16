@@ -33,6 +33,7 @@
 
 .casestudies-item {
     padding-right: 10px;
+    padding-left: 10px;
     max-width: 1920px;
     display: flex;
     gap: 5%;
@@ -111,15 +112,17 @@
 .casestudies-content .btn-last button {
     font-family: "Poppins", Sans-serif;
     font-size: 20px;
-    border: none;
+    border: 3px solid var(--brand-button-color);
     font-weight: 700;
     letter-spacing: 0.5px;
     border-width: 3px;
-    border-radius: 5px;
+    border-radius: 7px !important;
     padding: 21px 45px 21px 45px;
     background-color: var(--brand-button-color);
     color: white;
     cursor: pointer;
+    transition: 0.2s linear;
+
 }
 
 .lm-btn button {
@@ -135,6 +138,13 @@
     color: #FFFFFF;
     cursor: pointer;
     transition: 0.2s linear;
+}
+
+.casestudies-content .btn-last button:hover{
+    background-color: #FFFFFF;
+    color: var(--brand-button-color);
+    border-color: var(--brand-button-color);
+    outline: var(--brand-button-color);
 }
 
 .lm-btn button:hover {
@@ -348,7 +358,7 @@
     }
 }
 
-@media (width <= 1280px) {
+@media (width <= 1300px) {
     .casestudies-main {
         row-gap: 27px;
     }
@@ -421,10 +431,20 @@
 @media (width <= 1140px) {
     .casestudies-main {
         row-gap: 27px;
+        background-color: #FFFFFF;
     }
     
     .casestudies-item {
         align-items: center;
+        background-color: var(--bg);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        width: 700px;
+        border-radius: 40px;
+        /* border: 20px solid rgba(41, 46, 76, 0.15); */
+        /* border: 10px solid #616db08e; */
+
+
     }
     
     .casestudies-item:nth-child(even) {
@@ -444,8 +464,8 @@
     }
     
     .casestudies-item .casestudiesimg img {
-        max-width: 700px;
-        height: 700px;
+        max-width: 650px;
+        height: 650px;
     }
 
     .casestudies-content h3 {
@@ -460,6 +480,7 @@
 
     .casestudies-content h4 {
         font-size: 30px;
+        max-width: 700px;
         text-align: center;
         font-weight: 400;
         line-height: 40px;
@@ -477,11 +498,12 @@
             font-size: 15px;
             margin-bottom: 20px;
         }
+
         & > .btn-last button {
             font-weight: 300;
-            font-size: 12px;
+            font-size: 17px;
             letter-spacing: 0.5px;
-            padding: 12px 20px 12px 20px;
+            padding: 15px 22px 15px 22px;
             margin-bottom: 20px;
         }
     }
@@ -494,7 +516,7 @@
     .button-all button {
         white-space: nowrap;
         line-height: 13px;
-        padding: 10px 16px 10px 16px;
+        padding: 12px 16px 12px 16px;
         font-size: 16px;
     }
     
@@ -506,13 +528,15 @@
     }
 }
 
-@media (width <= 740px) {
+@media (width <= 790px) {
     .casestudies-main {
         row-gap: 25px;
+        background-color: none;
     }
     
     .casestudies-item {
         align-items: center;
+        width: 650px;
     }
     
     .casestudies-item .casestudiesimg img {
@@ -521,7 +545,7 @@
     }
 
     .casestudies-content h3 {
-        font-size: 30px;
+        font-size: 35px;
         font-weight: 500;
         text-align: center;
         line-height: 30px;
@@ -545,14 +569,14 @@
             font-weight: 300;
             line-height: 20px;
             letter-spacing: -1%;
-            font-size: 10px;
+            font-size: 14px;
             margin-bottom: 10px;
         }
         & > .btn-last button {
             font-weight: 300;
-            font-size: 10px;
+            font-size: 15px;
             letter-spacing: 0.5px;
-            padding: 10px 15px 10px 15px;
+            padding: 13px 20px 13px 20px;
             margin-bottom: 10px;
         }
     }
@@ -564,7 +588,140 @@
     
     .button-all button {
         line-height: 13px;
-        padding: 8px 12px 8px 12px;
+        padding: 10px 12px 10px 12px;
+        font-size: 14px;
+    }
+    
+    .lm-btn button {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 15px 40px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 736px) {
+    .casestudies-main {
+        row-gap: 25px;
+        background-color: none;
+    }
+    
+    .casestudies-item {
+        align-items: center;
+        width: 550px;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 500px;
+        height: 500px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 30px;
+        font-weight: 500;
+        text-align: center;
+        line-height: 25px;
+        margin-bottom: 15px;
+        margin-top: 10px;
+    }
+
+    .casestudies-content h4 {
+        font-size: 24px;
+        text-align: center;
+        font-weight: 300;
+        line-height: 30px;
+    }
+    
+    .casestudies-content {   
+        align-items: center; 
+        & > .para-down {
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -1%;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        & > .btn-last button {
+            font-weight: 300;
+            font-size: 15px;
+            letter-spacing: 0.5px;
+            padding: 13px 20px 13px 20px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 15px;
+        gap: 12px;
+    }
+    
+    .button-all button {
+        line-height: 13px;
+        padding: 10px 12px 10px 12px;
+        font-size: 14px;
+    }
+    
+    .lm-btn button {
+        font-size: 15px;
+        font-weight: 300;
+        padding: 15px 40px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 640px) {
+    .casestudies-main {
+        row-gap: 25px;
+    }
+    
+    .casestudies-item {
+        align-items: center;
+        width: 470px;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 430px;
+        height: 430px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 25px;
+        font-weight: 450;
+        margin-bottom: 13px;
+        margin-top: 10px;
+    }
+
+    .casestudies-content h4 {
+        font-size: 22px;
+        font-weight: 300;
+    }
+    
+    .casestudies-content {   
+        align-items: center; 
+        & > .para-down {
+            font-weight: 300;
+            line-height: 20px;
+            letter-spacing: -1%;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+        & > .btn-last button {
+            font-weight: 300;
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            padding: 12px 18px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 14px;
+        gap: 10px;
+    }
+    
+    .button-all button {
+        line-height: 13px;
+        padding: 10px;
         font-size: 12px;
     }
     
@@ -576,81 +733,79 @@
     }
 }
 
-@media (width <= 630px) {
+@media (width <= 550px) {
     .casestudies-main {
-        row-gap: 20px;
+        row-gap: 25px;
+    }
+    
+    .casestudies-item {
+        align-items: center;
+        width: 400px;
     }
     
     .casestudies-item .casestudiesimg img {
-        max-width: 400px;
-        height: 400px;
+        max-width: 380px;
+        height: 380px;
     }
 
     .casestudies-content h3 {
-        font-size: 25px;
-        font-weight: 350;
-        text-align: center;
-        line-height: 25px;
-        margin-bottom: 15px;
-        margin-top: 10px;
-        letter-spacing: -1%;
+        font-size: 22px;
+        font-weight: 400;
     }
 
     .casestudies-content h4 {
-        font-size: 22px;
+        font-size: 20px;
         text-align: center;
-        font-weight: 250;
-        line-height: 25px;
-        letter-spacing: -1%;
-        margin-bottom: 10px;
+        font-weight: 300;
     }
     
     .casestudies-content {   
         align-items: center; 
         & > .para-down {
-            font-weight: 200;
+            font-weight: 300;
             line-height: 20px;
             letter-spacing: -1%;
-            font-size: 10px;
+            font-size: 11px;
             margin-bottom: 10px;
-            text-align: center;
         }
         & > .btn-last button {
-            font-weight: 250;
+            font-weight: 300;
             font-size: 10px;
             letter-spacing: 0.5px;
-            padding: 8px 12px 8px 12px;
+            padding: 12px 15px;
             margin-bottom: 10px;
         }
     }
     
     .button-all {
-        margin-bottom: 12px;
-        gap: 8px;
-        row-gap: 8px;
+        margin-bottom: 14px;
+        gap: 9px;
     }
     
     .button-all button {
         line-height: 13px;
-        padding: 8px 12px 8px 12px;
-        font-size: 10px;
+        padding: 9px;
+        font-size: 11px;
     }
     
     .lm-btn button {
-        font-size: 12px;
-        font-weight: 250;
-        padding: 12px 35px;
-        border: 2px solid #6C30ED;
+        font-size: 13px;
+        font-weight: 300;
+        padding: 13px 40px;
+        border: 2px solid;
     }
 }
 
-@media (width <= 430px) {
+@media (width <= 476px) {
     .casestudies-main {
-        row-gap: 10px;
+        row-gap: 25px;
+    margin-bottom: 50px;
+
     }
     
     .casestudies-item {
         align-items: center;
+        width: 320px;
     }
     
     .casestudies-item .casestudiesimg img {
@@ -660,38 +815,96 @@
 
     .casestudies-content h3 {
         font-size: 20px;
-        font-weight: 350;
-        text-align: center;
-        line-height: 25px;
-        margin-bottom: 15px;
-        margin-top: 10px;
-        letter-spacing: -1%;
+        font-weight: 500;
+        margin-bottom: 10px;
     }
 
     .casestudies-content h4 {
-        font-size: 20px;
+        font-size: 18px;
         text-align: center;
-        font-weight: 200;
-        line-height: 25px;
-        letter-spacing: -1%;
-        margin-bottom: 10px;
-    }
+        font-weight: 400}
     
     .casestudies-content {   
         align-items: center; 
         & > .para-down {
-            font-weight: 200;
-            line-height: 20px;
-            letter-spacing: -1%;
-            font-size: 8px;
+            font-weight: 300;
+            line-height: 15px;
+            letter-spacing: -3%;
+            font-size: 10px;
             margin-bottom: 10px;
-            text-align: center;
+            max-width: 300px;
         }
         & > .btn-last button {
-            font-weight: 200;
-            font-size: 8px;
+            font-weight: 300;
+            font-size: 10px;
             letter-spacing: 0.5px;
-            padding: 8px 10px 8px 10px;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+        }
+    }
+    
+    .button-all {
+        margin-bottom: 12px;
+        gap: 7px;
+        /* flex-wrap:wrap ; */
+    }
+    
+    .button-all button {
+        line-height: 10px;
+        padding: 8px;
+        font-size: 9px;
+    }
+    
+    .lm-btn button {
+        font-size: 13px;
+        font-weight: 300;
+        padding: 13px 40px;
+        border: 2px solid;
+    }
+}
+
+@media (width <= 370px) {
+    .casestudies-main {
+        row-gap: 25px;
+    margin-bottom: 50px;
+
+    }
+    
+    .casestudies-item {
+        align-items: center;
+        width: 270px;
+    }
+    
+    .casestudies-item .casestudiesimg img {
+        max-width: 250px;
+        height: 250px;
+    }
+
+    .casestudies-content h3 {
+        font-size: 18px;
+        font-weight: 500;
+        margin-bottom: 8px;
+    }
+
+    .casestudies-content h4 {
+        font-size: 16px;
+        font-weight: 400}
+    
+    .casestudies-content {   
+        align-items: center; 
+        & > .para-down {
+            font-weight: 300;
+            line-height: 15px;
+            letter-spacing: -3%;
+            font-size: 10px;
+            margin-bottom: 10px;
+            max-width: 300px;
+        }
+        & > .btn-last button {
+            font-weight: 300;
+            font-size: 10px;
+            letter-spacing: 0.5px;
+            padding: 8px 12px;
             margin-bottom: 10px;
         }
     }
@@ -699,19 +912,19 @@
     .button-all {
         margin-bottom: 12px;
         gap: 5px;
-        row-gap: 5px;
+        /* flex-wrap:wrap ; */
     }
     
     .button-all button {
         line-height: 10px;
-        padding: 5px 10px 5px 10px;
+        padding: 8px;
         font-size: 8px;
     }
     
     .lm-btn button {
-        font-size: 12px;
-        font-weight: 250;
-        padding: 12px 35px;
-        border: 2px solid #6C30ED;
+        font-size: 13px;
+        font-weight: 300;
+        padding: 13px 40px;
+        border: 2px solid;
     }
 }
