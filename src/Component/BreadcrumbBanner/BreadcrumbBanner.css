@@ -27,7 +27,7 @@
     position: relative;
     z-index: 2; /* Position above the overlay */
     width: 100%;
-    max-width: 1920px;
+    max-width: 1990px;
     margin: 0 auto;
   }
   
