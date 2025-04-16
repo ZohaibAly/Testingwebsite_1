@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import "./ServicesSection.css";
 import SerImage1 from '../../assets/Services-image1.png';
 import SerImage2 from '../../assets/Services-image2.png';
@@ -82,11 +83,12 @@ const ServicesSection = () => {
                             </p>
                         </div>
                     </div>
-                    <a href="#">
+                    
                         <div className="services-component__btn">
-                            <button>Contact Us Now</button>
+                        <Link to="/contact"><button>Contact Us Now</button></Link>
+                            
                         </div>
-                    </a>
+                    
                 </section>
             </div>
         </div>
