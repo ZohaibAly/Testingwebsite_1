@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './CaseStudyComp.css';
 
 // Import all case study images
@@ -61,7 +62,8 @@ const CaseStudySlider = () => {
         </div>
         
         <div className="case-study-navigation">
-          <button className="view-all-btn">View All Before After</button>
+     <Link to="/before-and-after"><button className="view-all-btn">View All Before After</button></Link>
+         
           
           <div className="case-study-arrows">
             <button type="button" className="arrow-btn" onClick={goToPrevious}>

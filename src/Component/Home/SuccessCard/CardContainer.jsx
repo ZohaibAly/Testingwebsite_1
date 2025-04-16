@@ -78,7 +78,7 @@ const CaseStudiesContainer = (props) => {
 
        <div className="view-all-container">
        <Link to="/case-studies">
-       <button className="Card-viewallbtn" onClick={() => setActiveFilter('ctr')}>
+       <button className="Card-viewallbtn" >
            View All Case Studies
          </button></Link>
     
