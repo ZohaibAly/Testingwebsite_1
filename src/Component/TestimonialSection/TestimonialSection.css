@@ -46,22 +46,34 @@ place-self: center;
 }
 /* Testimonials Left Side */
 .testimonials-left {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 20px;
+  display: flex; 
+  flex-direction: column;
+  gap:20px;
   outline: 3px solid black;
-  width: 100%;
   transition: all 0.3s linear;
+  padding: 10px;
+  margin-left: 10px;
+
+}
+.testimonials-left-child1{
+  display: flex; 
+  gap:20px;
+}
+.testimonials-left-child2{
+
+  display: flex; 
+  gap:20px;
 }
 
+
 .testimonials-left img {
-  width: 100%;
-  height: auto;
+outline:2px solid blue;
   box-shadow: 6px 6px 12px 4px #00000033;
   border-radius: 20px;
   transition: all 0.3s linear;
   opacity: 1;
+  width: 580px;
+  height: 400px;
 }
 
 .testimonials-left:hover img:not(:hover) {
@@ -76,7 +88,6 @@ place-self: center;
   cursor: pointer;
 }
 .testimonials-right {
-
   outline: 3px solid black;
   padding-top: 12px;
 }
@@ -124,7 +135,7 @@ border: 3px solid white;
 
 /* HOVER EFFECT: This increases the button size when hovering */
 .nav-left:hover, .nav-right:hover {
-  transform: scale(1.2); /* Makes the button 20% larger */
+  transform: scale(1.2); 
 
 }
 
@@ -206,7 +217,16 @@ z-index: 1000;
   .testimonials-content{
     gap:30px;
   }
-.testimonials-right{
-  width: 38%;
 }
+@media ( width <= 1860px )
+{
+  .video-container img{
+    width: 630px;
+  height: 850px;
+  }
+  .testimonials-left .testimonials-left-child1{
+    width: 0px;
+    height: 0px;
+  }
+
 }
