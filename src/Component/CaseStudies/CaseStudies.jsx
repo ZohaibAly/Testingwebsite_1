@@ -33,7 +33,7 @@ const CaseStudies = () => {
 
   return (
   <>
-    <div className="showcase-study-heading">
+    <div className="showcase-study-heading" id="showcase-study-heading">
         <h2><span>Case</span> Studies</h2>
       </div>
     <div className='casestudies-main'>     
