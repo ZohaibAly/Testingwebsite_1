@@ -29,8 +29,7 @@ const FAQi = ({ faqData }) => {
             <div className="FAQ-accordion">
                 {faqData && faqData.map((item) => (
                     <div key={item.id} className="FAQ-accordion-item">
-                        <div 
-                            className={`FAQ-accordion-header ${openItem === item.id ? 'active' : ''}`}
+                        <div className={`FAQ-accordion-header ${openItem === item.id ? 'active' : ''}`}
                             onClick={() => toggleAccordion(item.id)}
                         >
                             <h3>{item.question}</h3>
