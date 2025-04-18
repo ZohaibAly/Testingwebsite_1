@@ -10,28 +10,22 @@
   }
 .Footer-main {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 60px;
-    padding: 5px 70px 100px 70px;
+    padding: 100px 70px 100px 70px;
 }
 
 .Footerpt-1 {
-    row-gap: 20px;
-    column-gap: 20px;
-    flex-wrap: wrap;
     display: flex;
     flex-direction: column;
     border-radius: 25px;
-    margin: 50px 0 0 0;
     padding: 40px 50px 50px 60px;
     background-color: #D9D9D9;
     line-height: 40px;
-    letter-spacing: 2%;
-    max-width: 428px;
-    min-height: 409px;
-    max-height: 509px;
+    width: 428px;
+    height: 400px;
+    
 }
 
 .Footerpt-1 .image-1 {
@@ -42,7 +36,6 @@
 .Footerpt-1 p {
     font-size: 24px;
     font-family: "Montserrat", "Sans-serif";
-    margin-top: -20px;
     color: #292E4C;
     margin-bottom: 15px;
 }
@@ -50,7 +43,6 @@
 .Footerpt-1-images {
     display: flex;
     gap: 14px;
-    width: 30px;
     height: 30px;
     & svg{
         color: white;
@@ -67,9 +59,9 @@
     flex-direction: row;
     align-items: left;
     gap: 110px;
-    font-family: "Montserrat", "Sans-serif";
-    
-
+    font-family: "Montserrat", "Sans-serif"; 
+    padding-top: 30px;
+    align-self:start;
 }
 
 .Footerpt-2 h4 {
@@ -77,19 +69,16 @@
     font-family: "Montserrat", "Sans-serif";
     font-weight: 700;
     color: #292E4C;
+    white-space: nowrap;
 }
 
 .Footerpt-2 a{
     font-family: "Montserrat", "Sans-serif";
     text-decoration: none;
     transition: color 0.5s ease;
-    color: black; 
+    color: #292E4C;
     font-weight: 400;
-    line-height: 21px;
-}
-
-.Footerpt-2 p{
-    font-family: "Montserrat", "Sans-serif";
+    line-height: 20px;
     font-size: 20px;
 
 }
@@ -99,29 +88,22 @@
     cursor: pointer;
 }
 
-.Footerpt-2 .Company,
-.Footerpt-2 .Quicklink,
-.Footerpt-2 .Newsletter {
+.Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
     display: flex;
     flex-direction: column;
-    gap: 30px 30px;
-    row-gap: 30px;
-    column-gap: 30px;
-    padding-top: 30px;
+    gap: 30px;
     line-height: 40px;
-    padding-bottom: 100px;
     letter-spacing: 2%;
     font-family: "Montserrat", "Sans-serif";
-
 }
 
 .Footerpt-3 {
     display: flex;
     flex-direction: column;
+    padding-top: 30px;
     gap: 20px;
     line-height: 40px;
-    column-gap: 20px;
-    margin-top: -10px;
+    align-self:start;
 }
 
 .Footerpt-3 h4 {
@@ -137,6 +119,7 @@
     font-size: 20px;
     color: #292E4C;
     letter-spacing: 2%;
+    
 }
 
 .Footer-input-wrapper {
@@ -155,7 +138,6 @@
 
 .Footerpt-3 .input-field {
     border: none;
-    height: 67;
     border-radius: 10px 0 0 10px;
     background-color: #D9D9D9;
     border-color: white;
@@ -188,12 +170,9 @@
         display: flex;
         align-items:center ;
         justify-content: center;
-        width: 1920;
-        height: 629;
-        top: 2799px;
         background-color: #292E4C;
         color: white;
-        padding: 20px 20px 20px 20px;
+        padding: 20px;
         font-size: 20px;
         font-weight: 400;
 }
@@ -207,3 +186,632 @@
 .Footer-bottom-text a:hover{
     color: #6C30ED;
 }
+
+@media(width<=1602px){
+.Footer-main {
+    gap:50px;
+}
+.Footerpt-1 {
+    width: 400px;
+    height: auto;
+
+}
+.Footer-1 .image-1{
+    height: 95px;
+    width: 270px;
+}
+.Footerpt-1 p {
+    font-size: 20px;
+
+}
+.Footerpt-1-images{
+    gap: 14px;
+    &svg{
+        width: 22px;
+        height: 22px;
+    }
+}
+
+.Footerpt-2{
+    gap: 70px;
+
+    h4{
+        font-size: 22px;
+        font-weight: 700;
+    }
+
+    a{font-size: 18px;}
+}
+
+.Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+    gap: 25px;
+}
+.Footerpt-3 {
+    gap:20px;
+
+    h4{
+    font-size: 22px;
+    }
+    p{
+    font-size: 18px;
+    }
+    .Footer-input-wrapper{
+        min-width: 200px;
+
+        button{
+    padding: 10px 18px;
+    font-size: 14px;
+            
+        }
+    }
+}
+}
+
+@media(width<=1340px){
+    .Footer-main {
+        gap:50px;
+        padding-bottom: 90px;
+    }
+    .Footerpt-1 {
+        width: 400px;
+        min-height: 300px;
+        padding: 25px 35px 35px 45px;
+
+        & .image-1{
+            height: 80px;
+            width: 230px;}
+    
+    }
+    .Footerpt-1 p {
+        font-size: 18px;
+        line-height:25px ;
+        text-align: left;
+        padding-bottom: 5px;
+    
+    }
+    .Footerpt-1-images{
+        gap: 13px;
+        & svg{
+            width: 18px;
+            height: 18px;
+        }
+    }
+    
+    .Footerpt-2{
+        gap: 70px;
+    
+        h4{
+            font-size: 22px;
+            font-weight: 700;
+        }
+    
+        a{font-size: 18px;}
+    }
+    
+    .Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+        gap: 25px;
+    }
+    .Footerpt-3 {
+        gap:20px;
+    
+        h4{
+        font-size: 22px;
+        }
+        p{
+        font-size: 18px;
+        }
+        .Footer-input-wrapper{
+            min-width: 200px;
+    
+            button{
+        padding: 10px 18px;
+        font-size: 14px;
+                
+            }
+        }
+    }
+    }
+
+    @media(width<=1240px){
+        .Footer-main {
+            gap:45px;
+            padding-bottom: 80px;
+        }
+        .Footerpt-1 {
+            width: 400px;
+            min-height: 300px;
+            padding: 25px 35px 35px 45px;
+    
+            & .image-1{
+                height: 60px;
+                width: 200px;}
+        
+        }
+        .Footerpt-1 p {
+            font-size: 14px;
+            line-height:25px ;
+            text-align: left;
+            padding-bottom: 5px;
+        
+        }
+        .Footerpt-1-images{
+            gap: 12px;
+            & svg{
+                width: 16px;
+                height: 16px;
+            }
+        }
+        
+        .Footerpt-2{
+            gap: 40px;
+        
+            h4{
+                font-size: 20px;
+                font-weight: 700;
+            }
+        
+            a{font-size: 15px;}
+        }
+        
+        .Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+            gap: 20px;
+        }
+        .Footerpt-3 {
+            gap:10px;
+        
+            h4{
+            font-size: 20px;
+            }
+            p{
+            font-size: 15px;
+            }
+            .Footer-input-wrapper{
+                /* min-width: 150px; */
+        
+                button{
+            padding: 8px 15px;
+            font-size: 13px;
+                    
+                }
+            }
+        }
+
+    }  
+    @media(width<=1090px){
+        .Footer-main {
+            gap:25px;
+            padding-bottom: 70px;
+        }
+        .Footerpt-1 {
+            min-width: 250px;
+            min-height: 250px;
+            padding: 25px 30px 30px 30px;
+    
+            & .image-1{
+                height: 55px;
+                width: 180px;}
+        
+        }
+        .Footerpt-1 p {
+            font-size: 14px;
+            line-height:24px ;
+            text-align: left;
+            padding-bottom: 2px;
+        
+        }
+        .Footerpt-1-images{
+            gap: 12px;
+            & svg{
+                width: 14px;
+                height: 14px;
+            }
+        }
+        
+        .Footerpt-2{
+            gap: 20px;
+        
+            h4{
+                font-size: 18px;
+                font-weight: 700;
+            }
+        
+            a{font-size: 13px;}
+        }
+        
+        .Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+            gap: 15px;
+        }
+        .Footerpt-3 {
+            gap:6px;
+        
+            h4{
+            font-size: 18px;
+            }
+            p{
+            font-size: 13px;
+            }
+            .Footer-input-wrapper{
+                /* width: 300px; */
+
+                .input-field{
+                    padding: 18px 20px;
+                    width: 150px;
+                }
+        
+                button{
+            padding: 8px 12px;
+            font-size: 13px;
+                    
+                }
+            }
+        }
+        }
+        
+        @media(width<=970px){
+            .Footer-main {
+                gap:25px;
+                padding-bottom: 50px;
+            }
+            .Footerpt-1 {
+                width: 2020px;
+                min-height: auto;
+                padding: 25px 15px 30px 25px;
+        
+                & .image-1{
+                    height: 50px;
+                    width: 160px;}
+            
+            }
+            .Footerpt-1 p {
+                font-size: 12px;
+                line-height:22px ;
+                text-align: left;
+                padding-bottom: 2px;
+            
+            }
+            .Footerpt-1-images{
+                gap: 10px;
+                & svg{
+                    width: 14px;
+                    height: 14px;
+                    padding: 10px;
+                }
+            }
+            
+            .Footerpt-2{
+                gap: 20px;
+            
+                h4{
+                    font-size: 14px;
+                    font-weight: 700;
+                }
+            
+                a{font-size: 10px;}
+            }
+            
+            .Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+                gap: 8px;
+            }
+            .Footerpt-3 {
+                gap:10px;
+                line-height: 0px;
+            
+                h4{
+                font-size: 14px;
+                }
+                p{
+                font-size: 10px;
+                }
+                .Footer-input-wrapper{ 
+                    .input-field{
+                        padding: 13px 2px 13px 20px;
+                        width: 70px;
+                        font-size: 10px;
+                    }
+            
+                    button{
+                padding: 2px 4px;
+                font-size: 8px;
+                        
+                    }
+                }
+            }
+            }
+
+            @media(width<=768px){
+                .Footer-main {
+                    gap:25px;
+                    padding-bottom: 50px;
+                    flex-direction: column;
+                }
+                .Footerpt-1 {
+                    width: 500px;
+                    height: 500px;
+                    padding: 25px 5px 0px 25px;
+            
+                    & .image-1{
+                        height: 120px;
+                        width: 340px;}
+                
+                }
+                .Footerpt-1 p {
+                    font-size: 26px;
+                    line-height:45px;
+                    text-align: left;
+                    padding-bottom: 5px;
+                
+                }
+                .Footerpt-1-images{
+                    gap: 20px;
+                    & svg{
+                        width: 35px;
+                        height: 35px;
+                        padding: 15px;
+                    }
+                }
+                
+                .Footerpt-2{
+                    gap: 30px;
+                    align-self: center;
+                    flex-direction: column;
+                
+                    h4{
+                        font-size: 35px;
+                        font-weight: 700;
+                    }
+                
+                    a{
+                        font-size: 24px;
+                        line-height: 40px;
+                    }
+                }
+                
+                .Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+                    gap: 8px;
+                    align-items: center;
+                    line-height: 60px;
+                }
+                .Footerpt-3 {
+                    gap:20px;
+                    line-height: 40px;
+                    align-items: center;
+                    align-self: center;
+
+                
+                    h4{
+                    font-size: 35px;
+                    }
+                    p{
+                    font-size: 20px;
+                    }
+                    .Footer-input-wrapper{ 
+                        min-width: 400px;
+                        .input-field{
+                            padding: 25px 42px 25px 40px;
+                            min-width: 100px;
+                            font-size: 18px;
+                        }
+                
+                        button{
+                    padding: 10px 14px;
+                    font-size: 15px;
+                            
+                        }
+                    }
+                }
+                }
+                
+                @media (width<=602px) {
+                    .Footer-bottom{
+                        font-size: 18px;
+                    }
+                }
+
+                @media (width<=560px) {
+                    .Footer-bottom{
+                        font-size: 15px;
+                    }
+                }
+
+                @media(width<=550px){
+                    .Footer-main {
+                        gap:20px;
+                        padding-bottom: 50px;
+                    }
+                    .Footerpt-1 {
+                        width: 400px;
+                        height: 420px;
+                        padding: 25px 5px 0px 25px;
+                
+                        & .image-1{
+                            height: 100px;
+                            width: 320px;}
+                    
+                    }
+                    .Footerpt-1 p {
+                        font-size: 22px;
+                        line-height:40px;
+                    
+                    }
+                    .Footerpt-1-images{
+                        gap: 20px;
+                        & svg{
+                            width: 28px;
+                            height: 28px;
+                            padding: 15px;
+                        }
+                    }
+                    
+                    .Footerpt-2{
+                        gap: 30px;                    
+                        h4{
+                            font-size: 32px;
+                            font-weight: 700;
+                        }
+                    
+                        a{
+                            font-size: 22px;
+                            line-height: 35px;
+                        }
+                    }
+                    
+                    .Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+                        gap: 6px;
+                        align-items: center;
+                        line-height: 60px;
+                    }
+                    .Footerpt-3 {
+                        gap:20px;
+                        line-height: 35px;
+                        align-items: center;
+                        align-self: center;
+    
+                    
+                        h4{
+                        font-size: 32px;
+                        }
+                        p{
+                        font-size: 20px;
+                        }
+                        .Footer-input-wrapper{ 
+                            min-width: 350px;
+                            .input-field{
+                                padding: 20px 42px 20px 40px;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    }
+
+                    @media(width<=450px){
+                        .Footer-main {
+                            padding-bottom: 40px;
+                        }
+                        .Footerpt-1 {
+                            width: 300px;
+                            height: 320px;
+                            padding: 25px 0px 0px 25px;
+                    
+                            & .image-1{
+                                height: 70px;
+                                width: 240px;}
+                        
+                        }
+                        .Footerpt-1 p {
+                            font-size: 16px;
+                            line-height:30px;
+                        }
+                        .Footerpt-1-images{
+                            gap: 10px;
+                            & svg{
+                                width: 14px;
+                                height: 13px;
+                                padding: 15px;
+                            }
+                        }
+                        
+                        .Footerpt-2{
+                            gap: 25px;                    
+                            h4{
+                                font-size: 30px;
+                                font-weight: 700;
+                            }
+                        
+                            a{
+                                font-size: 20px;
+                                line-height: 35px;
+                            }
+                        }
+                        
+                        .Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+                            gap: 4px;
+                            align-items: center;
+                            line-height: 50px;
+                        }
+                        .Footerpt-3 {
+                            gap:20px;
+                            line-height: 30px;       
+                        
+                            h4{
+                            font-size: 30px;
+                            }
+                            p{
+                            font-size: 19px;
+                            text-align: center;
+                            }
+                            .Footer-input-wrapper{ 
+                                min-width: 300px;
+                                .input-field{
+                                    padding: 15px 12px 15px 20px;
+                                    font-size: 16px;
+                                }
+                            }
+                        }
+                        }
+
+                        @media(width<=343px){
+                            .Footer-main {
+                                padding-bottom: 40px;
+                            }
+                            .Footerpt-1 {
+                                width: 280px;
+                                height: 280px;
+                                padding: 25px 0px 0px 25px;
+                        
+                                & .image-1{
+                                    height: 60px;
+                                    width: 220px;}
+                            
+                            }
+                            .Footerpt-1 p {
+                                font-size: 16px;
+                                line-height:22px;
+                            }
+                            .Footerpt-1-images{
+                                gap: 10px;
+                                & svg{
+                                    width: 16px;
+                                    height: 13px;
+                                    padding: 15px;
+                                }
+                            }
+                            
+                            .Footerpt-2{
+                                gap: 25px;                    
+                                h4{
+                                    font-size: 30px;
+                                    font-weight: 700;
+                                }
+                            
+                                a{
+                                    font-size: 20px;
+                                    line-height: 35px;
+                                    white-space: nowrap;
+                                }
+                            }
+                            
+                            .Footerpt-2 :is(.Company, .Quicklink, .Newsletter){
+                                gap: 4px;
+                                align-items: center;
+                                line-height: 50px;
+                            }
+                            .Footerpt-3 {
+                                gap:20px;
+                                line-height: 30px;       
+                            
+                                h4{
+                                font-size: 30px;
+                                }
+                                p{
+                                font-size: 19px;
+                                text-align: center;
+                                }
+                                .Footer-input-wrapper{ 
+                                    min-width: 300px;
+                                    .input-field{
+                                        padding: 15px 12px 15px 20px;
+                                        font-size: 16px;
+                                    }
+                                }
+                            }
+                            }
