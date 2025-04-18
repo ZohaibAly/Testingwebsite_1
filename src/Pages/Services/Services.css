@@ -50,14 +50,13 @@
     color: #6C30ED;
     line-height: 31px;
     margin-bottom: 20px;
-    margin-top: 75px;
+
 }
 
 .services-component__subtitle {
     text-align: left;
     height: 152px;
     color: #292E4C;
-    font: Montserrat;
     font-weight: 700 !important;
     font-size: 60px !important;
     line-height: 1.2 !important;
@@ -81,13 +80,12 @@
 
 .services-component__card {
     margin: 0px !important;
-    min-height: 350px;
     cursor: pointer;
     background: white;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
     padding: 39px 30px;
     border-style: none;
-    width: 340px;
+    width: 340px !important;
     text-align: left;
     transition: background-color 0.3s ease, color 0.3s ease;
     border-radius: 20px;
@@ -146,7 +144,6 @@
 }
 
 .services-component__btn button {
-    margin-top: 30px;
     border: 1px solid transparent;
     padding: 20px 60px;
     font-size: 20px;
@@ -164,4 +161,51 @@
     background-color: white;
     color: #242424;
     border: 2px solid #242424;
+}
+
+
+/* Responsiveness Start from 1302px */
+
+@media ( width <= 1320px ) 
+{
+    .services-component__cards-container{
+        gap:35px
+    }
+}
+
+@media ( width <= 1292px )  
+{
+    .services-component__cards-container{
+        gap:28px
+    }
+}
+
+@media ( width <= 1272px ) 
+{
+    .services-component__cards-container{
+        gap:22px
+    }
+}
+
+
+@media ( width <= 1258px ) 
+{
+    .services-component__cards-container{
+        gap:20px
+    }
+    .services-component__card{
+        width: 300px;
+    }
+    .services-component__subtitle{
+        font-size: 55px !important;
+   
+ }
+}
+
+
+@media ( width <= 1068px ) 
+{
+    .services-component__subtitle{
+        font-size: 45px !important;
+    }
 }

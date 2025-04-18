@@ -136,7 +136,7 @@ function Home() {
         categoryButtons={categoryButtons}
       />
       <Business/>
-      <Testmonial/>
+    <Testmonial/>  
       <OffersGrid/>
       <FAQSection />
       <FreeStoreComp/>

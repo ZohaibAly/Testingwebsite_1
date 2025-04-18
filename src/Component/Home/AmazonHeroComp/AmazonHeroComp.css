@@ -7,9 +7,6 @@
   --primary-color: #292E4C;
   --button-color: #7039d4;
 }
-*:has(>.hero-container) {
-  overflow-x: hidden;
-}
 
 /* Main container - sets the size and background */
 .hero-container {
@@ -17,11 +14,12 @@
   max-width: 1920px;
   margin: 0 auto;
   /* background-color: white; */
-  margin-top: 20px;
-  padding: 45px;
+  margin-top: 90px;
+  padding: 10px;
   box-sizing: border-box;
 }
 
+/* Parent div - sets the flex properties */
 .hero-parent {
   display: flex;
   justify-content: space-between;
@@ -36,7 +34,7 @@
 
 .hero-title {
   font-family: var(--title-font);
-  font-size: 88px;
+  font-size: 5.5rem;
   font-weight: 600;
   color: var(--primary-color);
   line-height: 1.1;
@@ -68,7 +66,7 @@
   gap: 20px;
   & *{
  
-		transition: all 0.25s linear;
+    transition: all 0.25s linear;
   }
 }
 
@@ -107,8 +105,8 @@
   color: var(--button-color);
   text-decoration:underline;
   & .ama-arrow-icon{
-		translate: 5px -5px !important;
-	}
+    translate: 5px -5px !important;
+  }
 }
 
 .ama-arrow-icon {
@@ -148,7 +146,7 @@
 }
 .pic1{
   position: absolute;
-  top:-200px; 
+  top:-200px;
   right: -320px; 
   z-index: -1;
 }
@@ -159,5 +157,82 @@
   z-index: -1;
 }
 
+/* Media queries for responsiveness */
+@media (max-width: 1600px) {
+  .hero-container {
+    padding: 60px 80px;
+  }
+  
+ 
+  .hero-subtitle {
+    font-size: 36px;
+  }
+  
+  .hero-image img {
+    width: 100%;
+    height: auto;
+  }
+}
 
+@media (max-width: 1200px) {
+  .hero-container {
+    padding: 50px 60px;
+  }
+  
 
+  .hero-subtitle {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-parent {
+    flex-direction: column;
+  }
+  .hero-title {
+    margin-right: 0px;
+  }
+  .hero-image .pic1{
+    display: none;
+    }
+
+  
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    padding: 40px 20px;
+    margin-top: 0px;
+  }
+  .hero-image .pic1{
+    display: none;
+    }
+    .hero-image .pic2{
+      display: none;
+      }
+    
+  
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-right: auto;
+  }
+
+  .hero-subtitle {
+    font-size: 28px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+}
