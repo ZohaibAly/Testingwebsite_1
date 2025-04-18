@@ -8,7 +8,8 @@
 
 .FAQ-main{
     padding-top: 100px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     overflow: hidden; 
     margin-bottom: 100px;
 }
@@ -148,9 +149,156 @@
     font-size: 18px;
     font-family: "Poppins", sans-serif;
 }
-
+/* Responsiveness Start */
 @media (width<=1200px) {
     .FAQ-accordion-item{
         width: 1100px;
     }
+.FAQ-main{
+    margin-bottom: 50px;
 }
+
+.FAQ-main-text{
+        h2{font-size: 50px;}
+        p{font-size: 16px;}
+}
+
+.FAQ-accordion {
+    h3{font-size: 19px;}
+    p{font-size: 16px;}
+}
+}
+
+@media (width<=1110px) {
+    .FAQ-accordion-item{
+        width: 900px;
+    }
+.FAQ-main{
+    margin-bottom: 50px;
+}
+
+.FAQ-main-text{
+        h2{font-size: 45px;}
+}
+
+.FAQ-accordion {
+    h3{font-size: 18px;}
+}
+}
+
+@media (width<=915px) {
+    .FAQ-accordion-item{
+        width: 750px;
+    }
+.FAQ-main{
+    margin-bottom: 0px;
+}
+
+.FAQ-main-text{
+        h2{font-size: 40px;}
+}
+
+.FAQ-accordion {
+    h3{font-size: 16px;}
+    p{font-size: 14px;}
+}
+}
+
+@media (width<=765px) {
+    .FAQ-accordion-item{
+        width: 620px;
+    }
+.FAQ-main{
+    margin-bottom: 0px;
+}
+
+.FAQ-main-text{
+        h2{font-size: 32px;
+        line-height: 50px;}
+
+        p{
+            line-height: 25px;
+            font-size: 15px;
+            text-align: center;
+        }
+}
+}
+
+@media (width<=640px) {
+    .FAQ-accordion-item{
+        width: 520px;
+    }
+.FAQ-main{
+    margin-bottom: 0px;
+}
+
+.FAQ-accordion-header{
+    padding: 20px 30px 20px 20px;    
+}
+.FAQ-main-text{
+        h2{font-size: 28px;
+        line-height: 50px;}
+
+        p{
+            line-height: 25px;
+            font-size: 14px;
+            width: 490px;
+            text-align: center;
+        }
+}
+
+.FAQ-accordion {
+    h3{font-size: 15px;}
+}
+}
+
+@media (width<=540px) {
+    .FAQ-accordion-item{
+        width: 420px;
+    }
+.FAQ-main-text{
+    h2{font-size: 22px;
+            height: 30px;}
+        
+            p{
+                height: 28px;
+                font-size: 13px;
+                width: 430px;
+            }
+        }
+        .FAQ-accordion {
+            h3{font-size: 12px;}
+    p{font-size: 10px;}
+
+        }
+}
+
+@media (width<=440px) {
+    .FAQ-accordion-item{
+        width: 320px;
+    }
+    .FAQ-accordion-header{
+        padding: 10px 20px 15px 12px;    
+    }
+.FAQ-main-text{
+    h2{font-size: 16px;
+            height: 25px;}
+        
+            p{
+                height: 26px;
+                font-size: 10px;
+                line-height: 12px;
+                width: 320px;
+            }
+        }
+        .FAQ-accordion {
+            h3{font-size: 9px;}
+
+            span{
+                font-size: 15px;
+                height: 20px;
+                margin-left: 20px;
+            }
+        }
+}
+
