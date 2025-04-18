@@ -8,6 +8,7 @@
 max-width: 1920px;
 min-width: 100dvw;
 display: flex;
+outline: 3px solid black;
 flex-direction: column;
 place-content: center;
 place-items: center;
@@ -18,6 +19,7 @@ place-self: center;
 .testimonials-header {
   margin-bottom: 50px;
   text-align: center;
+  outline: 3px solid black;
 }
 
 .testimonials-header h2 {
@@ -39,8 +41,8 @@ place-self: center;
   place-content: end;
   place-items: center;
   place-self: end;
-  gap:40px
-
+  gap:40px;
+  outline: 3px solid black;
 }
 /* Testimonials Left Side */
 .testimonials-left {
@@ -48,6 +50,7 @@ place-self: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
+  outline: 3px solid black;
   width: 100%;
   transition: all 0.3s linear;
 }
@@ -72,15 +75,17 @@ place-self: center;
   transition: all 0.3s linear;
   cursor: pointer;
 }
-
 .testimonials-right {
-  width: 38%;
+
+  outline: 3px solid black;
   padding-top: 12px;
-
-
 }
 .video-container{
   position: relative;
+}
+.video-container img{
+  width: 650px;
+height: 857px;
 }
 
 .client-video-image {
@@ -92,12 +97,15 @@ place-self: center;
   position: absolute;
   display: flex;
   gap: 20px;
-  bottom:90px;
-  left: 200px;
+  bottom:120px;
+  left: 250px;
 }
 
 .nav-left, .nav-right {
   background: transparent;
+  background: rgba(255, 255, 255, 0.1); /* Slightly visible background */
+  backdrop-filter: blur(4px); /* Adds blur effect */
+  -webkit-backdrop-filter: blur(4px); /* For Safari support */
   border-radius: 50%;
 border: 3px solid white;
   cursor: pointer;
@@ -105,15 +113,21 @@ border: 3px solid white;
   align-items: center;
   justify-content: center;
   transition: all 0.3s linear;
+  width: 70px;
+  height: 70px;
   
 }
-
-
-.nav-left:hover , 
-.nav-right:hover  {
-  transform: scale(1.2); /* Increases image size by 20% on hover and when active */
-  transition: all 0.3s linear;
+.nav-left svg, .nav-right svg {
+  font-size: 40px;
+  color: white;
 }
+
+/* HOVER EFFECT: This increases the button size when hovering */
+.nav-left:hover, .nav-right:hover {
+  transform: scale(1.2); /* Makes the button 20% larger */
+
+}
+
 /* Video Modal - Updated */
 .video-modal {
   position: fixed;
@@ -185,43 +199,14 @@ z-index: 1000;
   z-index: 1002;
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .modal-content {
-    width: 95%;
-    padding-bottom: 53.4375%; /* 16:9 aspect ratio for 95% width */
+
+/* Responsive Design Start */
+@media ( width <= 1880px )
+{
+  .testimonials-content{
+    gap:30px;
   }
-  
-  .close-modal {
-    top: -30px;
-    right: 0;
-  }
+.testimonials-right{
+  width: 38%;
 }
-
-/* Responsive styles */
-@media (max-width: 1200px) {
-  .testimonials-content {
-    flex-direction: column;
-  }
-
-  .testimonials-left {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .testimonials-right {
-    width: 100%;
-  }
-}
-
-
-@media (max-width: 480px) {
-  .testimonials-header h2 {
-    font-size: 26px;
-  }
-
-  .close-modal {
-    top: -30px;
-    right: 0;
-  }
 }
