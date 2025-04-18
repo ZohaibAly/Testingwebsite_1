@@ -58,9 +58,9 @@
     height: 152px;
     color: #292E4C;
     font: Montserrat;
-    font-weight: 700 !important;
-    font-size: 60px !important;
-    line-height: 1.2 !important;
+    font-weight: 700 ;
+    font-size: 60px ;
+line-height: 1.2 rem;
     margin-bottom: 20px;
 }
 
@@ -80,7 +80,7 @@
 }
 
 .services-component__card {
-    margin: 0px !important;
+    margin: 0px;
     min-height: 350px;
     cursor: pointer;
     background: white;
@@ -122,7 +122,7 @@
     font-weight: 700;
     color: #292E4C;
     line-height: 1.3em;
-    font-family: "Montserrat", Sans-serif !important;
+    font-family: "Montserrat", Sans-serif;
 }
 
 .services-component__card p {
@@ -164,4 +164,139 @@
     background-color: white;
     color: #242424;
     border: 2px solid #242424;
+}
+
+
+/* Responsiveness Start from 1302px */
+ 
+@media ( width <= 1320px )
+{
+    .services-component__cards-container{
+        gap:35px
+    }
+}
+ 
+@media ( width <= 1292px )  
+{
+    .services-component__cards-container{
+        gap:28px
+    }
+}
+ 
+@media ( width <= 1272px )
+{
+    .services-component__cards-container{
+        gap:22px
+    }
+}
+
+
+@media ( width <= 1258px )
+{
+    .services-component__cards-container{
+        gap:20px
+    }
+    .services-component__card{
+        width: 300px;
+    }
+    .services-component__subtitle{
+        font-size: 55px;
+   
+ }
+}
+
+
+@media ( width <= 1068px )
+{
+    .services-component__subtitle{
+        font-size: 45px;
+    }
+}
+
+@media ( width <= 882px ) {
+    .services-component__subtitle{
+        text-align: center;
+        font-size: 35px;
+        height: 100px;
+    }
+    .services-component__title{
+        text-align: center;
+    }
+    .services-component__card h2{
+        font-size:35px ;
+    }
+    .services-component__upper-container {
+        margin-left:0px;}
+}
+@media ( width <= 756px ) {
+    .services-component__subtitle{
+ 
+        font-size: 30px;
+    
+    }
+    .services-component__title{
+ 
+        font-size: 25px;
+    
+    }
+    .services-component__card h2{
+        font-size:32px ;
+    }
+    .services-component__btn 
+    {
+     margin-top: 30px;
+    }
+      
+}
+
+@media ( width <= 616px ) {
+    .services-component__subtitle{
+line-height:px;
+        font-size: 30px;
+    
+    }
+    .services-component__upper-container{
+        h1 br{
+            display: none;
+        }
+    }
+    .services-component__title{
+ 
+        font-size: 25px;
+    
+    }
+    .services-component__card h2{
+        font-size:32px ;
+    }
+    .services-component__btn button{   
+        margin-top: 10px;
+           padding: 20px 50px;
+           font-size: 18px;
+       }
+       
+    
+    
+}
+
+@media ( width <= 462px ) {
+    .services-component__subtitle{
+height: 120px;
+    
+    }
+  
+}
+
+@media ( width <= 375px ) {
+    .services-component__card{
+        width: 250px;
+    }
+    .services-component__card h2{
+        font-size: 28px;
+    }
+    .services-component__btn button{   
+        margin-top: 0px;
+           padding: 15px 40px;
+           font-size: 18px;
+       }
+       
 }
