@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './JobListing.css';
 import { Link } from 'react-router-dom';
 import careerimage from '../../assets/Career-image-commerceKind.png';
-const JobCard = ({ title }) => {
+const JobCard = ({ title, onApplyClick }) => {
   return (
     <div className="job-card">
       <h3 className="job-title">{title}</h3>
@@ -19,7 +19,7 @@ const JobCard = ({ title }) => {
         </div>
       </div>
 
-      <button className="apply-button">
+      <button className="apply-button" onClick={onApplyClick} >
         Apply Now
       </button>
     </div>
@@ -27,6 +27,10 @@ const JobCard = ({ title }) => {
 };
 
 const JobListingPage = () => {
+    const [showModal, setShowModal] = useState(false);
+  
+    // Simple toggle function
+    const toggleModal = () => setShowModal(!showModal);
   // List of job titles
   const jobTitles = [
     "eBay API Developer",
@@ -46,13 +50,26 @@ const JobListingPage = () => {
       
       <div className="jobs-grid">
         {jobTitles.map((title, index) => (
-          <JobCard key={index} title={title} />
+          <JobCard key={index} title={title} onApplyClick={toggleModal}/>
         ))}
       </div>
       <div className="button-container">
       <Link to="https://linkedin.com/company/commercekind" className="linkedin-button">   Explore More On LinkedIn</Link>
 
       </div>
+      {showModal && (
+        <div className="modal-overlay" onClick={toggleModal}>
+          <div className="modal-content" onClick={e => e.stopPropagation()}>
+            <div className='model-c1'>
+            <p>Apply now on <Link to="https://linkedin.com/company/commercekind" className="modal-link" >LinkedIn</Link> or email your resume at   <Link to="mailto:hr@commercekind.com" className="modal-link" >hr@commercekind.com</Link></p>
+            </div>
+           <div className='model-c2'> 
+           <button className="close-button" onClick={toggleModal}>Close</button>
+           </div>
+            
+          </div>
+        </div>
+      )}
     </div>
   );
 };

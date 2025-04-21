@@ -58,7 +58,6 @@ padding: 40px 50px 40px 50px;
     border: 1px solid #e5e7eb;
     border-radius:15px;
     background-color: white;
-
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25098039215686274);
     display: flex;
     flex-direction: column;
@@ -172,4 +171,76 @@ padding: 40px 50px 40px 50px;
 .button-container {
     text-align: center;
     margin-top: 1rem;
+    margin-bottom: 130px;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    z-index: 61000;
+}
+
+.modal-content {
+    background-color: white;
+    padding:20px;
+    border-radius:10px;
+    text-align: center;
+    height: 80px;
+    width: 697px;
+    margin-top: 700px;
+    font-family: var(--font-second);
+    animation: slideDown 0.7s linear;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-content .model-c1 p {
+    font-size: 16px;
+    text-align: left;
+    padding: 10px;
+}
+.modal-content .model-c2 {
+    text-align: end;
+    padding: 10px;
+}
+.modal-link {
+    color:#0EA498;
+    text-decoration: none;
+    font-weight: 500;
+    font-family: var(--font-second);
+    font-size: 16px;
+   
+}
+
+.close-button {
+    background-color: var(--brand-button-color);
+    color: white;
+    border: none;
+    padding: 0.4rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: right;
+    transition: all 0.3s linear;
+   
+ 
+}
+.close-button:hover{
+    background-color: #0EA498;
+    transition: all 0.3s linear;
 }
