@@ -101,7 +101,9 @@ const NavbarComponent = () => {
             <button className='try-button' onClick={toggleMenu}>Try Free</button>
           </div>
         </div>
+
       )}
+
     </div>
   );
 };
