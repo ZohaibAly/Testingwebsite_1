@@ -39,7 +39,7 @@ place-self: center;
   place-content: end;
   place-items: center;
   place-self: end;
-  gap:40px;
+  gap:35px;
 }
 /* Testimonials Left Side */
 .testimonials-left {

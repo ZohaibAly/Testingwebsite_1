@@ -1,0 +1,175 @@
+/* JobListing.css - External CSS for CommerceKind Job Listing */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --font-main: 'Montserrat', sans-serif;
+    --font-second: 'Poppins', sans-serif;
+    --main-hiring: #6C30ED;
+    --text-color: #292E4C;
+}
+
+/* Main container styles */
+.job-listing-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: var(--font-main);
+}
+
+/* Header styles */
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hiring-tag {
+    color:var(--main-hiring);
+    font-weight: 700;
+
+    font-family: var(--font-second);
+    font-size: 28px;
+}
+
+.main-heading {
+    color:var(--text-color);
+    font-size:60px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: var(--font-main);
+}
+
+/* Job cards grid */
+.jobs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Individual job card */
+.job-card {
+padding: 40px 50px 40px 50px;
+    border: 1px solid #e5e7eb;
+    border-radius:15px;
+    background-color: white;
+
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25098039215686274);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.job-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin-bottom: 1rem;
+    font-family: var(--font-main);
+}
+
+/* Job info section */
+.job-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.company-logo {
+    margin-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.company-logo img{
+    width: 85px;
+    height: 85px;
+}
+.job-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.tag {
+    font-size: 18px;
+    padding: 5px 15px 3px 15px;
+    border-style: none;
+    border-radius: 1002px 1002px 1002px 1002px;
+    font-family: var(--font-second);
+}
+
+.tag-time {
+    background-color:#6C30ED40;
+    color: var(--main-hiring);
+}
+
+.tag-days {
+    background-color: #0EA49840;
+    color: #0EA498;
+}
+
+.tag-location {
+    background-color: #292E4C40;
+    color: var(--text-color);
+}
+
+/* Apply button */
+.apply-button {
+    background-color:#6C30ED;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    width: 218px;
+    height: 52px;
+    border-radius:15px;
+    text-align: center;
+    cursor: pointer;
+    border:3px solid #6C30ED;
+    transition: background-color 0.2s;
+    font-family: var(--font-second);
+    transition: all 0.3s linear;
+}
+
+.apply-button:hover {
+ background-color: white;
+ color: var(--main-hiring);
+ border:3px solid #6C30ED;
+ transition: all 0.3s linear;
+ box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* LinkedIn button */
+.linkedin-button {
+    display: inline-block;
+    background-color:var(--text-color);
+    color: white;
+    font-size: 24px;
+    border: 4px solid var(--text-color);
+    font-weight: 500;
+    padding: 25px 80px 25px 80px;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 15px;
+    text-decoration: none;
+    font-family: var(--font-second);
+    transition: all 0.3s linear;
+}
+
+.linkedin-button:hover {
+    border: 4px solid var(--text-color);
+    background-color: white;
+    color: var(--text-color);
+    transition: all 0.3s linear;
+}
+
+/* Container for centering the LinkedIn button */
+.button-container {
+    text-align: center;
+    margin-top: 1rem;
+}
