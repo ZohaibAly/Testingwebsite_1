@@ -34,10 +34,10 @@ const BreadcrumbBanner = ({ currentPage }) => {
           <Link to="/" className="home-link">
             <FontAwesomeIcon icon={faHouseChimney} className="home-icon" />
             <span>Home</span>
+            <span className="separator"> &gt; </span>
           </Link>
           {pageTitle && pageTitle !== 'Home' && (
             <>
-              <span className="separator"> &gt; </span>
               <span className="current-page">{pageTitle}</span>
             </>
           )}

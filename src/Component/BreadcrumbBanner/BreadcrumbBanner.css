@@ -28,7 +28,7 @@
     z-index: 2; /* Position above the overlay */
     width: 100%;
     max-width: 1990px;
-    margin: 0 auto;
+    margin-left:150px;
   }
   
   .breadcrumb-nav {
@@ -48,6 +48,7 @@
     text-decoration: none;
     color: white;
     transition: color 0.3s ease;
+    white-space: nowrap;
   }
   
   .home-link:hover {
@@ -69,8 +70,29 @@
     color: white;
     display: inline-block; 
   }
+
+  @media (width<=1090px) {
+    .breadcrumb-nav{
+      display: block;
+      justify-items: center;
+
+      & .current-page{
+        text-align: center;
+      }
+    }
+
+  .breadcrumb-container {
+    margin: 0px;
+  }
+
+
+    .home-link{
+      text-align: center;
+      justify-content: center;
+    }
+  }
   
-  @media (max-width: 768px) {
+  @media ( width <= 768px) {
     .breadcrumb-banner {
       height: 300px;
     margin-bottom: 60px;
@@ -82,12 +104,13 @@
     }
   }
   
-  @media (max-width: 480px) {
+  @media (  width <=  480px) {
     .breadcrumb-banner {
       height: 200px;
     }
     
     .breadcrumb-nav {
-      font-size: 14px;
+      font-size: 13px;
+      flex-wrap: wrap;
     }
-  }
+  } 
