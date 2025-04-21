@@ -14,6 +14,7 @@ import FAQPage from './Pages/FAQ/FAQ';
 import CareersPage from './Pages/Careers/Careers';
 import Space from './Component/Space/Space';
 import CaseStudy from './Pages/CaseStudy/CaseStudy';
+import Page1Case from './Component/Page1CaseStudies/Page1CaseStudies';
 
 function App() {
   return (
@@ -31,7 +32,7 @@ function App() {
           <Route path="/before-and-after" element={<BeforeAfterPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2.5X Sales Growth – Scaling a brand’s Bariatric Multivitamin 45mg 90ct on Amazon" content="This is page 1" color="red" />} />
+          <Route path="/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2.5X Sales Growth – Scaling a brand’s Bariatric Multivitamin 45mg 90ct on Amazon" PageComponent={Page1Case}/>} />
           <Route path="/case-study-2x-sales-growth-revitalizing-a-brands-lozenges-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2X Sales Growth – Revitalizing a brand’s Lozenges on Amazon" content="This is page 2" color="blue" />} />
           <Route path="/case-study-2x-sales-growth-scaling-a-brands-vitamin-d-drops-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2X Sales Growth – Scaling a brand’s Vitamin D Drops on Amazon" content="This is page 3" color="green" />} />
           <Route path="/case-study-3x-revenue-growth-by-implementing-amazon-transparency-program-for-supplement-brand" element={<CaseStudy breadCrumbTitle="Case Study: 3X Revenue Growth by Implementing Amazon Transparency Program for Supplement Brand" content="This is page 4" color="orange" />} />

@@ -18,6 +18,7 @@
 .job-listing-container {
     max-width: 1920px;
     margin: 0 auto;
+
     padding: 2rem 1rem;
     font-family: var(--font-main);
 }
@@ -31,7 +32,6 @@
 .hiring-tag {
     color:var(--main-hiring);
     font-weight: 700;
-
     font-family: var(--font-second);
     font-size: 28px;
 }
@@ -50,18 +50,20 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
+    width:100%;
+
 }
 
 /* Individual job card */
 .job-card {
-padding: 40px 50px 40px 50px;
+padding: 30px 40px 30px 40px;
     border: 1px solid #e5e7eb;
     border-radius:15px;
     background-color: white;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25098039215686274);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
     margin-bottom: 1.5rem;
 }
 
@@ -194,7 +196,7 @@ padding: 40px 50px 40px 50px;
     text-align: center;
     height: 80px;
     width: 697px;
-    margin-top: 700px;
+    margin-top: 600px;
     font-family: var(--font-second);
     animation: slideDown 0.7s linear;
 }
@@ -244,3 +246,144 @@ padding: 40px 50px 40px 50px;
     background-color: #0EA498;
     transition: all 0.3s linear;
 }
+
+
+
+/* Responsive Start from 820px */
+
+/* @media ( width <= 820px ) {
+    .main-heading {
+        font-size:50px;
+        line-height: 1;
+    }
+}
+
+
+@media ( width <= 756px ) {
+    .main-heading {
+        font-size:40px;
+    }
+
+    .job-card {
+        padding: 30px 40px 30px 40px;
+        margin-bottom: 10px;
+        }
+        
+        .job-title {
+            font-size: 32px;
+            margin-bottom: 16px;
+        }
+        
+        .company-logo {
+            margin-right: 10px;
+        }
+        .company-logo img{
+            width: 75px;
+            height: 75px;
+        }
+        .job-tags {
+            gap:7px;
+        }
+        
+        .tag {
+            font-size: 15px;
+        }
+        
+        .upperbtn{
+            place-items: center;
+        }
+      
+        .linkedin-button {
+            
+            font-size: 22px;
+     
+            padding: 20px 70px 20px 70px;
+ 
+        }
+}
+
+
+@media ( width <= 640px ) {
+    .main-heading {
+        font-size:38px;
+    }
+
+    .job-card {
+        padding: 25px 35px 25px 35px;
+        }
+        
+        .job-title {
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+        
+        .company-logo {
+            margin-right: 10px;
+        
+        }
+        .company-logo img{
+            width: 75px;
+            height: 75px;
+        }
+        .job-tags {
+            gap:7px;
+        }
+        
+        .tag {
+            font-size: 13px;
+        }
+        
+      
+        .linkedin-button {
+            
+            font-size: 22px;
+     
+            padding: 20px 60px 20px 60px;
+ 
+        }
+        .job-tags {
+            gap: 5px;
+        }
+}
+@media ( width <= 590px ) {
+    .main-heading {
+        font-size:36px;
+    }
+.hiring-tag{
+    font-size: 26px;
+}
+    .job-card {
+        padding: 25px 35px 25px 35px;
+        }
+        
+        .job-title {
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+        .tag {
+            
+            padding: 5px 10px 3px 10px;
+    
+        }
+        
+    
+        .job-tags {
+          flex-direction: column;
+        }
+        
+        .tag {
+            font-size: 13px;
+        }
+        
+      
+        .linkedin-button {
+            
+            font-size: 22px;
+     
+            padding: 20px 60px 20px 60px;
+ 
+        }
+        .job-tags {
+            gap: 5px;
+        }
+} */
