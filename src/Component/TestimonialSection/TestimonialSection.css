@@ -518,9 +518,9 @@ z-index: 1000;
 @media ( width <= 768px) {
   .testimonials-content{
     flex-direction: column-reverse;
-    width: 756px;
     place-self: center;
     gap:20px;
+    padding: 5px;
   }
   .navigation-buttons {
     bottom:75px;
@@ -596,9 +596,7 @@ z-index: 1000;
 }
 
 @media ( width <= 562px ) {
-  .testimonials-content{
-    width: 562px;
-  }
+ 
 
 .nav-left, .nav-right {
   width: 50px;
@@ -616,7 +614,6 @@ z-index: 1000;
 }
 @media ( width <= 425px ) {
   .testimonials-content{
-    width: 425px;
     gap:20px;
   }
   .navigation-buttons {
@@ -639,7 +636,7 @@ z-index: 1000;
   padding-left: 2px;
   }
   .video-container img{
-    width: 390px;
+    width: 380px;
     height: 450px;
   } 
 
@@ -647,7 +644,6 @@ z-index: 1000;
 
 @media ( width <= 375px ) {
   .testimonials-content{
-    width: 375px;
     gap:20px;
   }
   .navigation-buttons {
@@ -680,7 +676,6 @@ z-index: 1000;
 
 @media ( width = 320px ) {
   .testimonials-content{
-    width: 325px;
     gap:20px;
   }
   .navigation-buttons {

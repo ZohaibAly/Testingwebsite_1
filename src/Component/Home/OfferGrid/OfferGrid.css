@@ -197,8 +197,8 @@ height: 50px;
 
 @media ( width <= 450px ) {
  .offers-grid__button{
-  padding: 28px 60px 28px 60px;
-  font-size: 22px;
+  padding: 20px 45px 20px 45px;
+  font-size: 20px;
  }
  .offers-grid__subtitle{
   font-size: 25px;
@@ -210,9 +210,9 @@ height: 50px;
 }
 @media ( width <= 383px ) {
   .offers-grid__button{
-   padding: 22px 45px 24px 45px;
-   font-size: 22px;
-  }
+    padding: 15px 30px 15px 30px;
+    font-size: 17px;
+   }
   .offers-grid__subtitle{
    font-size: 22px;
   }
