@@ -73,6 +73,8 @@
   @media (max-width: 768px) {
     .breadcrumb-banner {
       height: 300px;
+    margin-bottom: 60px;
+
     }
     
     .breadcrumb-container {

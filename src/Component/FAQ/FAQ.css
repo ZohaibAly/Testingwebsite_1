@@ -192,6 +192,8 @@
     }
 .FAQ-main{
     margin-bottom: 0px;
+    padding-top: 50px;
+
 }
 
 .FAQ-main-text{
@@ -210,6 +212,8 @@
     }
 .FAQ-main{
     margin-bottom: 0px;
+    padding-top: 20px;
+
 }
 
 .FAQ-main-text{
@@ -255,6 +259,9 @@
 @media (width<=540px) {
     .FAQ-accordion-item{
         width: 420px;
+    }
+    .FAQ-main{
+        padding-top: 0px;
     }
 .FAQ-main-text{
     h2{font-size: 22px;

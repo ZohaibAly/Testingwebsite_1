@@ -7,10 +7,10 @@ import BreadcrumbBanner from '../../Component/BreadcrumbBanner/BreadcrumbBanner'
 function FAQ() {
     return (
         <div className="FAQ">
-            {/* <BreadcrumbBanner/> */}
+            <BreadcrumbBanner/>
             <FAQSection />
-            {/* <Testmonial/> */}
-            {/* <FreeStoreComp/> */}
+            <Testmonial/>
+            <FreeStoreComp/>
         </div>
     );
 }
