@@ -16,7 +16,7 @@
   max-width: 1920px;
   margin: 0 auto;
   margin-top: 60px;
-  padding: 60px 20px;
+  padding-left: 0px;
   font-family: var(--heading-font);
 }
 
@@ -130,24 +130,13 @@ padding: 24px 50px 24px 50px;
     font-size: 50px; /* Increase icon size */
   }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .case-study-heading h2 {
-    font-size: 36px;
-  }
-  
-  .arrow-btn {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
-  }
-}
 
 /* Advanced image transition animations */
 /* Directional image animations */
 .case-study-image {
   position: relative;
   overflow: hidden;
+  outline: 3px solid black;
 }
 
 .case-study-image img {
@@ -207,5 +196,205 @@ padding: 24px 50px 24px 50px;
     opacity: 1;
     transform: translateX(0) scale(1);
     filter: blur(0) brightness(1);
+  }
+}
+
+
+
+/* Responsive Start from 768px */
+
+@media ( width <= 850px ) {
+  .case-study-heading h2 {
+    font-size: 50px;
+    line-height: 60px;
+  } 
+  .case-study-heading span::after {
+    bottom: 15px;
+    width: 100%;
+    height: 10px;
+  }
+  .case-study-navigation {
+    gap:15px;
+    margin-top: -30px;
+  }
+  .view-all-btn {
+  padding: 15px 30px 15px 30px;
+  font-size: 22px;
+  }
+  .case-study-arrows {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .arrow-btn {
+    width: 60px;
+    height: 61px;
+    margin-top: 25px;
+  }
+  
+  .arrow-btn:hover {
+    font-size: 28px;
+  }
+  .arrow-btn svg {
+      font-size: 40px; /* Increase icon size */
+    }
+}
+
+@media ( width <= 720px ) {
+  .case-study-heading h2 {
+    font-size: 40px;
+    line-height: 55px;
+  } 
+  .case-study-heading span::after {
+    bottom: 11px;
+    height: 9px;
+  }
+  .case-study-navigation {
+    gap:10px;
+    margin-top: -20px;
+  }
+  .view-all-btn {
+  padding: 13px 28px 13px 28px;
+  font-size: 20px;
+  }
+  .case-study-arrows {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .arrow-btn {
+    width: 50px;
+    height: 51px;
+    margin-top: 25px;
+  }
+  
+  .arrow-btn:hover {
+    font-size: 26px;
+  }
+  .arrow-btn svg {
+      font-size: 32px; /* Increase icon size */
+    }
+}
+
+
+@media ( width <= 580px ) {
+  .case-study-heading h2 {
+    font-size: 35px;
+    line-height: 45px;
+  } 
+  .case-study-heading span::after {
+    bottom: 9px;
+    height: 8px;
+  }
+  .case-study-navigation {
+    gap:10px;
+    margin-top: -18px;
+  }
+  .view-all-btn {
+  padding: 10px 25px 10px 25px;
+  font-size: 18px;
+  }
+  .case-study-arrows {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .arrow-btn {
+    width: 45px;
+    height: 46px;
+    margin-top: 20px;
+  }
+  
+  .arrow-btn:hover {
+    font-size: 26px;
+  }
+  .arrow-btn svg {
+      font-size: 26px; /* Increase icon size */
+    }
+}
+
+@media ( width <= 500px ) {
+  .case-study-heading h2 {
+    font-size: 30px;
+    line-height: 45px;
+  } 
+  .case-study-heading span::after {
+    bottom: 8px;
+    height: 7px;
+  }
+  .case-study-navigation {
+    gap:10px;
+    margin-top: -15px;
+  }
+  .view-all-btn {
+  padding: 5px 20px 5px 20px;
+  font-size: 15px;
+  border: 3px solid var(--primary-text);
+  }
+  .case-study-arrows {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .arrow-btn {
+    width: 35px;
+    height: 36px;
+    margin-top: 15px;
+  }
+  
+  .arrow-btn:hover {
+    font-size: 26px;
+  }
+  .arrow-btn svg {
+      font-size: 20px; /* Increase icon size */
+    }
+}
+
+@media ( width <= 375px ) {
+  .case-study-heading h2 {
+    font-size: 30px;
+    line-height: 35px;
+  
+  } 
+  .case-study-heading span::after {
+    bottom: 9px;
+    height: 6px;
+  }
+  .case-study-navigation {
+    gap:10px;
+    margin-top: -10px;
+  }
+  .view-all-btn {
+  padding: 5px 15px 5px 15px;
+  font-size: 12px;
+  border: 3px solid var(--primary-text);
+  }
+  .case-study-arrows {
+    display: flex;
+    gap: 15px;
+  }
+  .arrow-btn {
+    width: 35px;
+    height: 36px;
+    margin-top: 10px;
+  }
+  
+  .arrow-btn:hover {
+    font-size: 26px;
+  }
+  .arrow-btn svg {
+      font-size: 20px; /* Increase icon size */
+    }
+}
+
+@media ( width = 320px ) {
+  .case-study-heading h2 {
+    font-size: 25px;
+    line-height: 35px;
+  
+  } 
+  .case-study-heading span::after {
+    bottom: 7px;
+    height: 5px;
   }
 }

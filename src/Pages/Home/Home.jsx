@@ -130,7 +130,7 @@ function Home() {
     <div className="HomePage">
       <AmazonHeroComponent />
    <BrandLogosComp />   
-      {/* <CaseStudy /> */}
+      <CaseStudy />
       <CaseStudiesContainer 
         caseStudyData={caseStudyData}
         categoryButtons={categoryButtons}
