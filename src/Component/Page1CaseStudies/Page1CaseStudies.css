@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.CaseStudiesPage1-comp{
+    width: auto;
+    height: auto;
+    outline: 3px solid black;
+}
+.Page1-top-brand {
+    width: 100%;
+    background-color: white;
+    margin-top: 120px;
+  }
+  
+  .brand-overview-section {
+    max-width: 1920px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .background-ellipse {
+    position: absolute;
+    top: -15%;
+    left: -12%;
+    z-index: -1;
+  }
+  .background-ellipse img {
+width: 900px;
+height: 710px;
+  }
+  /* Section styles */
+  .main-title {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 700;
+    width: 1650px;
+    color: #292E4C;
+    font-family: 'poppins', sans-serif;
+    margin-bottom: 60px;
+    z-index: 1;
+    position: relative;
+  }
+  .brand-overview-section .main-title{
+    text-align: center;
+  margin-left: 190px;
+  }
+  
+  .section-title {
+    font-size: 55px;
+    font-weight: 700;
+    color: #0EA498;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  
+  .brand-overview-section {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .overview-content {
+    display: flex;
+    padding: 20px;
+    align-items: start;
+    justify-content: center;
+  }
+  
+.left-content{
+    padding-top: 110px;
+}
+  
+  .subtitle {
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #292E4C;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .description {
+    font-size: 27px;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #292E4C;
+  }
+  
+  .challenges {
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-family: 'poppins', sans-serif;
+  }
+  
+  .candy-image {
+  width: 880px;
+  height: 598px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+ 
+  :root {
+    --main-brand-color: #0EA498;
+    --text-color: #292E4C;
+    --brand-button-color: #6C30ED;
+    --bg: #292E4C1A;
+}
+
+
+.challenges-section{
+    width: 100%;
+    background-color: #E9EAED;
+
+}
+ 
+.challenges-1{
+    gap: 15px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 100px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    .challenge-content{
+        width: 950px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+
+    .challenge-content h3{
+        font-family: "Montserrat", sans-serif;
+        font-size: 55px;  
+        line-height: 1.3em;
+        margin-bottom: 20px;
+        color: #292E4C;
+    }
+ 
+    .challenge-content p{
+        font-size: 23px;
+        font-family: "Poppins", sans-serif;
+        margin-bottom: 23px;
+        line-height: 42px;
+
+
+    }
+ 
+ }
+ .image-section{
+    display: flex;
+    width: 950px;
+    gap: 13px;
+ 
+    img{
+        width: 139px;
+        height: 118px;
+        margin-top: 50px;
+    }
+ 
+    h2{
+        font-size: 32px;
+        font-family: "Montserrat", sans-serif;
+        margin-top: 40px;
+        color: #292E4C;
+        flex-wrap: wrap;
+
+
+    }
+    .image-section-right{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+    gap: 13px;
+    }
+ 
+    .image-section-left{
+        display: flex;
+        flex-direction: column;
+    gap: 13px;
+    }
+
+
+
+    .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
+        padding:25px;
+        width: 418px;
+        display: flex;
+        flex-direction: column;
+        background-color: #FFFFFF;
+        border: 1px solid var(--brand-button-color);
+        align-items: center;
+        border-radius: 25px;
+        height: 298px;
+    }
+
+
+ }
