@@ -136,7 +136,6 @@ padding: 24px 50px 24px 50px;
 .case-study-image {
   position: relative;
   overflow: hidden;
-  outline: 3px solid black;
 }
 
 .case-study-image img {
