@@ -82,6 +82,8 @@ place-self: center;
   z-index: 10;
   transition: all 0.3s linear;
   cursor: pointer;
+
+  opacity: 0.9;
 }
 .testimonials-right {
   padding-top: 12px;

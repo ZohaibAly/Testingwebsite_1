@@ -46,6 +46,7 @@ const Footer = () => {
                     <a href=""><p>Privacy Policy</p></a>
                 </div>
             </div>
+            
             <div className='Footerpt-3'>
                 <h4>Newsletter</h4>
                 <div className="Footer-input-wrapper">

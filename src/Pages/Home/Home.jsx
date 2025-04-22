@@ -128,9 +128,9 @@ function Home() {
 
   return (
     <div className="HomePage">
-      <AmazonHeroComponent />
-   <BrandLogosComp />   
-      {/* <CaseStudy /> */}
+      {/* <AmazonHeroComponent /> */}
+   {/* <BrandLogosComp />   
+      <CaseStudy />
       <CaseStudiesContainer 
         caseStudyData={caseStudyData}
         categoryButtons={categoryButtons}
@@ -138,7 +138,7 @@ function Home() {
       <Business/>
     <Testmonial/>  
       <OffersGrid/>
-      <FAQSection />
+      <FAQSection /> */}
       <FreeStoreComp/>
     </div>
   );

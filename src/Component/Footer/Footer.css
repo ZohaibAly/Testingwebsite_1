@@ -645,13 +645,13 @@
                     .Footerpt-2{
                         gap: 30px;                    
                         h4{
-                            font-size: 32px;
+                            font-size: 28px;
                             font-weight: 700;
                         }
                     
                         a{
-                            font-size: 22px;
-                            line-height: 35px;
+                            font-size: 18px;
+                            line-height: 28px;
                         }
                     }
                     
@@ -668,10 +668,10 @@
     
                     
                         h4{
-                        font-size: 32px;
+                        font-size: 28px;
                         }
                         p{
-                        font-size: 20px;
+                        font-size: 18px;
                         }
                         .Footer-input-wrapper{ 
                             min-width: 350px;
@@ -713,12 +713,12 @@
                         .Footerpt-2{
                             gap: 25px;                    
                             h4{
-                                font-size: 30px;
+                                font-size: 28px;
                                 font-weight: 700;
                             }
                         
                             a{
-                                font-size: 20px;
+                                font-size: 18px;
                                 line-height: 35px;
                             }
                         }
@@ -733,10 +733,10 @@
                             line-height: 30px;       
                         
                             h4{
-                            font-size: 30px;
+                            font-size: 28px;
                             }
                             p{
-                            font-size: 19px;
+                            font-size: 18px;
                             text-align: center;
                             }
                             .Footer-input-wrapper{ 
@@ -749,7 +749,7 @@
                         }
                         }
 
-                        @media(width<=343px){
+                        @media(width<=342px){
                             .Footer-main {
                                 padding-bottom: 40px;
                             }
@@ -779,13 +779,13 @@
                             .Footerpt-2{
                                 gap: 25px;                    
                                 h4{
-                                    font-size: 30px;
+                                    font-size: 26px;
                                     font-weight: 700;
                                 }
                             
                                 a{
-                                    font-size: 20px;
-                                    line-height: 35px;
+                                    font-size: 16px;
+                                    line-height: 32px;
                                     white-space: nowrap;
                                 }
                             }
@@ -797,13 +797,13 @@
                             }
                             .Footerpt-3 {
                                 gap:20px;
-                                line-height: 30px;       
+                                line-height: 0px;       
                             
                                 h4{
-                                font-size: 30px;
+                                font-size: 26px;
                                 }
                                 p{
-                                font-size: 19px;
+                                font-size: 16px;
                                 text-align: center;
                                 }
                                 .Footer-input-wrapper{ 
