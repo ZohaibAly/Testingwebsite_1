@@ -18,6 +18,8 @@ const JobCard = ({ title, onApplyClick }) => {
           <span className="tag tag-location">Paragon City, Lahore</span>
         </div>
       </div>
+
+      
 <div className='upperbtn'>
 <button className="apply-button" onClick={onApplyClick} >
         Apply Now

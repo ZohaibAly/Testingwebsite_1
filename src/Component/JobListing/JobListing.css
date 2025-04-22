@@ -75,7 +75,6 @@ padding: 30px 40px 30px 40px;
     font-family: var(--font-main);
 }
 
-/* Job info section */
 .job-info {
     display: flex;
     align-items: center;
@@ -88,6 +87,7 @@ padding: 30px 40px 30px 40px;
     justify-content: center;
     align-items: center;
 }
+
 .company-logo img{
     width: 85px;
     height: 85px;
@@ -100,7 +100,7 @@ padding: 30px 40px 30px 40px;
 
 .tag {
     font-size: 18px;
-    padding: 5px 15px 3px 15px;
+    padding: 5px 15px 5px 15px;
     border-style: none;
     border-radius: 1002px 1002px 1002px 1002px;
     font-family: var(--font-second);
@@ -127,8 +127,7 @@ padding: 30px 40px 30px 40px;
     color: white;
     font-weight: 600;
     font-size: 20px;
-    width: 218px;
-    height: 52px;
+    padding: 5px 45px ;
     border-radius:15px;
     text-align: center;
     cursor: pointer;
@@ -248,6 +247,87 @@ padding: 30px 40px 30px 40px;
 }
 
 
+@media ( width <= 767px) {
+    .job-info{
+        flex-direction: column;
+    }
+
+
+    .hiring-tag {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    .main-heading {
+        font-size: 30px;
+    }
+    .job-tags {
+        display: flex;
+        justify-content: center;
+    }
+    .job-title {
+        font-size: 22px;
+        text-align: center;
+    }
+.tag {
+    font-size: 13px;
+
+
+    border-radius: 30px;
+   
+}
+.upperbtn{
+    text-align: center;
+}
+.linkedin-button {
+            
+    font-size: 20px;
+
+    padding: 15px 30px 15px 30px;
+
+}
+.apply-button{
+    font-size: 18px;
+    padding: 5px 40px ;
+}
+}
+
+
+
+
+@media ( width <= 490px) {
+.linkedin-button {
+            
+    font-size: 18px;
+
+    padding: 10px 25px 10px 25px;
+
+}
+.apply-button{
+    font-size: 16px;
+    padding: 5px 35px ;
+}
+}
+
+@media ( width <= 380px ) {
+    
+    .hiring-tag {
+        font-size: 18px;
+    }
+    .main-heading {
+        font-size: 25px;
+    }
+    .linkedin-button {
+            
+        font-size: 16px;
+    
+        padding: 8px 22px 8px 22px;
+    
+    }
+    .apply-button{
+        font-size: 14px;
+        padding: 5px 30px ;
+    }
+}
 
 /* Responsive Start from 820px */
 
