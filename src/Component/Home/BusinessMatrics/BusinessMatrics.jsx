@@ -2,18 +2,18 @@ import React from 'react';
 import './BusinessMatrics.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
-const CompanyMetrics = () => {
+const BusinessMatrics = () => {
   return (
-    <section className="company-metrics">
-      <div className="container">
-        <div className="metrics-header">
-          <div className="title-container">
-            <p className="section-title">By The <span className='spanclass'>Numbers</span></p>
-            <p className="section-subtitle">We Don't Just Manage Amazon—We Master It for You.</p>
-            <div className='setting'>
-            <a href="#" className="about-button">
+    <section className="businessMatrics-company-metrics">
+      <div className="businessMatrics-container">
+        <div className="businessMatrics-metrics-header">
+          <div className="businessMatrics-title-container">
+            <p className="businessMatrics-section-title">By The <span className='businessMatrics-spanclass'>Numbers</span></p>
+            <p className="businessMatrics-section-subtitle">We Don't Just Manage Amazon—We Master It for You.</p>
+            <div className='businessMatrics-setting'>
+            <a href="#" className="businessMatrics-about-button">
               About CommerceKind
-              <span className="icon">
+              <span className="businessMatrics-icon">
               <FontAwesomeIcon icon={faArrowRight}/>
               </span>
             </a>
@@ -21,26 +21,26 @@ const CompanyMetrics = () => {
             </div>
           
           
-          <div className="primary-metric-card">
-            <p className='primary-child'>$100M+</p>
-            <p className='primary-child2'>Revenue Generated Annually</p>
+          <div className="businessMatrics-primary-metric-card">
+            <p className='businessMatrics-primary-child'>$100M+</p>
+            <p className='businessMatrics-primary-child2'>Revenue Generated Annually</p>
           </div>
         </div>
         
-        <div className="metrics-grid">
-          <div className="metric-card gradient-purple">
-            <p className='metric-value'>40+</p>
-            <p className='matric-brand'>Brands</p>
+        <div className="businessMatrics-metrics-grid">
+          <div className="businessMatrics-metric-card businessMatrics-gradient-purple">
+            <p className='businessMatrics-metric-value'>40+</p>
+            <p className='businessMatrics-matric-brand'>Brands</p>
           </div>
           
-          <div className="metric-card dark-blue">
-            <p className='metric-value'>99%</p>
-            <p className='matric-brand'>Retention Rate</p>
+          <div className="businessMatrics-metric-card businessMatrics-dark-blue">
+            <p className='businessMatrics-metric-value'>99%</p>
+            <p className='businessMatrics-matric-brand'>Retention Rate</p>
           </div>
           
-          <div className="metric-card self-customize">
-            <p className='metric-value'>50+</p>
-            <p className='matric-brand'>Employees</p>
+          <div className="businessMatrics-metric-card businessMatrics-self-customize">
+            <p className='businessMatrics-metric-value'>50+</p>
+            <p className='businessMatrics-matric-brand'>Employees</p>
           </div>
         </div>
       </div>
@@ -48,4 +48,4 @@ const CompanyMetrics = () => {
   );
 };
 
-export default CompanyMetrics;
+export default BusinessMatrics;
