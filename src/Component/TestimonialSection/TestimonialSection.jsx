@@ -8,8 +8,6 @@ import clientFullFixed3 from "../../assets/clientFullFixed3.png";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGreaterThan, faLessThan } from '@fortawesome/free-solid-svg-icons';
-import LessSign from "../../assets/less-sign.png";
-import GreaterSign from "../../assets/greater-sign.png";
 // Import Trustpilot testimonial images
 import Testimonial1 from "../../assets/Testimonial-1-CommerceKind.png";
 import Testimonial2 from "../../assets/Testimonial-2-CommerceKind.png";
