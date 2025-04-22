@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+  --main-brand-color: #0EA498;
+  --text-color: #292E4C;
+  --brand-button-color: #6C30ED;
+  --bg: #292E4C1A;
+  --Case-study-font-1: 'Montserrat', sans-serif;
+  --Case-study-font-2: 'Poppins', sans-serif;
+}
 *{
     margin: 0;
     padding: 0;
@@ -5,7 +17,7 @@
 .CaseStudiesPage1-comp{
     width: auto;
     height: auto;
-    outline: 3px solid black;
+
 }
 .Page1-top-brand {
     width: 100%;
@@ -34,8 +46,8 @@ height: 710px;
     font-size: 55px;
     font-weight: 700;
     width: 1650px;
-    color: #292E4C;
-    font-family: 'poppins', sans-serif;
+    color: var(--text-color);
+    font-family:var(--Case-study-font-2);
     margin-bottom: 60px;
     z-index: 1;
     position: relative;
@@ -48,9 +60,10 @@ height: 710px;
   .section-title {
     font-size: 55px;
     font-weight: 700;
-    color: #0EA498;
+    color: var(--main-brand-color);
     margin-bottom: 20px;
-    font-family: 'Montserrat', sans-serif;
+    font-family:var(--Case-study-font-1);
+
   
   }
   
@@ -74,22 +87,24 @@ height: 710px;
     font-size: 35px;
     font-weight: 700;
     margin-bottom: 50px;
-    color: #292E4C;
-    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    font-family:var(--Case-study-font-2);
+
   }
   
   .description {
     font-size: 27px;
     margin-bottom: 20px;
     line-height: 1.5;
-    color: #292E4C;
+    color: var(--text-color);
   }
   
   .challenges {
     font-size: 27px;
     font-weight: 700;
     line-height: 1.5;
-    font-family: 'poppins', sans-serif;
+    font-family:var(--Case-study-font-2);
+
   }
   
   .candy-image {
@@ -98,13 +113,10 @@ height: 710px;
     border-radius: 20px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   }
+
+ /* challenges section */
+
  
-  :root {
-    --main-brand-color: #0EA498;
-    --text-color: #292E4C;
-    --brand-button-color: #6C30ED;
-    --bg: #292E4C1A;
-}
 
 .challenges-section{
     width: 100%;
@@ -112,11 +124,12 @@ height: 710px;
 }
  
 .challenges-1{
+
     gap: 15px;
     max-width: 1920px;
     margin: 0 auto;
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 70px;
     padding-top: 25px;
     padding-left: 10px;
     padding-right: 10px;
@@ -127,22 +140,20 @@ height: 710px;
         flex-wrap: wrap;
     }
 
-
     .challenge-content h3{
-        font-family: "Montserrat", sans-serif;
+    font-family:var(--Case-study-font-1);
         font-size: 55px;  
         line-height: 1.3em;
         margin-bottom: 20px;
-        color: #292E4C;
+    color: var(--text-color);
+
     }
  
     .challenge-content p{
         font-size: 23px;
-        font-family: "Poppins", sans-serif;
+    font-family:var(--Case-study-font-2);
         margin-bottom: 23px;
         line-height: 42px;
-
-
     }
  
  }
@@ -159,9 +170,9 @@ height: 710px;
  
     h2{
         font-size: 32px;
-        font-family: "Montserrat", sans-serif;
+    font-family:var(--Case-study-font-1);
         margin-top: 40px;
-        color: #292E4C;
+    color: var(--text-color);
         flex-wrap: wrap;
 
 
@@ -193,5 +204,108 @@ height: 710px;
         height: 298px;
     }
 
-
  }
+
+ /* Strategies & Solutions */
+
+.challenges-2{
+
+    gap: 50px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 70px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    h3{
+    font-family:var(--Case-study-font-1);
+        font-size: 55px;  
+        line-height: 1.3em;
+        margin-bottom: 20px;
+    color: var(--text-color);
+
+    }
+
+    ul{
+      margin-left: 50px;
+    }
+
+    p{
+      font-size: 23px;
+    font-family:var(--Case-study-font-2);
+      margin-bottom: 12px;
+      line-height: 40px;
+    }
+
+    .image-section-strategies{
+      width: 935px;
+
+      img{
+        width: 821px;
+        height: 721px;
+      }
+    }
+
+    .challenge-content-2{
+      width: 935px;
+    }
+}
+    
+ /* Results and achievments */
+
+.challenges-3{
+
+    gap: 50px;
+    max-width: 1920px;
+    margin: 0 auto;
+    display: flex;
+    padding-bottom: 200px;
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    h3{
+    font-family:var(--Case-study-font-1);
+      font-size: 55px;  
+      line-height: 1.3em;
+      margin-bottom: 20px;
+    color: var(--text-color);
+
+    }
+
+    ul{
+      margin-left: 50px;
+    }
+
+    p{
+      font-size: 23px;
+    font-family:var(--Case-study-font-2);
+      line-height: 42px;
+    }
+
+    .Future-p{
+      margin-top: 22px;
+      margin-bottom: 22px;
+    }
+
+    .bottom-p{
+      margin-top: 25px;
+    }
+
+    .image-section-results{
+      width: 935px;
+      display: flex;
+
+      img{
+        width: 935px;
+        height: 613px;
+        align-self: center;
+      }
+    }
+
+    .challenge-content-3{
+      width: 935px;
+    }
+}
