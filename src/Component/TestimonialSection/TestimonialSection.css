@@ -34,8 +34,6 @@ place-self: center;
 /* Content Layout */
 .testimonials-content {
   display: flex;
-  /* justify-content: space-between;
-  align-items: flex-start; */
   place-content: end;
   place-items: center;
   place-self: end;
