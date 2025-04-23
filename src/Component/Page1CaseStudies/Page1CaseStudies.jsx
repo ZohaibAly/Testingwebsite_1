@@ -2,8 +2,6 @@ import React from 'react';
 import './Page1CaseStudies.css';
 
 // Import images 
-import beforeandafter from '../../assets/beforeandafter.png';
-import Frame from '../../assets/Frame.png';
 import page1image1 from '../../assets/page1image1.png';
 import page1image2 from '../../assets/page1image2.png';
 import page1image3 from '../../assets/page1image3.png';
@@ -20,35 +18,35 @@ const CaseStudiesPage1 = () => {
 <div className='CaseStudiesPage1-comp'>
 
         {/* Brand Overview */}
-            <div className="Page1-top-brand">
+        <div className="page1casestudies-Page1-top-brand">
           
 
-              <div className="brand-overview-section">
-                <div className='background-ellipse'>
-                    <img src={Ellipse} alt="" />
-                </div>
-                <h1 className="main-title">Strategic Growth for Bariatric Multivitamins Brand Case Study</h1>
-                
-                <div className="overview-content">
-                  <div className="left-content">
-                    <h2 className="section-title">Brand Overview</h2>
-                    <p className="subtitle">Supplements Multivitamins</p>
-                    
-                    <p className="description">Before our intervention, the product faced multiple growth obstacles.</p>
-                    
-                    <p className="challenges">
-                      Challenges: Low sales, PPC inefficiencies, weak listings, declining Subscribe & Save (S&S) buyers, and lack of brand dominance.
-                    </p>
-                  </div>
-                  
-                  <div className="right-content">
-                    <img src={MaskGroup} alt="Multivitamin candies" className="candy-image" />
-                  </div>
-                </div>
-              </div>
-
-            
+          <div className="page1casestudies-brand-overview-section">
+            <div className='page1casestudies-background-ellipse'>
+                <img src={Ellipse} alt="" />
             </div>
+            <h1 className="page1casestudies-main-title">Strategic Growth for Bariatric Multivitamins Brand Case Study</h1>
+            
+            <div className="page1casestudies-overview-content">
+              <div className="page1casestudies-left-content">
+                <h2 className="page1casestudies-section-title">Brand Overview</h2>
+                <p className="page1casestudies-subtitle">Supplements Multivitamins</p>
+                
+                <p className="page1casestudies-description">Before our intervention, the product faced multiple growth obstacles.</p>
+                
+                <p className="page1casestudies-challenges">
+                  Challenges: Low sales, PPC inefficiencies, weak listings, declining Subscribe & Save (S&S) buyers, and lack of brand dominance.
+                </p>
+              </div>
+              
+              <div className="page1casestudies-right-content">
+                <img src={MaskGroup} alt="Multivitamin candies" className="page1casestudies-candy-image" />
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
 
         {/* challenge compoent */}
              <div className="challenges-section">
@@ -87,7 +85,7 @@ const CaseStudiesPage1 = () => {
              </div>
 
         {/*Strategies & Solutions  */}
-             <div className="challenges-section2 ">
+              <div className="challenges-section2 ">
               <div className="challenges-2">
               <div className='image-section-strategies'>
               <img src={strategies} alt="Logo" />        
@@ -105,7 +103,7 @@ const CaseStudiesPage1 = () => {
                 </div>
                 
               </div>
-             </div>
+             </div> 
 
         {/* Results and achievments */}
             <div className="challenges-section-3">

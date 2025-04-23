@@ -1,7 +1,7 @@
 
 .testimonials-section {
   font-family: 'Montserrat', sans-serif;
-
+overflow: hidden;
 }
 
 .testimonials-container {
@@ -40,6 +40,7 @@ place-self: center;
   place-items: center;
   place-self: end;
   gap:35px;
+
 }
 /* Testimonials Left Side */
 .testimonials-left {
