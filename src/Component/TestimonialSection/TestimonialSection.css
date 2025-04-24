@@ -168,12 +168,14 @@ border: 3px solid white;
   left: 0;
   width: 100%;
   height: 100%;
+  outline: 3px solid white;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
   position: relative;
   width: 80%;
+  outline: 3px solid white; 
   max-width: 1280px;
   z-index: 1001;
   height: 0;
@@ -188,7 +190,7 @@ border: 3px solid white;
   top: 0;
   left: 0;
   border-radius: 20px;
-  width: 100%;
+  width: 100% !important;
 z-index: 1000;
   height: 100%;
   border: none;

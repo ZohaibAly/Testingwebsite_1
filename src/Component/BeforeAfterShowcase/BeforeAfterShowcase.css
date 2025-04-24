@@ -13,6 +13,7 @@
   .showcase-study-heading {
     text-align: center;
     margin-bottom: 75px;
+   
   }
   
   .showcase-study-heading h2 {
@@ -120,8 +121,30 @@
     max-width: 100%;
     height: auto;
   }
-  
-  @media (max-width: 768px) {
+  @media ( width <= 855px) {
+    .showcase-study-heading {
+      margin-bottom: 65px;
+    }
+    
+    .showcase-study-heading h2 {
+      font-size: 50px;
+      width: auto;
+      height: auto;
+      line-height: 55px;
+    }
+    
+ 
+    
+    .showcase-study-heading span::after {
+     
+      bottom: 15px;
+   
+      height: 10px;
+      
+    }
+    
+  }
+  @media ( width <= 768px) {
     .showcase-heading {
       font-size: 32px;
       margin-bottom: 40px;
@@ -134,9 +157,21 @@
     .showcase-section {
       margin-bottom: 60px;
     }
+    .showcase-study-heading h2 {
+      font-size: 40px;
+      width: auto;
+      height: auto;
+      line-height: 45px;
+    }
+    .showcase-study-heading span::after {
+     
+      bottom: 12px;
+      height: 9px;
+      
+    }
   }
   
-  @media (max-width: 480px) {
+  @media ( width <= 480px) {
     .showcase-heading {
       font-size: 28px;
     }
@@ -146,6 +181,19 @@
     }
     
     .showcase-section {
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+    .showcase-study-heading h2 {
+      font-size: 30px;
+      width: auto;
+      height: auto;
+      line-height: 30px;
+    }
+    .showcase-study-heading span::after {
+     
+      bottom: 8px;
+      height: 7px;
+      
     }
   }
+  
