@@ -2,14 +2,14 @@ import React from 'react';
 import './Page1CaseStudies.css';
 
 // Import images 
-import page1image1 from '../../assets/page1image1.png';
-import page1image2 from '../../assets/page1image2.png';
-import page1image3 from '../../assets/page1image3.png';
-import page1image4 from '../../assets/page1image4.png';
-import Ellipse from '../../assets/Ellipse.png';
-import MaskGroup from '../../assets/Mask-group.png';
-import strategies from '../../assets/Strategies-image.png';
-import results from '../../assets/Result-image.png';
+import page1image1 from '../../../assets/page1image1.png';
+import page1image2 from '../../../assets/page1image2.png';
+import page1image3 from '../../../assets/page1image3.png';
+import page1image4 from '../../../assets/page1image4.png';
+import Ellipse from '../../../assets/Ellipse.png';
+import MaskGroup from '../../../assets/Mask-group.png';
+import strategies from '../../../assets/Strategies-image.png';
+import results from '../../../assets/Result-image.png';
 
 
 const CaseStudiesPage1 = () => {
