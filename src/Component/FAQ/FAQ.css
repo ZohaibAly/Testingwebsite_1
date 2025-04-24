@@ -217,7 +217,7 @@
 }
 
 .FAQ-main-text{
-        h2{font-size: 32px;
+        h2{font-size: 35px;
         line-height: 50px;}
 
         p{
@@ -228,7 +228,7 @@
 }
 }
 
-@media (width<=640px) {
+@media (width<=655px) {
     .FAQ-accordion-item{
         width: 520px;
     }
@@ -240,7 +240,7 @@
     padding: 20px 30px 20px 20px;    
 }
 .FAQ-main-text{
-        h2{font-size: 28px;
+        h2{font-size: 32px;
         line-height: 50px;}
 
         p{
@@ -256,7 +256,7 @@
 }
 }
 
-@media (width<=540px) {
+@media (width<=600px) {
     .FAQ-accordion-item{
         width: 420px;
     }
@@ -264,7 +264,7 @@
         padding-top: 0px;
     }
 .FAQ-main-text{
-    h2{font-size: 22px;
+    h2{font-size: 26px;
             height: 30px;}
         
             p{
@@ -280,7 +280,7 @@
         }
 }
 
-@media (width<=440px) {
+@media (width<=487px) {
     .FAQ-accordion-item{
         width: 320px;
     }
@@ -288,18 +288,21 @@
         padding: 10px 20px 15px 12px;    
     }
 .FAQ-main-text{
-    h2{font-size: 16px;
-            height: 25px;}
+    h2{font-size: 24px;
+            height: 25px;
+            text-align: center;
+            line-height: 20px;
+        }
         
             p{
                 height: 26px;
-                font-size: 10px;
-                line-height: 12px;
-                width: 320px;
+                font-size: 12px;
+                line-height: 16px;
+                width: 400px;
             }
         }
         .FAQ-accordion {
-            h3{font-size: 9px;}
+            h3{font-size: 10px;}
 
             span{
                 font-size: 15px;
@@ -309,3 +312,25 @@
         }
 }
 
+@media (width<=460px) {
+.FAQ-main-text{
+    h2{font-size: 22px;
+            height: 25px;}
+        
+            p{
+                height: 26px;
+                font-size: 12px;
+                line-height: 16px;
+                width: 320px;
+            }
+        }
+        .FAQ-accordion {
+            h3{font-size: 10px;}
+
+            span{
+                font-size: 15px;
+                height: 20px;
+                margin-left: 20px;
+            }
+        }
+}
