@@ -9,7 +9,7 @@ const GoogleMap = () => {
   const address = "7628 103rd St Jacksonville, FL 32210";
   
   // Replace with your actual Google Maps API key
-  const API_KEY = "YOUR_GOOGLE_MAPS_API_KEY";
+  const API_KEY = "AIzaSyDmIq3KEK4MExzXN5eeY4t6l__daR7PgB4";
 
   useEffect(() => {
     // Add the Google Maps script to the page
