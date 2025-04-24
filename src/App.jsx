@@ -19,6 +19,7 @@ import Page2comp from './Component/AllPagesofCaseStudies/Page2CaseStudies/Page2C
 import Page3comp from './Component/AllPagesofCaseStudies/Page3CaseStudies/Page3CaseStudies';
 import Page4comp from './Component/AllPagesofCaseStudies/Page4CaseStudies/Page4CaseStudies';
 import Page5comp from './Component/AllPagesofCaseStudies/Page5CaseStudies/Page5CaseStudies';
+import Page6comp from './Component/AllPagesofCaseStudies/Page6CaseStudies/Page6CaseStudies';
 function App() {
   return (
     <Router>
@@ -40,7 +41,7 @@ function App() {
           <Route path="/case-study-2x-sales-growth-scaling-a-brands-vitamin-d-drops-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2X Sales Growth – Scaling a brand’s Vitamin D Drops on Amazon"  PageComponent={Page3comp} />} />
           <Route path="/case-study-3x-revenue-growth-by-implementing-amazon-transparency-program-for-supplement-brand" element={<CaseStudy breadCrumbTitle="Case Study: 3X Revenue Growth by Implementing Amazon Transparency Program for Supplement Brand" PageComponent={Page4comp}/>} />
           <Route path="/case-study-400-increase-in-sales-and-profitability-for-supplements-brand" element={<CaseStudy breadCrumbTitle="Case Study: 400% Increase in Sales and Profitability For Supplements Brand" PageComponent={Page5comp}/>} />
-          <Route path="/case-study-57-revenue-growth-scaling-a-brands-vitamin-c-zinc-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 57% Revenue Growth – Scaling a brand’s Vitamin C & Zinc on Amazon" content="This is page 6" color="teal" />} />
+          <Route path="/case-study-57-revenue-growth-scaling-a-brands-vitamin-c-zinc-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 57% Revenue Growth – Scaling a brand’s Vitamin C & Zinc on Amazon"  PageComponent={Page6comp}  />} />
           <Route path="/case-study-6x-yoy-growth-for-food-brand-through-a-to-z-management" element={<CaseStudy breadCrumbTitle="Case Study: 6X YoY Growth for Food Brand Through A to Z Management" content="This is page 7" color="pink" />} />
           <Route path="/case-study-7x-revenue-growth-by-overcoming-compliance-inventory-challenges" element={<CaseStudy breadCrumbTitle="Case Study: 7X Revenue Growth by Overcoming Compliance & Inventory Challenges" content="This is page 8" color="gray" />} />
           <Route path="/case-study-scaling-a-brands-elderberry-supplement-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: Scaling a brand’s Elderberry Supplement on Amazon" content="This is page 9" color="brown" />} />
