@@ -18,10 +18,10 @@ import Page1comp from './Component/AllPagesofCaseStudies/Page1CaseStudies/Page1C
 import Page2comp from './Component/AllPagesofCaseStudies/Page2CaseStudies/Page2CaseStudies';
 import Page3comp from './Component/AllPagesofCaseStudies/Page3CaseStudies/Page3CaseStudies';
 import Page4comp from './Component/AllPagesofCaseStudies/Page4CaseStudies/Page4CaseStudies';
-import Page8comp from './Component/AllPagesofCaseStudies/Page8CaseStudies/Page8CaseStudies';
-import Page9comp from './Component/AllPagesofCaseStudies/Page9CaseStudies/Page9CaseStudies';
 import Page5comp from './Component/AllPagesofCaseStudies/Page5CaseStudies/Page5CaseStudies';
 import Page6comp from './Component/AllPagesofCaseStudies/Page6CaseStudies/Page6CaseStudies';
+import Page8comp from './Component/AllPagesofCaseStudies/Page8CaseStudies/Page8CaseStudies';
+import Page9comp from './Component/AllPagesofCaseStudies/Page9CaseStudies/Page9CaseStudies';
 function App() {
   return (
     <Router>

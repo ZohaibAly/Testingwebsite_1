@@ -246,7 +246,15 @@ padding: 30px 40px 30px 40px;
     transition: all 0.3s linear;
 }
 
-
+@media ( width <= 1024px ) {
+    .modal-content {
+        height: auto;
+        margin: 10px;
+        width: auto;
+        margin-top: 390px;
+    
+    }
+}
 @media ( width <= 767px) {
     .job-info{
         flex-direction: column;
@@ -289,6 +297,13 @@ padding: 30px 40px 30px 40px;
     font-size: 18px;
     padding: 5px 40px ;
 }
+.modal-content {
+    height: auto;
+    margin: 10px;
+    width: auto;
+    margin-top: 390px;
+
+}
 }
 
 
@@ -305,6 +320,13 @@ padding: 30px 40px 30px 40px;
 .apply-button{
     font-size: 16px;
     padding: 5px 35px ;
+}
+.modal-content {
+    height: auto;
+    margin: 10px;
+    width: auto;
+    margin-top: 375px;
+
 }
 }
 
@@ -326,6 +348,14 @@ padding: 30px 40px 30px 40px;
     .apply-button{
         font-size: 14px;
         padding: 5px 30px ;
+    }
+    .modal-content {
+     
+        height: auto;
+        width: auto;
+        margin: 10px;
+        margin-top: 350px;
+    
     }
 }
 
