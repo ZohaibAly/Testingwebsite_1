@@ -7,6 +7,7 @@ function Contact() {
     return (
         <div className="Contact">
             <BreadcrumbBanner/>
+         
             <Testmonial/>
             <FreeStoreComp/>
         </div>
