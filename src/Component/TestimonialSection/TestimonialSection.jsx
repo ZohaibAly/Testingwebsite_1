@@ -70,11 +70,13 @@ const TestimonialsSection = () => {
   // Open modal with YouTube video
   const openVideoModal = () => {
     setIsModalOpen(true);
+   
   };
 
   // Close modal
   const closeModal = () => {
     setIsModalOpen(false);
+ 
   };
 
   // Handle navigation for testimonial carousel (mobile)

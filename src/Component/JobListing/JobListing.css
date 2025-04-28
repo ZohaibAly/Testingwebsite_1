@@ -175,7 +175,7 @@ padding: 30px 40px 30px 40px;
     margin-bottom: 130px;
 }
 
-.modal-overlay {
+.JobListing-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -185,10 +185,11 @@ padding: 30px 40px 30px 40px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    background-color: rgba(0, 0, 0, 0.85);
     z-index: 61000;
 }
 
-.modal-content {
+.JobListing-modal-content {
     background-color: white;
     padding:20px;
     border-radius:10px;
@@ -210,12 +211,12 @@ padding: 30px 40px 30px 40px;
     }
 }
 
-.modal-content .model-c1 p {
+.JobListing-modal-content .JobListing-model-c1 p {
     font-size: 16px;
     text-align: left;
     padding: 10px;
 }
-.modal-content .model-c2 {
+.JobListing-modal-content .JobListing-model-c2 {
     text-align: end;
     padding: 10px;
 }
@@ -247,7 +248,7 @@ padding: 30px 40px 30px 40px;
 }
 
 @media ( width <= 1024px ) {
-    .modal-content {
+    .JobListing-modal-content {
     height: auto;
     margin: 10px;
     width: auto;
@@ -297,7 +298,7 @@ padding: 30px 40px 30px 40px;
     font-size: 18px;
     padding: 5px 40px ;
 }
-.modal-content {
+.JobListing-modal-content {
     height: auto;
     margin: 10px;
     width: auto;
@@ -305,10 +306,6 @@ padding: 30px 40px 30px 40px;
 
 }
 }
-
-
-
-
 @media ( width <= 490px) {
 .linkedin-button {
             
@@ -321,7 +318,7 @@ padding: 30px 40px 30px 40px;
     font-size: 16px;
     padding: 5px 35px ;
 }
-.modal-content {
+.JobListing-modal-content {
     height: auto;
     margin: 10px;
     width: auto;
@@ -349,7 +346,7 @@ padding: 30px 40px 30px 40px;
         font-size: 14px;
         padding: 5px 30px ;
     }
-    .modal-content {
+    .JobListing-modal-content {
      
         height: auto;
         width: auto;
@@ -359,141 +356,3 @@ padding: 30px 40px 30px 40px;
     }
 }
 
-/* Responsive Start from 820px */
-
-/* @media ( width <= 820px ) {
-    .main-heading {
-        font-size:50px;
-        line-height: 1;
-    }
-}
-
-
-@media ( width <= 756px ) {
-    .main-heading {
-        font-size:40px;
-    }
-
-    .job-card {
-        padding: 30px 40px 30px 40px;
-        margin-bottom: 10px;
-        }
-        
-        .job-title {
-            font-size: 32px;
-            margin-bottom: 16px;
-        }
-        
-        .company-logo {
-            margin-right: 10px;
-        }
-        .company-logo img{
-            width: 75px;
-            height: 75px;
-        }
-        .job-tags {
-            gap:7px;
-        }
-        
-        .tag {
-            font-size: 15px;
-        }
-        
-        .upperbtn{
-            place-items: center;
-        }
-      
-        .linkedin-button {
-            
-            font-size: 22px;
-     
-            padding: 20px 70px 20px 70px;
- 
-        }
-}
-
-
-@media ( width <= 640px ) {
-    .main-heading {
-        font-size:38px;
-    }
-
-    .job-card {
-        padding: 25px 35px 25px 35px;
-        }
-        
-        .job-title {
-            font-size: 30px;
-            margin-bottom: 16px;
-        }
-        
-        .company-logo {
-            margin-right: 10px;
-        
-        }
-        .company-logo img{
-            width: 75px;
-            height: 75px;
-        }
-        .job-tags {
-            gap:7px;
-        }
-        
-        .tag {
-            font-size: 13px;
-        }
-        
-      
-        .linkedin-button {
-            
-            font-size: 22px;
-     
-            padding: 20px 60px 20px 60px;
- 
-        }
-        .job-tags {
-            gap: 5px;
-        }
-}
-@media ( width <= 590px ) {
-    .main-heading {
-        font-size:36px;
-    }
-.hiring-tag{
-    font-size: 26px;
-}
-    .job-card {
-        padding: 25px 35px 25px 35px;
-        }
-        
-        .job-title {
-            font-size: 30px;
-            margin-bottom: 16px;
-        }
-        .tag {
-            
-            padding: 5px 10px 3px 10px;
-    
-        }
-        
-    
-        .job-tags {
-          flex-direction: column;
-        }
-        
-        .tag {
-            font-size: 13px;
-        }
-        
-      
-        .linkedin-button {
-            
-            font-size: 22px;
-     
-            padding: 20px 60px 20px 60px;
- 
-        }
-        .job-tags {
-            gap: 5px;
-        }
-} */

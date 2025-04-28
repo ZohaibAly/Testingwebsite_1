@@ -62,12 +62,12 @@ const JobListingPage = () => {
 
       </div>
       {showModal && (
-        <div className="modal-overlay" onClick={toggleModal}>
-          <div className="modal-content" onClick={e => e.stopPropagation()}>
-            <div className='model-c1'>
+        <div className="JobListing-modal-overlay" onClick={toggleModal}>
+          <div className="JobListing-modal-content" onClick={e => e.stopPropagation()}>
+            <div className='JobListing-model-c1'>
             <p>Apply now on <Link to="https://linkedin.com/company/commercekind" className="modal-link" >LinkedIn</Link> or email your resume at   <Link to="mailto:hr@commercekind.com" className="modal-link" >hr@commercekind.com</Link></p>
             </div>
-           <div className='model-c2'> 
+           <div className='JobListing-model-c2'> 
            <button className="close-button" onClick={toggleModal}>Close</button>
            </div>
             
