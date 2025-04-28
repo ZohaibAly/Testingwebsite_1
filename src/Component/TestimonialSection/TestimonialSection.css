@@ -39,7 +39,7 @@ place-self: center;
   place-content: end;
   place-items: center;
   place-self: end;
-  gap:35px;
+  gap:30px;
 }
 /* Testimonials Left Side */
 .testimonials-left {
@@ -318,7 +318,7 @@ z-index: 1000;
 
 @media ( width <= 1340px) {
   .testimonials-left img{
-    width: 370px;
+    width: 365px;
     height: 300px;
   }
   .navigation-buttons {
@@ -427,7 +427,7 @@ z-index: 1000;
 
 @media ( width <= 1030px) {
   .testimonials-left img{
-    width: 290px;
+    width: 280px;
     height: 230px;
   }
   .video-container img{
@@ -455,11 +455,11 @@ z-index: 1000;
 
 @media ( width <= 1002px) {
   .testimonials-left img{
-    width: 250px;
+    width: 245px;
     height: 210px;
   }
   .video-container img{
-    width: 370px;
+    width: 365px;
     height: 480px;
   } 
   .navigation-buttons {
