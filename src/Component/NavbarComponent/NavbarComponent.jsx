@@ -64,46 +64,42 @@ const NavbarComponent = () => {
         </div>
       </div>
       
-      {isMenuOpen && (
-        <div className='mobile-menu'>
-          <div className='mobile-menu-header'>
-            <div className='close-icon' onClick={toggleMenu}>
-              <FontAwesomeIcon icon={faXmark} />
-            </div>
-          </div>
-          <div className='mobile-navigation'>
-            <Link to="/case-studies" onClick={toggleMenu}>Case Studies</Link>
-            <Link to="/before-and-after" onClick={toggleMenu}>Before and After</Link>
-            <Link to="/services" onClick={toggleMenu}>Services</Link>
-            <Link to="/contact" onClick={toggleMenu}>Contact</Link>
-          </div>
-          <div className='mobile-top-links'>
-            <Link to="/careers" onClick={toggleMenu}>Careers</Link>
-            <Link to="/blog" onClick={toggleMenu}>Blog</Link>
-            <Link to="/frequently-asked-questions" onClick={toggleMenu}>FAQs</Link>
-            <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank' onClick={toggleMenu}>Reviews</a>
-          </div>
-          <div className='mobile-socials'>
-            <a href="https://www.facebook.com/CommercekindLLC/" onClick={toggleMenu}>
-              <FontAwesomeIcon icon={faFacebook} />
-            </a>
-            <a href="https://www.instagram.com/commercekindllc/" onClick={toggleMenu}>
-              <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href="https://www.linkedin.com/company/commercekindllc/" onClick={toggleMenu}>
-              <FontAwesomeIcon icon={faLinkedin} />
-            </a>
-            <a href="#" onClick={toggleMenu}>
-              <FontAwesomeIcon icon={faXTwitter} />
-            </a>
-          </div>
-          <div className='mobile-actions'>
-            <button className='try-button' onClick={toggleMenu}>Try Free</button>
+      <div className={`mobile-menu ${isMenuOpen ? 'open' : ''}`}>
+        <div className='mobile-menu-header'>
+          <div className='close-icon' onClick={toggleMenu}>
+            <FontAwesomeIcon icon={faXmark} />
           </div>
         </div>
-
-      )}
-
+        <div className='mobile-navigation'>
+          <Link to="/case-studies" onClick={toggleMenu} className='nav-links'>Case Studies</Link>
+          <Link to="/before-and-after" onClick={toggleMenu} className='nav-links'>Before and After</Link>
+          <Link to="/services" onClick={toggleMenu} className='nav-links'>Services</Link>
+          <Link to="/contact" onClick={toggleMenu} className='nav-links'>Contact</Link>
+        </div>
+        <div className='mobile-top-links'>
+          <Link to="/careers" onClick={toggleMenu} className='nav-links'>Careers</Link>
+          <Link to="/blog" onClick={toggleMenu} className='nav-links'>Blog</Link>
+          <Link to="/frequently-asked-questions" onClick={toggleMenu} className='nav-links'>FAQs</Link>
+          <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank' onClick={toggleMenu}className='nav-links'>Reviews</a>
+        </div>
+        <div className='mobile-socials'>
+          <a href="https://www.facebook.com/CommercekindLLC/" onClick={toggleMenu} className='nav-links'>
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="https://www.instagram.com/commercekindllc/" onClick={toggleMenu} className='nav-links'>
+            <FontAwesomeIcon icon={faInstagram} />
+          </a>
+          <a href="https://www.linkedin.com/company/commercekindllc/" onClick={toggleMenu} className='nav-links'>
+            <FontAwesomeIcon icon={faLinkedin} />
+          </a>
+          <a href="#" onClick={toggleMenu} className='nav-links'>
+            <FontAwesomeIcon icon={faXTwitter} />
+          </a>
+        </div>
+        <div className='mobile-actions'>
+          <button className='try-button' onClick={toggleMenu}>Try Free</button>
+        </div>
+      </div>
     </div>
   );
 };
