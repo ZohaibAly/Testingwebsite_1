@@ -34,6 +34,7 @@ function Home() {
       growth: '+957.2%',
       category: 'Grocery',
       description: '7X Revenue Growth by Overcoming Compliance & Inventory Challenges',
+      permalink: "/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon",
       tags: ['ctr'],
     },
     {
@@ -42,6 +43,7 @@ function Home() {
       growth: '+577%',
       category: 'Supplements',
       description: '400% Increase in Sales and Profitability For Supplements Brand',
+      permalink: "/case-study-400-increase-in-sales-and-profitability-for-supplements-brand",
       tags: ['ctr'],
     },
     {
@@ -50,6 +52,7 @@ function Home() {
       growth: '2x',
       category: 'Healthcare',
       description: "2X Sales Growth – Revitalizing a brand's Lozenges on Amazon",
+      permalink: "/case-study-2x-sales-growth-revitalizing-a-brands-lozenges-on-amazon",
       tags: ['ctr'],
     },
     
@@ -57,17 +60,19 @@ function Home() {
     {
       id: 4,
       image: Cardimage3, // Same image as id 1
-      growth: '+577%',
+      growth: '+43.8%',
       category: 'Supplements',
-      description: '400% Increase in Sales and Profitability For Supplements Brand',
+      description: "Scaling a brand's Elderberry Supplement on Amazon",
+      permalink: "/case-study-scaling-a-brands-elderberry-supplement-on-amazon",
       tags: ['amazon'],
     },
     {
       id: 5,
       image: Cardimage1, // Same image as id 2
-      growth: '+781.7%',
-      category: 'Grocery',
-      description: '6X YoY Growth for Food Brand Through A to Z Management',
+      growth: '+57%',
+      category: 'Supplements',
+      description: '57% Revenue Growth – Scaling a brand’s Vitamin C & Zinc on Amazon',
+      permalink: "/case-study-57-revenue-growth-scaling-a-brands-vitamin-c-zinc-on-amazon",
       tags: ['amazon'],
     },
     
@@ -78,14 +83,16 @@ function Home() {
       growth: '3x',
       category: 'Babycare',
       description: '3X Revenue Growth by Implementing Amazon Transparency Program for Supplement Brand',
+      permalink: "/case-study-3x-revenue-growth-by-implementing-amazon-transparency-program-for-supplement-brand",
       tags: ['hijacker'],
     },
     {
       id: 7,
       image: Cardimage2, // Same image as id 2
-      growth: '2x',
-      category: 'Healthcare',
-      description: "2X Sales Growth – Revitalizing a brand's Lozenges on Amazon",
+      growth: '781.7%',
+      category: 'Grocery',
+      description: "6X YOY Growth for Food Brand Through A to Z Management",
+      permalink: "/case-study-6x-yoy-growth-for-food-brand-through-a-to-z-management",
       tags: ['hijacker'],
     },
     
@@ -111,17 +118,19 @@ function Home() {
     {
       id: 10,
       image: Cardimage1, // Same image as id 1
-      growth: '+57%',
-      category: 'Supplements',
-      description: "57% Revenue Growth – Scaling a brand's Vitamin C & Zinc on Amazon",
+      growth: '+2.5x',
+      category: 'Multivitamins',
+      description: "2.5X Sales Growth – Scaling a brand’s Bariatric Multivitamin 45mg 90ct on Amazon",
+      permalink: "/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon",
       tags: ['listings'],
     },
     {
       id: 11,
       image: Cardimage2, // Same image as id 2
-      growth: '+2.5x',
-      category: 'Multivitamins',
-      description: "2.5X Sales Growth – Scaling a brand's Bariatric Multivitamin 45mg 90ct on Amazon",
+      growth: '+2x',
+      category: 'Babycare',
+      description: "2X Sales Growth – Scaling a brand’s Vitamin D Drops on Amazon",
+      permalink: "/case-study-2x-sales-growth-scaling-a-brands-vitamin-d-drops-on-amazon",
       tags: ['listings'],
     }
   ];

@@ -1,22 +1,23 @@
 .space-container{
-    height: 209.2px;
+    height: 180.2px;
     width: 100%;
     background-color: white;
 }
 @media ( width <= 1316px ) {
     .space-container{
-        height: 187.2px;
+        height: 147.2px;
     }
 }
 @media ( width <= 1124px ) {
     .space-container{
-        height: 172.2px;
+        height: 142.2px;
     }
 }
 @media ( width <= 1024px ) {
     .space-container{
-        height: 142.2px;
+        height: 100.2px;
     }
+   
 }
 @media ( width <= 850px ) {
     .space-container{
