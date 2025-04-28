@@ -423,7 +423,16 @@ z-index: 1000;
 }
 }
 
-
+@media ( width <= 1052px ) {
+  .testimonials-left img{
+    width: 297px;
+    height: 230px;
+  }
+  .video-container img{
+    width: 408px;
+    height: 550px;
+  } 
+}
 
 @media ( width <= 1030px) {
   .testimonials-left img{
