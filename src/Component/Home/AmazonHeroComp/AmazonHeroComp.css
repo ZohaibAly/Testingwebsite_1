@@ -11,21 +11,27 @@
 /* Main container - sets the size and background */
 .hero-container {
   width: 100%;
-  max-width: 1920px;
+
   margin: 0 auto;
   /* background-color: white; */
+overflow: hidden;
   margin-top: 90px;
   padding: 10px;
+  padding-top: 90px;
+  padding-bottom: 100px;
   box-sizing: border-box;
 }
 
 /* Parent div - sets the flex properties */
 .hero-parent {
+  max-width: 1920px;
   display: flex;
+
   justify-content: space-between;
   align-items: center;
- 
+ margin: 0 auto;
 }
+
 
 /* Content section */
 .hero-content {
@@ -128,32 +134,33 @@
 
 }
 
-
-/* Image section */
 .hero-image {
   flex: 1;
   display: flex;
   justify-content: center;
   position: relative;
+
  
 }
 
 .hero-image img {
-  width: 938px;
+  width: 932px;
   height: 703px;
   object-fit: contain;
 }
 .pic1{
   position: absolute;
-  top:-200px;
-  right: -320px; 
+ top: -170px;
+ right: -320px;
   z-index: -1;
+
 }
 .pic2{
   position: absolute;
   bottom:-150px;
   right: 300px;
   z-index: -1;
+
 }
 
 
@@ -174,24 +181,44 @@
 
   }
 }
+@media ( max-width: 1280px) {
+  .pic2{
+    bottom:-90px;
 
-
-
-
+    width: 400px;
+    right: 200px;
+  }
+}
 @media (max-width: 1200px) {
   .hero-container {
     padding: 50px 60px;
   }
   
+  .pic2{
+    bottom:-90px;
 
+    width: 400px;
+    right: 200px;
+  }
   .hero-subtitle {
     font-size: 32px;
+  }
+}
+@media ( max-width: 1024px) {
+  .pic2{
+    bottom:-90px;
+    width: 400px;
+    right: 200px;
   }
 }
 
 @media (max-width: 992px) {
   .hero-parent {
     flex-direction: column;
+  }
+  .hero-container{
+    padding-top: 0px;
+    padding-bottom: 0px;
   }
   .hero-title {
     margin-right: 0px;

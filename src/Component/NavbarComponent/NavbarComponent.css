@@ -182,6 +182,7 @@
 .hamburger-icon {
   display: none;
   font-size: 24px;
+  color:var(--brand2-color);
   cursor: pointer;
 }
 
@@ -280,7 +281,6 @@
 .mobile-actions{
   .try-button{
     background-color: white;
-    border-color: #292E4C;
     color: #292E4C;   
     transition: 0.4s ease-in-out; 
   }

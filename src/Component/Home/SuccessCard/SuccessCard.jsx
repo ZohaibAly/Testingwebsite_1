@@ -2,10 +2,11 @@ import React from 'react';
 import Arrowup from '../../../assets/Card-Arrow-up.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import './SuccessCard.css';
-
 const SuccessCard = (props) => {
-  const { image, growth, category, description } = props;
+  const { image, growth, category, description, permalink } = props;
+
   return (
     
     <div className="success-card">
@@ -24,12 +25,14 @@ const SuccessCard = (props) => {
        
         <h3 className="card-category">{category}</h3>
         <p className="card-description">{description}</p>
+        <Link to={permalink} >
         <button className="view-case-btn">
+      
           View Case Studies <span className="Card-btn-circle">
           <FontAwesomeIcon icon={faArrowRight} />
           </span>
         </button>
-        
+        </Link>
       </div>
     </div>
     

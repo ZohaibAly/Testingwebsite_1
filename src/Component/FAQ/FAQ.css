@@ -12,6 +12,20 @@
     flex-direction: column;
     overflow: hidden; 
     margin-bottom: 100px;
+position: relative;
+}
+.blurred-ellipse {
+    position: absolute;
+    width: 450px;
+    height: 700px;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: #8C41E8;
+    opacity: 0.19;
+    filter: blur(150px);
+    z-index: 0;
 }
 
 .FAQ-main-text{
@@ -150,7 +164,7 @@
     font-family: "Poppins", sans-serif;
 }
 /* Responsiveness Start */
-@media (width<=1200px) {
+@media ( width <= 1200px ) {
     .FAQ-accordion-item{
         width: 1100px;
     }
@@ -169,7 +183,7 @@
 }
 }
 
-@media (width<=1110px) {
+@media ( width <= 1110px) {
     .FAQ-accordion-item{
         width: 900px;
     }
@@ -186,7 +200,7 @@
 }
 }
 
-@media (width<=915px) {
+@media ( width <= 915px ) {
     .FAQ-accordion-item{
         width: 750px;
     }
@@ -206,7 +220,7 @@
 }
 }
 
-@media (width<=765px) {
+@media ( width <= 765px ) {
     .FAQ-accordion-item{
         width: 620px;
     }
@@ -228,7 +242,7 @@
 }
 }
 
-@media (width<=655px) {
+@media ( width <= 655px ) {
     .FAQ-accordion-item{
         width: 520px;
     }
@@ -256,7 +270,7 @@
 }
 }
 
-@media (width<=600px) {
+@media ( width <= 600px ) {
     .FAQ-accordion-item{
         width: 420px;
     }
@@ -278,9 +292,12 @@
     p{font-size: 10px;}
 
         }
+        .blurred-ellipse {
+            display: none;
+        }
 }
 
-@media (width<=487px) {
+@media ( width <= 487px ) {
     .FAQ-accordion-item{
         width: 320px;
     }
@@ -312,7 +329,7 @@
         }
 }
 
-@media (width<=460px) {
+@media ( width <= 460px ) {
 .FAQ-main-text{
     h2{font-size: 22px;
             height: 25px;}

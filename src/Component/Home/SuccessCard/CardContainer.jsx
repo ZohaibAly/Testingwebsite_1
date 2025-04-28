@@ -70,6 +70,7 @@ const CaseStudiesContainer = (props) => {
              growth={item.growth}
              category={item.category}
              description={item.description}
+             permalink={item.permalink}
            />
          ))}
        </div>

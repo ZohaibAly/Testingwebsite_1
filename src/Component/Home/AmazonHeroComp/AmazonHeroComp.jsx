@@ -38,6 +38,7 @@ const AmazonHeroComponent = () => {
               alt="Before and After Amazon Dashboard Comparison"
             />
           </div>
+        
           <img
             src={HeroImage}
             alt="Before and After Amazon Dashboard Comparison"
