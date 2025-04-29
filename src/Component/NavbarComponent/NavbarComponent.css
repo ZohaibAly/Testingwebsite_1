@@ -29,7 +29,7 @@
     padding:20px;
     align-items: center;
     font-size: 20px;
-    height: 40px;
+    height: 80px;
   }
   
   /* Left side with contact info */
@@ -400,7 +400,7 @@
 
           .child1{
             font-size: 13px;
-           height: 20px;
+           height: 50px !important;
           }
           .p1{
             gap:5px;
