@@ -52,14 +52,14 @@
   background-color: #0ea498;
   width: 50px;
   height: 50px;
-
-  padding: 11px 13px;
   border-radius: 15px;
+  display: flex;
+  place-items: end;
+  justify-content: center;
 }
 .Footer-1-icons svg {
   font-size: 28px;
   color: white;
-  text-align: center;
 }
 .Footerpt-2 {
   display: flex;
@@ -208,10 +208,7 @@
   }
   .Footerpt-1-images {
     gap: 14px;
-    &svg {
-      width: 22px;
-      height: 22px;
-    }
+   
   }
 
   .Footerpt-2 {
@@ -274,9 +271,7 @@
   .Footer-1-icons svg {
     font-size: 26px;
   }
-  .Footer-1-icons {
-    padding: 10px 13px;
-  }
+  
 
   .Footerpt-2 {
     gap: 70px;
@@ -341,9 +336,7 @@
   .Footer-1-icons svg {
     font-size: 26px;
   }
-  .Footer-1-icons {
-    padding: 10px 13px;
-  }
+
 
   .Footerpt-2 {
     gap: 40px;
@@ -404,9 +397,7 @@
   .Footer-1-icons svg {
     font-size: 26px;
   }
-  .Footer-1-icons {
-    padding: 10px 13px;
-  }
+
   .Footerpt-2 {
     gap: 20px;
 
@@ -475,7 +466,6 @@
     font-size: 22px;
   }
   .Footer-1-icons {
-    padding: 7px 13px;
     width: 45px;
     height: 45px;
   }
@@ -529,7 +519,7 @@
   }
   .Footerpt-1 {
     width: 500px;
-    height: 500px;
+    height: 470px;
     padding: 25px 5px 0px 25px;
 
     & .image-1 {
@@ -547,12 +537,11 @@
     gap: 10px;
   }
     .Footer-1-icons svg {
-    font-size: 22px;
+    font-size: 26px;
   }
   .Footer-1-icons {
-    padding: 7px 13px;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
   }
 
   .Footerpt-2 {
@@ -623,7 +612,7 @@
   }
   .Footerpt-1 {
     width: 400px;
-    height: 500px;
+    height: 420px;
     padding: 25px 5px 0px 25px;
 
     & .image-1 {
@@ -639,13 +628,9 @@
     gap: 10px;
   }
     .Footer-1-icons svg {
-    font-size: 22px;
+    font-size: 25px;
   }
-  .Footer-1-icons {
-    padding: 7px 13px;
-    width: 45px;
-    height: 45px;
-  }
+  
 
   .Footerpt-2 {
     gap: 30px;
@@ -693,7 +678,7 @@
   }
   .Footerpt-1 {
     width: 300px;
-    height: 370px;
+    height: 330px;
     padding: 25px 0px 0px 25px;
 
     & .image-1 {
@@ -709,10 +694,9 @@
     gap: 10px;
   }
     .Footer-1-icons svg {
-    font-size: 22px;
+    font-size: 24px;
   }
   .Footer-1-icons {
-    padding: 7px 13px;
     width: 45px;
     height: 45px;
   }
@@ -762,7 +746,7 @@
   }
   .Footerpt-1 {
     width: 280px;
-    height: 320px;
+    height: 280px;
     padding: 25px 0px 0px 25px;
 
     & .image-1 {
@@ -778,12 +762,11 @@
     gap: 10px;
   }
     .Footer-1-icons svg {
-    font-size: 20px;
+    font-size: 22px;
   }
   .Footer-1-icons {
-    padding: 4px 11px;
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   .Footerpt-2 {
