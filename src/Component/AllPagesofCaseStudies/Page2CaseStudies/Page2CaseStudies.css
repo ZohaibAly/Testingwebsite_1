@@ -326,7 +326,8 @@ height: 598px;
 
 /* Responsiveness start */
 
-@media ( width <= 1440px ) {
+@media ( width <= 1575px ) {
+
   .page1casestudies-candy-image {
     width: 800px;
     height: 500px;
@@ -368,7 +369,8 @@ height: 598px;
      .image-section{
       .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
         width: 360px;
-        height: 258px;
+        height: 300px;
+
       }
      
       h2{
@@ -402,6 +404,23 @@ height: 598px;
 
 
 @media ( width <= 1280px ) {
+  .challenges-1{ 
+    .challenges-1{ 
+      margin-top: 60px;
+  
+     .image-section{
+      img{
+        width:120 ;
+        height: 100px;
+      }
+      h2{
+        font-size: 30px;
+      }
+      .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
+        width: 310px;
+        height: 270px;
+      }
+    }}}
   .page1casestudies-candy-image {
     width: 500px;
     height: 450px;
@@ -464,7 +483,8 @@ height: 598px;
         text-align: center;        
       }}
 }
-@media(width<=1092px){
+@media(width<=1130px){
+
  
   .challenges-1{
     .challenge-content{
@@ -482,8 +502,8 @@ height: 598px;
    .image-section{
     margin-top: 60px;
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-      width: 200px;
-      height: 180px;
+      width: 250px;
+      height: 220px;
     }
  
     h2{
@@ -576,8 +596,8 @@ height: 598px;
        align-self: center;
         margin-top: 20px;
       .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-        width: 212px;
-        height: 180px;
+        width: 250px;
+      height: 220px;
       }
       .image-section-right{
         margin-top: 13px;
@@ -682,8 +702,8 @@ height: 598px;
     flex-direction: column;
       margin-top: 20px;
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-      width: 195px;
-      height: 180px;
+      width: 250px;
+      height: 210px;
     }
     .image-section-right{
       flex-direction: row;
