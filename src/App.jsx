@@ -1,28 +1,35 @@
-import React from 'react';
+// import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ScrollToTop from './Component/STT';
 import Navbar from './Component/NavbarComponent/NavbarComponent';
+
+
 import FooterComp from './Component/Footer/Footer';
-import Homepage from './Pages/Home/Home';
-import ServicesPage from './Pages/Services/Services';
-import CaseStudiesPage from './Pages/CaseStudies/CaseStudies';
-import BeforeAfterPage from './Pages/BeforeAfter/BeforeAfter';
-import ContactPage from './Pages/Contact/Contact';
-import BlogPage from './Pages/Blog/Blog';
-import FAQPage from './Pages/FAQ/FAQ';
-import CareersPage from './Pages/Careers/Careers';
+
+const Homepage = lazy(() => import('./Pages/Home/Home'));
+const ServicesPage = lazy(() => import('./Pages/Services/Services'));
+const CaseStudiesPage = lazy(() => import('./Pages/CaseStudies/CaseStudies'));
+const BeforeAfterPage = lazy(() => import('./Pages/BeforeAfter/BeforeAfter'));
+const ContactPage = lazy(() => import('./Pages/Contact/Contact'));
+const BlogPage = lazy(() => import('./Pages/Blog/Blog'));
+const FAQPage = lazy(() => import('./Pages/FAQ/FAQ'));
+const CareersPage = lazy(() => import('./Pages/Careers/Careers'));
+const CaseStudy = lazy(() => import('./Pages/CaseStudy/CaseStudy'));
+
 import Space from './Component/Space/Space';
-import CaseStudy from './Pages/CaseStudy/CaseStudy';
-import Page1comp from './Component/AllPagesofCaseStudies/Page1CaseStudies/Page1CaseStudies';
-import Page2comp from './Component/AllPagesofCaseStudies/Page2CaseStudies/Page2CaseStudies';
-import Page3comp from './Component/AllPagesofCaseStudies/Page3CaseStudies/Page3CaseStudies';
-import Page4comp from './Component/AllPagesofCaseStudies/Page4CaseStudies/Page4CaseStudies';
-import Page7comp from './Component/AllPagesofCaseStudies/Page7CaseStudies/Page7CaseStudies';
-import Page5comp from './Component/AllPagesofCaseStudies/Page5CaseStudies/Page5CaseStudies';
-import Page6comp from './Component/AllPagesofCaseStudies/Page6CaseStudies/Page6CaseStudies';
-import Page8comp from './Component/AllPagesofCaseStudies/Page8CaseStudies/Page8CaseStudies';
-import Page9comp from './Component/AllPagesofCaseStudies/Page9CaseStudies/Page9CaseStudies';
+
+const Page1comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page1CaseStudies/Page1CaseStudies'));
+const Page2comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page2CaseStudies/Page2CaseStudies'));
+const Page3comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page3CaseStudies/Page3CaseStudies'));
+const Page4comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page4CaseStudies/Page4CaseStudies'));
+const Page5comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page5CaseStudies/Page5CaseStudies'));
+const Page6comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page6CaseStudies/Page6CaseStudies'));
+const Page7comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page7CaseStudies/Page7CaseStudies'));
+const Page8comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page8CaseStudies/Page8CaseStudies'));
+const Page9comp = lazy(() => import('./Component/AllPagesofCaseStudies/Page9CaseStudies/Page9CaseStudies'));
+const Loading = () => <div>Loading...</div>;
 function App() {
   return (
     <Router>
@@ -30,6 +37,7 @@ function App() {
       <div className="App">
         <Navbar />
         <Space />
+        <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/careers" element={<CareersPage />} />
@@ -46,12 +54,13 @@ function App() {
           <Route path="/case-study-400-increase-in-sales-and-profitability-for-supplements-brand" element={<CaseStudy breadCrumbTitle="Case Study: 400% Increase in Sales and Profitability For Supplements Brand" PageComponent={Page5comp}/>} />
           <Route path="/case-study-57-revenue-growth-scaling-a-brands-vitamin-c-zinc-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 57% Revenue Growth – Scaling a brand’s Vitamin C & Zinc on Amazon" PageComponent={Page6comp}  />} />
           <Route path="/case-study-6x-yoy-growth-for-food-brand-through-a-to-z-management" element={<CaseStudy breadCrumbTitle="Case Study: 6X YoY Growth for Food Brand Through A to Z Management" PageComponent={Page7comp}/>} />
-          <Route path="/case-study-57-revenue-growth-scaling-a-brands-vitamin-c-zinc-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 57% Revenue Growth – Scaling a brand’s Vitamin C & Zinc on Amazon"  PageComponent={Page6comp}  />} />
-          <Route path="/case-study-6x-yoy-growth-for-food-brand-through-a-to-z-management" element={<CaseStudy breadCrumbTitle="Case Study: 6X YoY Growth for Food Brand Through A to Z Management" content="This is page 7" color="pink" />} />
           <Route path="/case-study-7x-revenue-growth-by-overcoming-compliance-inventory-challenges" element={<CaseStudy breadCrumbTitle="Case Study: 7X Revenue Growth by Overcoming Compliance & Inventory Challenges" PageComponent={Page8comp}/>} />
           <Route path="/case-study-scaling-a-brands-elderberry-supplement-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: Scaling a brand’s Elderberry Supplement on Amazon" PageComponent={Page9comp}/>} />
         </Routes>
+        </Suspense>
+        
         <FooterComp/>
+     
       </div>
     </Router>
   );

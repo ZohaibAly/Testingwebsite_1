@@ -1,14 +1,17 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import BrandLogosComp from '../../Component/Home/BrandCarouselComp/BrandCarouselComp';
 import './Home.css';
 import AmazonHeroComponent from '../../Component/Home/AmazonHeroComp/AmazonHeroComp';
-import CaseStudy from '../../Component/Home/CaseStudyComp/CaseStudyComp';
-import CaseStudiesContainer from '../../Component/Home/SuccessCard/CardContainer';
-import Business from '../../Component/Home/BusinessMatrics/BusinessMatrics';
-import OffersGrid from '../../Component/Home/OfferGrid/OfferGrid';
-import Testmonial from '../../Component/TestimonialSection/TestimonialSection';
-import FAQSection from '../../Component/FAQ/FAQ';
-import FreeStoreComp from '../../Component/FreeStore/FreeStore';
+
+const CaseStudy = lazy(() => import('../../Component/Home/CaseStudyComp/CaseStudyComp'));
+const CaseStudiesContainer = lazy(() => import('../../Component/Home/SuccessCard/CardContainer'));
+const Business = lazy(() => import('../../Component/Home/BusinessMatrics/BusinessMatrics'));
+const OffersGrid = lazy(() => import('../../Component/Home/OfferGrid/OfferGrid'));
+const Testmonial = lazy(() => import('../../Component/TestimonialSection/TestimonialSection'));
+const FAQSection = lazy(() => import('../../Component/FAQ/FAQ'));
+const FreeStoreComp = lazy(() => import('../../Component/FreeStore/FreeStore'));
+
+
 import Cardimage1 from '../../assets/image-card-1.png';
 import Cardimage2 from '../../assets/image-card-2.png';
 import Cardimage3 from '../../assets/image-card-3.png';
@@ -139,16 +142,31 @@ function Home() {
     <div className="HomePage">
       <AmazonHeroComponent />
    <BrandLogosComp />   
-      <CaseStudy />
+
+      <Suspense fallback={<div>Loading...</div>}>
+        <CaseStudy />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
       <CaseStudiesContainer 
         caseStudyData={caseStudyData}
         categoryButtons={categoryButtons}
       />
+       </Suspense>
+       <Suspense fallback={<div>Loading...</div>}>
       <Business/>
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
     <Testmonial/>  
+    </Suspense>
+    <Suspense fallback={<div>Loading...</div>}>
       <OffersGrid/>
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
       <FAQSection />
+      </Suspense>
+      <Suspense fallback={<div>Loading...</div>}>
       <FreeStoreComp/>
+      </Suspense>
     </div>
   );
     

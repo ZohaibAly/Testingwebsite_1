@@ -7,6 +7,7 @@ import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/fr
 
 const Footer = () => {
     return (
+        <div>
         <div className='Footer-Parent'>
             <div className='Footer-main'>
             <div className='Footerpt-1'>
@@ -71,10 +72,12 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className="Footer-bottom">
-                <span className='Footer-bottom-text'>Copyright © 2025 CommerceKind | Powered By <a href="www.google.com">Develtro</a></span>
-            </div>
+ 
         </div>
+        <div className="Footer-bottom">
+        <span className='Footer-bottom-text'>Copyright © 2025 CommerceKind | Powered By <a href="www.google.com">Develtro</a></span>
+    </div>
+    </div>
     );
 }
 
