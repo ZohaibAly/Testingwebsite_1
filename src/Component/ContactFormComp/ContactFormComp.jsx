@@ -286,8 +286,11 @@ const ContactFormComp = () => {
                 onChange={handleChange}
               ></textarea>
             </div>
-
+            <div className='submit-button1'>
             <button type="submit" className="submit-button">Send Message</button>
+
+            </div>
+
           </form>
         </div>
       </div>

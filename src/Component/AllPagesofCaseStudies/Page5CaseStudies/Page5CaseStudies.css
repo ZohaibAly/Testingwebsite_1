@@ -198,14 +198,14 @@ height: 598px;
 
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
         padding:25px;
-        width: 418px;
+        width: 470px;
         display: flex;
         flex-direction: column;
         background-color: #FFFFFF;
         border: 1px solid var(--brand-button-color);
         align-items: center;
         border-radius: 25px;
-        height: 298px;
+        height: 350px;
     }
 
  } 
