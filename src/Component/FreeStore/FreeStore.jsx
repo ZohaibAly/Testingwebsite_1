@@ -4,7 +4,7 @@ import './FreeStore.css';
 
 const FreeStore = () => {
     return (
-        <div className='FreeStore-main'>
+        <div className='FreeStore-main Goodle-map'>
             <div className='FreeStore-text'>
                 <h2>Ready To Earn 5x More?</h2>
             </div>

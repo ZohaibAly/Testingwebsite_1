@@ -7,7 +7,7 @@ import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/fr
 
 const Footer = () => {
     return (
-        <div>
+        <div className='Footer-Parent'>
             <div className='Footer-main'>
             <div className='Footerpt-1'>
                 <div>
@@ -17,10 +17,21 @@ const Footer = () => {
                     CommerceKind is your trusted partner for Amazon’s success. We empower businesses to grow their stores and accounts with tailored solutions and proven expertise.
                 </p>
                 <div className='Footerpt-1-images'>
-                <Link to="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></Link>
-                <Link to="#"><FontAwesomeIcon icon={faXTwitter}  /></Link>
-                <Link to="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></Link>
-                <Link to="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></Link>
+                  <div className='Footer-1-icons'>  
+                  <Link to="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></Link>
+                  </div>
+               <div className='Footer-1-icons'>
+               <Link to="#"><FontAwesomeIcon icon={faXTwitter}  /></Link>
+               </div>
+              <div className='Footer-1-icons'>
+              <Link to="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></Link>
+              </div>
+              <div className='Footer-1-icons'>
+              <Link to="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></Link>
+              </div>
+               
+          
+                
                 
                 </div>
             </div>
