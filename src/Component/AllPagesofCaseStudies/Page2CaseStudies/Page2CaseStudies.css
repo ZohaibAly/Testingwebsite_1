@@ -202,6 +202,7 @@ height: 598px;
         display: flex;
         justify-content: center;
         flex-direction: column;
+        justify-content: center;
         background-color: #FFFFFF;
         border: 1px solid var(--brand-button-color);
         align-items: center;
