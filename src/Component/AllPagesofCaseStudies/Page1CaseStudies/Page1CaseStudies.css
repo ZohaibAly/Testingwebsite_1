@@ -198,14 +198,14 @@ height: 598px;
 
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
         padding:25px;
-        width: 470px;
+        width: 420px;
         display: flex;
         flex-direction: column;
         background-color: #FFFFFF;
         border: 1px solid var(--brand-button-color);
         align-items: center;
         border-radius: 25px;
-        height: 350px;
+        height: 300px;
     }
 
  } 
@@ -363,8 +363,8 @@ height: 598px;
      
      .image-section{
       .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-        width: 360px;
-        height: 300px;
+        width: 310px;
+        height: 250px;
       }
      
       h2{
@@ -495,8 +495,8 @@ height: 598px;
    .image-section{
     margin-top: 60px;
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-      width: 250px;
-      height: 220px;
+      width: 210px;
+      height: 180px;
     }
  
     h2{
@@ -586,8 +586,8 @@ height: 598px;
        align-self: center;
         margin-top: 20px;
       .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-        width: 250px;
-      height: 220px;
+        width: 210px;
+      height: 180px;
       }
       .image-section-right{
         margin-top: 13px;
@@ -692,8 +692,8 @@ height: 598px;
     flex-direction: column;
       margin-top: 20px;
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-      width: 250px;
-      height: 210px;
+      width: 210px;
+      height: 180px;
     }
     .image-section-right{
       flex-direction: row;

@@ -198,14 +198,14 @@ height: 598px;
 
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
         padding:25px;
-        width: 470px;
+        width: 418px;
         display: flex;
         flex-direction: column;
         background-color: #FFFFFF;
         border: 1px solid var(--brand-button-color);
         align-items: center;
         border-radius: 25px;
-        height: 350px;
+        height: 298px;
     }
 
  } 
@@ -326,8 +326,7 @@ height: 598px;
 
 /* Responsiveness start */
 
-@media ( width <= 1575px ) {
-
+@media ( width <= 1440px ) {
   .page1casestudies-candy-image {
     width: 800px;
     height: 500px;
@@ -369,8 +368,7 @@ height: 598px;
      .image-section{
       .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
         width: 360px;
-        height: 300px;
-
+        height: 258px;
       }
      
       h2{
@@ -404,23 +402,6 @@ height: 598px;
 
 
 @media ( width <= 1280px ) {
-  .challenges-1{ 
-    .challenges-1{ 
-      margin-top: 60px;
-  
-     .image-section{
-      img{
-        width:120 ;
-        height: 100px;
-      }
-      h2{
-        font-size: 30px;
-      }
-      .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-        width: 310px;
-        height: 270px;
-      }
-    }}}
   .page1casestudies-candy-image {
     width: 500px;
     height: 450px;
@@ -483,8 +464,7 @@ height: 598px;
         text-align: center;        
       }}
 }
-@media(width<=1130px){
-
+@media(width<=1092px){
  
   .challenges-1{
     .challenge-content{
@@ -502,8 +482,8 @@ height: 598px;
    .image-section{
     margin-top: 60px;
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-      width: 250px;
-      height: 220px;
+      width: 200px;
+      height: 180px;
     }
  
     h2{
@@ -596,8 +576,8 @@ height: 598px;
        align-self: center;
         margin-top: 20px;
       .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-        width: 250px;
-      height: 220px;
+        width: 212px;
+        height: 180px;
       }
       .image-section-right{
         margin-top: 13px;
@@ -702,8 +682,8 @@ height: 598px;
     flex-direction: column;
       margin-top: 20px;
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
-      width: 250px;
-      height: 210px;
+      width: 195px;
+      height: 180px;
     }
     .image-section-right{
       flex-direction: row;
