@@ -13,7 +13,7 @@ const FAQi = ({ faqData }) => {
     return (
         <div className='FAQ-main'>
             
-            <div className="blurred-ellipse">
+            <div className="Blurred-ellipse">
                 
             </div>
             <div className="FAQ-main-text">

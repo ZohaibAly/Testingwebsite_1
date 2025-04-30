@@ -11,21 +11,24 @@
     display: flex;
     flex-direction: column;
     overflow: hidden; 
-    margin-bottom: 100px;
+    margin-bottom: 100px; 
 position: relative;
+outline: 3px solid black;
+
 }
-.blurred-ellipse {
+.Blurred-ellipse {
     position: absolute;
     width: 450px;
-    height: 700px;
-    top: 50%;
+    height: 650px;
+    top: 49%;
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: #8C41E8;
     opacity: 0.19;
     filter: blur(150px);
-    z-index: 0;
+    z-index: -1;
+
 }
 
 .FAQ-main-text{
@@ -63,7 +66,7 @@ position: relative;
 }
 
 /* ACCORDION CSS */
-.blurred-ellipse {
+.Blurred-ellipse {
     position: absolute;
     width: 450px;
     height: 700px;
@@ -292,7 +295,7 @@ position: relative;
     p{font-size: 10px;}
 
         }
-        .blurred-ellipse {
+        .Blurred-ellipse {
             display: none;
         }
 }
