@@ -230,7 +230,7 @@ padding: 30px 40px 30px 40px;
 }
 
 .close-button {
-    background-color: var(--brand-button-color);
+    background-color:var(--main-hiring);
     color: white;
     border: none;
     padding: 0.4rem 1rem;
