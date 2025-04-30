@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Page1CaseStudies/Page1CaseStudies.css';
+import './Page8CaseStudies.css';
 // Import images 
 import page1image1 from '../../../assets/page1image1.png';
 import page1image2 from '../../../assets/page1image2.png';
@@ -110,9 +110,9 @@ return(
              </div> 
 
         {/* Results and achievments */}
-            <div id="challenges-section-3-update-7">
-              <div id="challenges-3-update-7">
-                <div id='challenge-content-3-update-7'>
+            <div id="challenges-section-3-update-8">
+              <div id="challenges-3-update-8">
+                <div id='challenge-content-3-update-8'>
                   <h3>Results & Achivements</h3>
                   <p>Our strategic interventions led to remarkable outcomes:</p>
                   <ul>
@@ -120,9 +120,9 @@ return(
                       <li><p>Improved Advertising Efficiency – Real ACoS improved from 23.99% in 2023 to 12.37% in 2024.</p></li>
                       <li><p>Profitability Boost – Net profit surged from $2,403.13 in 2023 to $25,405.25 in 2024.</p></li>
                   </ul> 
-                  <p id='bottom-result-p'><strong>Through meticulous planning and execution, Sweet Gifting transformed its challenges into opportunities, achieving substantial growth and enhanced brand integrity on Amazon.</strong></p>
+                  <p id='bottom-result-p-8'><strong>Through meticulous planning and execution, Sweet Gifting transformed its challenges into opportunities, achieving substantial growth and enhanced brand integrity on Amazon.</strong></p>
                 </div>
-                <div id='image-section-results-update-7'>
+                <div id='image-section-results-update-8'>
               <img src={page8Result} alt="Logo" />        
                 </div>
               </div>

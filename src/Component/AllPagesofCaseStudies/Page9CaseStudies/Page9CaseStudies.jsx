@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Page1CaseStudies/Page1CaseStudies.css';
+import './Page9CaseStudies.css';
 // Import images 
 import page1image1 from '../../../assets/page1image1.png';
 import page1image2 from '../../../assets/page1image2.png';
@@ -102,9 +102,9 @@ const CaseStudiesPage1 = () => {
       </div> 
 
       {/* Results and achievments */}
-      <div id="challenges-section-3-update-7">
-        <div id="challenges-3-update-7">
-          <div id='challenge-content-3-update-7'>
+      <div id="challenges-section-3-update-9">
+        <div id="challenges-3-update-9">
+          <div id='challenge-content-3-update-9'>
             <h3>Results & Achivements</h3>
             <p>Revenue Growth – Increased from $374,665 to $538,561 per month.</p>
             <ul style={{marginLeft: '0px'}}>
@@ -115,7 +115,7 @@ const CaseStudiesPage1 = () => {
               <p><span><strong>Inventory Optimization</strong> – Implemented an effective restock plan, reducing stockout occurrences.</span></p>
             </ul>
           </div>
-          <div id='image-section-results-update-7'>
+          <div id='image-section-results-update-9'>
             <img src={page9Result} alt="Logo" />        
           </div>
         </div>

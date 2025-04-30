@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Page7CaseStudies/Page7CaseStudies.css"
+import "./Page7CaseStudies.css"
 // Import images 
 import page1image1 from '../../../assets/page1image1.png';
 import page1image2 from '../../../assets/page1image2.png';
