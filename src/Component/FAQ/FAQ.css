@@ -13,9 +13,7 @@
     overflow: hidden; 
     margin-bottom: 100px; 
 position: relative;
-outline: 3px solid black;
 
-}
 .Blurred-ellipse {
     position: absolute;
     width: 450px;
@@ -25,11 +23,13 @@ outline: 3px solid black;
     transform: translate(-50%, -50%);
     border-radius: 50%;
     background-color: #8C41E8;
-    opacity: 0.19;
+    opacity: 0.5;
     filter: blur(150px);
     z-index: -1;
 
 }
+}
+
 
 .FAQ-main-text{
     display: flex;
