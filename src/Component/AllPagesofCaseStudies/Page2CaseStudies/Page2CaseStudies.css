@@ -198,9 +198,10 @@ height: 598px;
 
     .image-section-right-1, .image-section-right-2, .image-section-left-1, .image-section-left-2{
         padding:25px;
-        width: 470px;
+        width: 420px;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         background-color: #FFFFFF;
         border: 1px solid var(--brand-button-color);
         align-items: center;
