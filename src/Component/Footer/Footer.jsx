@@ -75,7 +75,7 @@ const Footer = () => {
  
         </div>
         <div className="Footer-bottom">
-        <span className='Footer-bottom-text'>Copyright © 2025 CommerceKind | Powered By <a href="www.google.com">Develtro</a></span>
+        <span className='Footer-bottom-text'>Copyright © 2025 CommerceKind | Powered By <a href="https://develtro.com/">Develtro</a></span>
     </div>
     </div>
     );
