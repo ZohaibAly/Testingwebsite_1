@@ -4,6 +4,7 @@ import './ContactFormComp.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+import emailjs from '@emailjs/browser';
 
 // Custom dropdown component
 const CustomDropdown = ({ options, value, onChange, name }) => {
@@ -65,6 +66,7 @@ const CustomDropdown = ({ options, value, onChange, name }) => {
 };
 
 const ContactFormComp = () => {
+  const form = useRef();
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -74,6 +76,16 @@ const ContactFormComp = () => {
     amazonStatus: 'Not On Amazon Yet',
     message: ''
   });
+  
+  // Add state for form status
+  const [status, setStatus] = useState({
+    submitted: false,
+    success: false,
+    message: ''
+  });
+  
+  // Add loading state
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -92,8 +104,47 @@ const ContactFormComp = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Add your form submission logic here 
+    setLoading(true);
+    
+    // Replace these with your actual EmailJS credentials
+    const SERVICE_ID = 'service_kwb1hhs'; // Get this from EmailJS
+    const TEMPLATE_ID = 'template_pmq305r'; // Get this from EmailJS
+    const PUBLIC_KEY = '0kcHpWi_43nqVU0MI'; // Get this from EmailJS
+    
+    // EmailJS is already initialized in the HTML file
+    
+    // Send the email using EmailJS
+    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+      .then((result) => {
+        console.log('Email sent successfully:', result.text);
+        setStatus({
+          submitted: true,
+          success: true,
+          message: 'Thank you! Your message has been sent successfully.'
+        });
+        
+        // Reset form data
+        setFormData({
+          firstName: '',
+          lastName: '',
+          email: '',
+          phoneNumber: '',
+          helpWith: '',
+          amazonStatus: 'Not On Amazon Yet',
+          message: ''
+        });
+        
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Error sending email:', error.text);
+        setStatus({
+          submitted: true,
+          success: false,
+          message: 'Oops! Something went wrong. Please try again later.'
+        });
+        setLoading(false);
+      });
   };
 
   // Amazon status options for the dropdown
@@ -103,7 +154,6 @@ const ContactFormComp = () => {
     { value: '100,000-$500,000', label: '100,000-$500,000' },
     { value: '$500,000-$1,000,000', label: '$500,000-$1,000,000' },
     { value: 'over $1,000,000', label: 'over $1,000,000' }
-
   ];
 
   return (
@@ -151,147 +201,174 @@ const ContactFormComp = () => {
 
           <div className="social-icons">
             <div className="social-icon facebook">
-            <Link to="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></Link>
+              <Link to="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></Link>
             </div>
             <div className="social-icon twitter">
-            <Link to="#"><FontAwesomeIcon icon={faXTwitter} /></Link>
-
+              <Link to="#"><FontAwesomeIcon icon={faXTwitter} /></Link>
             </div>
             <div className="social-icon instagram">
-            <Link to="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></Link>
-            
+              <Link to="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></Link>
             </div>
             <div className="social-icon linkedin">
-            <Link to="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></Link>
-      
+              <Link to="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></Link>
             </div>
           </div>
         </div>
 
         <div className="contact-form">
-          <form onSubmit={handleSubmit}>
-            <div className="form-row">
-              <div className="form-group">
-                <label htmlFor="firstName">First Name</label>
-                <input
-                  type="text"
-                  id="firstName"
-                  name="firstName"
-                  placeholder="John"
-                  value={formData.firstName}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="lastName">Last Name</label>
-                <input
-                  type="text"
-                  id="lastName"
-                  name="lastName"
-                  placeholder="Doe"
-                  value={formData.lastName}
-                  onChange={handleChange}
-                />
-              </div>
+          {/* Show success/error message if form is submitted */}
+          {status.submitted && (
+            <div className={`form-message ${status.success ? 'success' : 'error'}`}>
+              {status.message}
             </div>
-
-            <div className="form-row">
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input
-                  type="email"
-                  id="email"
-                  name="email"
-                  placeholder="name@example.com"
-                  value={formData.email}
-                  onChange={handleChange}
-                />
-              </div>
-              <div className="form-group">
-                <label htmlFor="phoneNumber">Phone Number</label>
-                <input
-                  type="tel"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  placeholder="+1 (123) 456 7890"
-                  value={formData.phoneNumber}
-                  onChange={handleChange}
-                />
-              </div>
-            </div>
-
-            <div className="form-group">
-              <label>I Need Help With</label>
-              <div className="radio-options">
-                <div className="radio-option">
+          )}
+          
+          {/* Hide form if submission was successful */}
+          {!status.success && (
+            <form ref={form} onSubmit={handleSubmit}>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="firstName">First Name</label>
                   <input
-                    type="radio"
-                    id="storeAudit"
-                    name="helpWith"
-                    checked={formData.helpWith === 'Store Audit'}
-                    onChange={() => handleRadioChange('Store Audit')}
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    placeholder="John"
+                    value={formData.firstName}
+                    onChange={handleChange}
+                    required
                   />
-                  <label htmlFor="storeAudit">Store Audit</label>
                 </div>
-                <div className="radio-option">
+                <div className="form-group">
+                  <label htmlFor="lastName">Last Name</label>
                   <input
-                    type="radio"
-                    id="listingsCreative"
-                    name="helpWith"
-                    checked={formData.helpWith === 'Listings Creative'}
-                    onChange={() => handleRadioChange('Listings Creative')}
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    placeholder="Doe"
+                    value={formData.lastName}
+                    onChange={handleChange}
+                    required
                   />
-                  <label htmlFor="listingsCreative">Listings Creative</label>
-                </div>
-                <div className="radio-option">
-                  <input
-                    type="radio"
-                    id="ppc"
-                    name="helpWith"
-                    checked={formData.helpWith === 'PPC'}
-                    onChange={() => handleRadioChange('PPC')}
-                  />
-                  <label htmlFor="ppc">PPC</label>
-                </div>
-                <div className="radio-option">
-                  <input
-                    type="radio"
-                    id="others"
-                    name="helpWith"
-                    checked={formData.helpWith === 'Others'}
-                    onChange={() => handleRadioChange('Others')}
-                  />
-                  <label htmlFor="others">Others</label>
                 </div>
               </div>
-            </div>
 
-            <div className="form-group">
-              {/* Replace the native select with CustomDropdown */}
-              <CustomDropdown
-                options={amazonStatusOptions}
-                value={formData.amazonStatus}
-                onChange={handleChange}
-                name="amazonStatus"
-              />
-            </div>
+              <div className="form-row">
+                <div className="form-group">
+                  <label htmlFor="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="name@example.com"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="phoneNumber">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="+1 (123) 456 7890"
+                    value={formData.phoneNumber}
+                    onChange={handleChange}
+                  />
+                </div>
+              </div>
 
-            <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Write your message..."
-                value={formData.message}
-                onChange={handleChange}
-              ></textarea>
-            </div>
-            <div className='submit-button1'>
-            <button type="submit" className="submit-button">Send Message</button>
+              <div className="form-group">
+                <label>I Need Help With</label>
+                <div className="radio-options">
+                  <div className="radio-option">
+                    <input
+                      type="radio"
+                      id="storeAudit"
+                      name="helpWith"
+                      value="Store Audit"
+                      checked={formData.helpWith === 'Store Audit'}
+                      onChange={() => handleRadioChange('Store Audit')}
+                    />
+                    <label htmlFor="storeAudit">Store Audit</label>
+                  </div>
+                  <div className="radio-option">
+                    <input
+                      type="radio"
+                      id="listingsCreative"
+                      name="helpWith"
+                      value="Listings Creative"
+                      checked={formData.helpWith === 'Listings Creative'}
+                      onChange={() => handleRadioChange('Listings Creative')}
+                    />
+                    <label htmlFor="listingsCreative">Listings Creative</label>
+                  </div>
+                  <div className="radio-option">
+                    <input
+                      type="radio"
+                      id="ppc"
+                      name="helpWith"
+                      value="PPC"
+                      checked={formData.helpWith === 'PPC'}
+                      onChange={() => handleRadioChange('PPC')}
+                    />
+                    <label htmlFor="ppc">PPC</label>
+                  </div>
+                  <div className="radio-option">
+                    <input
+                      type="radio"
+                      id="others"
+                      name="helpWith"
+                      value="Others"
+                      checked={formData.helpWith === 'Others'}
+                      onChange={() => handleRadioChange('Others')}
+                    />
+                    <label htmlFor="others">Others</label>
+                  </div>
+                </div>
+              </div>
 
-            </div>
+              <div className="form-group">
+                <label htmlFor="amazonStatus">Amazon Status</label>
+                {/* Use a hidden input for EmailJS to capture the value */}
+                <input 
+                  type="hidden" 
+                  name="amazonStatus" 
+                  value={formData.amazonStatus} 
+                />
+                {/* Keep the CustomDropdown for UI */}
+                <CustomDropdown
+                  options={amazonStatusOptions}
+                  value={formData.amazonStatus}
+                  onChange={handleChange}
+                  name="amazonStatus"
+                />
+              </div>
 
-          </form>
+              <div className="form-group">
+                <label htmlFor="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Write your message..."
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                ></textarea>
+              </div>
+              
+              <div className='submit-button1'>
+                <button 
+                  type="submit" 
+                  className="submit-button" 
+                  disabled={loading}
+                >
+                  {loading ? 'Sending...' : 'Send Message'}
+                </button>
+              </div>
+            </form>
+          )}
         </div>
       </div>
     </div>
