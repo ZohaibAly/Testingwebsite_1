@@ -51,7 +51,7 @@ function FAQ() {
       answer: "To get started with CommerceKind, simply contact us through our website.Our team will discuss your needs and develop a tailored strategy to help you unlock your brand’s full potential on Amazon."
     }
   ];
- 
+
     return (
         <div className="FAQ">
             <FAQi faqData={faqData}/>

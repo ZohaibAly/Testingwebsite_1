@@ -57,10 +57,8 @@ function App() {
           <Route path="/case-study-7x-revenue-growth-by-overcoming-compliance-inventory-challenges" element={<CaseStudy breadCrumbTitle="Case Study: 7X Revenue Growth by Overcoming Compliance & Inventory Challenges" PageComponent={Page8comp}/>} />
           <Route path="/case-study-scaling-a-brands-elderberry-supplement-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: Scaling a brand’s Elderberry Supplement on Amazon" PageComponent={Page9comp}/>} />
         </Routes>
-        </Suspense>
-        
-        <FooterComp/>
-     
+        </Suspense>    
+        <FooterComp/>     
       </div>
     </Router>
   );
