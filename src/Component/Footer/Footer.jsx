@@ -31,9 +31,6 @@ const Footer = () => {
               <Link to="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></Link>
               </div>
                
-          
-                
-                
                 </div>
             </div>
             <div className='Footerpt-2'>
