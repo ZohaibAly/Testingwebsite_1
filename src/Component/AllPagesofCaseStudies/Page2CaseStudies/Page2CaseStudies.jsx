@@ -9,7 +9,7 @@ import page1image4 from '../../../assets/page1image4.png';
 import Ellipse from '../../../assets/Ellipse.png';
 import MaskGroup from '../../../assets/Mask-group.png';
 import strategies from '../../../assets/Strategies-image.png';
-import results from '../../../assets/Result-image.png';
+import results from '../../../assets/page2BeforeAfter.png';
 
 
 const CaseStudiesPage1 = () => {
