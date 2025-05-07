@@ -12,12 +12,14 @@ flex-direction: column;
 place-content: center;
 place-items: center;
 place-self: center;
+
 }
 
 /* Header Styles */
 .testimonials-header {
   margin-bottom: 50px;
   text-align: center;
+
 }
 
 .testimonials-header h2 {
@@ -208,7 +210,14 @@ z-index: 1000;
 
 
 /* Responsive Screens 1868px */
-
+@media ( width >= 2000px) {
+  .testimonials-content {
+    place-content: center;
+    place-items: center;
+    place-self: center;
+    
+  }
+}
 @media ( width <= 1868px) {
   .testimonials-left img{
     width: 560px;

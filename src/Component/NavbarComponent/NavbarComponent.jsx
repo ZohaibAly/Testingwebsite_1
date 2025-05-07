@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhoneVolume, faMagnifyingGlass, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhoneVolume, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 import Logo from '../../assets/Logo-HD-CommerceKind.png';
 import './NavbarComponent.css';
@@ -54,10 +54,13 @@ const NavbarComponent = () => {
           <Link to="/contact">Contact</Link>
         </div>
         <div className='actions'>
-          <div className='search'>
+          {/* <div className='search'>
             <FontAwesomeIcon icon={faMagnifyingGlass} />
-          </div>
-          <button className='try-button'>Try Free</button>
+          </div> */}
+         <Link to="/contact">
+         <button className='try-button'>Try Free</button>
+            </Link>
+
         </div>
         <div className='hamburger-icon' onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />

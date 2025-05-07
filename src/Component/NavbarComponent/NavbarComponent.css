@@ -115,11 +115,11 @@
     gap: 20px;
   }
   
-  .search {
+  /* .search {
     color: #333;
     cursor: pointer;
     font-size: 24px;
-  }
+  } */
 
   .try-button {
     background-color: var(--brand2-color);
