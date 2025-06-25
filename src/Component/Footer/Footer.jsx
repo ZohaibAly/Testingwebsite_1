@@ -63,7 +63,7 @@ const Footer = () => {
                     <button type="button">Subscribe</button>
                 </div>
                 <h4>Phone: </h4>
-                <p>(659) 209-3973</p>
+                <p>(203) 547-9102</p>
                 <h4>Address: </h4>
                 <p>7628 103rd St Jacksonville, FL 32210</p>
             </div>

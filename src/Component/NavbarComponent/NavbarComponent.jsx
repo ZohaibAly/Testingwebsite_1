@@ -24,7 +24,7 @@ const NavbarComponent = () => {
           <div className='divider'>|</div>
           <div className='phone-container'>
             <FontAwesomeIcon icon={faPhoneVolume} />
-            <span>(659) 209-3973</span>
+            <span>(203) 547-9102</span>
           </div>
         </div>
         <div className='p2'>
