@@ -8,6 +8,8 @@ import Navbar from './Component/NavbarComponent/NavbarComponent';
 
 import FooterComp from './Component/Footer/Footer';
 
+const JobDetailPage = lazy(() => import('./Component/JobDetailPage/JobDetailPage'));
+const ApplicationForm = lazy(() => import('./Component/ApplicationForm/ApplicationForm'));
 const Homepage = lazy(() => import('./Pages/Home/Home'));
 const ServicesPage = lazy(() => import('./Pages/Services/Services'));
 const CaseStudiesPage = lazy(() => import('./Pages/CaseStudies/CaseStudies'));
@@ -41,6 +43,8 @@ function App() {
         <Routes>
           <Route path="/" element={<Homepage />} />
           <Route path="/careers" element={<CareersPage />} />
+          <Route path="/careers/job/:jobId" element={<JobDetailPage />} />
+          <Route path="/careers/apply/:jobId" element={<ApplicationForm />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/frequently-asked-questions" element={<FAQPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />

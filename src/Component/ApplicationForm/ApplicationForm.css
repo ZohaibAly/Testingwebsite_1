@@ -1,0 +1,472 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.applicationform-container {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Success Banner */
+.applicationform-success-banner {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  animation: slideInRight 0.3s ease-out;
+}
+
+.applicationform-success-icon {
+  font-size: 1.2rem;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Header Styles */
+.applicationform-header {
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.applicationform-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+ 
+}
+
+.applicationform-header-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.applicationform-submit-btn{
+   font-family: "poppins", sans-serif;
+  background-color:#0EA498;
+  color: white;
+  padding:12px;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+border: 2px solid #0EA498;
+  transition: all 0.3s linear;
+}
+
+.applicationform-submit-btn:hover {
+  background-color: #ffffff;
+  color:#0EA498;
+  border: 2px solid #0EA498;
+    transition: all 0.3s linear;
+}
+
+.applicationform-company-badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.applicationform-main-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+
+.applicationform-location-posted {
+  font-family: "Poppins", sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+/* Form Content */
+.applicationform-content {
+  max-width: 800px;
+  margin: -2rem auto 0;
+  padding: 0 2rem 2rem;
+  position: relative;
+  z-index: 3;
+}
+
+/* Form Header */
+.applicationform-form-header {
+  margin-bottom: 2rem;
+}
+
+.applicationform-back-button {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: #667eea;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.applicationform-back-button:hover {
+  background: #f7fafc;
+  border-color: #667eea;
+  transform: translateY(-1px);
+}
+
+.applicationform-back-icon {
+  font-size: 1rem;
+}
+
+/* Form Container */
+.applicationform-form-container {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-top: 1rem;
+}
+
+/* Autofill Section */
+.applicationform-autofill-section {
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border: 2px solid #bae6fd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.applicationform-autofill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.applicationform-autofill-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.applicationform-autofill-text {
+  font-family: "Poppins", sans-serif;
+  color: #1e40af;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.applicationform-import-controls {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.applicationform-import-btn {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.applicationform-import-btn:hover:not(:disabled) {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  transform: translateY(-1px);
+}
+
+.applicationform-import-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.applicationform-import-icon {
+  font-size: 1rem;
+}
+
+/* Required Text */
+.applicationform-required-text {
+  font-family: "Poppins", sans-serif;
+  color: #e53e3e;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Sections */
+.applicationform-form-section {
+  margin-bottom: 2rem;
+}
+
+.applicationform-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.applicationform-section-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.applicationform-clear-btn {
+  background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.applicationform-clear-btn:hover {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  transform: translateY(-1px);
+}
+
+/* Form Elements */
+.applicationform-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.applicationform-form-group {
+  margin-bottom: 1rem;
+}
+
+.applicationform-form-label {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.applicationform-optional {
+  color: #a0aec0;
+  font-weight: 400;
+}
+
+.applicationform-form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.applicationform-form-input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.applicationform-input-error {
+  border-color: #e53e3e !important;
+}
+
+.applicationform-input-error:focus {
+  box-shadow: 0 0 0 3px rgba(229, 62, 62, 0.1) !important;
+}
+
+.applicationform-form-textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  resize: vertical;
+  min-height: 100px;
+  transition: border-color 0.2s ease;
+}
+
+.applicationform-form-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.applicationform-form-select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background: white;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.applicationform-form-select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Error Messages */
+.applicationform-error-message {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #e53e3e;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  animation: shake 0.3s ease-in-out;
+}
+
+.applicationform-error-icon {
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* Phone Input */
+.applicationform-phone-input-group {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.applicationform-country-code {
+  flex: 0 0 120px;
+  padding: 0.75rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  background: white;
+  cursor: pointer;
+}
+
+.applicationform-phone-number {
+  flex: 1;
+}
+
+/* File Upload */
+.applicationform-file-upload-area {
+  border: 2px dashed #cbd5e0;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  background: #f7fafc;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.applicationform-file-upload-area:hover {
+  border-color: #667eea;
+  background: #f0f4ff;
+}
+
+.applicationform-upload-error {
+  border-color: #e53e3e;
+  background: #fef2f2;
+}
+
+.applicationform-upload-success {
+  border-color: #10b981;
+  background: #ecfdf5;
+  border-style: solid;
+}
+
+.applicationform-upload-icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #667eea;
+}
+
+.applicationform-upload-text {
+  font-family: "Poppins", sans-serif;
+  color: #718096;
+  font-size: 0.9rem;
+}
+
+.applicationform-upload-link {
+  color: #667eea;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.applicationform-upload-success-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.applicationform-upload-success-icon {
+  font-size: 1.5rem;}

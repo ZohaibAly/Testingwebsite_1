@@ -1,11 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './JobListing.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { jobsData } from '../Data/JobsData';
 import careerimage from '../../assets/Career-image-commerceKind.png';
-const JobCard = ({ title, onApplyClick }) => {
+
+const JobCard = ({job}) => {
+    const navigate = useNavigate();
+
+  const handleApplyClick = () => {
+    navigate(`/careers/job/${job.id}`);
+  };
+
   return (
     <div className="job-card">
-      <h3 className="job-title">{title}</h3>
+      <h3 className="job-title">{job.title}</h3>
       
       <div className="job-info">
         <div className="company-logo">
@@ -13,38 +21,22 @@ const JobCard = ({ title, onApplyClick }) => {
         </div>
         
         <div className="job-tags">
-          <span className="tag tag-time">5PM-2AM</span>
-          <span className="tag tag-days">Monday-Friday</span>
-          <span className="tag tag-location">Paragon City, Lahore</span>
+          <span className="tag tag-time">{job.schedule}</span>
+          <span className="tag tag-days">{job.days}</span>
+          <span className="tag tag-location">{job.location}</span>
         </div>
       </div>
 
-      
-<div className='upperbtn'>
-<button className="apply-button" onClick={onApplyClick} >
-        Apply Now
-      </button>
-</div>
-      
+      <div className='upperbtn'>
+        <button className="apply-button" onClick={handleApplyClick}>
+          Apply Now
+        </button>
+      </div>
     </div>
   );
 };
 
 const JobListingPage = () => {
-    const [showModal, setShowModal] = useState(false);
-  
-    // Simple toggle function
-    const toggleModal = () => setShowModal(!showModal);
-  // List of job titles
-  const jobTitles = [
-    "eBay API Developer",
-    "Amazon API Developer",
-    "Business Development Executive",
-    "Amazon PL Brand Manager",
-    "Cold Caller Specialist",
-    "Amazon Private Label Intern"
-  ];
-
   return (
     <div className="job-listing-container">
       <div className="header">
@@ -53,27 +45,16 @@ const JobListingPage = () => {
       </div>
       
       <div className="jobs-grid">
-        {jobTitles.map((title, index) => (
-          <JobCard key={index} title={title} onApplyClick={toggleModal}/>
+        {jobsData.map((job) => (
+          <JobCard key={job.id} job={job} />
         ))}
       </div>
+      
       <div className="button-container">
-      <Link to="https://www.linkedin.com/company/commercekindllc/" className="linkedin-button">   Explore More On LinkedIn</Link>
-
+        <Link to="https://www.linkedin.com/company/commercekindllc/" className="linkedin-button">
+          Explore More On LinkedIn
+        </Link>
       </div>
-      {showModal && (
-        <div className="JobListing-modal-overlay" onClick={toggleModal}>
-          <div className="JobListing-modal-content" onClick={e => e.stopPropagation()}>
-            <div className='JobListing-model-c1'>
-            <p>Apply now on <Link to="https://www.linkedin.com/company/commercekindllc/" className="modal-link" >LinkedIn</Link> or email your resume at   <Link to="mailto:hr@commercekind.com" className="modal-link" >hr@commercekind.com</Link></p>
-            </div>
-           <div className='JobListing-model-c2'> 
-           <button className="close-button" onClick={toggleModal}>Close</button>
-           </div>
-            
-          </div>
-        </div>
-      )}
     </div>
   );
 };
