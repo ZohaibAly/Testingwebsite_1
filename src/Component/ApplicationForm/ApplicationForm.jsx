@@ -8,63 +8,62 @@ import Select from "react-select";
 import pkFlag from "../../assets/pakistan.png";
 import caFlag from "../../assets/canada.png";
 import irFlag from "../../assets/ireland.png";
-import inFlag from "../../assets/indiaFlag.png"
+import inFlag from "../../assets/indiaFlag.png";
 import BnFlag from "../../assets/Bangladesh.png";
 import usFlag from "../../assets/united-states.png";
-import ukFlag from '../../assets/flag.png';
-import gmFlag from '../../assets/germany.png';
-import ausFlag from '../../assets/australia.png';
-import uaeFlag from '../../assets/united-arab-emirates.png';
-import jpFlag from '../../assets/japan.png';
+import ukFlag from "../../assets/flag.png";
+import gmFlag from "../../assets/germany.png";
+import ausFlag from "../../assets/australia.png";
+import uaeFlag from "../../assets/united-arab-emirates.png";
+import jpFlag from "../../assets/japan.png";
 
 const countryOptions = [
   {
-    value: '+92',
-    label: 'PK (+92)',
+    value: "+92",
+    label: "PK (+92)",
     flag: pkFlag,
   },
   {
-    value: '+1',
-    label: 'US (+1)',
+    value: "+1",
+    label: "US (+1)",
     flag: usFlag,
   },
   {
-    value: '+91',
-    label: 'IN (+91)',
+    value: "+91",
+    label: "IN (+91)",
     flag: inFlag,
   },
   {
-    value: '+44',
-    label: 'UK (+44)',
+    value: "+44",
+    label: "UK (+44)",
     flag: ukFlag,
   },
   {
-    value: '+61',
-    label: 'AU (+61)',
+    value: "+61",
+    label: "AU (+61)",
     flag: ausFlag,
   },
   {
-    value: '+1',
-    label: 'CA (+1)',
+    value: "+1",
+    label: "CA (+1)",
     flag: caFlag,
   },
   {
-    value: '+81',
-    label: 'JP (+81)',
+    value: "+81",
+    label: "JP (+81)",
     flag: jpFlag,
   },
   {
-    value: '+49',
-    label: 'DE (+49)',
+    value: "+49",
+    label: "Gm(+49)",
     flag: gmFlag,
   },
   {
-    value: '+353',
-    label: 'IR(+353)',
+    value: "+353",
+    label: "IR(+353)",
     flag: irFlag,
-  }
+  },
 ];
-
 
 const ApplicationForm = () => {
   const { jobId } = useParams();
@@ -343,24 +342,13 @@ const ApplicationForm = () => {
             <div className="applicationform-form-group">
               <label className="applicationform-form-label">* Phone</label>
               <div className="applicationform-phone-input-group">
-                {/* <select className="applicationform-country-code">
-                  <option value="+92">🇵🇰 +92</option>
-                  <option value="+1">🇺🇸 +1</option>
-                  <option value="+91">🇮🇳 +91</option>
-                  <option value="+44">🇬🇧 +44</option>
-                  <option value="+971">🇦🇪 +971</option>
-                  <option value="+61">🇦🇺 +61</option>
-                  <option value="+1">🇨🇦 +1</option>
-                  <option value="+81">🇯🇵 +81</option>
-                  <option value="+49">🇩🇪 +49</option>
-                  <option value="+966">🇸🇦 +966</option>
-                  <option value="+880">🇧🇩 +880</option>
-                  <option value="+20">🇪🇬 +20</option>
-                </select> */}
                 <Select
                   className="applicationform-country-code"
                   options={countryOptions}
                   defaultValue={countryOptions[0]}
+                  isSearchable={false} 
+                  isClearable={false} 
+                  isDisabled={false}
                   getOptionLabel={(e) => (
                     <div
                       style={{
