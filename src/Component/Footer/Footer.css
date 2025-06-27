@@ -740,13 +740,13 @@
   }
 }
 
-@media (width<=342px) {
+@media ( width <= 342px ) {
   .Footer-main {
     padding-bottom: 40px;
   }
   .Footerpt-1 {
     width: 280px;
-    height: 280px;
+    height: 310px;
     padding: 25px 0px 0px 25px;
 
     & .image-1 {

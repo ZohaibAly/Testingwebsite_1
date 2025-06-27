@@ -187,15 +187,29 @@
   font-family: "Poppins", sans-serif;
 }
 
+.breadcrumb button {
+  padding:10px;
+  border:2px solid #3b82f6;
+  border-radius:20px;
+ background-color:#3b82f6;
+   font-family: "Poppins", sans-serif;
+   font-size:15px;
+   transition:all 0.3s linear;
+}
+.breadcrumb button:hover{
+ border:2px solid #3b82f6;
+  transition:all 0.3s linear;
+   background-color:white;
+}
+ 
 .breadcrumb a {
-  color: #3b82f6;
   text-decoration: none;
+  color:white;
+  
 }
-
-.breadcrumb a:hover {
-  text-decoration: underline;
+.breadcrumb a:hover{
+   color:#6C30ED;
 }
-
 .breadcrumb span {
   color: #6b7280;
 }

@@ -14,60 +14,19 @@
     --text-color: #292E4C;
 }
 
-/* Main container styles */
-.job-listing-container {
-    max-width: 1920px;
-    margin: 0 auto;
-
-    padding: 2rem 1rem;
-    font-family: var(--font-main);
-}
-
-/* Header styles */
-.header {
-    text-align: center;
-    margin-bottom: 3rem;
-}
-
-.hiring-tag {
-    color:var(--main-hiring);
-    font-weight: 700;
-    font-family: var(--font-second);
-    font-size: 28px;
-}
-
-.main-heading {
-    color:var(--text-color);
-    font-size:60px;
-    font-weight: 700;
-    line-height: 1.2;
-    font-family: var(--font-main);
-}
-
-/* Job cards grid */
-.jobs-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem;
-    width:100%;
-
-}
-
-/* Individual job card */
-.job-card {
-padding: 30px 40px 30px 40px;
+/* JobCard Component Styles */
+.jobcard-container {
+    padding: 30px 40px 30px 40px;
     border: 1px solid #e5e7eb;
-    border-radius:15px;
+    border-radius: 15px;
     background-color: white;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.25098039215686274);
     display: flex;
     flex-direction: column;
-
     margin-bottom: 1.5rem;
 }
 
-.job-title {
+.jobcard-title {
     font-size: 36px;
     font-weight: 700;
     color: var(--text-color);
@@ -75,30 +34,31 @@ padding: 30px 40px 30px 40px;
     font-family: var(--font-main);
 }
 
-.job-info {
+.jobcard-info {
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
 }
 
-.company-logo {
+.jobcard-company-logo {
     margin-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.company-logo img{
+.jobcard-company-logo img {
     width: 85px;
     height: 85px;
 }
-.job-tags {
+
+.jobcard-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
 }
 
-.tag {
+.jobcard-tag {
     font-size: 18px;
     padding: 5px 15px 5px 15px;
     border-style: none;
@@ -106,49 +66,93 @@ padding: 30px 40px 30px 40px;
     font-family: var(--font-second);
 }
 
-.tag-time {
-    background-color:#6C30ED40;
+.jobcard-tag-time {
+    background-color: #6C30ED40;
     color: var(--main-hiring);
 }
 
-.tag-days {
+.jobcard-tag-days {
     background-color: #0EA49840;
     color: #0EA498;
 }
 
-.tag-location {
+.jobcard-tag-location {
     background-color: #292E4C40;
     color: var(--text-color);
 }
 
-/* Apply button */
-.apply-button {
-    background-color:#6C30ED;
+.jobcard-upperbtn {
+    text-align: center;
+}
+
+.jobcard-apply-button {
+    background-color: #6C30ED;
     color: white;
     font-weight: 600;
     font-size: 20px;
-    padding: 5px 45px ;
-    border-radius:15px;
+    padding: 5px 45px;
+    border-radius: 15px;
     text-align: center;
     cursor: pointer;
-    border:3px solid #6C30ED;
+    border: 3px solid #6C30ED;
     transition: background-color 0.2s;
     font-family: var(--font-second);
     transition: all 0.3s linear;
 }
 
-.apply-button:hover {
- background-color: white;
- color: var(--main-hiring);
- border:3px solid #6C30ED;
- transition: all 0.3s linear;
- box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+.jobcard-apply-button:hover {
+    background-color: white;
+    color: var(--main-hiring);
+    border: 3px solid #6C30ED;
+    transition: all 0.3s linear;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
 
-/* LinkedIn button */
-.linkedin-button {
+/* JobListingPage Component Styles */
+.joblistingpage-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: var(--font-main);
+}
+
+.joblistingpage-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.joblistingpage-hiring-tag {
+    color: var(--main-hiring);
+    font-weight: 700;
+    font-family: var(--font-second);
+    font-size: 28px;
+}
+
+.joblistingpage-main-heading {
+    color: var(--text-color);
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.2;
+    font-family: var(--font-main);
+}
+
+.joblistingpage-jobs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+}
+
+.joblistingpage-button-container {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 130px;
+}
+
+.joblistingpage-linkedin-button {
     display: inline-block;
-    background-color:var(--text-color);
+    background-color: var(--text-color);
     color: white;
     font-size: 24px;
     border: 4px solid var(--text-color);
@@ -161,21 +165,15 @@ padding: 30px 40px 30px 40px;
     transition: all 0.3s linear;
 }
 
-.linkedin-button:hover {
+.joblistingpage-linkedin-button:hover {
     border: 4px solid var(--text-color);
     background-color: white;
     color: var(--text-color);
     transition: all 0.3s linear;
 }
 
-/* Container for centering the LinkedIn button */
-.button-container {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 130px;
-}
-
-.JobListing-modal-overlay {
+/* Modal Styles */
+.joblistingpage-modal-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -189,10 +187,10 @@ padding: 30px 40px 30px 40px;
     z-index: 61000;
 }
 
-.JobListing-modal-content {
+.joblistingpage-modal-content {
     background-color: white;
-    padding:20px;
-    border-radius:10px;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
     height: auto;
     width: auto;
@@ -200,6 +198,7 @@ padding: 30px 40px 30px 40px;
     font-family: var(--font-second);
     animation: slideDown 0.7s linear;
 }
+
 @keyframes slideDown {
     from {
         transform: translateY(-100%);
@@ -211,26 +210,27 @@ padding: 30px 40px 30px 40px;
     }
 }
 
-.JobListing-modal-content .JobListing-model-c1 p {
+.joblistingpage-modal-content .joblistingpage-model-c1 p {
     font-size: 16px;
     text-align: left;
     padding: 10px;
 }
-.JobListing-modal-content .JobListing-model-c2 {
+
+.joblistingpage-modal-content .joblistingpage-model-c2 {
     text-align: end;
     padding: 10px;
 }
-.modal-link {
-    color:#0EA498;
+
+.joblistingpage-modal-link {
+    color: #0EA498;
     text-decoration: none;
     font-weight: 500;
     font-family: var(--font-second);
     font-size: 16px;
-   
 }
 
-.close-button {
-    background-color:var(--main-hiring);
+.joblistingpage-close-button {
+    background-color: var(--main-hiring);
     color: white;
     border: none;
     padding: 0.4rem 1rem;
@@ -239,120 +239,116 @@ padding: 30px 40px 30px 40px;
     font-weight: 500;
     text-align: right;
     transition: all 0.3s linear;
-   
- 
 }
-.close-button:hover{
+
+.joblistingpage-close-button:hover {
     background-color: #0EA498;
     transition: all 0.3s linear;
 }
 
-@media ( width <= 1024px ) {
-    .JobListing-modal-content {
-    height: auto;
-    margin: 10px;
-    width: auto;
-    margin-top: 390px;
+/* Media Queries */
+@media (width <= 1024px) {
+    .joblistingpage-modal-content {
+        height: auto;
+        margin: 10px;
+        width: auto;
+        margin-top: 390px;
+    }
+}
 
-}
-}
-@media ( width <= 767px) {
-    .job-info{
+@media (width <= 767px) {
+    .jobcard-info {
         flex-direction: column;
     }
 
-
-    .hiring-tag {
+    .joblistingpage-hiring-tag {
         font-size: 22px;
         margin-bottom: 15px;
     }
-    .main-heading {
+
+    .joblistingpage-main-heading {
         font-size: 30px;
     }
-    .job-tags {
+
+    .jobcard-tags {
         display: flex;
         justify-content: center;
     }
-    .job-title {
+
+    .jobcard-title {
         font-size: 22px;
         text-align: center;
     }
-.tag {
-    font-size: 13px;
 
+    .jobcard-tag {
+        font-size: 13px;
+        border-radius: 30px;
+    }
 
-    border-radius: 30px;
-   
-}
-.upperbtn{
-    text-align: center;
-}
-.linkedin-button {
-            
-    font-size: 20px;
+    .jobcard-upperbtn {
+        text-align: center;
+    }
 
-    padding: 15px 30px 15px 30px;
+    .joblistingpage-linkedin-button {
+        font-size: 20px;
+        padding: 15px 30px 15px 30px;
+    }
 
-}
-.apply-button{
-    font-size: 18px;
-    padding: 5px 40px ;
-}
-.JobListing-modal-content {
-    height: auto;
-    margin: 10px;
-    width: auto;
-    margin-top: 390px;
+    .jobcard-apply-button {
+        font-size: 18px;
+        padding: 5px 40px;
+    }
 
-}
-}
-@media ( width <= 490px) {
-.linkedin-button {
-            
-    font-size: 18px;
-
-    padding: 10px 25px 10px 25px;
-
-}
-.apply-button{
-    font-size: 16px;
-    padding: 5px 35px ;
-}
-.JobListing-modal-content {
-    height: auto;
-    margin: 10px;
-    width: auto;
-    margin-top: 375px;
-
-}
+    .joblistingpage-modal-content {
+        height: auto;
+        margin: 10px;
+        width: auto;
+        margin-top: 390px;
+    }
 }
 
-@media ( width <= 380px ) {
-    
-    .hiring-tag {
+@media (width <= 490px) {
+    .joblistingpage-linkedin-button {
+        font-size: 18px;
+        padding: 10px 25px 10px 25px;
+    }
+
+    .jobcard-apply-button {
+        font-size: 16px;
+        padding: 5px 35px;
+    }
+
+    .joblistingpage-modal-content {
+        height: auto;
+        margin: 10px;
+        width: auto;
+        margin-top: 375px;
+    }
+}
+
+@media (width <= 380px) {
+    .joblistingpage-hiring-tag {
         font-size: 18px;
     }
-    .main-heading {
+
+    .joblistingpage-main-heading {
         font-size: 25px;
     }
-    .linkedin-button {
-            
+
+    .joblistingpage-linkedin-button {
         font-size: 16px;
-    
         padding: 8px 22px 8px 22px;
-    
     }
-    .apply-button{
+
+    .jobcard-apply-button {
         font-size: 14px;
-        padding: 5px 30px ;
+        padding: 5px 30px;
     }
-    .JobListing-modal-content {
-     
+
+    .joblistingpage-modal-content {
         height: auto;
         width: auto;
         margin: 10px;
         margin-top: 350px;
-    
     }
 }
-
