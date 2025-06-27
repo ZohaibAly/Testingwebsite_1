@@ -351,3 +351,12 @@
   color: #6b7280;
   font-size: 0.75rem;
 }
+
+/* RESPONSIVENESS */
+
+@media (width <= 768px) {
+  .interest-btn {
+    display: flex;
+    place-self: center;
+  }
+}

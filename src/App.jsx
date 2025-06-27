@@ -13,7 +13,7 @@ const ApplicationForm = lazy(() => import('./Component/ApplicationForm/Applicati
 const Homepage = lazy(() => import('./Pages/Home/Home'));
 const ServicesPage = lazy(() => import('./Pages/Services/Services'));
 const CaseStudiesPage = lazy(() => import('./Pages/CaseStudies/CaseStudies'));
-const BeforeAfterPage = lazy(() => import('./Pages/BeforeAfter/BeforeAfter'));
+const BeforeAfterPage = lazy(() => import('./Pages/BeforeAfter/BeforeAfter'));  
 const ContactPage = lazy(() => import('./Pages/Contact/Contact'));
 const BlogPage = lazy(() => import('./Pages/Blog/Blog'));
 const FAQPage = lazy(() => import('./Pages/FAQ/FAQ'));
