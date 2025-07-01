@@ -85,7 +85,7 @@ const ServicesSection = () => {
                     </div>
                     
                         <div className="services-component__btn">
-                        <Link to="/contact"><button>Contact Us Now</button></Link>
+                        <Link to="/contact-us"><button>Contact Us Now</button></Link>
                             
                         </div>
                     

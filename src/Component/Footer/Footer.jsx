@@ -40,7 +40,7 @@ const Footer = () => {
                     <Link to="/case-studies"><p>Case Studies</p></Link>
                     <Link to="/before-and-after"><p>Before and After</p></Link>
                     <Link to="/services"><p>Services</p></Link>
-                    <Link to="/contact"><p>Contact</p></Link>
+                    <Link to="/contact-us"><p>Contact</p></Link>
                 </div>
                 <div className='Quicklink'>
                     <h4>Quick Links</h4>

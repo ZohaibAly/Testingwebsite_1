@@ -20,10 +20,10 @@ const AmazonHeroComponent = () => {
             Strategy - Free Audit to get started
           </p>
           <div className="hero-buttons">
-            <Link to="/contact">
+            <Link to="/contact-us">
               <button className="hero-button">Free Store Audit</button>
             </Link>
-            <Link to="/contact" className="hero-link">
+            <Link to="/contact-us" className="hero-link">
               Grow Your Amazon Sales{" "}
               <span className="ama-arrow-icon">
                 <FontAwesomeIcon icon={faArrowRight} />

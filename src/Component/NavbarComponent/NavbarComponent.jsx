@@ -51,13 +51,13 @@ const NavbarComponent = () => {
           <Link to="/case-studies">Case Studies</Link>
           <Link to="/before-and-after">Before and After</Link>
           <Link to="/services">Services</Link>
-          <Link to="/contact">Contact</Link>
+          <Link to="/contact-us">Contact</Link>
         </div>
         <div className='actions'>
           {/* <div className='search'>
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </div> */}
-         <Link to="/contact">
+         <Link to="/contact-us">
          <button className='try-button'>Try Free</button>
             </Link>
 

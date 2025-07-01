@@ -9,7 +9,7 @@ const FreeStore = () => {
                 <h2>Ready To Earn 5x More?</h2>
             </div>
             <div className="FreeStore-btn">
-            <Link to="/contact"><button className='free-store-btn'>Free Store Audit</button></Link>
+            <Link to="/contact-us"><button className='free-store-btn'>Free Store Audit</button></Link>
             </div>
         </div>
     );

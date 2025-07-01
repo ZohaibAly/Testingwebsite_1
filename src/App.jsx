@@ -50,7 +50,7 @@ function App() {
           <Route path="/case-studies" element={<CaseStudiesPage />} />
           <Route path="/before-and-after" element={<BeforeAfterPage />} />
           <Route path="/services" element={<ServicesPage />} />
-          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact-us" element={<ContactPage />} />
           <Route path="/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2.5X Sales Growth – Scaling a brand’s Bariatric Multivitamin 45mg 90ct on Amazon" PageComponent={Page1comp}  />} />
           <Route path="/case-study-2x-sales-growth-revitalizing-a-brands-lozenges-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2X Sales Growth – Revitalizing a brand’s Lozenges on Amazon"  PageComponent={Page2comp}/>} />
           <Route path="/case-study-2x-sales-growth-scaling-a-brands-vitamin-d-drops-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2X Sales Growth – Scaling a brand’s Vitamin D Drops on Amazon"  PageComponent={Page3comp} />} />
