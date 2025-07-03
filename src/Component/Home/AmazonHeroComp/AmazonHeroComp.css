@@ -227,6 +227,13 @@
   }
 }
 
+@media (min-width: 1805px) and (max-width: 1900px){
+.hero-parent {
+  gap: 100px;
+}
+}
+
+
 @media (max-width: 992px) {
   .hero-parent {
     flex-direction: column;
