@@ -77,7 +77,7 @@ const NavbarComponent = () => {
           <Link to="/case-studies" onClick={toggleMenu} className='nav-links'>Case Studies</Link>
           <Link to="/before-and-after" onClick={toggleMenu} className='nav-links'>Before and After</Link>
           <Link to="/services" onClick={toggleMenu} className='nav-links'>Services</Link>
-          <Link to="/contact" onClick={toggleMenu} className='nav-links'>Contact</Link>
+          <Link to="/contact-us" onClick={toggleMenu} className='nav-links'>Contact</Link>
         </div>
         <div className='mobile-top-links'>
           <Link to="/careers" onClick={toggleMenu} className='nav-links'>Careers</Link>
