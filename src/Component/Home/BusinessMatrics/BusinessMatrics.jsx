@@ -16,7 +16,7 @@ const BusinessMatrics = () => {
               We Don't Just Manage Amazon—We Master It for You.
             </p>
             <div className="businessMatrics-setting">
-              <Link to="/contact" className="businessMatrics-about-button">
+              <Link to="/contact-us" className="businessMatrics-about-button">
                 About CommerceKind
                 <span className="businessMatrics-icon">
                   <FontAwesomeIcon icon={faArrowRight} />
