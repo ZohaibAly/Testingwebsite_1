@@ -10,7 +10,7 @@ function Blog() {
             </div>
             <div className="Blog-btn">
                 <a href="#">
-                    <Link to="/contact"><button className='blog-btn'>Contact Us</button></Link>
+                    <Link to="/contact-us"><button className='blog-btn'>Contact Us</button></Link>
                 </a>
             </div>
         </div>
