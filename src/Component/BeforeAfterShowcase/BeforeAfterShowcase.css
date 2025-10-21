@@ -30,17 +30,7 @@
     color: #000000;
   }
   
-  .showcase-study-heading span::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 16px;
-    width: 100%;
-    height: 12px;
-    background-color:#165EFE;
-    z-index: -1;
-  }
-  
+ 
   .showcase-section {
     margin-bottom: 60px;
     opacity: 0;

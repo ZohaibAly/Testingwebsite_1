@@ -62,7 +62,7 @@ const CaseStudySlider = () => {
         </div>
         
         <div className="case-study-navigation">
-     <Link to="/before-and-after"><button className="view-all-btn">See All Transformations</button></Link>
+     <Link to="/All-Transformation"><button className="view-all-btn">See All Transformations</button></Link>
          
           
           <div className="case-study-arrows">
