@@ -90,7 +90,9 @@
   background-color: white;
   color: var(--button-color);
 }
-
+.hero-title span{
+  color: #196BDE;
+}
 
 .hero-image {
   flex: 1;

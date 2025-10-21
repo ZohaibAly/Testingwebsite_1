@@ -12,7 +12,7 @@ const AmazonHeroComponent = () => {
     <div className="hero-container">
       <div className="hero-parent">
         <div className="hero-content">
-          <h1 className="hero-title">Premium Amazon Accelerating Solutions</h1>
+          <h1 className="hero-title">Premium <span>Amazon</span> Accelerating Solutions</h1>
           <h2 className="hero-subtitle">Struggling with Visibility? We'll Fix It!</h2>
           <p className="hero-description">
             Great Products, Low Sales? You bring the inventory, we bring the

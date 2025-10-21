@@ -22,7 +22,7 @@ position: relative;
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color:  #165EFE;
+    background-color:  #196BDE;
     opacity: 0.5;
     filter: blur(150px);
     z-index: -1;
@@ -53,7 +53,7 @@ position: relative;
 }
 
 .FAQ-main-text h2>span{
-    color: #165EFE;
+    color: #196BDE;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -74,7 +74,7 @@ position: relative;
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #165EFE;
+    background-color: #196BDE;
     opacity: 0.19;
     filter: blur(150px);
     z-index: 0;
@@ -134,7 +134,7 @@ position: relative;
     width: 9px;
     height: 11px;
     font-weight: 600;
-    color: #165EFE;
+    color: #196BDE;
     font-size: 18px;
     transition: color 0.3s ease;
 }
