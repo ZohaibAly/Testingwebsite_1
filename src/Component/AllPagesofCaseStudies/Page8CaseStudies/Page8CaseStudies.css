@@ -4,9 +4,9 @@
 
 :root {
   --brand-color1: #0EA498;
-  --text-color: #292E4C;
-  --brand-button-color: #6C30ED;
-  --bg: #292E4C1A;
+  --text-color: #000000;
+  --brand-button-color: #196BDE;
+  --bg: #0000001A;
   --Case-study-font-1: 'Montserrat', sans-serif;
   --Case-study-font-2: 'Poppins', sans-serif;
 }
@@ -124,7 +124,7 @@ height: 598px;
 
 .challenges-section{
     width: 100%;
-    background-color: #E9EAED;
+    background-color:  #edf4fc;
 }
 .challenges-1{
 

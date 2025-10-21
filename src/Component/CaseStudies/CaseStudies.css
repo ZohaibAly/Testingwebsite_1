@@ -10,7 +10,7 @@
     --main-brand-color: #6C30ED;
     --text-color: #000000;
     --brand-button-color: #196BDE;
-    --bg: #EDF4FC;
+    --bg: #edf4fc;
 }
 
 *:has(>.casestudies-main) {
@@ -28,7 +28,7 @@
     width: 100%;
     height: auto;
     flex-direction: column;
-    background-color: var(--bg);
+  background-color: #edf4fc;
     margin-bottom: 200px;
 }
 

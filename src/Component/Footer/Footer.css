@@ -32,7 +32,7 @@
 
 .Footerpt-1 .image-1 {
   height: 101px;
-  width: auto;
+  width: 150px;
 }
 
 .Footerpt-1 p {
@@ -196,12 +196,12 @@
     gap: 50px;
   }
   .Footerpt-1 {
-    width: 400px;
+    width: 5400px;
     height: auto;
   }
   .Footer-1 .image-1 {
     height: 95px;
-    width: 270px;
+    width: auto;
   }
   .Footerpt-1 p {
     font-size: 20px;
@@ -259,7 +259,7 @@
 
     & .image-1 {
       height: 80px;
-      width: 230px;
+      width: auto;
     }
   }
   .Footerpt-1 p {
@@ -321,7 +321,7 @@
 
     & .image-1 {
       height: 60px;
-      width: 200px;
+      width: auto;
     }
   }
   .Footerpt-1 p {
@@ -385,7 +385,7 @@
 
     & .image-1 {
       height: 55px;
-      width: 180px;
+      width: auto;
     }
   }
   .Footerpt-1 p {
@@ -450,7 +450,7 @@
 
     & .image-1 {
       height: 50px;
-      width: 160px;
+      width: auto;
     }
   }
   .Footerpt-1 p {
@@ -524,7 +524,7 @@
 
     & .image-1 {
       height: 120px;
-      width: 340px;
+      width: auto;
     }
   }
   .Footerpt-1 p {
@@ -617,7 +617,7 @@
 
     & .image-1 {
       height: 100px;
-      width: 320px;
+      width:auto;
     }
   }
   .Footerpt-1 p {
@@ -683,7 +683,7 @@
 
     & .image-1 {
       height: 70px;
-      width: 240px;
+      width: auto;
     }
   }
   .Footerpt-1 p {
@@ -751,7 +751,7 @@
 
     & .image-1 {
       height: 60px;
-      width: 220px;
+      width: auto;
     }
   }
   .Footerpt-1 p {

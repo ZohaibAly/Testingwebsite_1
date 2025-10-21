@@ -5,10 +5,9 @@ import page1image1 from '../../../assets/page1image1.png';
 import page1image2 from '../../../assets/page1image2.png';
 import page1image3 from '../../../assets/page1image3.png';
 import page1image4 from '../../../assets/page1image4.png';
-import Ellipse from '../../../assets/Ellipse.png';
-import MaskGroup from '../../../assets/Mask-group.png';
-import strategies from '../../../assets/Strategies-image.png';
-import Page6Result from '../../../assets/page6BeforeAfter.png';
+import MaskGroup from '../../../assets/Mask-image.png';
+import strategies from '../../../assets/Strategies.png';
+import Page6Result from '../../../assets/ResultPage6.png';
 
 
 const CaseStudiesPage1 = () => {
@@ -21,20 +20,18 @@ return(
           
 
           <div className="page1casestudies-brand-overview-section">
-            <div className='page1casestudies-background-ellipse'>
-                <img src={Ellipse} alt="" />
-            </div>
-            <h1 className="page1casestudies-main-title">Strategic Growth for Supplements Brand Case Study </h1>
+        
+            <h1 className="page1casestudies-main-title">Supplements Brand: A Strategic Expansion Case Study</h1>
             <div className="page1casestudies-overview-content">
               <div className="page1casestudies-left-content">
-                <h2 className="page1casestudies-section-title">Brand Overview</h2>
-                <p className="page1casestudies-subtitle">Supplements</p>
+                <h2 className="page1casestudies-section-title">About the Brand</h2>
+                <p className="page1casestudies-subtitle">Nutritional Supplements</p>
                 
-                <p className="page1casestudies-description"> Before our intervention, the product faced multiple growth obstacles.
+                <p className="page1casestudies-description">Prior to our engagement, the product encountered several expansion barriers.
                 </p>
                 
                 <p className="page1casestudies-challenges">
-                Challenges: Low sales, inventory issues, low CVR% & CTR%, inefficient PPC campaign structuring, poor rankings, irrelevant keyword targeting, inefficient budget utilization, and uncontrolled ad spend.
+                Obstacles: Underperforming revenue, supply disruptions, poor click-through & conversion metrics, disorganized advertising architecture, weak search positions, misaligned keyword selection, wasteful budget allocation, and unmanaged campaign expenditure.
                 </p>
               </div>
               
@@ -51,13 +48,13 @@ return(
              <div className="challenges-section">
               <div className="challenges-1">
                 <div className='challenge-content'>
-                  <h3>Challenges Before Our Takeover</h3>
-                  <p><span> <strong>Revenue Struggles</strong> –Monthly revenue was limited to $28,000 with only 1,250 units sold, far below the brand's potential.</span></p>
-                  <p><span> <strong>Inventory Mismanagement</strong> – Stock reserves did not align with the sales pace, leading to frequent stockouts and long periods of unavailability, disrupting sales momentum.</span></p>
-                  <p><span> <strong>Low CTR & CVR</strong> – The product's CTR was only 0.13%, and the conversion rate remained low, indicating that the listing and ads were not engaging or converting shoppers effectively.</span></p>
-                  <p><span> <strong>Inefficient PPC Campaigns</strong>  – The existing ad campaigns were poorly structured, with too many keywords, irregular bid adjustments, and inefficient budget allocation, leading to wasted ad spend and poor performance.
+                  <h3>Obstacles Prior to Our Engagement</h3>
+                  <p><span> <strong>Revenue Struggles</strong> – Monthly earnings capped at $28,000 with merely 1,250 units moved, significantly beneath the brand's capacity.</span></p>
+                  <p><span> <strong>Inventory Mismanagement</strong> – Supply levels failed to match the transaction velocity, causing repeated unavailability and extended out-of-stock durations, hampering sales continuity.</span></p>
+                  <p><span> <strong>Low CTR & CVR</strong> – The product's click-through stood at merely 0.13%, and the purchase rate stayed minimal, suggesting that the page and advertisements weren't attracting or persuading customers successfully.</span></p>
+                  <p><span> <strong>Inefficient PPC Campaigns</strong>  – The current advertising initiatives were inadequately organized, featuring excessive keywords, sporadic bid modifications, and poor budget distribution, resulting in squandered expenditure and subpar results.
                   </span></p>
-                  <p><span> <strong>Poor Organic Ranking</strong> – The product had an average ranking position of 72, making it difficult to gain visibility in search results and compete with top-performing listings.
+                  <p><span> <strong>Poor Organic Ranking</strong> – The product maintained an average position of 72, hindering its ability to achieve search exposure and rival leading listings.
                   </span></p>
                 </div>
                 <div className='image-section'>
@@ -92,25 +89,25 @@ return(
               <img src={strategies} alt="Logo" />        
                 </div>
                 <div className='challenge-content-2'>
-                  <h3>Strategies & Solutions Implemented</h3>
+                  <h3>Solutions & Tactics We Deployed</h3>
                   <div>
-    <p><strong>Inventory Stability</strong> – Introduced a data-driven inventory management system based on sales trends and demand forecasting. This ensured stock levels were aligned with sales velocity, eliminating long stockout periods.
+    <p><strong>Supply Consistency</strong> – Implemented a metrics-based stock control framework utilizing transaction patterns and demand prediction. This guaranteed inventory quantities matched sales momentum, removing prolonged unavailability intervals.
     </p>
    
     
-   <p> <strong>Listing Optimization</strong> – Enhanced product listing with SEO-driven titles, keyword-rich bullet points, high-quality images, and A+ Content to improve CTR and CVR.
+   <p> <strong>Product Page Enhancement</strong> – Upgraded product presentation with search-optimized headlines, keyword-dense features, premium visuals, and Enhanced Content to boost click-through and purchase rates.
    </p>
   
     
-    <p><strong>PPC Overhaul</strong>  – Restructured PPC campaigns by:</p>
+    <p><strong>Advertising Restructuring</strong>  – Redesigned advertising initiatives by:</p>
     <ul>
-        <li><p><span>Refining keyword targeting to focus on high-converting and relevant terms. </span></p></li>
-        <li><p><span>Optimizing bids to reduce wasted ad spend and improve ACOS.</span></p></li>
-        <li><p><span>Balancing campaign budgets for maximum profitability and efficiency. </span></p></li>
+        <li><p><span>Sharpening keyword focus to emphasize high-performing and applicable phrases.</span></p></li>
+        <li><p><span>Refining bid strategies to minimize wasteful spending and enhance cost efficiency.</span></p></li>
+        <li><p><span>Distributing campaign funds for optimal profitability and effectiveness.</span></p></li>
     </ul>
-    <p><strong>Conversion Rate Optimization (CRO)</strong>  – Improved product positioning, pricing strategy, and promotional offers to enhance purchase intent and increase conversions.
+    <p><strong>Purchase Rate Enhancement (CRO)</strong>  – Upgraded product placement, pricing tactics, and promotional incentives to strengthen buying motivation and elevate conversions.
     </p>
-    <p><strong>Ranking Improvement Strategy</strong>  – Focused on organic ranking growth through an optimized PPC structure, strategic keyword indexing, and driving external traffic to the listing.</p>
+    <p><strong>Position Advancement Strategy</strong>  – Prioritized natural ranking elevation via an enhanced advertising framework, tactical keyword indexing, and channeling outside visitors to the product page.</p>
 </div>
                 </div>
                 
@@ -121,19 +118,19 @@ return(
             <div className="challenges-section-3">
               <div className="challenges-3">
                 <div className='challenge-content-3'>
-                  <h3>Results & Achivements</h3>
+                  <h3>Outcomes & Milestones</h3>
                 
-                      <p><strong>Revenue Growth </strong><span> – Increased monthly revenue from $28,000 to $43,900, with unit sales rising from 1,250 to 2,000 per month. </span></p>
-                      <p><strong>Inventory Optimization</strong><span> – Implemented a structured restock plan, significantly reducing stockout occurrences and maintaining consistent availability.
+                      <p><strong>Sales Expansion </strong><span> – Elevated monthly earnings from $28,000 to $43,900, with unit transactions climbing from 1,250 to 2,000 monthly.</span></p>
+                      <p><strong>Supply Optimization</strong><span> – Established an organized replenishment framework, substantially decreasing unavailability incidents and preserving steady product availability.
                       </span></p>
-                      <p><strong>PPC Efficiency</strong><span> – Paused non-performing keywords, removed irrelevant targeting, and redirected campaigns toward highly relevant keywords, reaching the right audience.
+                      <p><strong>Ad Efficiency</strong><span> – Halted underperforming search terms, eliminated misaligned targeting, and redirected initiatives toward highly applicable keywords, connecting with the ideal demographic.
 
                       </span></p>
-                      <p><strong>Conversion Boost</strong><span> – CTR improved from 0.13% to 0.80%, alongside an increase in conversion rate due to enhanced listing optimization, backend keyword indexing, and ad relevance.
+                      <p><strong>Conversion Enhancement</strong><span> – Click-through advanced from 0.13% to 0.80%, accompanied by a purchase rate increase stemming from improved page refinement, backend keyword indexing, and advertisement relevance.
                       </span></p>
-                      <p><strong>Ranking Improvement</strong><span> – The product's average ranking position improved from 72 to 29, greatly enhancing organic visibility.
+                      <p><strong>Position Advancement</strong><span> – The product's average search position progressed from 72 to 29, substantially boosting natural discoverability.
                       </span></p>
-                      <p><strong>Better Budget Utilization</strong><span> – Allocated PPC budgets more effectively and optimized bids based on keyword performance, leading to higher ROAS and controlled ad spend.
+                      <p><strong>Superior Budget Management</strong><span> – Distributed advertising funds more strategically and refined bids according to keyword effectiveness, producing elevated ROAS and managed campaign spending.
                       </span></p>
                 </div>
                 <div className='image-section-results'>

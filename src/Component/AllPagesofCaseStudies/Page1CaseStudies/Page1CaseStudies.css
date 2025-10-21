@@ -3,10 +3,10 @@
 
 
 :root {
-  --brand-color1: #0EA498;
-  --text-color: #292E4C;
-  --brand-button-color: #6C30ED;
-  --bg: #292E4C1A;
+  --brand-color1: #edf4fc;
+  --text-color: #000000;
+  --brand-button-color: #196BDE;
+  --bg: #0000001A;
   --Case-study-font-1: 'Montserrat', sans-serif;
   --Case-study-font-2: 'Poppins', sans-serif;
 }
@@ -35,16 +35,6 @@
   margin: 0 auto;
   position: relative;
 
-}
-.page1casestudies-background-ellipse {
-  position: absolute;
-  top: -15%;
-  left: -12%;
-  z-index: -1;
-}
-.page1casestudies-background-ellipse img {
-width: 900px;
-height: 710px;
 }
 /* Section styles */
 .page1casestudies-main-title {
@@ -124,7 +114,7 @@ height: 598px;
 
 .challenges-section{
     width: 100%;
-    background-color: #E9EAED;
+    background-color: var( --brand-color1);
 }
 .challenges-1{
 
@@ -334,10 +324,7 @@ height: 598px;
       
     }
     
-    .page1casestudies-background-ellipse {
-      top:-18%;
-      left: -22%;
-    }
+ 
     .page1casestudies-description {
       font-size: 20px;
     }
@@ -425,14 +412,8 @@ height: 598px;
       font-size: 50px;
       margin-bottom: 40px;
     }
-    .page1casestudies-background-ellipse {
-      top:-13%;
-      left: -25%;
-    }
-    .page1casestudies-background-ellipse img {
-      width: 700px;
-      height: 510px;
-      }
+
+    
     .page1casestudies-left-content{
       padding-top: 50px;
     }
@@ -541,15 +522,7 @@ height: 598px;
       margin-bottom: 40px;
     }
   
-    .page1casestudies-background-ellipse {
-      top:-13%;
-      left: -25%;
-    }
-    .page1casestudies-background-ellipse img {
-      width: 700px;
-      height: 510px;
-  
-      }
+    
     .page1casestudies-left-content{
       padding-top: 20px;
       text-align: center;
@@ -610,15 +583,7 @@ height: 598px;
 }
 
 @media ( width <=756px ) {
-  .page1casestudies-background-ellipse {
-    top:-13%;
-    left: -25%;
-  }
-  .page1casestudies-background-ellipse img {
-    width: 500px;
-    height: 310px;
-    
-    }
+  
     .page1casestudies-left-content{
       padding-top: 0px;
     }
@@ -674,10 +639,7 @@ height: 598px;
 }
 
 @media ( width <=650px ) {
-  .page1casestudies-background-ellipse {
-    top:-5%;
-    left: -35%;
-  }
+
   .challenges-1{
     flex-direction: column;
  
@@ -734,9 +696,7 @@ height: 598px;
 }
 
   @media ( width <=510px ) {
-    .page1casestudies-background-ellipse {
-    display: none;
-    }
+   
     .page1casestudies-candy-image {
       width: 450px;
       height: 350px;

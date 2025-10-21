@@ -79,7 +79,6 @@ const NavbarComponent = () => {
           <Link to="/contact-us" onClick={toggleMenu} className='nav-links'>Contact</Link>
         </div>
         <div className='mobile-top-links'>
-          <Link to="/careers" onClick={toggleMenu} className='nav-links'>Careers</Link>
           <Link to="/blog" onClick={toggleMenu} className='nav-links'>Blog</Link>
           <Link to="/frequently-asked-questions" onClick={toggleMenu} className='nav-links'>FAQs</Link>
         </div>

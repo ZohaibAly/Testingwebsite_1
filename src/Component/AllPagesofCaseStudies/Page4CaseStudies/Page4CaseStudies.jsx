@@ -5,10 +5,9 @@ import page1image1 from '../../../assets/page1image1.png';
 import page1image2 from '../../../assets/page1image2.png';
 import page1image3 from '../../../assets/page1image3.png';
 import page1image4 from '../../../assets/page1image4.png';
-import Ellipse from '../../../assets/Ellipse.png';
-import MaskGroup from '../../../assets/Mask-group.png';
-import strategies from '../../../assets/Strategies-image.png';
-import page4Result from '../../../assets/page4ResultImage.png';
+import MaskGroup from '../../../assets/Mask-image.png';
+import strategies from '../../../assets/Strategies.png';
+import page4Result from '../../../assets/ResultPage4.png';
 
 
 const CaseStudiesPage1 = () => {
@@ -21,20 +20,18 @@ return(
           
 
           <div className="page1casestudies-brand-overview-section">
-            <div className='page1casestudies-background-ellipse'>
-                <img src={Ellipse} alt="" />
-            </div>
-            <h1 className="page1casestudies-main-title">Strategic Growth and Hijacker Removal for Baby Products & Supplements Brand Case Study</h1>
+           
+            <h1 className="page1casestudies-main-title">Baby Products & Supplements Brand: Strategic Expansion and Unauthorized Seller Elimination Case Study</h1>
             <div className="page1casestudies-overview-content">
               <div className="page1casestudies-left-content">
-                <h2 className="page1casestudies-section-title">Brand Overview</h2>
-                <p className="page1casestudies-subtitle">Baby Products & Supplements</p>
+                <h2 className="page1casestudies-section-title">About the Brand</h2>
+                <p className="page1casestudies-subtitle">Supplements & Baby Products</p>
                 
-                <p className="page1casestudies-description">When we took over the brand's protection strategy, it was facing critical threats that were severely impacting sales and customer trust.
+                <p className="page1casestudies-description">Upon assuming the brand's defense strategy, it encountered significant risks that were drastically affecting revenue and consumer confidence.
                 </p>
                 
                 <p className="page1casestudies-challenges">
-                Services: Brand Protection, Amazon Transparency Program, Amazon Zero Program Implementation
+                Services: Brand Defense, Amazon Transparency Initiative, Amazon Zero Initiative Implementation
                 </p>
               </div>
               
@@ -51,11 +48,11 @@ return(
              <div className="challenges-section">
               <div className="challenges-1">
                 <div className='challenge-content'>
-                  <h3>Challenges Before Our Takeover</h3>
-                  <p><span> <strong>Widespread Hijackers</strong> – Unauthorized sellers flooding the market with counterfeit and grey-market products.</span></p>
-                  <p><span> <strong>Revenue Drain</strong> – Hijackers winning the Buy Box, undercutting pricing, and stealing sales.</span></p>
-                  <p><span> <strong>Customer Complaints & Brand Damage</strong> – Buyers receiving low-quality or expired products, leading to negative reviews and declining trust.</span></p>
-                  <p><span> <strong>Ineffective Initial Takedown Efforts</strong> – Basic warnings and violation reports failed due to the high number of hijackers.</span></p>
+                  <h3>Obstacles Prior to Our Engagement</h3>
+                  <p><span> <strong>Widespread Hijackers</strong> – Unlicensed merchants saturating the marketplace with fake and unauthorized merchandise.</span></p>
+                  <p><span> <strong>Revenue Drain</strong> – Unauthorized sellers capturing the Buy Box, slashing prices, and diverting sales.</span></p>
+                  <p><span> <strong>Customer Complaints & Brand Damage</strong> – Purchasers obtaining substandard or outdated merchandise, resulting in poor feedback and eroding credibility.</span></p>
+                  <p><span> <strong>Ineffective Initial Takedown Efforts</strong> – Standard notices and infringement claims proved unsuccessful given the substantial volume of unauthorized sellers.</span></p>
                 </div>
                 <div className='image-section'>
                   <div className='image-section-left'>
@@ -89,32 +86,32 @@ return(
               <img src={strategies} alt="Logo" />        
                 </div>
                 <div className='challenge-content-2'>
-                  <h3>Strategies & Solutions Implemented</h3>
-                  <p>We launched an aggressive, multi-phase strategy that combined legal enforcement, compliance programs, and automation to regain brand control.
+                  <h3>Solutions & Tactics We Deployed</h3>
+                  <p>We initiated a forceful, phased approach that merged legal action, compliance initiatives, and automation to reclaim brand authority.
                   </p>
                   <div>
-    <strong><p>Phase 1: Direct Takedown & Enforcement</p></strong>
+    <strong><p>Phase 1: Immediate Removal & Legal Action</p></strong>
     <ul>
-        <li><p><span>Issued cease-and-desist warnings to unauthorized sellers, demanding immediate removal.</span></p></li>
-        <li><p><span>Filed intellectual property and policy violation reports with Amazon against persistent hijackers.</span></p></li>
+        <li><p><span>Dispatched legal termination notices to unlicensed merchants, requiring instant delisting.</span></p></li>
+        <li><p><span>Submitted intellectual property and policy breach claims with Amazon targeting persistent unauthorized sellers.</span></p></li>
     </ul>
     
-    <strong><p>Phase 2: Amazon Transparency Program Enrollment</p></strong>
+    <strong><p>Phase 2: Amazon Transparency Initiative Registration</p></strong>
     <ul>
-        <li><p><span>Registered all Wellements products under Amazon's Transparency Program to prevent unauthorized listings.</span></p></li>
-        <li><p><span>Ensured only verified, serialized units could be sold, blocking counterfeit sales at the source.</span></p></li>
+        <li><p><span>Enrolled all Wellements merchandise under Amazon's Transparency Initiative to block unauthorized postings.</span></p></li>
+        <li><p><span>Guaranteed only authenticated, serialized items could be marketed, eliminating counterfeit transactions at origin.</span></p></li>
     </ul>
     
-    <strong><p>Phase 3: Amazon Zero Program Activation</p></strong>
+    <strong><p>Phase 3: Amazon Zero Initiative Implementation</p></strong>
     <ul>
-        <li><p><span>Enrolled in the Amazon Zero Program to leverage automated counterfeit detection.</span></p></li>
-        <li><p><span>Enabled AI-driven removal of unauthorized listings, wiping out hijackers in real time.</span></p></li>
+        <li><p><span>Participated in the Amazon Zero Initiative to harness automated counterfeit identification.</span></p></li>
+        <li><p><span>Activated AI-powered elimination of unauthorized postings, eradicating unauthorized sellers instantaneously.</span></p></li>
     </ul>
     
-    <strong><p>Execution & Optimization</p></strong>
+    <strong><p>Implementation & Enhancement</p></strong>
     <ul>
-        <li><p><span>Successfully onboarded all products into the Transparency and Zero Programs.</span></p></li>
-        <li><p><span>Implemented ongoing monitoring to lock down future threats and ensure long-term protection.</span></p></li>
+        <li><p><span>Effectively integrated all merchandise into the Transparency and Zero Initiatives.</span></p></li>
+        <li><p><span>Established continuous surveillance to prevent future risks and guarantee sustained defense.</span></p></li>
     </ul>
 </div>
                 </div>
@@ -126,17 +123,17 @@ return(
             <div className="challenges-section-3">
               <div className="challenges-3">
                 <div className='challenge-content-3'>
-                  <h3>Results & Achivements</h3>
-                  <p>Following a complete brand protection overhaul, we achieved significant improvements:</p>
+                  <h3>Outcomes & Milestones</h3>
+                  <p>After a comprehensive brand defense transformation, we accomplished substantial advancements:</p>
                   <ul>
-                      <li><p><span>100% Hijacker-Free Listings – Every unauthorized seller was eliminated, restoring brand control.</span></p></li>
-                      <li><p><span>3X Revenue Growth – With pricing control and Buy Box dominance, revenue skyrocketed.</span></p></li>
-                      <li><p><span>Stronger Brand Reputation – Customers now receive only authentic products, leading to higher ratings and repeat purchases.</span></p></li>
-                      <li><p><span>Long-Term Market Protection – Transparency and Zero Program enrollment ensure hijacker prevention for the future.
+                      <li><p><span>100% Unauthorized Seller-Free Listings – Every unlicensed merchant was removed, reclaiming brand authority.</span></p></li>
+                      <li><p><span>3X Sales Expansion – With pricing authority and Buy Box supremacy, revenue multiplied exponentially.</span></p></li>
+                      <li><p><span>Enhanced Brand Credibility – Consumers now obtain exclusively genuine merchandise, producing elevated ratings and recurring transactions.</span></p></li>
+                      <li><p><span>Sustained Market Defense – Transparency and Zero Initiative registration guarantee unauthorized seller prevention moving forward.
                       </span></p></li>
                   </ul> 
                   <strong><p className='bottom-p'> 
-                  This transformation highlights the power of strategic brand protection, compliance enforcement, and automation in securing an Amazon brand's success.</p></strong>
+                  This evolution demonstrates the effectiveness of tactical brand defense, compliance execution, and automation in safeguarding an Amazon brand's prosperity.</p></strong>
 
                 </div>
                 <div className='image-section-results'>
