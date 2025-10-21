@@ -12,10 +12,10 @@ const FreeStoreComp = lazy(() => import('../../Component/FreeStore/FreeStore'));
 
 
 import Cardimage1 from '../../assets/image-card-1.jpg';
-import Cardimage2 from '../../assets/Grocery.jpg';
+import Cardimage2 from '../../assets/image-card-2.jpg';
 import Cardimage3 from '../../assets/image-card-3.jpg';
-import Cardimage4 from '../../assets/Healthcare.jpg';
-import Cardimage5 from '../../assets/Supplement.jpg';
+import Cardimage4 from '../../assets/image-card-4.jpg';
+import Cardimage5 from '../../assets/image-card-5.jpg';
 
 function Home() {
   // Define filter categories
@@ -53,7 +53,6 @@ function Home() {
       growth: '2.3x',
       category: 'Medical Supplies',
       description: "Double-Digit Performance Surge – Transforming Enterprise's Throat Comfort Solutions Via Platform Strategy",
-
       permalink: "/case-study-2x-sales-growth-revitalizing-a-brands-lozenges-on-amazon",
       tags: ['conversion'],
     },
