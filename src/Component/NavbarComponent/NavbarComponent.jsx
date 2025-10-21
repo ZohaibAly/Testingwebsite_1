@@ -31,7 +31,7 @@ const NavbarComponent = () => {
           <div className='links'>
             <Link to="/blog">Blog</Link>
             <Link to="/frequently-asked-questions">FAQs</Link>
-            <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank'>Reviews</a>
+     
           </div>
           <div className='divider'>|</div>
           <div className='socials'>
@@ -82,7 +82,6 @@ const NavbarComponent = () => {
           <Link to="/careers" onClick={toggleMenu} className='nav-links'>Careers</Link>
           <Link to="/blog" onClick={toggleMenu} className='nav-links'>Blog</Link>
           <Link to="/frequently-asked-questions" onClick={toggleMenu} className='nav-links'>FAQs</Link>
-          <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank' onClick={toggleMenu}className='nav-links'>Reviews</a>
         </div>
         <div className='mobile-socials'>
           <a href="https://www.facebook.com/CommercekindLLC/" onClick={toggleMenu} className='nav-links'>

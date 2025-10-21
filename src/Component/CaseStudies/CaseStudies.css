@@ -7,10 +7,10 @@
 }
 
 :root {
-    --main-brand-color: #0EA498;
-    --text-color: #292E4C;
-    --brand-button-color: #6C30ED;
-    --bg: #292E4C1A;
+    --main-brand-color: #6C30ED;
+    --text-color: #000000;
+    --brand-button-color: #196BDE;
+    --bg: #EDF4FC;
 }
 
 *:has(>.casestudies-main) {
@@ -47,31 +47,15 @@
     font-weight: 700;
     letter-spacing: 0px;
     line-height: 65px;
-    color: #292E4C;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
   }
  
   .Case-showcase-study-heading span {
     position: relative;
-    color: #292E4C;
+    color: #000000;
   }
  
-  .Case-showcase-study-heading span::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 16px;
-    width: 100%;
-    height: 12px;
-    background-color: #7B45EF;
-    z-index: -1;
-  }
-
-
-
-
-
-
 .casestudies-item {
     padding-right: 10px;
     padding-left: 10px;
