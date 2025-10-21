@@ -26,23 +26,13 @@ const AmazonHeroComponent = () => {
           </div>
         </div>
         <div className="hero-image">
-          <div className="pic1">
-            <img
-              src={purpleGlow}
-              alt="Before and After Amazon Dashboard Comparison"
-            />
-          </div>
+     
         
           <img
             src={HeroImage}
             alt="Before and After Amazon Dashboard Comparison"
           />
-          <div className="pic2">
-            <img
-              src={GreenGlow}
-              alt="Before and After Amazon Dashboard Comparison"
-            />
-          </div>
+      
         </div>
       </div>
     </div>

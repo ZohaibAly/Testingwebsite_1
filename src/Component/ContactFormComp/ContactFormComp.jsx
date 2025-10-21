@@ -4,9 +4,8 @@ import './ContactFormComp.css';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import emailjs from '@emailjs/browser';
 
-// Custom dropdown component
+// Custom dropdown component (kept, but not used now)
 const CustomDropdown = ({ options, value, onChange, name }) => {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef(null);
@@ -18,33 +17,22 @@ const CustomDropdown = ({ options, value, onChange, name }) => {
         setIsOpen(false);
       }
     };
-    
     document.addEventListener('click', handleClickOutside);
     return () => document.removeEventListener('click', handleClickOutside);
   }, []);
 
   return (
     <div className="dropdown custom-dropdown" ref={dropdownRef}>
-      <select 
-        style={{ display: 'none' }} 
-        name={name} 
-        value={value}
-        onChange={() => {}}
-      >
+      <select style={{ display: 'none' }} name={name} value={value} onChange={() => {}}>
         {options.map(opt => (
           <option key={opt.value} value={opt.value}>{opt.label}</option>
         ))}
       </select>
-      
-      {/* Custom dropdown display */}
-      <div 
-        className="select-display" 
-        onClick={() => setIsOpen(!isOpen)}
-      >
+
+      <div className="select-display" onClick={() => setIsOpen(!isOpen)}>
         {value}
       </div>
-      
-      {/* Dropdown options */}
+
       {isOpen && (
         <div className="select-options">
           {options.map(opt => (
@@ -72,19 +60,16 @@ const ContactFormComp = () => {
     lastName: '',
     email: '',
     phoneNumber: '',
-    helpWith: '',
-    amazonStatus: 'Not On Amazon Yet',
+    helpWith: '', // still present but unused (as requested earlier)
     message: ''
   });
-  
-  // Add state for form status
+
   const [status, setStatus] = useState({
     submitted: false,
     success: false,
     message: ''
   });
-  
-  // Add loading state
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -105,56 +90,26 @@ const ContactFormComp = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    
-    // Replace these with your actual EmailJS credentials
-    const SERVICE_ID = 'service_kwb1hhs'; // Get this from EmailJS
-    const TEMPLATE_ID = 'template_pmq305r'; // Get this from EmailJS
-    const PUBLIC_KEY = '0kcHpWi_43nqVU0MI'; // Get this from EmailJS
-    
-    // EmailJS is already initialized in the HTML file
-    
-    // Send the email using EmailJS
-    emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
-      .then((result) => {
-        console.log('Email sent successfully:', result.text);
-        setStatus({
-          submitted: true,
-          success: true,
-          message: 'Thank you! Your message has been sent successfully.'
-        });
-        
-        // Reset form data
-        setFormData({
-          firstName: '',
-          lastName: '',
-          email: '',
-          phoneNumber: '',
-          helpWith: '',
-          amazonStatus: 'Not On Amazon Yet',
-          message: ''
-        });
-        
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error sending email:', error.text);
-        setStatus({
-          submitted: true,
-          success: false,
-          message: 'Oops! Something went wrong. Please try again later.'
-        });
-        setLoading(false);
-      });
-  };
 
-  // Amazon status options for the dropdown
-  const amazonStatusOptions = [
-    { value: 'Not On Amazon Yet', label: 'Not On Amazon Yet' },
-    { value: 'under $10,000', label: 'under $10,000' },
-    { value: '100,000-$500,000', label: '100,000-$500,000' },
-    { value: '$500,000-$1,000,000', label: '$500,000-$1,000,000' },
-    { value: 'over $1,000,000', label: 'over $1,000,000' }
-  ];
+    // EmailJS removed — just mark as submitted successfully
+    setStatus({
+      submitted: true,
+      success: true,
+      message: 'Thank you! Your message has been sent successfully.'
+    });
+
+    // Reset form
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phoneNumber: '',
+      helpWith: '',
+      message: ''
+    });
+
+    setLoading(false);
+  };
 
   return (
     <div className="contact-container">
@@ -175,7 +130,7 @@ const ContactFormComp = () => {
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
               </div>
-              <span>(203) 547-9102</span>
+              <span>(555) 942-1765</span>
             </div>
 
             <div className="contact-item">
@@ -185,7 +140,7 @@ const ContactFormComp = () => {
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </div>
-              <span>info@commercekind.com</span>
+              <span>sales@jptamazonsolutions.com</span>
             </div>
 
             <div className="contact-item">
@@ -195,7 +150,7 @@ const ContactFormComp = () => {
                   <circle cx="12" cy="10" r="3"></circle>
                 </svg>
               </div>
-              <span>7628 103rd St Jacksonville, FL 32210</span>
+              <span>4392 Riverside Ave Tampa, FL 33614</span>
             </div>
           </div>
 
@@ -216,14 +171,12 @@ const ContactFormComp = () => {
         </div>
 
         <div className="contact-form">
-          {/* Show success/error message if form is submitted */}
           {status.submitted && (
             <div className={`form-message ${status.success ? 'success' : 'error'}`}>
               {status.message}
             </div>
           )}
-          
-          {/* Hide form if submission was successful */}
+
           {!status.success && (
             <form ref={form} onSubmit={handleSubmit}>
               <div className="form-row">
@@ -279,72 +232,8 @@ const ContactFormComp = () => {
                 </div>
               </div>
 
-              <div className="form-group">
-                <label>I Need Help With</label>
-                <div className="radio-options">
-                  <div className="radio-option">
-                    <input
-                      type="radio"
-                      id="storeAudit"
-                      name="helpWith"
-                      value="Store Audit"
-                      checked={formData.helpWith === 'Store Audit'}
-                      onChange={() => handleRadioChange('Store Audit')}
-                    />
-                    <label htmlFor="storeAudit">Store Audit</label>
-                  </div>
-                  <div className="radio-option">
-                    <input
-                      type="radio"
-                      id="listingsCreative"
-                      name="helpWith"
-                      value="Listings Creative"
-                      checked={formData.helpWith === 'Listings Creative'}
-                      onChange={() => handleRadioChange('Listings Creative')}
-                    />
-                    <label htmlFor="listingsCreative">Listings Creative</label>
-                  </div>
-                  <div className="radio-option">
-                    <input
-                      type="radio"
-                      id="ppc"
-                      name="helpWith"
-                      value="PPC"
-                      checked={formData.helpWith === 'PPC'}
-                      onChange={() => handleRadioChange('PPC')}
-                    />
-                    <label htmlFor="ppc">PPC</label>
-                  </div>
-                  <div className="radio-option">
-                    <input
-                      type="radio"
-                      id="others"
-                      name="helpWith"
-                      value="Others"
-                      checked={formData.helpWith === 'Others'}
-                      onChange={() => handleRadioChange('Others')}
-                    />
-                    <label htmlFor="others">Others</label>
-                  </div>
-                </div>
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="amazonStatus">Amazon Status</label>
-                {/* Use a hidden input for EmailJS to capture the value */}
-                <input 
-                  type="hidden" 
-                  name="amazonStatus" 
-                  value={formData.amazonStatus} 
-                />
-                {/* Keep the CustomDropdown for UI */}
-                <CustomDropdown
-                  options={amazonStatusOptions}
-                  value={formData.amazonStatus}
-                  onChange={handleChange}
-                  name="amazonStatus"
-                />
-              </div>
+              {/* "I Need Help With" radios already removed */}
+              {/* Amazon Status and its dropdown removed */}
 
               <div className="form-group">
                 <label htmlFor="message">Message</label>
@@ -357,13 +246,9 @@ const ContactFormComp = () => {
                   required
                 ></textarea>
               </div>
-              
+
               <div className='submit-button1'>
-                <button 
-                  type="submit" 
-                  className="submit-button" 
-                  disabled={loading}
-                >
+                <button type="submit" className="submit-button" disabled={loading}>
                   {loading ? 'Sending...' : 'Send Message'}
                 </button>
               </div>

@@ -46,7 +46,7 @@ const Footer = () => {
                     <h4>Quick Links</h4>
                     <Link to="/blog"><p>Blog</p></Link>
                     <Link to="/frequently-asked-questions"><p>FAQs</p></Link>
-                    <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank'><p>Reviews</p></a>
+           
                 </div>
                 <div className='Newsletter'>
                     <h4>Others</h4>

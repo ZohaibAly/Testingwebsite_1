@@ -12,11 +12,10 @@
   :root {
     --contact-first: 'Montserrat', sans-serif;
     --second-font: 'poppins', sans-serif;
-    --primary-color: #292E4C;
-    --secondary-color: #0EA498;
-    --accent-color: #4A2F9D;
+    --primary-color: #000000;
+    --secondary-color: #165EFE;
     --text-light: #ffffff;
-    --icon-color: #69727D;
+    --icon-color: #edf4fc;
     --text-dark: #333333;
     --text-itself: #C9C9C9;
     --text-medium: #000000;
@@ -153,18 +152,7 @@ color: var(--text-light);
   }
   
   /* Background circles decoration */
-  .contact-info::before {
-    content: "";
-    position: absolute;
-    bottom: 160px;
-    right: 150px;
-    width: 174px;
-    height: 174px;
-    border-radius: 50%;
-    background-color: var(--accent-color);
-    opacity: 0.7;
-    z-index: 1;
-  }
+
   
   .contact-info::after {
     content: "";
