@@ -14,9 +14,9 @@ const ServicesSection = () => {
             {/* Heading Section */}
             <div className="services-component__TOP">
                 <div className="services-component__upper-container">
-                    <h2 className="services-component__title">How May We Help You?</h2>
+                    <h2 className="services-component__title">What Can We Do For Your Brand?</h2>
                     <h1 className="services-component__subtitle">
-                        We Don’t Just Manage Amazon, We <br /> Master It for You!
+                    From Strategy to Sales, We Drive <br /> Results That Matter!
                     </h1>
                 </div>
 
@@ -24,62 +24,62 @@ const ServicesSection = () => {
                 <section className="services-component__services-section">
                     <div className="services-component__cards-container">
                         <div className="services-component__card">
-                            <h2>Amazon PPC</h2>
+                            <h2>Marketplace Advertising</h2>
                             <div className="services-component__card-image-div">
                                 <img src={SerImage1} alt="Amazon PPC Management" className="services-component__card-image" />
                             </div>
                             <p>
-                                Optimize your Amazon journey with CommerceKind. Our tailored solutions boost visibility, maximize profitability, and empower your e-commerce success with expertise and excellence.
+                                Launch targeted campaigns that place your products where shoppers search, maximizing ROI through smart bidding and strategic ad placements.
                             </p>
                         </div>
 
                         <div className="services-component__card">
-                            <h2>Listings SEO</h2>
+                            <h2>Catalog Optimization</h2>
                             <div className="services-component__card-image-div">
                                 <img src={SerImage2} alt="E-commerce Growth" className="services-component__card-image" />
                             </div>
                             <p>
-                                Enhance your product rankings with our specialized SEO strategies, ensuring your listings reach the right audience. We optimize content based on customer psychology, driving engagement and conversions.
+                                 Elevate product discoverability with search-optimized titles, feature bullets, and A+ Brand Stories that rank higher and convert faster.
                             </p>
                         </div>
 
                         <div className="services-component__card">
-                            <h2>Listings Creatives</h2>
+                            <h2>Visual Content</h2>
                             <div className="services-component__card-image-div">
                                 <img src={SerImage3} alt="Shopify Optimization" className="services-component__card-image" />
                             </div>
                             <p>
-                                Captivate customers with compelling visuals and descriptions. Our creative approach is designed to align with customer psychology, making your product more appealing and increasing conversions.
+                                Create scroll-stopping infographics, lifestyle photos, and demo videos that answer questions visually and reduce hesitation at checkout.
                             </p>
                         </div>
 
                         <div className="services-component__card">
-                            <h2>CTR% Improvement</h2>
+                            <h2>Engagement Enhancement</h2>
                             <div className="services-component__card-image-div">
                                 <img src={SerImage4} alt="Shopify Optimization" className="services-component__card-image" />
                             </div>
                             <p>
-                                Increase your Click-Through Rate with data-driven strategies. We refine your listings with high-performing keywords, compelling creatives, and persuasive copy that encourage more clicks.
+                                Increase impression-to-click ratios with attention-grabbing main images, benefit-focused copy, and strategic badge utilization.
                             </p>
                         </div>
 
                         <div className="services-component__card">
-                            <h2>CVR% Improvement</h2>
+                            <h2>Conversion Amplification</h2>
                             <div className="services-component__card-image-div">
                                 <img src={SerImage5} alt="Shopify Optimization" className="services-component__card-image" />
                             </div>
                             <p>
-                                Boost your Conversion Rate by optimizing every touchpoint with customer psychology in mind. We refine content, visuals, and engagement strategies to turn visitors into loyal buyers.
+                                Turn browsers into buyers through persuasive messaging, trust-building social proof, and friction-free purchasing experiences.
                             </p>
                         </div>
 
                         <div className="services-component__card">
-                            <h2>Platform Management</h2>
+                            <h2>Channel Oversight</h2>
                             <div className="services-component__card-image-div">
                                 <img src={SerImage6} alt="Shopify Optimization" className="services-component__card-image" />
                             </div>
                             <p>
-                                Effortlessly manage your Amazon operations with our expert platform management. From inventory tracking to order fulfillment, we streamline processes for seamless growth and efficiency.
+                                Maintain seller health with proactive monitoring, case management, stock level optimization, and automated workflow systems.
                             </p>
                         </div>
                     </div>
