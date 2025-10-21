@@ -41,41 +41,44 @@ const OffersGrid = () => {
     }
   }, [hoveredIndex]);
 
-  const offers = [
-    {
-      id: 'marketplace-advertising',
-      title: 'Marketplace Advertising',
-      image: Services1, 
-    },
-    {
-      id: 'catalog-optimization',
-      title: 'Catalog Optimization',
-      image: Services2,
-    },
-    {
-      id: 'visual-content',
-      title: 'Visual Content',
-      image: Services3,
-    },
-    {
-      id: 'engagement-boost',
-      title: 'Engagement Rate',
-      subtitle: 'Enhancement',
-      image: Services4,
-    },
-    {
-      id: 'conversion-boost',
-      title: 'Conversion Rate',
-      subtitle: 'Amplification',
-      image: Services5,
-    },
-    {
-      id: 'channel-oversight',
-      title: 'Channel',
-      subtitle: 'Oversight',
-      image: Services6,
-    },
-  ];
+const offers = [
+  {
+    id: 'marketplace-advertising',
+    title: 'Marketplace',
+    subtitle: 'Advertising',
+    image: Services1, 
+  },
+  {
+    id: 'catalog-optimization',
+    title: 'Catalog',
+    subtitle: 'Optimization',
+    image: Services2,
+  },
+  {
+    id: 'visual-content',
+    title: 'Visual',
+    subtitle: 'Content',
+    image: Services3,
+  },
+  {
+    id: 'engagement-rate',
+    title: 'Engagement',
+    subtitle: 'Enhancement',
+    image: Services4,
+  },
+  {
+    id: 'conversion-rate',
+    title: 'Conversion',
+    subtitle: 'Amplification',
+    image: Services5,
+  },
+  {
+    id: 'channel-oversight',
+    title: 'Channel',
+    subtitle: 'Oversight',
+    image: Services6,
+  },
+];
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
   };
