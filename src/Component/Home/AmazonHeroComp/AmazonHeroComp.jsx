@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./AmazonHeroComp.css";
 import HeroImage from "../../../assets/testimg.png";
-import purpleGlow from "../../../assets/Home-Hero-Glow-Purple.png";
-import GreenGlow from "../../../assets/Home-Hero-Glow-Green.png";
 
 const AmazonHeroComponent = () => {
   return (
