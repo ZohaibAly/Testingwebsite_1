@@ -27,7 +27,7 @@
   background-color: #edf4fc;
   line-height: 40px;
   width: 538px;
-  height: auto;
+  height: auto !important;
 }
 
 .Footerpt-1 .image-1 {
@@ -56,6 +56,7 @@
   display: flex;
   place-items: end;
   justify-content: center;
+  margin-bottom:10px
 }
 .Footer-1-icons svg {
   font-size: 28px;
