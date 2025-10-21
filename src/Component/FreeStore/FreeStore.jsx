@@ -6,10 +6,10 @@ const FreeStore = () => {
     return (
         <div className='FreeStore-main Goodle-map'>
             <div className='FreeStore-text'>
-                <h2>Ready To Earn 5x More?</h2>
+               <h2>Prepared To Generate 5x Revenue?</h2>
             </div>
             <div className="FreeStore-btn">
-            <Link to="/contact-us"><button className='free-store-btn'>Free Store Audit</button></Link>
+            <Link to="/contact-us"><button className='free-store-btn'> Business Analysis</button></Link>
             </div>
         </div>
     );

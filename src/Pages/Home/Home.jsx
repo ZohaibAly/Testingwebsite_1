@@ -7,25 +7,23 @@ const CaseStudy = lazy(() => import('../../Component/Home/CaseStudyComp/CaseStud
 const CaseStudiesContainer = lazy(() => import('../../Component/Home/SuccessCard/CardContainer'));
 const Business = lazy(() => import('../../Component/Home/BusinessMatrics/BusinessMatrics'));
 const OffersGrid = lazy(() => import('../../Component/Home/OfferGrid/OfferGrid'));
-const Testmonial = lazy(() => import('../../Component/TestimonialSection/TestimonialSection'));
 const FAQSection = lazy(() => import('../../Component/FAQ/FAQ'));
 const FreeStoreComp = lazy(() => import('../../Component/FreeStore/FreeStore'));
 
 
-import Cardimage1 from '../../assets/image-card-1.png';
-import Cardimage2 from '../../assets/image-card-2.png';
-import Cardimage3 from '../../assets/image-card-3.png';
-import Cardimage4 from '../../assets/image-card-4.png';
-import Cardimage5 from '../../assets/image-card-5.png';
+import Cardimage1 from '../../assets/image-card-1.jpg';
+import Cardimage2 from '../../assets/Grocery.jpg';
+import Cardimage3 from '../../assets/image-card-3.jpg';
+import Cardimage4 from '../../assets/Healthcare.jpg';
+import Cardimage5 from '../../assets/Supplement.jpg';
 
 function Home() {
   // Define filter categories
   const categoryButtons = [
-    { id: 'ctr', label: 'CTR%/CVR% Optimization' },
-    { id: 'amazon', label: 'Amazon PPC' },
-    { id: 'hijacker', label: 'Hijacker Removal' },
-    { id: 'designs', label: 'Designs' },
-    { id: 'listings', label: 'Listings SEO & Optimization' }
+       { id: 'conversion', label: 'Engagement & Sales Rate Enhancement' },
+    { id: 'sponsored', label: 'Marketplace Sponsored Ads' },
+    { id: 'protection', label: 'Unauthorized Seller Elimination' },
+    { id: 'catalog', label: 'Product Page Search & Refinement' }
   ];
   
   // Case studies data with all variants for each image
@@ -34,107 +32,97 @@ function Home() {
     {
       id: 1,
       image: Cardimage2,
-      growth: '+957.2%',
-      category: 'Grocery',
-      description: '7X Revenue Growth by Overcoming Compliance & Inventory Challenges',
+      growth: '+850.3%',
+      category: 'Food & Beverage',
+      description: 'Nine-Fold Performance Amplification Via Strategic Regulatory Navigation & Inventory Orchestration',
       permalink: "/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon",
-      tags: ['ctr'],
+      tags: ['conversion'],
     },
     {
       id: 2,
       image: Cardimage5,
-      growth: '+577%',
-      category: 'Supplements',
-      description: '400% Increase in Sales and Profitability For Supplements Brand',
+      growth: '+623%',
+      category: 'Nutritional Products',
+      description: 'Quadruple Performance Elevation With Profitability Enhancement For Health Enterprise',
       permalink: "/case-study-400-increase-in-sales-and-profitability-for-supplements-brand",
-      tags: ['ctr'],
+      tags: ['conversion'],
     },
     {
       id: 3,
       image: Cardimage4,
-      growth: '2x',
-      category: 'Healthcare',
-      description: "2X Sales Growth – Revitalizing a brand's Lozenges on Amazon",
+      growth: '2.3x',
+      category: 'Medical Supplies',
+      description: "Double-Digit Performance Surge – Transforming Enterprise's Throat Comfort Solutions Via Platform Strategy",
+
       permalink: "/case-study-2x-sales-growth-revitalizing-a-brands-lozenges-on-amazon",
-      tags: ['ctr'],
+      tags: ['conversion'],
     },
     
     // Amazon PPC variants
     {
       id: 4,
       image: Cardimage3, // Same image as id 1
-      growth: '+43.8%',
-      category: 'Supplements',
-      description: "Scaling a brand's Elderberry Supplement on Amazon",
+     growth: '+48.2%',
+      category: 'Nutritional Products',
+      description: "Amplifying Enterprise's Botanical Immunity Formula Through Platform Domination",
+
       permalink: "/case-study-scaling-a-brands-elderberry-supplement-on-amazon",
-      tags: ['amazon'],
+      tags: ['sponsored'],
     },
     {
       id: 5,
       image: Cardimage1, // Same image as id 2
-      growth: '+57%',
-      category: 'Supplements',
-      description: '57% Revenue Growth – Scaling a brand’s Vitamin C & Zinc on Amazon',
+ growth: '+64%',
+      category: 'Nutritional Products',
+      description: 'Sixty-Four Percent Performance Leap – Propelling Enterprise Defense Nutrient Blend Via Marketplace Tactics',
+
       permalink: "/case-study-57-revenue-growth-scaling-a-brands-vitamin-c-zinc-on-amazon",
-      tags: ['amazon'],
+      tags: ['sponsored'],
     },
     
     // Hijacker removal variants
     {
       id: 6,
       image: Cardimage1, // Same image as id 1
-      growth: '3x',
-      category: 'Babycare',
-      description: '3X Revenue Growth by Implementing Amazon Transparency Program for Supplement Brand',
+     growth: '3.4x',
+      category: 'Infant Care',
+      description: 'Triple-Digit Performance Explosion Via Platform Verification Framework For Health Enterprise',
+
       permalink: "/case-study-3x-revenue-growth-by-implementing-amazon-transparency-program-for-supplement-brand",
-      tags: ['hijacker'],
+      tags: ['protection'],
     },
     {
       id: 7,
       image: Cardimage2, // Same image as id 2
-      growth: '781.7%',
-      category: 'Grocery',
-      description: "6X YOY Growth for Food Brand Through A to Z Management",
+ growth: '892.5%',
+      category: 'Food & Beverage',
+      description: "Eight-Fold Year-Over-Year Trajectory For Edible Enterprise Via Comprehensive Operational Mastery",
+
       permalink: "/case-study-6x-yoy-growth-for-food-brand-through-a-to-z-management",
-      tags: ['hijacker'],
+      tags: ['protection'],
     },
     
-    // Designs variants
-    {
-      id: 8,
-      image: Cardimage1, // Same image as id 1
-      growth: '+43.8%',
-      category: 'Supplements',
-      description: "Scaling a brand's Elderberry Supplement on Amazon",
-      tags: ['designs'],
-    },
-    {
-      id: 9,
-      image: Cardimage2, // Same image as id 2
-      growth: '+2x',
-      category: 'Babycare',
-      description: "2X Sales Growth – Scaling a brand's Vitamin D Drops on Amazon",
-      tags: ['designs'],
-    },
+   
     
     // Listings SEO variants
     {
       id: 10,
       image: Cardimage1, // Same image as id 1
-      growth: '+2.5x',
-      category: 'Multivitamins',
-      description: "2.5X Sales Growth – Scaling a brand’s Bariatric Multivitamin 45mg 90ct on Amazon",
+      growth: '+2.7x',
+      category: 'Wellness Formulas',
+      description: "Triple-Near Performance Explosion – Accelerating Enterprise's Post-Surgical Nutrition Complex Via Platform Optimization",
+
       permalink: "/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon",
-      tags: ['listings'],
+      tags: ['catalog'],
     },
     {
       id: 11,
       image: Cardimage2, // Same image as id 2
-      growth: '+2x',
-      category: 'Babycare',
-      description: "2X Sales Growth – Scaling a brand’s Vitamin D Drops on Amazon",
+      growth: '+2.1x',
+      category: 'Infant Care',
+      description: "Dual-Fold Performance Amplification – Maximizing Enterprise's Baby Vitamin Solution Through Marketplace Dominance",
       permalink: "/case-study-2x-sales-growth-scaling-a-brands-vitamin-d-drops-on-amazon",
-      tags: ['listings'],
+      tags: ['catalog'],
     }
   ];
 
@@ -155,9 +143,6 @@ function Home() {
        <Suspense fallback={<div>Loading...</div>}>
       <Business/>
       </Suspense>
-      <Suspense fallback={<div>Loading...</div>}>
-    <Testmonial/>  
-    </Suspense>
     <Suspense fallback={<div>Loading...</div>}>
       <OffersGrid/>
       </Suspense>

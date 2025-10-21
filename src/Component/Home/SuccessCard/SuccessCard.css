@@ -23,7 +23,7 @@
   bottom: 1px;
   width: 400px;
   height: 2px;
-  background-color: #6C30ED;
+  background-color: #165EFE;
 }
 .card-image {
   height: 316px;
@@ -37,18 +37,7 @@
   transition: transform 0.5s linear;
 }
 
-.card-image::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #6C30ED, #0EA498);
-  opacity: 0.3; /* Adjust this value to control the intensity of the overlay */
-  z-index: 1;
-  pointer-events: none; /* This allows clicks to pass through to the image */
-}
+
 .card-content {
   padding: 30px; /* Increased from 25px for better spacing */
   display: flex;
@@ -59,7 +48,7 @@
   display: flex;
   place-content: start;
   place-items: baseline;
-  gap: 10px;
+  gap: 40px;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -68,7 +57,7 @@
   height: 72px;
 }
 .growth-percentage {
-  color: #0EA498;
+  color: #000000;
 font-family: 'poppins', sans-serif;
   font-size: 60px; 
   font-weight: 700;
@@ -80,7 +69,7 @@ font-family: 'poppins', sans-serif;
   letter-spacing: 0%;
   font-family: 'Montserrat' , sans-serif;
   font-weight: 600px;
-  color: #292E4C;
+  color: #000000;
   margin: 17px 0; 
 }
 
@@ -108,7 +97,7 @@ font-family: 'poppins', sans-serif;
   align-items: center;
   background: none;
   border: none;
-  color: #292E4C;
+  color: #165EFE;
   font-size: 18px; /* Increased from 14px */
   font-weight: 600;
 font-family: 'poppins', sans-serif;
@@ -125,7 +114,7 @@ transition: all 0.3s linear;
   justify-content: center;
   width: 30px; /* Increased from 20px */
   height: 31px; /* Increased from 20px */
-  background-color: #6C30ED;
+  background-color:#165EFE;
   border-radius: 50%;
   color: white;
   margin-left: 10px; /* Increased from 8px */
@@ -141,7 +130,7 @@ transition: all 0.3s linear;
 }
 
 .success-card:hover .view-case-btn {
-  color:#6C30ED;
+  color:#165EFE;
   text-decoration: underline;
   & .Card-btn-circle{
     translate: 5px -5px;

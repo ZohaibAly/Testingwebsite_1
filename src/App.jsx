@@ -8,8 +8,7 @@ import Navbar from './Component/NavbarComponent/NavbarComponent';
 
 import FooterComp from './Component/Footer/Footer';
 
-const JobDetailPage = lazy(() => import('./Component/JobDetailPage/JobDetailPage'));
-const ApplicationForm = lazy(() => import('./Component/ApplicationForm/ApplicationForm'));
+
 const Homepage = lazy(() => import('./Pages/Home/Home'));
 const ServicesPage = lazy(() => import('./Pages/Services/Services'));
 const CaseStudiesPage = lazy(() => import('./Pages/CaseStudies/CaseStudies'));
@@ -17,7 +16,6 @@ const BeforeAfterPage = lazy(() => import('./Pages/BeforeAfter/BeforeAfter'));
 const ContactPage = lazy(() => import('./Pages/Contact/Contact'));
 const BlogPage = lazy(() => import('./Pages/Blog/Blog'));
 const FAQPage = lazy(() => import('./Pages/FAQ/FAQ'));
-const CareersPage = lazy(() => import('./Pages/Careers/Careers'));
 const CaseStudy = lazy(() => import('./Pages/CaseStudy/CaseStudy'));
 
 import Space from './Component/Space/Space';
@@ -42,13 +40,10 @@ function App() {
         <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/careers" element={<CareersPage />} />
-          <Route path="/careers/job/:jobId" element={<JobDetailPage />} />
-          <Route path="/careers/apply/:jobId" element={<ApplicationForm />} />
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/frequently-asked-questions" element={<FAQPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />
-          <Route path="/before-and-after" element={<BeforeAfterPage />} />
+          <Route path="/All-Transformation" element={<BeforeAfterPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact-us" element={<ContactPage />} />
           <Route path="/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2.5X Sales Growth – Scaling a brand’s Bariatric Multivitamin 45mg 90ct on Amazon" PageComponent={Page1comp}  />} />

@@ -4,8 +4,8 @@
 :root {
   --title-font: 'Poppins', sans-serif;
   --content-font: 'Montserrat', sans-serif;
-  --primary-color: #292E4C;
-  --button-color: #7039d4;
+  --primary-color: #000000;
+  --button-color: #165EFE;
 }
 
 /* Main container - sets the size and background */
@@ -91,45 +91,6 @@
   color: var(--button-color);
 }
 
-.hero-link {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: var(--title-font);
-  color:var( --primary-color);
-  text-decoration: none;
-  padding: 10px 0;
-}
-
-.hero-link:hover {
-  color: var(--button-color);
-  text-decoration:underline;
-  & .ama-arrow-icon{
-    translate: 5px -5px !important;
-  }
-}
-
-.ama-arrow-icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  /* height: 40px; */
-  aspect-ratio: 1;
-  background-color: var(--button-color);
-  color: white;
-  border-radius: 50%;
-  font-size: 20px;
-  position: relative;
- 
-}
-.ama-arrow-icon svg {
-  transform: rotate(-45deg);
-  transition: transform 0.2s linear;
-
-}
 
 .hero-image {
   flex: 1;

@@ -22,7 +22,7 @@ position: relative;
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #8C41E8;
+    background-color:  #165EFE;
     opacity: 0.5;
     filter: blur(150px);
     z-index: -1;
@@ -48,12 +48,12 @@ position: relative;
     line-height: 41px;
     letter-spacing: 0px;
     height: 41px;
-    color: #292E4C;
+    color: #000000;
     font-family: "Montserrat", sans-serif;
 }
 
 .FAQ-main-text h2>span{
-    color: #6C30ED;
+    color: #165EFE;
     font-family: "Montserrat", sans-serif;
 }
 
@@ -74,7 +74,7 @@ position: relative;
     left: 0;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    background-color: #8C41E8;
+    background-color: #165EFE;
     opacity: 0.19;
     filter: blur(150px);
     z-index: 0;
@@ -116,14 +116,14 @@ position: relative;
     font-family: "Poppins", sans-serif;
     margin: 0;
     font-size: 20px;
-    color: #292E4C;
+    color: #000000;
     font-weight: 500;
     letter-spacing: 0.3px;
     transition: color 0.3s ease;
 }
 
 .FAQ-accordion-header.active {
-    background-color: #292E4C;
+    background-color:#000000;
 }
 
 .FAQ-accordion-header.active h3{
@@ -134,7 +134,7 @@ position: relative;
     width: 9px;
     height: 11px;
     font-weight: 600;
-    color: #6C30ED;
+    color: #165EFE;
     font-size: 18px;
     transition: color 0.3s ease;
 }
@@ -162,7 +162,7 @@ position: relative;
 
 .FAQ-accordion-content p {
     margin: 0;
-    color: #292E4C;
+color:#000000;
     font-size: 18px;
     font-family: "Poppins", sans-serif;
 }

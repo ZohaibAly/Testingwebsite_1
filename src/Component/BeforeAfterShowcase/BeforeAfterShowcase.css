@@ -21,13 +21,13 @@
     font-weight: 700;
     letter-spacing: 0px;
     line-height: 65px;
-    color: #292E4C;
+    color: #000000;
     font-family: 'Montserrat', sans-serif;
   }
   
   .showcase-study-heading span {
     position: relative;
-    color: #292E4C;
+    color: #000000;
   }
   
   .showcase-study-heading span::after {
@@ -37,7 +37,7 @@
     bottom: 16px;
     width: 100%;
     height: 12px;
-    background-color: #7B45EF;
+    background-color:#165EFE;
     z-index: -1;
   }
   
@@ -79,13 +79,13 @@
   }
   
   .showcase-content {
-    background-color: #0EA4981A;
+    background-color: #ebf2fa;
     border-radius: 0px;
   }
   
   .showcase-section:nth-child(3) .showcase-content,
   .showcase-section:nth-child(5) .showcase-content {
-    background-color: #F0EAFD;
+    background-color: #FFFFFF;
   }
   
   .showcase-title {
@@ -98,13 +98,13 @@
     font-size: 28px;
     padding-top: 30px;
     font-family: 'poppins', sans-serif;
-    color: #292E4C;
+    color: #000000;
     font-weight: 700;
   }
   
   .showcase-title h2 {
     font-size: 48px;
-    color: #6c30ed;
+    color: #165EFE;
     font-family: 'poppins', sans-serif;
     font-weight: 700;
     margin: 0;

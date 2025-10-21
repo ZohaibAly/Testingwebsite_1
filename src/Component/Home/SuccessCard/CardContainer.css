@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-text: #292E4C;
-  --primary-purple: #7039d4;
-  --secondary-purple: #6C30ED;
-  --card-green: #0EA498;
+  --primary-text: #000000;
+  --primary-purple: #165EFE;
+  --secondary-purple: #165EFE ;
+  --card-green: #000000;
   --arrow-green: #00d68f;
-  --btn-icon-bg: #7e3bff;
+  --btn-icon-bg: #165EFE;
   --card-bg: #ffffff;
   --border-color: #e9ecef;
   --heading-font: 'Montserrat', sans-serif;

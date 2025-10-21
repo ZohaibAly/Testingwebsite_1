@@ -43,40 +43,39 @@ const OffersGrid = () => {
 
   const offers = [
     {
-      id: 'amazon-ppc',
-      title: 'Amazon PPC',
+      id: 'marketplace-advertising',
+      title: 'Marketplace Advertising',
       image: Services1, 
     },
     {
-      id: 'listings-seo',
-      title: 'Listings SEO',
+      id: 'catalog-optimization',
+      title: 'Catalog Optimization',
       image: Services2,
     },
     {
-      id: 'listings-creatives',
-      title: 'Listings Creatives',
+      id: 'visual-content',
+      title: 'Visual Content',
       image: Services3,
     },
     {
-      id: 'ctr-improvement',
-      title: 'CTR%',
-      subtitle: 'Improvement',
+      id: 'engagement-boost',
+      title: 'Engagement Rate',
+      subtitle: 'Enhancement',
       image: Services4,
     },
     {
-      id: 'cvr-improvement',
-      title: 'CVR%',
-      subtitle: 'Improvement',
+      id: 'conversion-boost',
+      title: 'Conversion Rate',
+      subtitle: 'Amplification',
       image: Services5,
     },
     {
-      id: 'platform-management',
-      title: 'Platform',
-      subtitle: 'Management',
+      id: 'channel-oversight',
+      title: 'Channel',
+      subtitle: 'Oversight',
       image: Services6,
     },
   ];
-
   const handleMouseEnter = (index) => {
     setHoveredIndex(index);
   };
@@ -89,8 +88,8 @@ const OffersGrid = () => {
     <section className="offers-grid">
       <div className="offers-grid__container">
         <div className="offers-grid__header">
-          <h3 className="offers-grid__subtitle">How We Help You</h3>
-          <h2 className="offers-grid__title">Our Services</h2>
+          <h3 className="offers-grid__subtitle">What We Deliver</h3>
+          <h2 className="offers-grid__title">Our Solutions</h2>
         </div>
 
         <div className="offers-grid__items">

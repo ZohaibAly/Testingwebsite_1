@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhoneVolume, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
-import Logo from '../../assets/Logo-HD-CommerceKind.png';
+import Logo from '../../assets/Logo-HD-JPT.png';
 import './NavbarComponent.css';
 
 const NavbarComponent = () => {
@@ -19,17 +19,16 @@ const NavbarComponent = () => {
         <div className='p1'>
           <div className='email-container'>
             <FontAwesomeIcon icon={faEnvelope} />
-            <span>info@commercekind.com</span>
+            <span>sales@jptamazonsolutions.com</span>
           </div>
           <div className='divider'>|</div>
           <div className='phone-container'>
             <FontAwesomeIcon icon={faPhoneVolume} />
-            <span>(203) 547-9102</span>
+            <span>(555) 942-1765</span>
           </div>
         </div>
         <div className='p2'>
           <div className='links'>
-            <Link to="/careers">Careers</Link>
             <Link to="/blog">Blog</Link>
             <Link to="/frequently-asked-questions">FAQs</Link>
             <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank'>Reviews</a>
@@ -49,7 +48,7 @@ const NavbarComponent = () => {
         </div>
         <div className='navigation'>
           <Link to="/case-studies">Case Studies</Link>
-          <Link to="/before-and-after">Before and After</Link>
+          <Link to="/All-Transformation">All Transformations</Link>
           <Link to="/services">Services</Link>
           <Link to="/contact-us">Contact</Link>
         </div>
@@ -58,7 +57,7 @@ const NavbarComponent = () => {
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </div> */}
          <Link to="/contact-us">
-         <button className='try-button'>Try Free</button>
+         <button className='try-button'>Get Started</button>
             </Link>
 
         </div>
@@ -75,7 +74,7 @@ const NavbarComponent = () => {
         </div>
         <div className='mobile-navigation'>
           <Link to="/case-studies" onClick={toggleMenu} className='nav-links'>Case Studies</Link>
-          <Link to="/before-and-after" onClick={toggleMenu} className='nav-links'>Before and After</Link>
+          <Link to="/before-and-after" onClick={toggleMenu} className='nav-links'>See All Transformations</Link>
           <Link to="/services" onClick={toggleMenu} className='nav-links'>Services</Link>
           <Link to="/contact-us" onClick={toggleMenu} className='nav-links'>Contact</Link>
         </div>

@@ -10,9 +10,6 @@ import logo6 from '../../../assets/Brand Logos 6.png';
 import logo7 from '../../../assets/Brand Logos 7.png';
 import logo8 from '../../../assets/Brand Logos 8.png';
 import logo9 from '../../../assets/Brand Logos 9.png';
-import logo10 from '../../../assets/Brand Logos 10.png';
-import logo11 from '../../../assets/Brand Logos 11.png';
-import logo12 from '../../../assets/Brand Logos 12.png';
 
 const BrandCarouselComponent = () => {
   const logos = [
@@ -25,15 +22,12 @@ const BrandCarouselComponent = () => {
     { src: logo7, alt: 'Brand Logo 7' },
     { src: logo8, alt: 'Brand Logo 8' },
     { src: logo9, alt: 'Brand Logo 9' },
-    { src: logo10, alt: 'Brand Logo 10' },
-    { src: logo11, alt: 'Brand Logo 11' },
-    { src: logo12, alt: 'Brand Logo 12' },
   ];
 
   return (
     <div className="brand-carousel-container">
       <div className="brand-carousel-heading">
-        <h2>Trusted by <span>Hundreds</span> of Brands & FBA Sellers on Amazon</h2>
+        <h2>Empowering <span>Thousands</span> of Amazon Sellers & Premium Brands</h2>
       </div>
       
       <div className="brand-carousel-wrapper">

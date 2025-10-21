@@ -49,7 +49,7 @@ const CaseStudySlider = () => {
   return (
     <div className="case-study-container">
       <div className="case-study-heading">
-        <h2>Proof Over Promises: <span>Results</span> You Can See</h2>
+       <h2>Evidence Beyond Words: <span>Outcomes</span> You Can Trust</h2>
       </div>
       
       <div className="case-study-content">
@@ -62,7 +62,7 @@ const CaseStudySlider = () => {
         </div>
         
         <div className="case-study-navigation">
-     <Link to="/before-and-after"><button className="view-all-btn">View All Before After</button></Link>
+     <Link to="/before-and-after"><button className="view-all-btn">See All Transformations</button></Link>
          
           
           <div className="case-study-arrows">

@@ -5,27 +5,23 @@ import './CardContainer.css';
 const CaseStudiesContainer = (props) => {
     const { caseStudyData, categoryButtons } = props;
  // State to track active filter
- const [activeFilter, setActiveFilter] = useState('ctr'); // Default to first filter
+ const [activeFilter, setActiveFilter] = useState('conversion'); // Default to first filter
 
  // Get displayed items based on active filter
  const getDisplayedItems = () => {
-   // For Designs filter, return empty array (no cards)
-   if (activeFilter === 'designs') {
-     return [];
-   }
-   
+
    // For CTR filter, return 3 specific cards
-   if (activeFilter === 'ctr') {
-     return caseStudyData.filter(item => item.tags.includes('ctr'));
+   if (activeFilter === 'conversion') {
+     return caseStudyData.filter(item => item.tags.includes('conversion'));
    }
    
    // For Amazon PPC, get the 2 cards with Amazon tag
-   if (activeFilter === 'amazon') {
-     return caseStudyData.filter(item => item.tags.includes('amazon'));
+   if (activeFilter === 'sponsored') {
+     return caseStudyData.filter(item => item.tags.includes('sponsored'));
    }
    
    // For Hijacker Removal and Listings SEO, use same images as Amazon but different content
-   const amazonCards = caseStudyData.filter(item => item.tags.includes('amazon'));
+   const amazonCards = caseStudyData.filter(item => item.tags.includes('sponsored'));
    const currentFilterCards = caseStudyData.filter(item => item.tags.includes(activeFilter));
    
    // Return cards with Amazon images but current filter content
@@ -45,8 +41,8 @@ const CaseStudiesContainer = (props) => {
      <div className="case-studies-section">
        <div className="case-studies-header">
          <div className="case-studies-title">
-           <span className="case-studies-tag">Case Study</span>
-           <h2>My Case Studies</h2>
+           <span className="case-studies-tag">Work Showcase</span>
+           <h2>Evidence of Impact</h2>
          </div>
          
          <div className="category-filters">

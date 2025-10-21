@@ -1,15 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-  --carousel-bg: #292E4C;
-  --heading-color: #ffffff;
-  --accent-color: #6530DD;
+  --heading-color: #000000;
 }
 
 .brand-carousel-container {
   width:auto;
   margin: 0 0 auto;
-  background-color: var(--carousel-bg);
+  background:#9cbdf3;
   padding: 40px 10px;
   overflow: hidden;
 
@@ -34,23 +32,6 @@
   position: relative; /* Add this */
   z-index: 0; /* Add this */
   color: var(--heading-color);
-
-}
-.brand-carousel-heading span::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom:16px;
-    width: 100%;
-    height: 12px;
-    background-color:var(--accent-color); /* Vibrant purple/blue color */
-    z-index: -1; /* Add this */
-  }
-.brand-carousel-heading span {
-  color: var(--heading-color);
-  position: relative;
-  display: inline-block;
-  z-index: 1;
 
 }
 

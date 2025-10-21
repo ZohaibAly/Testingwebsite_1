@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
-import frame1 from '../../assets/Logo-HD-CommerceKind.png';
+import frame1 from '../../assets/Logo-HD-JPT.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
@@ -15,7 +15,7 @@ const Footer = () => {
                     <img className='image-1' src={frame1} alt="" />
                 </div>
                 <p>
-                    CommerceKind is your trusted partner for Amazon’s success. We empower businesses to grow their stores and accounts with tailored solutions and proven expertise.
+             JPT Amazon Solutions represents your reliable collaborator for marketplace achievement. We assist enterprises to expand their channels and portfolios with personalized approaches and demonstrated competence.
                 </p>
                 <div className='Footerpt-1-images'>
                   <div className='Footer-1-icons'>  
@@ -44,7 +44,6 @@ const Footer = () => {
                 </div>
                 <div className='Quicklink'>
                     <h4>Quick Links</h4>
-                    <Link to="/careers"><p>Careers</p></Link>
                     <Link to="/blog"><p>Blog</p></Link>
                     <Link to="/frequently-asked-questions"><p>FAQs</p></Link>
                     <a href="https://www.trustpilot.com/review/commercekind.com" target='_blank'><p>Reviews</p></a>
@@ -63,17 +62,15 @@ const Footer = () => {
                     <button type="button">Subscribe</button>
                 </div>
                 <h4>Phone: </h4>
-                <p>(203) 547-9102</p>
+                <p>(555) 942-1765</p>
                 <h4>Address: </h4>
-                <p>7628 103rd St Jacksonville, FL 32210</p>
+          <p>4392 Riverside Ave Tampa, FL 33614</p>
             </div>
         </div>
 
  
         </div>
-        <div className="Footer-bottom">
-        <span className='Footer-bottom-text'>Copyright © 2025 CommerceKind | Powered By <a href="https://develtro.com/">Develtro</a></span>
-    </div>
+  
     </div>
     );
 }

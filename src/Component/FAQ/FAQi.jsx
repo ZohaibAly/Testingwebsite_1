@@ -16,11 +16,11 @@ const FAQi = ({ faqData }) => {
             <div className="Blurred-ellipse"></div>
             <div className="FAQ-main-text">
                 <h2 className='FAQ-main-heading'>
-                    <span>Got Questions?</span> We've Got Answers!
+                    <span>Need Clarity?</span> Find Solutions Here!
                 </h2>
                 <p className='FAQ-main-p'>
-                    We handle the complexities of Amazon so you can focus on growth.
-                    From strategy to execution, our expert team is here to maximize your success.
+                     We manage Amazon's challenges so you can concentrate on scaling.
+                    From planning to implementation, our specialized team drives your results.
                 </p>
             </div>
             

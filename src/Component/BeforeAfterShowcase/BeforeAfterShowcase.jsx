@@ -64,7 +64,7 @@ const BeforeAfterShowcase = () => {
   return (
     <div className="showcase-container">
       <div className="showcase-study-heading">
-        <h2>Proof Over Promises: <span>Results</span> You Can See</h2>
+        <h2>  Evidence Beyond Words: <span>Outcomes</span>You Can Trust </h2>
       </div>
       
       {showcaseData.map((item, index) => (

@@ -11,8 +11,8 @@
   }
   :root {
     --font-family: 'Montserrat', sans-serif;
-    --brandnav-color:#0ea498;
-    --brand2-color:#6C30ED;
+    --brandnav-color:#000000;
+    --brand2-color:#165EFE;
   }
   *
   {
@@ -22,7 +22,7 @@
   
   /* Top bar section */
   .child1 {
-    background-color: #292E4C;
+    background-color: #000000;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -104,6 +104,7 @@
   
   .logo img {
     height: 92px;
+    width:auto;
     margin-left: 30px;
   }
   
@@ -137,23 +138,23 @@
   }
   
   .socials a:hover {
-    color: var(--brandnav-color);
+    color: var(--brand2-color);
     transition: color 0.3s ease;
   }
   
   /* Hover effect for navigation links */
   .links a:hover {
-    color: var(--brandnav-color);
+   color: var(--brand2-color);
     transition: color 0.3s ease;
   }
   
   /* Hover effect for main navigation links */
   .navigation a:hover {
-    color: var(--brandnav-color);
+   color:var(--brand2-color);
     transition: color 0.3s ease;
   }
   .navigation a.active{
-    color: var(--brandnav-color); 
+  color:var(--brand2-color);
   }
   
   /* Hover effect for the Try button */
@@ -174,10 +175,11 @@
 /* Existing media queries remain the same */
   .navigation a {
     text-decoration: none;
-    color: #292E4C;
+    color: #000000;
     font-weight: 500;
     font-size: 18px;
   }
+ 
   /* Hide hamburger icon by default on larger screens */
 .hamburger-icon {
   display: none;

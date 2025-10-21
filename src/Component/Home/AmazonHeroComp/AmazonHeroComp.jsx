@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "./AmazonHeroComp.css";
-import HeroImage from "../../../assets/Home-Hero-Graphic-CommerceKind.png";
+import HeroImage from "../../../assets/testimg.png";
 import purpleGlow from "../../../assets/Home-Hero-Glow-Purple.png";
 import GreenGlow from "../../../assets/Home-Hero-Glow-Green.png";
 
@@ -12,22 +12,16 @@ const AmazonHeroComponent = () => {
     <div className="hero-container">
       <div className="hero-parent">
         <div className="hero-content">
-          <h1 className="hero-title">Smart Amazon Management Services</h1>
-          <h2 className="hero-subtitle">Low Ranking? We've Got Solutions!</h2>
+          <h1 className="hero-title">Premium Amazon Accelerating Solutions</h1>
+          <h2 className="hero-subtitle">Struggling with Visibility? We'll Fix It!</h2>
           <p className="hero-description">
-            Low Sales, High Potential? If you have the product, we have the
+            Great Products, Low Sales? You bring the inventory, we bring the
             <br />
-            Strategy - Free Audit to get started
+               Expertise - Complimentary Analysis to begin
           </p>
           <div className="hero-buttons">
             <Link to="/contact-us">
-              <button className="hero-button">Free Store Audit</button>
-            </Link>
-            <Link to="/contact-us" className="hero-link">
-              Grow Your Amazon Sales{" "}
-              <span className="ama-arrow-icon">
-                <FontAwesomeIcon icon={faArrowRight} />
-              </span>
+              <button className="hero-button">Claim Free Analysis</button>
             </Link>
           </div>
         </div>

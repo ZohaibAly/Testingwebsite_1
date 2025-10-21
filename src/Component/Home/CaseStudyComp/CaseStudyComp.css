@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 :root {
-  --primary-text: #292E4C;
-  --highlight-color: #724cf9;
+  --primary-text: #000000;
+  --highlight-color: #165EFE;
   --border-color: #e0e0e0;
   --btn-bg: white;
-  --arrow-bg: #292E4C;
+  --arrow-bg: #000000;
   --arrow-color: white;
   --heading-font: 'Montserrat', sans-serif;
   --btn-font:'poppins', sans-serif;

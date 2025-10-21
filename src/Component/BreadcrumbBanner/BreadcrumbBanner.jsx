@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseChimney } from '@fortawesome/free-solid-svg-icons';
 import './BreadcrumbBanner.css';
-import bannerBg from '../../assets/SubPage-Banner-CommerceKind.png';
+import bannerBg from '../../assets/SubPage-Banner-JPT.png';
 
 const BreadcrumbBanner = ({ currentPage }) => {
   const location = useLocation();
@@ -29,6 +29,7 @@ const BreadcrumbBanner = ({ currentPage }) => {
 
   return (
     <div className="breadcrumb-banner" style={{ backgroundImage: `url(${bannerBg})` }}>
+
       <div className="breadcrumb-container">
         <div className="breadcrumb-nav">
           <Link to="/" className="home-link">

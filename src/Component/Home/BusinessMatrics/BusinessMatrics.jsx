@@ -10,14 +10,14 @@ const BusinessMatrics = () => {
         <div className="businessMatrics-metrics-header">
           <div className="businessMatrics-title-container">
             <p className="businessMatrics-section-title">
-              By The <span className="businessMatrics-spanclass">Numbers</span>
+            In The <span className="businessMatrics-spanclass">Data</span>
             </p>
             <p className="businessMatrics-section-subtitle">
-              We Don't Just Manage Amazon—We Master It for You.
+               We Don't Just Handle Marketplace—We Excel At It For You.
             </p>
             <div className="businessMatrics-setting">
               <Link to="/contact-us" className="businessMatrics-about-button">
-                About CommerceKind
+                Know JPT AmazonSolutions
                 <span className="businessMatrics-icon">
                   <FontAwesomeIcon icon={faArrowRight} />
                 </span>
@@ -26,27 +26,27 @@ const BusinessMatrics = () => {
           </div>
 
           <div className="businessMatrics-primary-metric-card">
-            <p className="businessMatrics-primary-child">$100M+</p>
+            <p className="businessMatrics-primary-child">$150M+</p>
             <p className="businessMatrics-primary-child2">
-              Revenue Generated Annually
+             Sales Achieved Yearly
             </p>
           </div>
         </div>
 
         <div className="businessMatrics-metrics-grid">
           <div className="businessMatrics-metric-card businessMatrics-gradient-purple">
-            <p className="businessMatrics-metric-value">40+</p>
-            <p className="businessMatrics-matric-brand">Brands</p>
+            <p className="businessMatrics-metric-value">60+</p>
+            <p className="businessMatrics-matric-brand">Clients</p>
           </div>
 
           <div className="businessMatrics-metric-card businessMatrics-dark-blue">
-            <p className="businessMatrics-metric-value">99%</p>
-            <p className="businessMatrics-matric-brand">Retention Rate</p>
+            <p className="businessMatrics-metric-value">97%</p>
+            <p className="businessMatrics-matric-brand">Client Loyalty</p>
           </div>
 
           <div className="businessMatrics-metric-card businessMatrics-self-customize">
-            <p className="businessMatrics-metric-value">50+</p>
-            <p className="businessMatrics-matric-brand">Employees</p>
+            <p className="businessMatrics-metric-value">75+</p>
+            <p className="businessMatrics-matric-brand">Team Members</p>
           </div>
         </div>
       </div>

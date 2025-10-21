@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
-  --businessMatrics-teal-brown: #0EA498;
-  --businessMatrics-dark-blue: #292E4C;
-  --businessMatrics-purple: #6C30ED;
+  --businessMatrics-teal-brown: #165EFE;
+  --businessMatrics-dark-blue: #000000;
+  --businessMatrics-purple: #6b9df8;
   --businessMatrics-white: #FFFFFF;
   --businessMatrics-font-primary: 'Montserrat', sans-serif;
   --businessMatrics-font-secondary: 'Poppins', sans-serif;
