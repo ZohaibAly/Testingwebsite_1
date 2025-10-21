@@ -13,15 +13,23 @@ import image8 from '../../assets/casestudies-8.png';
 import image9 from '../../assets/casestudies-9.png';
 
 const caseStudiesData = [
-  { id: 1, permalink: "/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon", image: image1, title: "Supplements Multivitamins", subtitle: "Strategic Growth for Bariatric Multivitamins Brand", result: "2.5X Sales Growth – Scaling a brand’s Bariatric Multivitamin 45mg 90ct on Amazon" },
-  { id: 2, permalink: "/case-study-2x-sales-growth-revitalizing-a-brands-lozenges-on-amazon", image: image2, title: "Health & Personal Care", subtitle: "Strategic Growth for Health & Personal Care Brand", result: "2X Sales Growth – Revitalizing a brand’s Lozenges on Amazon" },
-  { id: 3, permalink: "/case-study-2x-sales-growth-scaling-a-brands-vitamin-d-drops-on-amazon", image: image3, title: "Baby Products & Supplements", subtitle: "Strategic Growth for Baby Products & Supplements Brand", result: "2X Sales Growth – Scaling a brand’s Vitamin D Drops on Amazon" },
-  { id: 4, permalink: "/case-study-3x-revenue-growth-by-implementing-amazon-transparency-program-for-supplement-brand", image: image4, title: "Baby Products & Supplements", subtitle: "Strategic Growth and Hijacker Removal for Baby Products & Supplements Brand", result: "3X Revenue Growth by Implementing Amazon Transparency Program for Supplement Brand" },
-  { id: 5, permalink: "/case-study-400-increase-in-sales-and-profitability-for-supplements-brand", image: image5, title: "Supplements", subtitle: "Strategic Growth for Supplements Brand", result: "400% Increase in Sales and Profitability For Supplements Brand" },
-  { id: 6, permalink: "/case-study-57-revenue-growth-scaling-a-brands-vitamin-c-zinc-on-amazon", image: image6, title: "Supplements", subtitle: "Strategic Growth for Supplements Brand", result: "57% Revenue Growth – Scaling a brand’s Vitamin C & Zinc on Amazon" },
-  { id: 7, permalink: "/case-study-6x-yoy-growth-for-food-brand-through-a-to-z-management", image: image7, title: "Grocery & Gourmet Food", subtitle: "Strategic Growth and Hijacker Removal for Grocery & Gourmet Food Brand", result: "6X YoY Growth for Food Brand Through A to Z Management" },
-  { id: 8, permalink: "/case-study-7x-revenue-growth-by-overcoming-compliance-inventory-challenges", image: image8, title: "Grocery & Gourmet Food", subtitle: "Strategic Growth for Grocery & Gourmet Food Brand", result: "7X Revenue Growth by Overcoming Compliance & Inventory Challenges" },
-  { id: 9, permalink: "/case-study-scaling-a-brands-elderberry-supplement-on-amazon", image: image9, title: "Supplements", subtitle: "Strategic Growth for Supplements Brand", result: "Scaling a brand’s Elderberry Supplement on Amazon" },
+  { id: 1, permalink: "/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon", image: image1, title: "Supplements Multivitamins", subtitle: "Transforming Bariatric Nutrition Through Data-Driven Optimization", result: "Achieved 150% Revenue Surge for Specialized 45mg Multivitamin Formula"  },
+  { id: 2, permalink: "/case-study-2x-sales-growth-revitalizing-a-brands-lozenges-on-amazon", image: image2, title: "Health & Personal Care", subtitle: "Reviving Market Position with Enhanced Visibility Tactics", 
+    result: "Doubled Monthly Performance for Throat Relief Product Line"  },
+  { id: 3, permalink: "/case-study-2x-sales-growth-scaling-a-brands-vitamin-d-drops-on-amazon", image: image3, title: "Baby Products & Supplements", subtitle: "Elevating Infant Wellness Solutions with Parent-Focused Messaging", 
+    result: "100% Increase in Pediatric Vitamin D Drop Conversions"  },
+  { id: 4, permalink: "/case-study-3x-revenue-growth-by-implementing-amazon-transparency-program-for-supplement-brand", image: image4, title: "Baby Products & Supplements", subtitle: "Protecting Brand Integrity While Eliminating Unauthorized Sellers", 
+    result: "Tripled Income via Transparency Program and Counterfeit Prevention"  },
+  { id: 5, permalink: "/case-study-400-increase-in-sales-and-profitability-for-supplements-brand", image: image5, title: "Supplements", subtitle: "Comprehensive Overhaul Delivering Exponential Market Expansion", 
+    result: "5X Profit Multiplication Through Full-Funnel Optimization" },
+  { id: 6, permalink: "/case-study-57-revenue-growth-scaling-a-brands-vitamin-c-zinc-on-amazon", image: image6, title: "Supplements", subtitle: "Immunity Category Dominance via Precision Targeting", 
+    result: "57% Revenue Lift for Immune Support Combination Formula"  },
+  { id: 7, permalink: "/case-study-6x-yoy-growth-for-food-brand-through-a-to-z-management", image: image7, title: "Grocery & Gourmet Food", subtitle: "End-to-End Account Mastery Eliminating Operational Bottlenecks", 
+    result: "600% Year over Year Expansion Through Complete Platform Control"  },
+  { id: 8, permalink: "/case-study-7x-revenue-growth-by-overcoming-compliance-inventory-challenges", image: image8, title: "Grocery & Gourmet Food", subtitle: "Resolving Regulatory Hurdles to Unlock Untapped Potential", 
+    result: "Sevenfold Financial Growth via Compliance and Stock Solutions"  },
+  { id: 9, permalink: "/case-study-scaling-a-brands-elderberry-supplement-on-amazon", image: image9, title: "Supplements", subtitle: "Seasonal Wellness Product Amplification Strategy", 
+    result: "Elderberry Line Expansion with Enhanced Search Ranking"  },
 ];
 
 const CaseStudies = () => {
@@ -47,7 +55,6 @@ const CaseStudies = () => {
                 <div className='para-text'><h4>{item.subtitle}</h4></div>
                 <div className='button-all'>
                   <button>Sales</button>
-                  <button>UX & Design</button>
                   <button>Marketing</button>
                   <button>Product Management</button>
                 </div>
@@ -62,7 +69,6 @@ const CaseStudies = () => {
                 <div className='para-text'><h4>{item.subtitle}</h4></div>
                 <div className='button-all'>
                   <button>Sales</button>
-                  <button>UX & Design</button>
                   <button>Marketing</button>
                   <button>Product Management</button>
                 </div>
