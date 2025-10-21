@@ -31,7 +31,7 @@
   letter-spacing: 0.5px;
   position: relative; /* Add this */
   z-index: 0; /* Add this */
-  color: var(--heading-color);
+  color: #FFFFFF;
 
 }
 
