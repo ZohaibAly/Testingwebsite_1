@@ -19,7 +19,7 @@ const NavbarComponent = () => {
         <div className='p1'>
           <div className='email-container'>
             <FontAwesomeIcon icon={faEnvelope} />
-            <span>sales@jptamazonsolutions.com</span>
+            <span>yeshua@jptamzsolutions.com</span>
           </div>
           <div className='divider'>|</div>
           <div className='phone-container'>

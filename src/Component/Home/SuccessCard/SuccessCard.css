@@ -23,7 +23,7 @@
   bottom: 1px;
   width: 400px;
   height: 2px;
-  background-color: #165EFE;
+  background-color: #214E87;
 }
 .card-image {
   height: 316px;
@@ -97,7 +97,7 @@ font-family: 'poppins', sans-serif;
   align-items: center;
   background: none;
   border: none;
-  color: #165EFE;
+  color: #214E87;
   font-size: 18px; /* Increased from 14px */
   font-weight: 600;
 font-family: 'poppins', sans-serif;
@@ -114,7 +114,7 @@ transition: all 0.3s linear;
   justify-content: center;
   width: 30px; /* Increased from 20px */
   height: 31px; /* Increased from 20px */
-  background-color:#165EFE;
+  background-color:#214E87;
   border-radius: 50%;
   color: white;
   margin-left: 10px; /* Increased from 8px */

@@ -5,7 +5,7 @@
   --title-font: 'Poppins', sans-serif;
   --content-font: 'Montserrat', sans-serif;
   --primary-color: #000000;
-  --button-color: #165EFE;
+  --button-color: #214E87;
 }
 
 /* Main container - sets the size and background */
@@ -91,7 +91,7 @@
   color: var(--button-color);
 }
 .hero-title span{
-  color: #196BDE;
+  color: #214E87;
 }
 
 .hero-image {

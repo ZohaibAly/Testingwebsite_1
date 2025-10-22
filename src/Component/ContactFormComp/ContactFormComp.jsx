@@ -140,7 +140,7 @@ const ContactFormComp = () => {
                   <polyline points="22,6 12,13 2,6"></polyline>
                 </svg>
               </div>
-              <span>sales@jptamazonsolutions.com</span>
+              <span>yeshua@jptamzsolutions.com</span>
             </div>
 
             <div className="contact-item">
