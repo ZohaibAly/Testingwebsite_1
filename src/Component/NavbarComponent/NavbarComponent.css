@@ -302,7 +302,7 @@
 }
   @media ( width <= 1316px) {
   .logo img{
-    height:70px;
+    height:101px;
     margin-left: 30px;
   }
   }
@@ -347,7 +347,7 @@
         gap:20px;
       }
       .logo img{
-        height:55px;
+        height:95px;
         margin-left: 0px;
       }
    
@@ -383,7 +383,7 @@
         gap:16px;
       }
       .logo img{
-        height:45px;
+        height:85px;
         margin-left: 0px;
       }
    

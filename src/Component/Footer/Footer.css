@@ -31,7 +31,7 @@
 }
 
 .Footerpt-1 .image-1 {
-  height: 101px;
+  height: 130px;
   width: auto;
 }
 
@@ -192,7 +192,7 @@
   color: #6c30ed;
 }
 
-@media (width<=1602px) {
+@media ( width <= 1602px ) {
   .Footer-main {
     gap: 50px;
   }
@@ -321,7 +321,7 @@
     padding: 25px 35px 35px 45px;
 
     & .image-1 {
-      height: 60px;
+      height: 80px;
       width: auto;
     }
   }
@@ -385,7 +385,7 @@
     padding: 25px 30px 30px 30px;
 
     & .image-1 {
-      height: 55px;
+      height: 80px;
       width: auto;
     }
   }
@@ -450,7 +450,7 @@
     padding: 25px 15px 30px 25px;
 
     & .image-1 {
-      height: 50px;
+      height: 80px;
       width: auto;
     }
   }
@@ -682,10 +682,6 @@
     height: 330px;
     padding: 25px 0px 0px 25px;
 
-    & .image-1 {
-      height: 70px;
-      width: auto;
-    }
   }
   .Footerpt-1 p {
     font-size: 16px;
@@ -751,7 +747,7 @@
     padding: 25px 0px 0px 25px;
 
     & .image-1 {
-      height: 60px;
+      height: 80px;
       width: auto;
     }
   }
