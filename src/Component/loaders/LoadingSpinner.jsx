@@ -1,6 +1,6 @@
 import React from 'react';
 import Lottie from 'lottie-react';
-import animationData from '../../../public/Amination/Loading.json';
+import animationData from '../../Amination/Loading.json';
 
 const LoadingSpinner = () => {
   return (

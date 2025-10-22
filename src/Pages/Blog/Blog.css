@@ -8,8 +8,8 @@
 }
 
 .Blog {
-    height: 50vh;
-    background-color: #292E4C;
+    height: 40vh;
+    background-color:#196BDE;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,7 +19,7 @@
 }
 
 .Blog-text h2 {
-    font-size: 100px;
+    font-size: 50px;
     font-weight: 700;
     letter-spacing: 4px;
     color: #FFFFFF;
@@ -27,9 +27,10 @@
 }
 
 .Blog-btn button {
-    padding: 35px 70px !important;
-    background-color: #6C30ED;
-    font-size: 50px;
+    padding: 15px 40px !important;
+    background-color: #000000;
+    font-size: 30px;
+    border:2px solid #edf4fc;
     font-weight: 600;
     letter-spacing: 0.5px;
     border: none;
@@ -39,127 +40,102 @@
 }
 
 .Blog-btn:hover button {
-    background-color: #0EA498;
+    background-color: #edf4fc;
     cursor: pointer;
+    color:#000000;
+    transition: all 0.1s linear;
+    border:2px solid #edf4fc;
 }
 
 
 @media ( width <= 1384px) {
-    .Blog-text h2{
-        font-size: 90px;
+      .Blog-text h2{
+        font-size: 30px;
+    }
+    .Blog{
+        height: 35vh;
+    }
+     .Blog-btn button{
+        padding: 13px 25px !important;
+        font-size: 22px;
+       
     }
 }
 
-@media ( width <= 1264px) {
-    .Blog-text h2{
-        font-size: 85px;
-    }
-}
+
 
 @media ( width <= 1196px) {
     .Blog-text h2{
-        font-size: 75px;
+        font-size: 25px;
     }
-    .Blog-btn button{
-        padding: 34px 67px !important;
+    .Blog{
+        height: 35vh;
+    }
+     .Blog-btn button{
+        padding: 8px 20px !important;
+        font-size: 20px;
+       
     }
 }
 
-@media ( width <= 1056px) {
-    .Blog-text h2{
-        font-size: 70px;
-    }
-  
-}
 
 @media ( width <= 990px) {
     .Blog-text h2{
-        font-size: 60px;
+        font-size: 25px;
+    }
+    .Blog{
+        height: 35vh;
+    }
+     .Blog-btn button{
+        padding: 8px 20px !important;
+        font-size: 20px;
+       
     }
   
 }
 
-@media ( width <= 858px) {
-    .Blog-text h2{
-        font-size: 55px;
-    }
-    .Blog-btn button{
-        padding: 30px 60px !important;
-        font-size: 45px;
-       
-    }
-    .Blog{
-        height: 40vh;
-       }
-}
 
-@media ( width <= 800px) {
-    .Blog-text h2{
-        font-size: 50px;
-    }
-    .Blog-btn button{
-        padding: 30px 60px !important;
-        font-size: 45px;
-       
-    }
-}
 
-@media ( width <= 728px) {
-    .Blog-text h2{
-        font-size: 45px;
-    }
-    .Blog-btn button{
-        padding: 30px 60px !important;
-        font-size: 45px;
-       
-    }
-}
-
-@media ( width <= 672px) {
-    .Blog-text h2{
-        font-size: 40px;
-    }
-    .Blog-btn button{
-        padding: 28px 58px !important;
-        font-size: 43px;
-       
-    }
-}
-
-@media ( width <= 606px) {
-    .Blog-text h2{
-        font-size: 36px;
-    }
- 
-}
 
 @media ( width <= 556px) {
-    .Blog-text h2{
-        font-size: 32px;
+      .Blog-text h2{
+        font-size: 20px;
     }
-    .Blog-btn button{
-        padding: 25px 50px !important;
-        font-size: 40px;
-        font-weight: 500;
+    .Blog{
+        height: 35vh;
+    }
+     .Blog-btn button{
+        padding: 8px 20px !important;
+        font-size: 20px;
        
     }
 }
 
 @media ( width <= 496px) {
-    .Blog-text h2{
-        font-size: 28px;
+     .Blog-text h2{
+        font-size: 20px;
     }
-    .Blog-btn button{
-        padding: 23px 48px !important;
-        font-size: 40px;
-        font-weight: 500;
+    .Blog{
+        height: 35vh;
+    }
+     .Blog-btn button{
+        padding: 8px 20px !important;
+        font-size: 20px;
        
     }
 }
 
 @media ( width <= 460px) {
     .Blog-text h2{
-        font-size: 25px;
+        font-size: 20px;
+    }
+    .Blog{
+        height: 35vh;
+    }
+     .Blog-btn button{
+        padding: 8px 20px !important;
+        font-size: 20px;
+       
     }
  
 }
@@ -171,41 +147,41 @@
     .Blog{
         height: 35vh;
     }
-    .Blog-btn button{
-        padding: 20px 46px !important;
-        font-size: 35px;
-        font-weight: 500;
+     .Blog-btn button{
+        padding: 8px 20px !important;
+        font-size: 20px;
        
     }
 }
 
 @media ( width <= 348px) {
     .Blog-text h2{
-        font-size: 18px;
+        font-size: 20px;
+        text-align:center;
+         padding: 10px;
     }
     .Blog{
         height: 35vh;
     }
-    .Blog-btn button{
-        padding: 20px 46px !important;
-        font-size: 30px;
-        font-weight: 500;
+   .Blog-btn button{
+        padding: 8px 20px !important;
+        font-size: 15px;
        
     }
 }
 
 @media ( width = 320px) {
     .Blog-text h2{
-        font-size: 16px;
+        font-size: 20px;
+        text-align:center;
         padding: 10px;
     }
     .Blog{
         height: 35vh;
     }
     .Blog-btn button{
-        padding: 18px 20px !important;
-        font-size: 30px;
-        font-weight: 500;
+        padding: 8px 20px !important;
+        font-size: 15px;
        
     }
 }
