@@ -130,7 +130,7 @@ transition: all 0.3s linear;
 }
 
 .success-card:hover .view-case-btn {
-  color:#165EFE;
+  color:#214E87;
   text-decoration: underline;
   & .Card-btn-circle{
     translate: 5px -5px;
