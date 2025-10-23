@@ -15,7 +15,7 @@ const Footer = () => {
                     <img className='image-1' src={frame1} alt="" />
                 </div>
                 <p>
-             JPT Amazon Solutions represents your reliable collaborator for marketplace achievement. We assist enterprises to expand their channels and portfolios with personalized approaches and demonstrated competence.
+             JPT AMZ SOLUTIONS represents your reliable collaborator for marketplace achievement. We assist enterprises to expand their channels and portfolios with personalized approaches and demonstrated competence.
                 </p>
                 <div className='Footerpt-1-images'>
                   <div className='Footer-1-icons'>  

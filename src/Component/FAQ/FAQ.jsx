@@ -7,13 +7,13 @@ function FAQ() {
   const faqData = [
     {
       id: 1,
-      question: "What does JPT Amazon Solutions' Complete Brand Oversight entail?",
-      answer: "JPT Amazon Solutions' Complete Brand Oversight represents an all-encompassing approach delivered by our agency, addressing every facet of your marketplace presence, including catalog enhancement, inventory coordination, and operational logistics, guaranteeing optimal exposure and revenue expansion for your business."
+      question: "What does JPT AMZ SOLUTIONS' Complete Brand Oversight entail?",
+      answer: "JPT AMZ SOLUTIONS' Complete Brand Oversight represents an all-encompassing approach delivered by our agency, addressing every facet of your marketplace presence, including catalog enhancement, inventory coordination, and operational logistics, guaranteeing optimal exposure and revenue expansion for your business."
     },
     {
       id: 2,
-      question: "How does JPT Amazon Solutions accelerate my marketplace revenue?",
-      answer: "JPT Amazon Solutions excels in delivering specialized offerings including sponsored advertising oversight, catalog refinement, market analysis, and identity development, all engineered to amplify your platform performance through enhanced discoverability, elevated engagement rates, and optimized workflows."
+      question: "How does JPT AMZ SOLUTIONS accelerate my marketplace revenue?",
+      answer: "JPT AMZ SOLUTIONS excels in delivering specialized offerings including sponsored advertising oversight, catalog refinement, market analysis, and identity development, all engineered to amplify your platform performance through enhanced discoverability, elevated engagement rates, and optimized workflows."
     },
     {
       id: 3,
@@ -47,8 +47,8 @@ function FAQ() {
     },
     {
       id:9,
-      question: "How do I begin partnering with JPT Amazon Solutions?",
-      answer: "To begin partnering with JPT Amazon Solutions, simply reach out through our platform. Our professionals will explore your requirements and create a customized roadmap to assist you in maximizing your enterprise's complete capabilities on the marketplace."
+      question: "How do I begin partnering with JPT AMZ SOLUTIONS?",
+      answer: "To begin partnering with JPT AMZ SOLUTIONS, simply reach out through our platform. Our professionals will explore your requirements and create a customized roadmap to assist you in maximizing your enterprise's complete capabilities on the marketplace."
     }
   ];
 
