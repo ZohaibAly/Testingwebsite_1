@@ -1,6 +1,6 @@
 import React from 'react';
 import './Page5CaseStudies.css';
-// Import images 
+//Import-images 
 import page1image1 from '../../../assets/page1image1.png';
 import page1image2 from '../../../assets/page1image2.png';
 import page1image3 from '../../../assets/page1image3.png';
