@@ -19,16 +19,16 @@ const Footer = () => {
                 </p>
                 <div className='Footerpt-1-images'>
                   <div className='Footer-1-icons'>  
-                  <Link to="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></Link>
+                  <Link to="#"><FontAwesomeIcon icon={faFacebook} /></Link>
                   </div>
                <div className='Footer-1-icons'>
                <Link to="#"><FontAwesomeIcon icon={faXTwitter}  /></Link>
                </div>
               <div className='Footer-1-icons'>
-              <Link to="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></Link>
+              <Link to="#"><FontAwesomeIcon icon={faInstagram} /></Link>
               </div>
               <div className='Footer-1-icons'>
-              <Link to="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></Link>
+              <Link to="https://www.linkedin.com/in/mindy-israel-a8a015390/"><FontAwesomeIcon icon={faLinkedin} /></Link>
               </div>
                
                 </div>
@@ -62,7 +62,7 @@ const Footer = () => {
                     <button type="button">Subscribe</button>
                 </div>
                 <h4>Phone: </h4>
-                <p>(555) 942-1765</p>
+                <p>(732) 451-4720</p>
                 <h4>Address: </h4>
           <p>4392 Riverside Ave Tampa, FL 33614</p>
             </div>

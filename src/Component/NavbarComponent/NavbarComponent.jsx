@@ -24,7 +24,7 @@ const NavbarComponent = () => {
           <div className='divider'>|</div>
           <div className='phone-container'>
             <FontAwesomeIcon icon={faPhoneVolume} />
-            <span>(555) 942-1765</span>
+            <span>(732) 451-4720</span>
           </div>
         </div>
         <div className='p2'>
@@ -35,9 +35,9 @@ const NavbarComponent = () => {
           </div>
           <div className='divider'>|</div>
           <div className='socials'>
-            <a href="https://www.facebook.com/CommercekindLLC/"><FontAwesomeIcon icon={faFacebook} /></a>
-            <a href="https://www.instagram.com/commercekindllc/"><FontAwesomeIcon icon={faInstagram} /></a>
-            <a href="https://www.linkedin.com/company/commercekindllc/"><FontAwesomeIcon icon={faLinkedin} /></a>
+            <a href="#"><FontAwesomeIcon icon={faFacebook} /></a>
+            <a href="#"><FontAwesomeIcon icon={faInstagram} /></a>
+            <a href="https://www.linkedin.com/in/mindy-israel-a8a015390/"><FontAwesomeIcon icon={faLinkedin} /></a>
             <a href="#"><FontAwesomeIcon icon={faXTwitter} /></a>
           </div>
         </div>
@@ -83,13 +83,13 @@ const NavbarComponent = () => {
           <Link to="/frequently-asked-questions" onClick={toggleMenu} className='nav-links'>FAQs</Link>
         </div>
         <div className='mobile-socials'>
-          <a href="https://www.facebook.com/CommercekindLLC/" onClick={toggleMenu} className='nav-links'>
+          <a href="#" onClick={toggleMenu} className='nav-links'>
             <FontAwesomeIcon icon={faFacebook} />
           </a>
-          <a href="https://www.instagram.com/commercekindllc/" onClick={toggleMenu} className='nav-links'>
+          <a href="#" onClick={toggleMenu} className='nav-links'>
             <FontAwesomeIcon icon={faInstagram} />
           </a>
-          <a href="https://www.linkedin.com/company/commercekindllc/" onClick={toggleMenu} className='nav-links'>
+          <a href="https://www.linkedin.com/in/mindy-israel-a8a015390/" onClick={toggleMenu} className='nav-links'>
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           <a href="#" onClick={toggleMenu} className='nav-links'>
