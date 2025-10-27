@@ -42,7 +42,7 @@ function App() {
           <Route path="/blog" element={<BlogPage />} />
           <Route path="/frequently-asked-questions" element={<FAQPage />} />
           <Route path="/case-studies" element={<CaseStudiesPage />} />
-          <Route path="/All-Transformation" element={<BeforeAfterPage />} />
+          <Route path="/before-and-after" element={<BeforeAfterPage />} />
           <Route path="/services" element={<ServicesPage />} />
           <Route path="/contact-us" element={<ContactPage />} />
           <Route path="/case-study-2-5x-sales-growth-scaling-a-brands-bariatric-multivitamin-45mg-90ct-on-amazon" element={<CaseStudy breadCrumbTitle="Case Study: 2.5X Sales Growth – Scaling a brand’s Bariatric Multivitamin 45mg 90ct on Amazon" PageComponent={Page1comp}  />} />

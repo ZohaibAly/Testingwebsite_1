@@ -10,12 +10,12 @@ const AmazonHeroComponent = () => {
     <div className="hero-container">
       <div className="hero-parent">
         <div className="hero-content">
-          <h1 className="hero-title">Premium <span>Amazon</span> Propelling Solutions</h1>
-          <h2 className="hero-subtitle">Struggling with Visibility? We'll Fix It!</h2>
+          <h1 className="hero-title">Smart <span>Solutions</span> for Smarter Selling</h1>
+          <h2 className="hero-subtitle">Low Sales, High Potential? You’ve Got the Product, We’ve Got the Strategy.</h2>
           <p className="hero-description">
-            Great Products, Low Sales? You bring the inventory, we bring the
+            iEmpowering Thousands of Amazon Sellers & Premium Brands
             <br />
-               Expertise - Complimentary Analysis to begin
+               Trusted by 100+ Growing Brands and FBA Sellers on Amazon
           </p>
           <div className="hero-buttons">
             <Link to="/contact-us">
