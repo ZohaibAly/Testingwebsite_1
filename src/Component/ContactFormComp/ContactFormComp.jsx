@@ -1,9 +1,15 @@
-// ContactForm.jsx
+// ContactForm.jsx 
 import React, { useState, useRef, useEffect } from 'react';
 import './ContactFormComp.css';
+import emailjs from '@emailjs/browser';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faLinkedin, faXTwitter } from '@fortawesome/free-brands-svg-icons';
+
+// === EmailJS IDs you provided ===
+const SERVICE_ID  = 'service_f8kbdvu';
+const TEMPLATE_ID = 'template_1pwgw45';
+const PUBLIC_KEY  = 'tsWqfkVe9czS_8FXj';
 
 // Custom dropdown component (kept, but not used now)
 const CustomDropdown = ({ options, value, onChange, name }) => {
@@ -87,28 +93,42 @@ const ContactFormComp = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  // === Only this function changed to actually send the email ===
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+    setStatus({ submitted: false, success: false, message: '' });
 
-    // EmailJS removed — just mark as submitted successfully
-    setStatus({
-      submitted: true,
-      success: true,
-      message: 'Thank you! Your message has been sent successfully.'
-    });
+    try {
+      // Sends all inputs by their `name` attributes via the form ref
+      await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, { publicKey: PUBLIC_KEY });
 
-    // Reset form
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: '',
-      phoneNumber: '',
-      helpWith: '',
-      message: ''
-    });
+      setStatus({
+        submitted: true,
+        success: true,
+        message: 'Thank you! Your message has been sent successfully.'
+      });
 
-    setLoading(false);
+      // Reset form UI/state
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phoneNumber: '',
+        helpWith: '',
+        message: ''
+      });
+      if (form.current) form.current.reset();
+    } catch (err) {
+      console.error(err);
+      setStatus({
+        submitted: true,
+        success: false,
+        message: 'Sorry, something went wrong while sending. Please try again.'
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
