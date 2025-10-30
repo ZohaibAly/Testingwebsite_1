@@ -13,13 +13,13 @@ const AmazonHeroComponent = () => {
           <h1 className="hero-title">Smart <span>Solutions</span> for Smarter Selling</h1>
           <h2 className="hero-subtitle">Low Sales, High Potential? You’ve Got the Product, We’ve Got the Strategy.</h2>
           <p className="hero-description">
-            iEmpowering Thousands of Amazon Sellers & Premium Brands
+            Empowering Thousands of Amazon Sellers & Premium Brands
             <br />
                Trusted by 100+ Growing Brands and FBA Sellers on Amazon
           </p>
           <div className="hero-buttons">
             <Link to="/contact-us">
-              <button className="hero-button">Claim Free Analysis</button>
+              <button className="hero-button">Claim Free Audit</button>
             </Link>
           </div>
         </div>
