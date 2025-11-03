@@ -141,11 +141,11 @@ line-height: 1.2 rem;
     color: white;
 }
 
-.services-component__btn {
+.ServicesSection-Component__Btn {
     margin-top: 100px;
 }
 
-.services-component__btn button {
+.ServicesSection-Component__Btn button {
     margin-top: 30px;
     border: 1px solid transparent;
     padding: 20px 60px;
@@ -161,7 +161,7 @@ line-height: 1.2 rem;
     color-scheme: light dark;
 }
 
-.services-component__btn button:hover {
+.ServicesSection-Component__Btn button:hover {
     background-color: white;
     color: #242424;
     border: 2px solid #242424;
@@ -243,7 +243,7 @@ line-height: 1.2 rem;
     .services-component__card h2{
         font-size:32px ;
     }
-    .services-component__btn 
+    .ServicesSection-Component__Btn 
     {
      margin-top: 30px;
     }
@@ -269,7 +269,7 @@ line-height:px;
     .services-component__card h2{
         font-size:32px ;
     }
-    .services-component__btn button{   
+    .ServicesSection-Component__Btn button{   
         margin-top: 10px;
            padding: 20px 50px;
            font-size: 18px;
@@ -294,7 +294,7 @@ height: 120px;
     .services-component__card h2{
         font-size: 28px;
     }
-    .services-component__btn button{   
+    .ServicesSection-Component__Btn button{   
         margin-top: 0px;
            padding: 15px 40px;
            font-size: 18px;
