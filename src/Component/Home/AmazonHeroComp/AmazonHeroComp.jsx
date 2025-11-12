@@ -13,9 +13,9 @@ const AmazonHeroComponent = () => {
           <h1 className="hero-title">Smart <span>Solutions</span> for Smarter Selling</h1>
           <h2 className="hero-subtitle">Low Sales, High Potential? You’ve Got the Product, We’ve Got the Strategy.</h2>
           <p className="hero-description">
-            Empowering Thousands of Amazon Sellers & Premium Brands
+          Trusted by growing sellers and established brands 
             <br />
-               Trusted by 100+ Growing Brands and FBA Sellers on Amazon
+            who rely on results, not promises.
           </p>
           <div className="hero-buttons">
             <Link to="/contact-us">
